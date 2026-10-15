@@ -1,0 +1,758 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\newcommand{\inc}{\text{\footnotesize\phantom{.}I\phantom{.}}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newcounter{definition}[section]
+\newenvironment{definition}[2][]{\refstepcounter{definition} \noindent\textbf{Definition~\thedefinition #1 -- #2} \par \rmfamily}{\bigskip}
+   
+\renewcommand{\emph}[1]{\textcolor{red}{#1}}
+
+
+
+
+
+%%%% Special Commands &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\id}{\operatorname{id}}
+\renewcommand{\mod}[1]{ \ (\operatorname{mod} #1)}
+\newcommand{\cyc}[1]{\langle #1 \rangle}
+\newcommand{\rbracket}{]}
+\newcommand{\ip}[1]{\langle #1 \rangle}
+\newcommand{\intr}{\operatorname{int}}
+\newcommand{\dom}{\operatorname{dom}}
+
+%% For Absolute Value %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+    
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\section*{Chapter 0}
+
+
+\subsection*{0.1}
+
+
+    \begin{definition}{Set (naive)}
+        A \emph{set} is a collection of ``objects" or ``things".
+    \end{definition}
+    
+    \begin{definition}{Element}
+	    An \emph{element} or \emph{member} of a set is an ``object" or ``thing" in the collection.
+	\end{definition}
+    
+    \begin{definition}{Subset}
+		A \emph{subset} of the set $S$ is a set $A$ such that every element of $A$ is also a member of $S$.
+	\end{definition}
+	
+	\begin{definition}{Empty Set}
+		The \emph{empty set}, denoted $\varnothing$, is the set with no members.
+	\end{definition}
+	
+	\begin{definition}{Union}
+		Let $S$ be a given set and let $A \subseteq S$ and $B \subseteq S$. Define 
+			\[A \cup B = \{x \in S : x \in A \text{ or } x \in B\},\]
+		which is read "the set of all $x \in S$ that are members of $A$ or $B$ (or both)." The set $A \cup B$ is called the \emph{union} of $A$ and $B$.
+	\end{definition}
+	
+	\begin{definition}{Intersection}
+		Let $S$ be a given set and let $A \subseteq S$ and $B \subseteq S$. Define
+			\[A \cap B = \{x \in S : x \in A \text{ and } x \in B\},\]
+		which is read "the set of all $x \in S$ that are members of both $A$ and $B$." The set $A \cap B$ is called the \emph{intersection} of $A$ and $B$.
+	\end{definition}
+	
+	\begin{definition}{Complement}
+		For $A \subseteq S$. We form the \emph{complement} of $A$ in $S$ be defining
+			\[A^C = \{ x \in S : x \notin A \}.\]
+	\end{definition}
+		
+	\begin{definition}{Relative Complement, Set Difference}
+		For $A \subseteq S$ and $B \subseteq S$, we form the \emph{complement of $A$ relative to $B$} by defining
+			\[B\backslash A = \{x \in B : x \notin A\}.\]
+	\end{definition}
+	
+	\begin{definition}{Cartesian Product}
+		Given sets $A$ and $B$, define the \emph{Cartesian product} $A \times B$ of $A$ and $B$ to be the set of all ordered pairs $(a,b)$ with $a \in A$ and $b \in B$; i.e. 
+			\[A \times B = \{ (a,b) : a \in A \text{ and } b\in B\}.\]
+	\end{definition}
+	
+	\begin{definition}{Function, Mapping, Transformation}
+		Let $S$ and $T$ be given sets. A \emph{function} $f: S \to T$ consists of two sets $S$ and $T$ together with a "rule" that assigns to each $x \in S$ a specific element of $T$, denoted $f(x)$.
+	\end{definition}
+	
+	\begin{definition}{Domain, Source}
+		For a function $f: S \to T$, the set $S$ is called the \emph{domain} of $f$.
+	\end{definition}
+	
+	\begin{definition}{Codomain, Target}
+		For a function $f: S \to T$, the set $T$ is called the \emph{codomain} of $f$.
+	\end{definition}
+	
+	\begin{definition}{Image, Range}
+		For a function $f: S \to T$ the \emph{image} of $f$ is the subset of $T$ defined by $f(S) = \{ f(x) \in T : x \in S\}$.
+	\end{definition}
+	
+	\begin{definition}{Graph}
+		For a function $f: S \to T$ the \emph{graph} of $f$ is the set $\{ (x, f(x)) \in S \times T : x \in S\}$.
+	\end{definition}
+	
+	\begin{definition}{Injective, One-to-one}
+		A function $f: S \to T$ is called \emph{injective} or an \emph{injection} if whenever $x_1 \neq x_2$, then $f(x_1) \neq f(x_2)$.
+	\end{definition}
+	
+	\begin{definition}{Surjective, Onto}
+		We say that $f: S \to T$ is \emph{surjective} or a \emph{surjection}, when for every $y \in T$, there is an $x \in S$ such that $f(x) = y$; in other words, when the range equals the codomain.
+	\end{definition}
+	
+	\begin{definition}{Bijection, One-to-one Correspondence}
+		A one-to-one and onto map is called a \emph{bijection}.
+	\end{definition}
+	
+	\begin{definition}{Image (of a set)}
+		For $f: S \to T$ and $A \subseteq S$, we define $f(A) = \{f(x) \in T : x \in A\}$ to be the \emph{image of $A$ under $f$}.
+	\end{definition}
+	
+	\begin{definition}{Preimage, Inverse Image}
+		For $f: S \to T$ and $B \subseteq T$ we define $f^{-1}(B)$ to be the set $\{ x \in S : f(x) \in B\}$. We call $f^{-1}(B)$ the \emph{preimage} of $B$ under $f$.
+	\end{definition}
+	
+	\begin{definition}{Inverse Function}
+		If there is a unique function $f^{-1} : T \to S$ such that $f(f^{-1}(y)) = y$ for all $y \in T$ and $f^{-1}(f(x)) = x$ for all $x \in S$, we call $f^{-1}$ the \emph{inverse function} of $f$.
+	\end{definition}
+	
+	\begin{definition}{Identity Map}
+		The map $f: S \to S$ defined by $f(x) = x$ for all $x \in S$ is called the \emph{identity map} on $S$.
+	\end{definition}
+	
+	\begin{definition}{Composition}
+		For two functions $f: S \to T$ and $g : T \to U$, the \emph{composition} $g \circ f : S \to U$ is defined by $(g \circ f)(x) = g(f(x))$.
+	\end{definition}
+	
+	\begin{definition}{Restriction (of a function)}
+		Let $f: S \to T$ be a mapping and $A \subseteq S$. We consider a new function denoted $f \mid A: A \to T$ defined by $(f \mid A)(x) = f(x)$ for all $x \in A$. We call $f \mid A$ the \emph{restriction} of $f$ to $A$.
+	\end{definition}
+	
+	\begin{definition}{Extension (of a function)}
+		Suppose $f: A \to B$ is a mapping and that $A \subseteq S$ and $B \subseteq T$. If $g: S \to T$ is a function such that $(g \mid A) = f$ then $g$ is an \emph{extension} of $f$.
+	\end{definition}
+	
+	\begin{definition}{Finite (Set)}
+		A set $A$ is called \emph{finite} if we can display all of its elements as follows: $A = \{a_1, a_2, \ldots, a_n\}$, for some integer $n$. More precisely, a set is finite if it can be put into one-to-one correspondence with the subset $\{1, 2, \ldots, n\}$ of the natural numbers for some $n \in \N$.
+	\end{definition}
+	
+	\begin{definition}{Infinite (Set)}
+		A set that is not finite is \emph{infinite}.
+	\end{definition}
+	
+	\begin{definition}{Equipollent, Equinumerous, Equipotent}
+		We say that two sets $A$ and $B$ are \emph{equipollent} (same cardinality) if there exists a bijective map $f$ from $A$ to $B$.
+	\end{definition}
+	
+	\begin{definition}{Countably Infinite, Denumerable}
+		If an infinite set is equipollent to the natural numbers, then it is called \emph{countably infinite}. 
+	\end{definition}
+	
+	\begin{definition}{Countable}
+		A set that is either finite or denumerable is said to be \emph{countable}.
+	\end{definition}
+	
+	\begin{definition}{Uncountable, Uncountable Infinite}
+		A set that is not countable is \emph{uncountable}.
+	\end{definition}
+	
+	\begin{definition}{Sequence}
+		Let $S$ be a set. A \emph{sequence} in $S$ is a mapping $f: \N \to S$.
+	\end{definition}
+	
+	\begin{definition}{Subsequence}
+		We call $y_1, y_2, \ldots$ a \emph{subsequence} of $x_1, x_2, \ldots$ if there is a function $g: \N \to \N$ such that for every $i,j \in \N$, $y_i = x_{g(i)}$, and if $i < j$ then $g(i) < g(j)$.
+	\end{definition}
+	
+	
+\subsection*{0.2}
+
+
+    \begin{definition}{Successor}
+    	If $x$ is a set, then we define $x^+ = x \cup \{x\}$ and call it the \emph{successor} of $x$.
+	\end{definition}
+	
+	
+\section*{Chapter 1}
+
+
+\subsection*{1.1}
+
+
+    \begin{definition}{Ordered Field}
+	    A system obeying all 16 properties is called an \emph{ordered field}.
+	\end{definition}
+	
+	\begin{definition}{Partial Ordering}
+	    Let $S$ be a set with an order relation $\leq$ satisfying the properties of reflexivity, antisymmetry and transitivity. The $\leq$ is said to be a \emph{partial ordering} of $S$.
+	\end{definition}
+	
+	\begin{definition}{Partially Ordered Set}
+	    A set $S$ with a partial order, $\leq$, on it is called a \emph{partially ordered set} or a \emph{poset}.
+	\end{definition}
+	
+	\begin{definition}{Linear Order, Total Order}
+	    Given a partially ordered set $S$ with partial order $\leq$, if for any $a,b \in S$ either $a \leq b$ or $b \leq a$ then we say that $\leq$ is a \emph{linear order} or \emph{total order}.
+	\end{definition}
+	
+	\begin{definition}{Totally Ordered Set}
+	    A set with a total ordering on it is called a \emph{totally ordered set}.
+	\end{definition}
+	
+	\begin{definition}{Absolute Value, Magnitude}
+    	The \emph{absolute value} or \emph{magnitude} of a number $x$, denoted $\abs{x}$, is defined by 
+    		\[\abs{x} = \left\{
+    			\begin{matrix}
+    				x, & x \geq 0 \\
+    				-x, & x < 0
+    			\end{matrix}
+    		\right.
+    		\]
+	\end{definition}
+	
+	\begin{definition}{Distance}
+	    The \emph{distance} between two elements $x$ and $y$ is $\abs{x - y}$.
+	\end{definition}
+	
+	\begin{definition}{Archimedean Ordered Field}
+    	A field $\mathbb{F}$ is called an \emph{Archimedean ordered field} if it has the Archimedean property.
+	\end{definition}
+	
+	
+\subsection*{1.2}
+
+
+    \begin{definition}{(1.2.1) Converge}
+    	A sequence $x_n$ is said to \emph{converge} if there exists a real number $x$ such that if for every $\varepsilon > 0$ there is a natural number $N$ such that $\abs{x_n - x} < \varepsilon$ whenever $n \geq N$. In this case we write
+    		\[\lim_{n \to \infty} x_n = x\]
+    	or 
+    		\[x_n \to x \text{ as } n \to \infty.\]
+	\end{definition}
+	
+	\begin{definition}{Limit}
+	    If a sequence $x_n$ converges to a real number $x$ then $x$ is called the \emph{limit} of the sequence.
+	\end{definition}
+	
+	\begin{definition}{Bounded}
+    	A sequence is said to be \emph{bounded} if there is a number $M$ such that $\abs{x_n} \leq M$ for all $n$.
+	\end{definition}
+	
+	\begin{definition}{Bounded Above, Upper Bound}
+    	A sequence is said to be \emph{bounded above} if there is a number $A$ with $x_n \leq A$ for every $n$. $A$ is called an \emph{upper bound} for the sequence $x_n$.
+	\end{definition}
+
+	\begin{definition}{Bounded Below, Lower Bound}
+    	A sequence is said to be \emph{bounded below} if there is a number $B$ with $x_n \geq B$ for every $n$. $B$ is called a \emph{lower bound} for the sequence $x_n$. 
+	\end{definition}
+	
+	\begin{definition}{Increasing, Nondecreasing}
+	    A sequence $x_n$ is said to be \emph{increasing} if $x_n \leq x_{n+1}$ for every $n$.
+	\end{definition}
+	
+	\begin{definition}{Strictly Increasing}
+	    A sequence $x_n$ is said to be \emph{strictly increasing} if $x_n < x_{n+1}$ for every $n$.
+	\end{definition}
+
+	\begin{definition}{Decreasing, Nonincreasing}
+	    A sequence $x_n$ is said to be \emph{decreasing} if $x_n \geq x_{n+1}$ for each $n$.
+	\end{definition}
+
+	\begin{definition}{Strictly Decreasing}
+	    A sequence $x_n$ is said to be \emph{strictly decreasing} if $x_n > x_{n+1}$ for each $n$.
+	\end{definition}
+	
+	\begin{definition}{Monotone Sequence}
+    	A sequence is called a \emph{monotone sequence} (\emph{monotonically increasing}, \emph{monotonically decreasing}) if it is an increasing or decreasing sequence.
+	\end{definition}
+	
+	\begin{definition}{Monotone Sequence Property}
+	    Let $\mathbb{F}$ be an ordered field. We say that $\mathbb{F}$ has the \emph{monotone sequence property} if every monotone increasing sequence bounded above converges.
+	\end{definition}
+	
+	\begin{definition}{Complete}
+	    An ordered field is said to be \emph{complete} if it obeys the monotone sequence property.
+	\end{definition}
+	
+	
+\subsection*{1.3}
+
+
+    \begin{definition}{Upper Bound}
+    	Let $S \subseteq \R$. A number $b$ is called an \emph{upper bound} for $S$ if for all $x \in S$, we have $x \leq b$.
+	\end{definition}
+
+	\begin{definition}{Least Upper Bound, Supremum}
+    	Let $S \subseteq \R$. A number $b$ is called a \emph{least upper bound} for $S$ provided that $b$ is both an upper bound for $S$ and given any other upper bound, $b'$ of $S$, then $b \leq b'$. If $S \subseteq \R$ is not bounded above or $S$ is empty then we say that $\sup{S}$ is infinite and write $\sup{S} = \infty$.
+	\end{definition}
+	
+	\begin{definition}{Lower Bound}
+	    Let $S \subseteq \R$. A number $a$ is called a \emph{lower bound} for $S$ if for all $x \in S$, we have $a \leq x$.
+	\end{definition}
+
+	\begin{definition}{Greatest Lower Bound, Infimum}
+	    Let $S \subseteq \R$. A number $a$ is called a \emph{greatest lower bound} for $S$ provided that $a$ is both a lower bound for $S$ and given any other lower bound $a'$, then $a \geq a'$. If $S \subseteq \R$ is not bounded below or $S$ is empty we write $\inf{S} = - \infty$.
+	\end{definition}
+	
+	
+\subsection*{1.4}
+
+
+    \begin{definition}{Cauchy Sequence}
+		A sequence $x_n$ of real numbers is called a \emph{Cauchy sequence} if for every number $\varepsilon > 0$, there is a natural number $N$ (depending on $\varepsilon$) such that $\abs{x_n - x_m} < \varepsilon$ whenever $n \geq N$ and $m \geq N$.
+	\end{definition}
+	
+	
+\subsection*{1.5}
+
+
+    \begin{definition}{Cluster Points}
+		A point $x$ is called a \emph{cluster point} of the sequence $x_n$ if for every $\varepsilon > 0$ there are infinitely many values of $n$ with $\abs{x_n - x} < \varepsilon$.
+	\end{definition}
+	
+	\begin{definition}{Limit Superior}
+		Let $x_n$ be a sequence in $\R$ that is bounded above. The \emph{limit superior} of $x_n$ is the largest cluster point of $x_n$,  i.e., the $\sup$ of the set of cluster points. If the set of cluster points is empty, we set $\limsup x_n = -\infty$; if the sequence is not bounded above, we set $\limsup x_n = +\infty$.
+	\end{definition}
+	
+	\begin{definition}{Limit Inferior}
+		Let $x_n$ be a sequence in $\R$ that is bounded below. The \emph{limit inferior} of $x_n$ is the smallest cluster point of $x_n$, i.e., the $\inf$ of the set of cluster points. If the set of cluster points is empty, we set $\liminf x_n = +\infty$, and if $x_n$ is not bounded below, we set $\liminf x_n = -\infty$.
+	\end{definition}
+	
+	
+\subsection*{1.6}
+
+    
+    \begin{definition}{Euclidean $n$-space}{}
+		\emph{Euclidean $n$-space}, denote $\R^n$, consists of all ordered $n$-tuples of real numbers. Symbolically,
+			\[\R^n = \{(x_1,\ldots,x_n) : x_1,\ldots, x_n \in \R\}.\]
+		Thus, $\R^n = \R \times \cdots \times \R$ ($n$ times) is the Cartesian product of $\R$ with itself $n$ times.
+	\end{definition}
+	
+	\begin{definition}{Real Vector Space}{}
+		A \emph{real vector space} $\mathcal{V}$ is a set of elements called \emph{vectors}, with given operations of \emph{vector addition}, $+ : \mathcal{V}\times\mathcal{V} \to \mathcal{V}$ and \emph{scalar multiplication}, $\cdot : \R \times \mathcal{V} \to \mathcal{V}$, such that:
+		
+			\begin{itemize}
+				\item[i.] $v+w = w+v$ for every $v$ and $w$ in $\mathcal{V}$. \hfill \textbf{commutativity}
+				\item[ii.] $(v+u)+w = v+(u+w)$. \hfill \textbf{associativity}
+				\item[iii.] There is a zero vector 0 such that $v+0=v$ for every $v$ in $\mathcal{V}$. \hfill \textbf{zero vector}
+				\item[iv.] For each $v$ in $\mathcal{V}$ there is a vector $-v$ such that $v + (-v) = 0$. \hfill \textbf{additive inverses}
+				\item[v.] For $\lambda \in \R$ and $v,w$ in $\mathcal{V}$, $\lambda \cdot (v + w) = \lambda v + \lambda \cdot w$. \hfill \textbf{distributivity}
+				\item[vi.] For $\lambda, m \in \R$ and $v$ in $\mathcal{V}$, $\lambda(m \cdot v) = (\lambda m)\cdot v$. \hfill \textbf{compatibility}
+				\item[vii.] For $\lambda, m \in \R$ and $v$ in $\mathcal{V}$, $(\lambda + m) \cdot v = \lambda \cdot v + m \cdot v$. \hfill \textbf{distributivity}
+				\item[viii.] $1 \cdot v = v$ for every $v \in \mathcal{V}$. \hfill \textbf{multiplicative identity}
+			\end{itemize}
+	\end{definition}
+	
+	\begin{definition}{Norm}
+		The \emph{length} or \emph{norm} of a vector $x$ in $\R^n$ is defined by
+			\[\norm{x} = \left\{\sum_{i=1}^n x_i^2\right\}^{1/2},\]
+		where $x = (x_1, \ldots, x_n)$.
+	\end{definition}
+
+	\begin{definition}{Distance}
+		The \emph{distance} between two vectors $x$ and $y$ is the real number
+			\[d(x,y) := \norm{x-y} = \left\{\sum_{i=1}^n (x_i - y_i)^2\right\}^{1/2}.\]
+	\end{definition}
+	
+	\begin{definition}{Inner Product}
+		The \emph{inner product} of $x$ and $y$ is defined by
+			\[\ip{x,y} = \sum_{i=1}^n x_iy_i.\]
+	\end{definition}
+	
+	\begin{definition}{Orthogonal}
+        If $x,y \in \R^n$, we call them \emph{orthogonal} if and only if $\ip{x,y} = 0$.
+		
+        \medskip
+
+	    Two subspaces $S$ and $T$ are orthogonal if and only if $\ip{x,y} = 0$ for all $x \in S$ and $y \in T$. 
+	\end{definition}
+	
+	\begin{definition}{Metric}
+		A \emph{metric} on a set $X$ is a function $d: X \times X \to [0,\infty)$ such that, for all $x,y,z \in X$
+			\begin{itemize}\setlength\itemsep{6pt}
+				\item[i.] $d(x,y) \geq 0$ \hfill \textbf{positivity}
+				\item[ii.] $d(x,y) = 0$ iff $x = y$. \hfill \textbf{nondegeneracy}
+				\item[iii.] $d(x,y) = d(y,x)$. \hfill \textbf{symmetry}
+				\item[iv.] $d(x,y) \leq d(x,z) + d(z,y)$. \hfill \textbf{triangle inequality}
+			\end{itemize}
+	\end{definition}
+    
+
+\subsection*{1.7}
+
+
+    \begin{definition}{Metric Space}
+		A \emph{metric space} $(M,d)$ is a set $M$ and a function $d:M \times M \to \R$ such that $d$ is a metric.
+	\end{definition}
+	
+	\begin{definition}{Normed Space}
+		A \emph{normed space} (or \emph{normal vector space}) $(\mathcal{V},\norm{\cdot})$ is a vector space $\mathcal{V}$ and a function $\norm{\cdot}: \mathcal{V} \to \R$ satisfying the properties of  a norm on $\mathcal{V}$.
+	\end{definition}
+	
+	\begin{definition}{Inner Product Space}
+		An \emph{inner product space} is a vector space $\mathcal{V}$ along with a function $\ip{\cdot,\cdot}:\mathcal{V}\times \mathcal{V} \to \R$ such that $\ip{\cdot,\cdot}$ is an inner product on $\mathcal{V}$.
+	\end{definition}
+	
+
+\section*{Chapter 2}
+
+
+\subsection*{2.1}
+
+    \begin{definition}{$\varepsilon$-ball, $\varepsilon$-neighborhood}
+		Let $(M,d)$ be a metric space. For each fixed $x \in M$ and $\varepsilon > 0$, the set
+			\[B(x,\varepsilon) = \{ y \in M : d(x,y) < \varepsilon\}\]
+		is called the \emph{$\varepsilon$-ball} about $x$ (also called the \emph{$\varepsilon$-neighborhood} or \emph{$\varepsilon$-disk} about $x$).
+	\end{definition}
+	
+	\begin{definition}{Open Set}
+		A set $A \subseteq M$ is said to be \emph{open} if for each $x \in A$, there  exists an $\varepsilon > 0$ such that $D(x,\varepsilon) \subseteq A$. 
+	\end{definition}
+	
+	\begin{definition}{Neighborhood}
+		A \emph{neighborhood} of a point in $M$ is an open set containing that point.
+	\end{definition}
+	
+
+\subsection*{2.2}
+
+
+    \begin{definition}{Interior Point}
+		Let $M$ be a metric space and $A \subseteq M$. A point $x \in A$ is called an \emph{interior point} of $A$ if there is an open set $U$ such that $x \in U \subseteq A$.
+	\end{definition}
+
+	\begin{definition}{Interior (of a set)}
+		The \emph{interior of a set} $A$ is the collection of all interior points of $A$ and is denoted $\operatorname{int}(A)$. 
+	\end{definition}
+
+
+\subsection*{2.3}
+
+
+    \begin{definition}{Closed Set}
+		A set $B$ in a metric space is said to be \emph{closed} if its complement (That is, the set $M\backslash B$) is open.
+	\end{definition}
+	
+	\begin{definition}{Clopen}
+		A set that is both closed and open is \emph{clopen}.
+	\end{definition}
+
+
+\subsection*{2.4}
+
+
+    \begin{definition}{Accumulation Point}
+		A point $x$ in a metric space $M$ is called an \emph{accumulation point} of a set $A \subset M$ if every open set $U$ containing $x$ contains some point of $A$ other than $x$.
+	\end{definition}
+
+
+\subsection*{2.5}
+
+
+    \begin{definition}{Closure}
+	    Let $(M, d)$ be a metric space and $A \subseteq M$. The \emph{closure} of $A$ denoted $\operatorname{cl}(A)$ (or $\overline{A}$), is defined to to be the intersection of all closed sets containing $A$.
+	\end{definition}
+
+
+\subsection*{2.6}
+
+
+    \begin{definition}{Boundary}
+		For a given set $A$ in a metric space $(M,d)$, the \emph{boundary} is defined to be the set
+			\[\operatorname{bd}(A) = \operatorname{cl}(A) \cap \operatorname{cl}(M \backslash A).\]
+		Sometimes the notation $\partial A = \operatorname{bd}(A)$ is used.
+	\end{definition}
+
+
+\subsection*{2.7}
+
+
+    \begin{definition}{Converge}\label{converge}
+		Let $(M,d)$ be a metric space and $x_k$ a sequence of points in $M$. We say that $x_k$ \emph{converges} to a point $x \in M$ written
+			\[\lim_{k\to\infty}x_k = x\]
+		or $x \to x$ as $k \to \infty$, provided that for every open set $U$ containing $x$, there is an integer $N$ such that $x_k \in U$ whenever $k \geq N$.
+	\end{definition}
+	
+	\begin{definition}{Convergence in $\R^n$}
+		A sequence of points $v_k$ in $\R^n$ converges to $v$ if for every $\varepsilon > 0$ there is an $N$ such that $\norm{v_k - v} < \varepsilon$ whenever $k \geq N$.
+	\end{definition}
+	
+	
+\subsection*{2.8}
+
+
+    \begin{definition}{Cauchy Sequence}
+		Let $(M,d)$ be a metric space. A \emph{Cauchy sequence} is a sequence $x_k \in M$ such that for all $\varepsilon > 0$, there is an $N$ such that $n,m \geq N$ implies $d(x_m,x_n) < \varepsilon$.
+	\end{definition}
+
+	\begin{definition}{Complete Metric Space}
+		A metric space $(M,d)$ is a \emph{complete metric space} provided that every Cauchy sequence in $M$ converges to a point in $M$.
+	\end{definition}
+
+	\begin{definition}{Bounded Sequence}
+		A sequence $x_k$ in a normed space is \emph{bounded} if there is a number $R$ such that $\norm{x_k} \leq R$ for every $k$. In a metric space we require that there be a point $x_0$ such that $d(x_k,x_0) \leq R$ for all $k$.
+	\end{definition}
+	
+	\begin{definition}{Cluster Point}
+		A point $x$ in a metric space is called a \emph{cluster point} of the sequence $x_k$ if for every $\varepsilon > 0$ there are infinitely many values of $k$ with $d(x_k, x) < \varepsilon$.
+	\end{definition}
+
+
+\section*{Chapter 3}
+
+
+\subsection*{3.1}
+
+
+    \begin{definition}{Sequentially Compact}
+		Let $M$ be a metric space. A subset $A \subseteq M$ is called \emph{sequentially compact} if every sequence in $A$ has a subsequence that converges to a point in $A$.
+	\end{definition}
+	
+	\begin{definition}{Cover}
+		Let $M$ be a metric space and $A \subseteq M$. A \emph{cover} of $A$ is a collection $\{U_i\}$ of sets whose union contains $A$.
+	\end{definition}
+
+	\begin{definition}{Open Cover}
+		An open cover of a set $A$ of a metric space $M$ is collection of open sets $\{U_i\}$ that covers $A$.
+	\end{definition}
+
+	\begin{definition}{Finite Subcover}
+		A cover of a set $A$ in a metric space $M$, which consists of a finite subset of another cover, is called a \emph{finite subcover} of $A$.
+	\end{definition}
+
+	\begin{definition}{Compact}
+		A subset $A$ of a metric space $M$ is called \emph{compact} if every open cover of $A$ has a finite subcover.
+	\end{definition}
+	
+	\begin{definition}{Bounded (Set)}
+        A set $A$ in a metric space $(M,d)$ is \emph{bounded} if there is some $x \in M$ and real number $r$ such that $A \subseteq B(x,r)$.
+    \end{definition}
+	
+	\begin{definition}{Totally Bounded}
+		A set $A \subseteq M$ is called \emph{totally bounded} if for each $\varepsilon > 0$ there is a finite set $\{x_1, \ldots, x_N\}$ in $M$ such that 
+			\[A \subseteq \bigcup_{i=1}^N B(x_i,\varepsilon).\]
+	\end{definition}
+
+
+\subsection*{3.4}
+
+
+    \begin{definition}{Continuous Map of a Closed Interval}
+		We call a map $\varphi : [a,b] \to M$ of an interval $[a,b]$ into a metric space $M$ \emph{continuous} if $t_k \to t$ implies $\varphi(t_k) \to \varphi(t)$ for every sequence $t_k$ in $[a,b]$ converging to some $t \in [a,b]$.
+	\end{definition}
+
+	\begin{definition}{Continuous Path}
+		A \emph{continuous path} joining two points $x$ and $y$, in a metric space $M$ is a mapping $\varphi[a,b] \to M$ with $a \leq b$, such that $\varphi(a) = x$, $\varphi(b) = y$, and $\varphi$ is continuous.
+	\end{definition}
+
+	\begin{definition}{Lie in a Set $A$}
+		A path $\varphi$ is said to \emph{lie in a set $A$} if $\varphi(t) \in A$ for all $t \in [a,b]$.
+	\end{definition}
+
+	\begin{definition}{Path-Connected}
+		We say that a set is \emph{path-connected} if every two points in the set can be joined by a continuous path lying in the set.
+	\end{definition}
+
+
+\subsection*{3.5}
+
+
+    \begin{definition}{Separate}
+		Let $A$ be a subset of a metric space $M$. Two open sets $U$, and $V$ are said to \emph{separate} $A$ if they satisfy these conditions:
+			\begin{itemize}
+				\item[i.] $U \cap V \cap A = \varnothing$
+				\item[ii.] $A \cap U \neq \varnothing$
+				\item[iii.] $A \cap V \neq \varnothing$
+				\item[iv.] $A \subseteq U \cup V$.
+			\end{itemize}
+	\end{definition}
+	
+	\begin{definition}{Disconnected}
+		Let $A$ be a subset of a metric space $M$. If two open sets $U$ and $V$ exists that separate $A$, then we say $A$ is \emph{disconnected}.
+	\end{definition}
+
+	\begin{definition}{Connected}
+		If $A$ is not disconnected, that is, if no pair of open sets exists that separate $A$, the we say $A$ is \emph{connected}.
+	\end{definition}
+	
+	\begin{definition}{Component}
+		A \emph{component} of a set $A$ is a connected subset $A_0 \subseteq A$ such that there is no connected set in $A$ containing $A_0$ other than $A_0$ itself.
+	\end{definition}
+	
+	\begin{definition}{Path Component}
+		A \emph{path component} of a set $A$ is a path-connected subset $A_0 \subseteq A$ such that there is no path-connected set in $A$ containing $A_0$ other than $A_0$ itself.
+	\end{definition}
+
+
+\section*{Chapter 4}
+
+
+\subsection*{4.1}
+
+
+    \begin{definition}{Limit of $f$}
+		Let $(M,d)$ and $(N,\rho)$ be two metric space, $A \subseteq M$, and $f: A \to N$ a given mapping. Further, suppose $x_0$ is an accumulation point of $A$. We say that $b \in N$ is the \emph{limit of $f$ at $x_0$}, written
+			\[\lim_{x \to x_0} f(x) = b,\]
+		if given any $\varepsilon > 0$ there exists $\delta > 0$ (possibly depending on $f$, $x_0$, and $\varepsilon$) such that for all $x \in A$ satisfying $x \neq x_0$ and $d(x_0,x) < \delta$, we have $\rho(f(x),b) < \varepsilon$.
+	\end{definition}
+	
+	\begin{definition}{Continuous at $x_0$}
+		Let $A \subseteq M$, $f: A \to N$, and $x_0 \in A$. We say that $f$ is \emph{continuous at $x_0$} if either $x_0$ is not an accumulation point of $A$, or $\lim_{x \to x_0} f(x) = f(x_0)$.
+	\end{definition}
+	
+	\begin{definition}{Continuous (on $B$)}
+		A function $f: A \subseteq M \to N$ is called \emph{continuous on the set $B \subseteq A$} if $f$ is continuous at each point of $B$. If we say that $f$ is \emph{continuous}, we mean that $f$ is continuous on its domain $A$.
+	\end{definition}
+
+
+\subsection*{4.6}
+
+
+    \begin{definition}{Uniformly Continuous}
+		Let $(M,d)$ and $(N,\rho)$ be metric spaces, $A \subseteq M$, $f: A \to N$, and $B \subseteq A$. We say that $f$ is \emph{uniformly continuous on the set $B$} if for every $\varepsilon > 0$ there is a $\delta > 0$ such that $x,y \in B$ and $d(x,y) < \delta$ imply $\rho(f(x),f(y)) < \varepsilon$.
+	\end{definition}
+
+
+\subsection*{4.7}
+	
+	\begin{definition}{Differentiable at $x_0$}
+		Let the function $f$ be defined on some open interval containing $x_0 \in \R$. We say that $f$ is \emph{differentiable at $x_0$} if
+			\[f'(x_0) = \lim_{h \to 0} \dfrac{f(x_0 + h) - f(x_0)}{h} = \lim_{x \to x_0} \dfrac{f(x) - f(x_0)}{x - x_0}\]
+		exists. We call $f'(x_0)$ the derivative of $f$ at $x_0$.
+	\end{definition}
+	
+	\begin{definition}{Class $C^1$}
+		If $f$ is differentiable on $(a,b)$ and $f'$ is continuous, we say that $f$ is of \emph{class $C^1$}.
+	\end{definition}
+	
+	\begin{definition}{Class $C^n$}
+		If $f^{(n)}$ exists for $0,\ldots, n$ and is continuous on $(a,b)$ then we say that $f$ is of \emph{class $C^n$}.
+	\end{definition}
+	
+	\begin{definition}{Increasing at $x_0$}
+		We say that a function $f$ defined in a neighborhood of $x_0$ is \emph{increasing at $x_0$} if there is an interval $(a,b)$ containing $x_0$ such that:
+			\begin{itemize}
+				\item[i.] If $a < x < x_0$, then $f(x) \leq f(x_0)$.
+				\item[ii.] If $x_0 < x < b$, then $f(x) \geq f(x_0)$.
+			\end{itemize}
+	\end{definition}
+
+	\begin{definition}{Decreasing at $x_0$}
+		We say that a function $f$ defined in a neighborhood of $x_0$ is \emph{decreasing at $x_0$} if there is an interval $(a,b)$ containing $x_0$ such that:
+			\begin{itemize}
+				\item[i.] If $a < x < x_0$, then $f(x) \geq f(x_0)$.
+				\item[ii.] If $x_0 < x < b$, then $f(x) \leq f(x_0)$.
+			\end{itemize}
+	\end{definition}
+	
+
+\subsection*{4.8}
+
+
+    \begin{definition}{Integrate}
+		Let $A \subseteq \R$ be a bounded set and $f : A \to \R$ a bounded function. When we say that we want to \emph{integrate} the function $f$ over the set $A$, we mean that we would like to find the signed area under the graph of $f$.
+	\end{definition}
+	
+	\begin{definition}{Upper Sum}
+		Let $A \subseteq \R$ be a bounded set and $f: A \to \R$ a bounded function. As $A$ is bounded then $A \subseteq [a,b]$ for some $a,b \in \R$. Define $f^* : [a,b] \to \R$ by
+			\[f^*(x) = \left\{
+				\begin{matrix}
+				f(x) &: x \in A \\
+				0 &: x \not\in A
+				\end{matrix}\right.
+			.\]
+		Partitioning $[a,b]$ we get $a = x_0 < x_1 < \cdots < x_{n-1} < x_n = b$. We denote this partition by $P = \{x_0,\ldots,x_n\}$. Then we define the \emph{upper sum}
+			\[U(f,P) = \sum_{i=0}^{n-1}\big(\sup\{f^*(x) : x \in [x_i,x_{i+1}]\}\big)(x_{i+1}-x_i).\]
+	\end{definition}
+	
+	\begin{definition}{Lower Sum}
+		Let $A \subseteq \R$ be a bounded set and $f: A \to \R$ a bounded function. As $A$ is bounded then $A \subseteq [a,b]$ for some $a,b \in \R$. Define $f^* : [a,b] \to \R$ by
+			\[f^*(x) = \left\{
+				\begin{matrix}
+				f(x) &: x \in A \\
+				0 &: x \not\in A
+				\end{matrix}\right.
+			.\]
+		Partitioning $[a,b]$ we get $a = x_0 < x_1 < \cdots < x_{n-1} < x_n = b$. We denote this partition by $P = \{x_0,\ldots,x_n\}$. Then we define the \emph{lower sum}
+			\[L(f,P) = \sum_{i=0}^{n-1}\big(\inf\{f^*(x) : x \in [x_i,x_{i+1}]\}\big)(x_{i+1}-x_i).\]
+	\end{definition}
+	
+	\begin{definition}{Upper Integral}
+		The \emph{upper integral} is given by
+			\[S = \overline{\int_A} f(x) \ dx = \inf\{U(f,P) : P \text{ partitions } [a,b]\}.\]	
+	\end{definition}
+	
+	\begin{definition}{Lower Integral}
+		The \emph{upper integral} is given by
+			\[s = \underline{\int_A} f(x) \ dx = \sup\{L(f,P) : P \text{ partitions } [a,b]\}.\]	
+	\end{definition}
+	
+	\begin{definition}{Riemann Integrable (Integrable)}
+		We say that $f$ is \emph{Riemann integrable} (or just \emph{integrable}, or that the \emph{integral exists}, for short) if $s = S$. The common value $s = S$ is denoted by $\int_A f$ or by $\int_A f(x) \ dx$. If $A = [a,b]$, we write
+			\[\int_a^b f(x) \ dx = \int_A f = \int_a^b f.\]
+	\end{definition}
+	
+	\begin{definition}{Antiderivative}
+		For $f: [a,b] \to \R$, an \emph{antiderivative} of $f$ is a continuous function $F : [a,b] \to \R$ such that $F$ is differentiable on $(a,b)$ and $F'(x) = f(x)$ for $a < x < b$.
+	\end{definition}
+	
+
+\end{document}
+
+
+    \begin{definition}{}
+        
+    \end{definition}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+{
+  "name": "Jessup Math Flashcards",
+  "short_name": "MathCards",
+  "description": "Flashcard study app for Jessup University Math 301, 410, and 461 definitions",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50%' y='68%' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>&fnof;</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

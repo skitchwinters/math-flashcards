@@ -1,0 +1,710 @@
+\documentclass[12pt]{article}
+
+\usepackage[letterpaper]{geometry}
+\textwidth = 6.5in
+\textheight = 9.5in
+\topmargin = -.75in
+\footskip = 30pt
+\hoffset = .25in
+\headheight = 15pt
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\newcommand{\inc}{\text{\footnotesize\phantom{.}I\phantom{.}}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newcounter{definition}[section]
+\newenvironment{definition}[2][]{\refstepcounter{definition} \noindent\textbf{Definition~\thedefinition #1 -- #2} \par \rmfamily}{\bigskip}
+   
+\renewcommand{\emph}[1]{\textcolor{red}{#1}}
+
+\addtocounter{definition}{-2}
+
+
+%%%% Special Commands &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\id}{\operatorname{id}}
+\renewcommand{\mod}[1]{ \ (\operatorname{mod} #1)}
+\newcommand{\cyc}[1]{\langle #1 \rangle}
+\newcommand{\rbracket}{]}
+\newcommand{\intr}{\operatorname{int}}
+\newcommand{\dom}{\operatorname{dom}}
+
+%% For Absolute Value %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+    
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+
+
+%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Definitions}
+\author{MATH 410}
+\date{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\section*{Chapter 1}
+
+    \begin{definition}{Statement}{}
+        A \emph{statement} in logic or mathematics is an assertion that is either true or false.
+    \end{definition}
+    
+    
+    \begin{definition}{\mbox{IF, AND, OR (Conditional, Conjunction, Disjunction)}}{}
+    		\[
+        		\begin{array}{ccc}
+        		A & \emph{\implies} & B \\ \hline
+        		T &     \textbf{T}    & T \\
+        		T &     \textbf{F}    & F \\
+        		F &     \textbf{T}    & T \\
+        		F &     \textbf{T}    & F 
+        		\end{array}
+        		\qquad
+        		\begin{array}{ccc}
+        		A & \emph{\wedge} & B \\ \hline
+        		T &     \textbf{T}    & T \\
+        		T &     \textbf{F}    & F \\
+        		F &     \textbf{F}    & T \\
+        		F &     \textbf{F}    & F 
+        		\end{array}
+        		\qquad
+        		\begin{array}{ccc}
+        		A & \emph{\vee} & B \\ \hline
+        		T &     \textbf{T}    & T \\
+        		T &     \textbf{T}    & F \\
+        		F &     \textbf{T}    & T \\
+        		F &     \textbf{F}    & F 
+        		\end{array}
+    		\]		
+    \end{definition}
+    
+    
+    \begin{definition}{Set}
+        A \emph{set} is a well-defined collection of objects; that is, it is defined in such a manner that we can determine for any given object $x$ whether or not $x$ belongs to the set.
+    \end{definition}
+    
+    
+    \begin{definition}{General Linear Group}
+        The \emph{general linear group over $\R$}, $GL_n(\R)$, is the group of $n \times n$ invertible matrices with entries in $\R$.
+    \end{definition}
+    
+    
+    \begin{definition}{Special Linear Group}
+        The \emph{special linear group over $\R$}, $SL_n(\R)$, is the group of $n \times n$ matrices with entries in $\R$ and determinant 1.
+    \end{definition}
+            
+    
+    \begin{definition}{Subset}
+        A set $A$ is a \emph{subset} of $B$ written $A \subset B$ or $B \supset A$, if every element of $A$ is also an element of $B$.
+    \end{definition}
+    
+    
+    \begin{definition}{Proper Subset}
+        A set $A$ is a \emph{proper subset} of a set $B$ if $A \subset B$ but $A \neq B$ ($A \subsetneq B$). If $A$ is not a subset of $B$, we write $A \not\subset B$.
+    \end{definition}
+
+
+    \begin{definition}{Equal (sets)}
+        Two sets $A$ and $B$ are \emph{equal} as sets, $A = B$, if they have all the same elements.
+    \end{definition}
+    
+    
+    \begin{definition}{Empty Set}
+        The set containing no elements is called the \emph{empty set} and is usually denoted by $\emptyset$.
+    \end{definition}
+    
+    
+    \begin{definition}{Universal Set}
+        The \emph{universal set} is a set fixed within the framework of a theory and consisting of all objects considered in this theory.
+        
+        \underline{\hspace{3in}}\\
+        {\tiny Weisstein, Eric W. "Universal Set." From MathWorld--A Wolfram Web Resource. http://mathworld.wolfram.com/UniversalSet.html}
+    \end{definition}
+
+
+    \begin{definition}{Union}
+        The \emph{union}, $A \cup B$, of two sets $A$ and $B$ is defined as
+    	    \[A \cup B = \{x : x \in A \text{ or } x\in B\}.\]
+    \end{definition}
+
+    
+    \begin{definition}{Intersection}
+        The \emph{intersection}, $A \cap B$, of $A$ and $B$ is defined as 
+    	    \[A \cap B = \{x : x \in A \text{ and } x \in B\}.\]	
+    \end{definition}
+
+
+    \begin{definition}{Disjoint}
+        When two sets have no elements in common they are said to be \emph{disjoint.}
+    \end{definition}
+    
+    
+    \begin{definition}{Complement}
+        For any set $A \subset U$, we define the \emph{complement} of $A$, denoted $A'$, to be the set
+    	    \[A' = \{ x : x \in U \text{ and } x \notin A\}.\]
+    \end{definition}
+    
+    
+    \begin{definition}{Difference}
+        The \emph{difference} of two sets $A$ and $B$ is defined as
+        	\[A \backslash B = A \cap B' = \{x : x\in A \text{ and } x \notin B\}.\]
+    \end{definition}
+    
+    
+    \begin{definition}{Cartesian Product}
+        Given sets $A$ and $B$, we can define a new set $A \times B$, called the \emph{Cartesian product} of $A$ and $B$, as a set of ordered pairs. That is,
+        	\[A \times B = \{(a,b) : a \in A \text{ and } b \in B\}.\]
+    \end{definition}
+    
+    
+    \begin{definition}{Cartesian Product of $n$ Sets}
+        We define the \emph{Cartesian product of $n$ sets} to be
+        	\[A_1 \times \cdots \times A_n = \{(a_1, \ldots , a_n) : a_i \in A_i \text{ for }i = 1,\dots , n\}.\]
+    \end{definition}
+    
+    
+    \begin{definition}{Relation}
+        A \emph{relation} is any subset of $A \times B$. 
+    \end{definition}
+    
+    
+    \begin{definition}{Mapping, Function}
+        A \emph{mapping} or \emph{function} $f \subset A \times B$ from a set $A$ to a set $B$ is defined to be a special type of relation where $(a,b) \in f$ if for every element $a \in A$ there exists a unique element $b \in B$.
+    \end{definition}
+    
+    
+    \begin{definition}{Domain}
+        Given some function $f : A \to B$, then the set $A$ is called the \emph{domain}.
+    \end{definition}
+    
+    
+    \begin{definition}{Codomain}
+        Given some function $f : A \to B$, then the set $B$ is called the \emph{codomain}.
+    \end{definition}
+
+
+    \begin{definition}{Range, Image}
+        Given some function $f : A \to B$ the set 
+        	\[f(A) = \{ f(a) : a \in A\} \subset B\]
+        is called the \emph{range} of $f$ or \emph{image} of $A$ under $f$.
+        
+        \medskip
+        
+        Similarly $f(a) \in B$ is the \emph{image} of $a$ under $f$.
+    \end{definition}
+    
+    
+    \begin{definition}{Preimage}
+        Given some function $f : A \to B$ with $f(a) = b$ then
+        	\[f^{-1}(b) = \{x \in A : f(x) = b\}\]
+        and
+        	\[a \in f^{-1}(b).\]
+        We refer to $f^{-1}(b)$ as the \emph{preimage} of $b$ under $f$.
+        
+        \medskip
+        
+        Let $C \subset B$. We similarly define
+        	\[f^{-1}(C) = \{ x \in A: f(x) \in C\}\]
+        as the \emph{preimage} of $C$ under $f$.
+    \end{definition}
+    
+    
+    \begin{definition}{Well-defined}
+        A relation $f: A \rightarrow B$ is \emph{well-defined} if each element in the domain is assigned to a unique element in the range. That is, given $a_1,a_2 \in A$ with $a_1=a_2$ then $f(a_1)=f(a_2)$.
+    \end{definition}
+    
+    
+    \begin{definition}{Onto, Surjective, Epic}
+        Given a function $f: A\rightarrow B$, then $f$ is said to be \emph{onto}, \emph{surjective}, or \emph{epic} if $f(A)=B$. That is for each $b \in B$ there exists some $a \in A$ with $f(a)=b$.
+    \end{definition}
+        
+        
+    \begin{definition}{One-to-one, Injective, Monic}
+        Given a function $f:A \rightarrow B$, then $f$ is said to be \emph{one-to-one}, \emph{1-1}, \emph{injective}, or \emph{monic} if $a_1 \neq a_2$ implies that $f(a_1)\neq f(a_2)$. Equivalently, if $f(a_1)=f(a_2)$ then $a_1=a_2$.
+    \end{definition}
+        
+        
+    \begin{definition}{Bijection, 1-1 Correspondence}
+        A function that is both injective and surjective is called a \emph{bijection}. Equivalently if $f: A \rightarrow B$ is a bijection we say that it provides a \emph{1-1 correspondence} between $A$ and $B$.
+    \end{definition}
+    
+    
+    \begin{definition}{Permutation}
+        For any set $S$, a bijective mapping $\pi : S \to S$ is called a \emph{permutation} of $S$.
+    \end{definition}
+    
+    
+    \begin{definition}{Composition}
+        Given two functions $f:A \rightarrow B$ and $g: B \rightarrow C$ then we may define a new function $g \circ f : A \rightarrow C$ called the \emph{composition} by restricting the domain of $g$ to the range of $f$. That is, $(g\circ f)(x) = g(f(x))$.
+    \end{definition}
+    
+    
+    \begin{definition}{Linear Map, Linear Transformation}
+        A map from $\R^n$ to $\R^m$ given by matrices is called a \emph{linear map} or \emph{linear transformation}.
+    \end{definition}
+    
+    
+    \begin{definition}{Identity Map}
+        The \emph{identity map} from a set $S$ to itself is given by $\id(s)=s$ for all $s \in S$.
+    \end{definition}
+    
+        
+    \begin{definition}{Inverse Mapping}
+        A map $g: B \to A$ is an \emph{inverse mapping} of $f: A \to B$ if $g \circ f = \id_A$ and $f\circ g = \id_B$.
+    \end{definition}
+    
+        
+    \begin{definition}{Invertible}
+        A map is said to be \emph{invertible} if it has an inverse. We usually write $f^{-1}$ for the inverse of $f$.
+    \end{definition}
+    
+    
+    \begin{definition}{Equivalence Relation}
+        An \emph{equivalence relation} on a set $X$ is a relation $R \subset X \times X$ such that 
+        	\begin{itemize}
+        	    \item[1.] $(x,x)\in R$ for all $x \in X$ (\emph{reflexive property});
+        	    \item[2.] $(x,y) \in R$ implies $(y,x) \in R$ (\emph{symmetric property});
+        	    \item[3.] $(x,y)$ and $(y,z) \in R$ imply $(x,z) \in R$ (\emph{transitive property}).
+        	\end{itemize}
+    \end{definition}
+    
+    
+    \begin{definition}{Partition}
+        Let $K$ be an indexing set. A \emph{partition} $\mathcal{P}$ of a set $X$ is a collection of nonempty sets $\{X_k\}_{k \in K}$ such that $X_i \cap X_j = \varnothing$ for any $i \neq j$ and $\bigcup_{k \in K} X_k = X$.
+    \end{definition}
+    
+    
+    \begin{definition}{Equivalence Class}
+        Let $\sim$ be an equivalence relation on the set $X$ and let $x \in X$. Then $[x] = \{y \in X : x \sim y\}$ is called the \emph{equivalence class} of $x$.
+    \end{definition}
+    
+    
+    \begin{definition}{Congruence Module $n$}
+        Let $r$ and $s$ be two integers and suppose that $n \in \N$. We say that $r$ is \emph{congruent} to $s$ \emph{modulo $n$}, or $r$ is congruent to $s$ mod $n$, if $r-s$ is evenly divisible by $n$; that is, $r-s = nk$ for some $k \in \Z$. We write
+        	\[r \equiv s \mod{n}.\]
+    \end{definition}
+    
+
+\section*{Chapter 2}
+
+
+    \begin{definition}{Inductive Set}
+        A set $T$ that is a subset of $\Z$ is an \emph{inductive set} provided that for each integer $k$, if $k \in T$, then $k+1 \in T$.
+    \end{definition}
+    
+    
+    \begin{definition}{Mathematical Induction, Induction}
+        \emph{Mathematical Induction} or \emph{induction} is a proof technique making use of any version of the Principle of Mathematical Induction.
+    \end{definition}
+    
+    
+    \begin{definition}{Well-Ordered}
+        A nonempty subset $S$ of $\Z$ is \emph{well-ordered} if $S$ contains a least element.
+    \end{definition}
+    
+    
+    \begin{definition}{Divides, Divisor}
+        If $a,b \in \Z$ we say that $a$ \emph{divides} $b$, written $a \mid b$, if $ac = b$ for some $c \in \Z$. In this case, we say $a$ is a \emph{divisor} of $b$. We say that $a$ \emph{does not divide} $b$, written $a \nmid b$, if there is no $c \in \Z$ such that $ac =b$.
+    \end{definition}
+    
+    
+    \begin{definition}{Common Divisor}
+        Let $a$ and $b$ be integers. An integer $d$ is called a \emph{common divisor} of $a$ and $b$ if $d \mid a$ and $d \mid b$.
+    \end{definition}
+        
+        
+    \begin{definition}{Greatest Common Divisor}
+        The \emph{greatest common divisor} of integers $a$ and $b\neq 0$ is a positive integer $d$ such that $d$ is a common divisor of $a$ and $b$ and if $d'$ is any other common divisor of $a$ and $b$, then $d' \mid d$. We write $d = \gcd(a,b)$.
+    \end{definition}
+        
+        
+    \begin{definition}{Relatively Prime}
+        We say that two integers $a$ and $b$ are \emph{relatively prime} if $\gcd(a,b) = 1$.
+    \end{definition}
+    
+    
+    \begin{definition}{Prime Number}
+        An integer $n > 1$ is \emph{prime} if the only positive divisors of $n$ are 1 and $n$.
+    \end{definition}
+
+    \begin{definition}{Composite Number}
+        We call an integer $n>1$ \emph{composite} if $n$ is not prime.
+    \end{definition}
+    
+    \begin{definition}{Power Set}
+        Let $X$ be a set. Define the \emph{power set} of $X$, denoted $\mathcal{P}(X)$, to be the set of all subsets of $X$.
+    \end{definition}
+
+
+\section*{Chapter 3}
+
+    
+    \begin{definition}{Symmetry}
+        A \emph{symmetry} of a geometric figure is a rearrangement of the figure preserving the arrangement of its sides and vertices as well as its distances and angles.
+    \end{definition}
+        
+    \begin{definition}{Rigid Motion}
+        A map from the plane to itself preserving the symmetry of an object is called a \emph{rigid motion}.
+    \end{definition}
+    
+    
+    \begin{definition}{Binary Operation}
+        A \emph{binary operation} or \emph{law of composition} on a set $G$ is a function $G \times G \rightarrow G$ that assigns to each pair $(a,b) \in G \times G$ a unique element $a \cdot b$, or $ab$ in $G$, called the product of $a$ and $b$ (or sum, or composition). 
+    \end{definition}
+    
+    
+    \begin{definition}{Group}
+        A \emph{group} is a set $G$ together with a binary operation, $\star$, $(G, \star)$, that satisfies the following axioms.
+        
+        \medskip
+        
+        	\begin{tabular}{l p{8cm}}
+            	\textbf{Closure*} & $G$ is closed under the binary operation $\star$. That is, given $a,b \in G$ then $a \star b \in G$. \\
+            	\textbf{Associativity} & The binary operation is associative:
+            		\[(a \star b)\star c = a \star (b \star c),\]
+            		for $a,b,c \in G$. \\
+            	\textbf{Identity} & There exists an element $e \in G$, called the \emph{identity element} in $G$, such that for any element $a \in G$
+            		\[e \star a = a \star e = a.\] \vspace{-10pt} \\
+            	\textbf{Inverse} & For each element $a \in G$, there exists an \emph{inverse element} in $G$, denoted by $a^{-1}$, such that 
+            		\[a \star a^{-1} = a^{-1} \star a = e.\] \\
+        	\end{tabular}
+        	\vspace{-15pt}
+    \end{definition}
+    
+    
+    \begin{definition}{Abelian Group, Commutative Group}
+        A group $G$ for which the binary operation, $\star$, commutes is called an \emph{abelian group} or \emph{commutative group}. That is, given $a,b \in G$ then 
+        	\[a \star b = b \star a.\]
+        A group without this property is called a \emph{nonabelian} or \emph{noncommutative} group.
+    \end{definition}
+    
+    
+    \begin{definition}{Order}
+        The \emph{order} of a group is the number of elements that it contains, or its ``size". A group is \emph{finite}, or has \emph{finite order}, if it contains a finite number of elements; otherwise, the group is said to be \emph{infinite} or have \emph{infinite order}.
+    \end{definition}
+    
+    
+    \begin{definition}{Cayley Table}
+        A \emph{Cayley Table} is the operation (multiplication/addition/etc) table fully describing a group.
+    \end{definition}
+    
+    
+    \begin{definition}{$U(n)$, Group of Units}
+        \emph{$U(n)$} or \emph{the group of units of $\Z_n$} is the set of elements in $\Z_n$ that have multiplicative inverses.
+        
+        \bigskip
+        
+        Equivalently (Proposition 3.4 (6)), as a set,
+        	\[U(n) = \{ k \in \Z_n : k \neq 0, \gcd(k,n) = 1\}.\]
+    \end{definition}
+    
+    
+    \begin{definition}{Subgroup}
+        We define a \emph{subgroup} $H$ of a group $G$ to be a subset $H$ of $G$ such that when the group operation of $G$ is restricted to $H$, $H$ is a group in its own right.
+    \end{definition}
+    
+    
+    \begin{definition}{Trivial Subgroup}
+        The subgroup $H$ of a group $G$ consisting of solely of the identity, $H = \{e\}$ is called the \emph{trivial subgroup}.
+    \end{definition}
+    
+    
+    \begin{definition}{Proper Subgroup}
+        A subgroup that is a proper subset of $G$ is called a \emph{proper subgroup}.
+    \end{definition}
+    
+    
+    \begin{definition}{Center (of a group)}
+        Let $G$ be a group. Then the set
+            \[Z(G) = \{x \in G : gx = xg \text{ for all } g \in G\}\]
+        is a subgroup of $G$ called the \emph{center} of $G$.
+    \end{definition}
+
+
+\section*{Chapter 4}
+
+
+    \begin{definition}{Cyclic Subgroup}
+        Let $G$ be a group. For $a \in G$, we call $\cyc{a} = \{a^k : k \in \Z\}$ the \emph{cyclic subgroup} generated by $a$.
+    \end{definition}
+        
+        
+    \begin{definition}{Cyclic Group}
+        Let $G$ be a group. If $G$ contains some element $a$ such that \linebreak $G = \cyc{a} = \{a^k : k \in \Z\}$, then $G$ is a \emph{cyclic group}.
+    \end{definition}
+    
+    
+    \begin{definition}{Generator (of a group)}
+        Let $G = \cyc{a}$ be a cyclic group. In this case $a$ is called a \emph{generator} of $G$.
+    \end{definition}
+        
+    \begin{definition}{Order (of an element)}
+        If $a$ is an element of a group $G$, we define the \emph{order} of $a$ to be the smallest positive integer $n$ such that $a^n = e$, and we write $|a| = n$. If there is no such integer $n$, we say that the order of $a$ is infinite and write $|a|=\infty$ to denote the order of $a$.
+    \end{definition}
+    
+    
+    \begin{definition}{Complex Numbers}
+        The \emph{complex numbers} are defined as 
+        	\[\C  = \{a + bi : a,b \in \R\},\]
+        where $i^2 = -1$. If $z = a+bi$, then $a$ is the \emph{real part} of $z$ and $b$ is the \emph{imaginary part} of $z$.
+    \end{definition}
+    
+    
+    \begin{definition}{Complex Conjugate}
+        The \emph{complex conjugate} of a complex number $z = a + bi$ is defined to be $\bar{z} = a - bi$. 
+    \end{definition}
+        
+    \begin{definition}{Modulus}
+        The \emph{absolute value} or \emph{modulus} of $z$ is $\left| z \right| = \sqrt{a^2+b^2}$.
+    \end{definition}
+    
+    
+    \begin{definition}{Circle Group}
+        The group
+        	\[\mathbb{T} =\{z \in \C : |z| = 1\},\]
+        is called the \emph{circle group}.
+    \end{definition}
+    
+    
+    \begin{definition}{$n$th Root of Unity}
+        The complex numbers satisfying the equation
+        	\[z^n = 1\]
+        are called the \emph{$n$th roots of unity}.
+    \end{definition}
+    
+    
+    \begin{definition}{Primitive $n$th Root of Unity}
+        A generator for the group of the $n$th roots of unity is called a \emph{primitive $n$th root of unity}.
+    \end{definition}
+
+
+\section*{Chapter 5}
+
+
+    \begin{definition}{Permutation}
+        A \emph{permutation} of a set $S$ is a bijection $\pi : S \rightarrow S$.
+    \end{definition}
+    
+    
+    \begin{definition}{Symmetric Group}
+        The group consisting of all the permutations on a set with $n$ elements under the operation of composition is called the \emph{symmetric group on $n$ letters}.
+    \end{definition}
+    
+    
+    \begin{definition}{Cycle of Length $k$}
+        A permutation $\sigma \in S_X$ is a \emph{cycle of length $k$} if there exists elements $a_1, a_2, \cdots, a_k \in X$ such that
+        	\begin{align*}
+        		\sigma(a_1) &= a_2 \\
+        		\sigma(a_2) &= a_3 \\
+        		&\vdots \\
+        		\sigma(a_k) &= a_1,
+        	\end{align*}
+        and $\sigma(x)=x$ for all other elements $x \in X$. We will write $(a_1, a_2, \ldots, a_k)$ to denote the cycle $\sigma$.
+    \end{definition}
+    
+    
+    \begin{definition}{Disjoint Cycles}
+        Two cycles in $S_X$, $\sigma=(a_1, a_2, \ldots, a_k)$ and $\tau = (b_1, b_2, \ldots, b_m)$, are \emph{disjoint} if $a_i \neq b_j$ for all $i$ and $j$. That is if their domains are disjoint.
+    \end{definition}
+    
+    
+    \begin{definition}{Transpositions}
+        The simplest permutation is a cycle of length 2. Such cycles are called \emph{transpositions}.
+    \end{definition}
+    
+    
+    \begin{definition}{Even (permutation)}
+        A permutation is \emph{even} if it can be expressed as an even number of transpositions.
+    \end{definition}
+
+
+    \begin{definition}{Odd (permutation)}
+        A permutation is \emph{odd} if it can be expressed as an odd number of transpositions.
+    \end{definition}
+    
+    
+    \begin{definition}{Alternating Group on $n$ Letters}
+        The group $A_n$ consisting of all even permutations of $S_n$ is called the \emph{alternating group on $n$ letters}.
+    \end{definition}
+    
+    
+    \begin{definition}{$n$th Dihedral Group}
+        For $n=3,4, \ldots$ we define the \emph{$n$th dihedral group} to be the group of rigid motions of a regular $n$-gon. We will denote this group by $D_n$.
+    \end{definition}
+    
+    
+    \begin{definition}{Orbit (of $x$ under a function $\sigma$)}
+        The \emph{orbit} of $x \in X$ under $\sigma \in S_X$ is the set
+            \[\mathcal{O}_{x,\sigma} = \{\sigma^n(x) : n \in \Z\}.\]
+    \end{definition}
+    
+    
+\section*{Chapter 6}
+
+
+    \begin{definition}{Left Coset, Right Coset, Representative}
+        Let $G$ be a group and $H$ a subgroup of $G$. Define a \emph{left coset} of $H$ with \emph{representative} $g \in G$ to be the set
+        	\[gH = \{gh : h \in H\}.\]
+        \emph{Right cosets} can be defined similarly by
+        	\[Hg = \{hg : h \in H\}.\]
+    \end{definition}
+    
+    
+    \begin{definition}{Index}
+        Let $G$ be a group and $H$ a subgroup of $G$. Define the \emph{index} of $H$ in $G$ to be the number of left cosets of $H$ in $G$. We will denote the index by $[G:H]$.
+    \end{definition}
+    
+    
+\section*{Chapter 9}
+
+
+    \begin{definition}{Isomorphic, Isomorphism}{}
+        Two groups $(G, \cdot)$ and $(H, \circ)$ are \emph{isomorphic} ($\cong$) if there exists a bijection $\varphi: G \rightarrow H$ such that the group operation is preserved; that is,
+        	\[\varphi(a \cdot b) = \varphi(a)\circ \varphi(b)\]
+        for all $a$ and $b$ in $G$. If $G$ is isomorphic to $H$, we write $G \cong H$. The map $\varphi$ is called an \emph{isomorphism}.
+    \end{definition}
+    
+    
+    \begin{definition}{Representation Theory (informal)}
+        The aim of \emph{representation theory} is to find an isomorphism of some group $G$ that we want to study to a group that we know a great deal about, such as the group of permutations or matrices.
+    \end{definition}
+    
+    \begin{definition}{External Direct Product}{}
+        The group $G \times H$ is called the \emph{external direct product} of $G$ and $H$.
+    \end{definition}
+    
+    
+    \begin{definition}{Internal Direct Product}{}
+        Let $G$ be a group with subgroups $H$ and $K$ satisfying the following conditions.
+        	\begin{itemize}
+            	\item[$\bullet$] $G = HK = \{ hk : h\in H, k \in K\}$;
+            	\item[$\bullet$] $H \cap K = \{e\}$;
+            	\item[$\bullet$] $hk = kh$ for all $k \in K$ and $h \in H$.
+        	\end{itemize}
+        Then we say that $G$ is the \emph{internal direct product} of $H$ and $K$.
+    \end{definition}
+
+
+\section*{Chapter 10}
+
+    
+    \begin{definition}{Normal (group)}{}
+        A subgroup $H$ of a group $G$ is \emph{normal} in $G$ ($H \unlhd G$) if $gH = Hg$ for all $g \in G$. That is, a normal subgroup of a group $G$ is one in which the right and left cosets are precisely the same.
+    \end{definition}
+    
+    
+    \begin{definition}{Factor Group, Quotient Group}
+        If $N$ is a normal subgroup of a group $G$, then the cosets of $N$ in $G$ form a group $G\slash N$ under the operation $(aN)(bN) = abN$ (additively $(a+N)+(b+N)=a+b+N$). This group is called the \emph{factor} or \emph{quotient group} of $G$ and $N$. This is sometime pronounced ``$G$ mod  $N$".
+    \end{definition}
+    
+    
+    \begin{definition}{Simple Group}{}
+        A group with no nontrivial normal subgroups is called a \emph{simple group}.
+    \end{definition}
+    
+    
+    \begin{definition}{Centralizer}
+        The \emph{centralizer} of an element $g$ in a group $G$ is the set
+            \[C(g) = \{x \in G : xg = gx\}.\]
+    \end{definition}
+
+
+\section*{Chapter 11}
+
+
+    \begin{definition}{homomorphism, homomorphic image}{}
+        A \emph{homomorphism} between groups $(G, \cdot)$ and $(H, \circ)$ is a map $\phi : G \rightarrow H$ such that
+        	\[\phi(g_1 \cdot g_2) = \phi(g_1)\circ \phi(g_2)\]
+        for $g_1, g_2 \in G$. The range of $\phi$ in $H$ is called the \emph{homomorphic image} of $\phi$.
+    \end{definition}
+    
+    
+    \begin{definition}{Kernel}{}
+        Let $\phi: G \rightarrow H$ be a group homomorphism and suppose that $e$ is the identity of $H$. By Proposition 11.4, $\phi^{-1}(\{e\})$ is a subgroup of $G$. This subgroup is called the \emph{kernel} of $\phi$ and will be denoted by $\ker{\phi}$.
+    \end{definition}
+    
+    
+    \begin{definition}{Epimorphism}
+        A surjective homomorphisms is called an \emph{epimorphism}.
+    \end{definition}
+       
+        
+    \begin{definition}{Monomorphism}
+        An injective homomorphism is called a \emph{monomorphism}.
+    \end{definition}
+       
+        
+    \begin{definition}{Automorphism}
+        An \emph{automorphism} is an isomorphism from a group to itself.
+    \end{definition}
+       
+        
+    \begin{definition}{Endomorphism}
+        An \emph{endomorphism} is a homomorphism from a group to itself (not necessarily surjective or injective).
+    \end{definition}
+    
+    
+    \begin{definition}{\mbox{Natural Homomorphism/Canonical Homomorphism}}
+        Let $H$ be a normal subgroup of $G$. Define the \emph{natural} or \emph{canonical homomorphism}
+        	\[\phi : G \rightarrow G\slash H\]
+        by
+        	\[\phi(g) = gH.\]
+    \end{definition}
+    
+    
+\section*{Chapter 16}
+
+    \begin{definition}{}
+        
+    \end{definition}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

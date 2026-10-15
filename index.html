@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Jessup Math Flashcards</title>
+  <meta name="description" content="Master mathematical definitions across Discrete Mathematics, Abstract Algebra, and Real Analysis.">
+  <meta name="theme-color" content="#090d16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b82f6'/><text x='50%' y='68%' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>&fnof;</text></svg>">
+
+  <!-- KaTeX CSS & JS for Math Notation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Global App Header -->
+    <header class="app-header">
+      <div class="brand-wrapper" title="Go to Main Menu">
+        <div class="brand-logo">&fnof;</div>
+        <div class="brand-text">
+          <h1>Math Flashcards</h1>
+          <p>Jessup University Mathematics</p>
+        </div>
+      </div>
+      <div id="header-right-action"></div>
+    </header>
+
+    <!-- ================= 1. COURSE SELECTION (LANDING VIEW) ================= -->
+    <main id="view-landing" class="view active">
+      <div class="view-header">
+        <h2>Select a Course</h2>
+        <p>Choose which course definitions you want to study today</p>
+      </div>
+      <div id="course-grid" class="course-grid">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </main>
+
+    <!-- ================= 2. CHAPTER SELECTION VIEW ================= -->
+    <main id="view-chapters" class="view">
+      <div class="breadcrumbs">
+        <button id="btn-back-to-courses" class="btn-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Courses
+        </button>
+        <span>/</span>
+        <span id="chapter-course-badge" style="color: var(--text-main); font-weight: 600;"></span>
+      </div>
+
+      <div class="view-header">
+        <h2 id="chapter-course-title">Course Chapters</h2>
+        <p>Select which chapters you want to include in your flashcard deck</p>
+      </div>
+
+      <div class="chapter-controls-bar">
+        <div class="bulk-actions">
+          <button id="btn-select-all" class="btn-pill">Select All</button>
+          <button id="btn-clear-all" class="btn-pill">Clear All</button>
+        </div>
+        <div id="selected-count-badge" class="selection-summary">
+          <strong>0</strong> definitions selected
+        </div>
+      </div>
+
+      <div id="chapter-grid" class="chapter-grid">
+        <!-- Injected dynamically by app.js -->
+      </div>
+
+      <div class="bottom-action-bar">
+        <button id="btn-start-studying" class="btn-primary" style="width: 100%;">
+          Start Studying
+        </button>
+      </div>
+    </main>
+
+    <!-- ================= 3. FLASHCARD STUDY VIEW ================= -->
+    <main id="view-study" class="view">
+      <!-- Top Navigation & Card Progress -->
+      <div class="study-top-bar">
+        <button id="btn-exit-study" class="study-nav-btn" title="Exit to chapter selection">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          Chapters
+        </button>
+        <button id="btn-shuffle-deck" class="study-nav-btn" title="Shuffle remaining cards">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 3 21 3 21 8"></polyline>
+            <line x1="4" y1="20" x2="21" y2="3"></line>
+            <polyline points="21 16 21 21 16 21"></polyline>
+            <line x1="15" y1="15" x2="21" y2="21"></line>
+            <line x1="4" y1="4" x2="9" y2="9"></line>
+          </svg>
+          Shuffle
+        </button>
+      </div>
+
+      <div class="study-progress-wrapper">
+        <div class="progress-header">
+          <span id="study-card-counter" class="card-counter">Card <strong>1</strong> of 10</span>
+          <span id="study-chapter-badge" class="chapter-tag">Chapter 1</span>
+        </div>
+        <div class="progress-track">
+          <div id="study-progress-bar" class="progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- 3D Flippable Flashcard -->
+      <div class="card-scene">
+        <div id="flashcard" class="flashcard">
+          <!-- FRONT FACE (TERM) -->
+          <div class="card-face card-face-front">
+            <div class="card-badge-top">
+              <span>Term</span>
+              <span id="card-ch-label">Chapter 1</span>
+            </div>
+            <div class="card-content-center">
+              <h2 id="card-term" class="card-term-title">Term</h2>
+            </div>
+            <div class="card-footer-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                <path d="M16 21h5v-5"></path>
+              </svg>
+              <span>Tap or click to reveal definition</span>
+            </div>
+          </div>
+
+          <!-- BACK FACE (DEFINITION) -->
+          <div class="card-face card-face-back">
+            <div class="card-badge-top">
+              <span style="color: #a78bfa;">Definition</span>
+              <span id="card-section-label">Section 1.1</span>
+            </div>
+            <div id="card-definition" class="card-content-body">
+              <!-- Definition rendered with KaTeX -->
+            </div>
+            <div class="card-footer-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path>
+                <path d="M16 21h5v-5"></path>
+              </svg>
+              <span>Tap or click to return to term</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Control Buttons -->
+      <div class="study-controls">
+        <button id="btn-prev-card" class="btn-secondary" title="Previous Card (Left Arrow)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Prev</span>
+        </button>
+        <button id="btn-flip-card" class="btn-secondary" title="Flip Card (Space)">
+          <span>Flip Card</span>
+          <span class="kbd-hint">Space</span>
+        </button>
+        <button id="btn-next-card" class="btn-next-card" title="Next Card (Right Arrow)">
+          <span>Next</span>
+          <span class="kbd-hint">→</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <!-- ================= 4. COMPLETION SUMMARY VIEW ================= -->
+    <main id="view-complete" class="view">
+      <div class="completion-container">
+        <div class="completion-icon">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+            <path d="M4 22h16"></path>
+            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+          </svg>
+        </div>
+
+        <h2 class="completion-title">Session Complete!</h2>
+        <p id="complete-course-title" style="font-weight: 700; color: #60a5fa; margin-bottom: 0.25rem;">MATH 301</p>
+        <p id="complete-summary-text" class="completion-subtitle">
+          You reviewed all definitions for the selected chapters.
+        </p>
+
+        <div class="completion-stats-grid">
+          <div class="stat-box">
+            <div class="stat-label">Definitions Mastered</div>
+            <div id="complete-total-cards" class="stat-value">32</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Chapters Studied</div>
+            <div id="complete-total-chapters" class="stat-value">2</div>
+          </div>
+        </div>
+
+        <div class="completion-actions">
+          <button id="btn-restart-session" class="btn-primary" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
+            Start Over
+          </button>
+          <button id="btn-back-to-chapter-select" class="btn-secondary" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            Choose Different Chapters
+          </button>
+          <button id="btn-back-to-main-menu" class="btn-secondary" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Back to Main Menu
+          </button>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Data Script (Pre-parsed definitions) -->
+  <script src="definitions.js"></script>
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(err => {
+          console.log('ServiceWorker registration optional:', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>

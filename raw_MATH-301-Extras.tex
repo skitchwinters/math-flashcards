@@ -1,0 +1,486 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\newcommand{\inc}{\text{\footnotesize\phantom{.}I\phantom{.}}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newcounter{definition}[section]
+\newenvironment{definition}[2][]{\refstepcounter{definition} \noindent\textbf{Definition~\thedefinition #1 -- #2} \par \rmfamily}{\bigskip}
+   
+\renewcommand{\emph}[1]{\textcolor{red}{#1}}
+
+
+
+
+%%%% Special Commands &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\id}{\operatorname{id}}
+\renewcommand{\mod}[1]{ \ (\operatorname{mod} #1)}
+\newcommand{\cyc}[1]{\langle #1 \rangle}
+\newcommand{\rbracket}{]}
+\newcommand{\intr}{\operatorname{int}}
+\newcommand{\dom}{\operatorname{dom}}
+
+%% For Absolute Value %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{mathtools}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+    
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\section*{Chapter 1}
+
+\subsection*{1.1}
+
+    \begin{definition}{Set (naive)}
+        A \emph{set} is a well-defined collection of objects; that is, it is defined in such a manner such that we can determine for any given object $x$ whether or not $x$ belongs to the set.
+    \end{definition}
+    
+    \begin{definition}{Element (naive)}
+        An \emph{element} is any member of a set.
+    \end{definition}
+    
+    \begin{definition}{Equal (sets, naive)}
+        Two sets are \emph{equal} if they contain exactly the same elements.
+    \end{definition}
+    
+    \begin{definition}{Cardinality}
+		The \emph{cardinality} of a set is the number of elements it has.
+	\end{definition}
+	
+	\begin{definition}{Empty Set}
+		The \emph{empty set} is the set $\{\}$ that contains no elements.
+	\end{definition}
+	
+\subsection*{1.2}
+
+    \begin{definition}{Ordered Pair (naive)}
+		An \emph{ordered pair} is a list $(x,y)$ of two things $x$ and $y$, enclosed in parentheses and separated by a comma. The order is significant; that is $(x,y) = (a,b)$ if and only if $x = a$ and $y = b$.
+	\end{definition}
+	
+	\begin{definition}{Cartesian Product}
+		The \emph{Cartesian product} of two sets $A$ and $B$ is another set, denoted as $A \times B$ and defined as $A \times B = \{(a,b) : a \in A, b \in B\}$.
+	\end{definition}
+	
+	\begin{definition}{Cartesian Power $A^n$}
+	    For any set $A$ and a positive integer $n$, the \emph{Cartesian power $A^n$} is
+	        \[A^n =\underbrace{A \times A \times \cdots \times A}_\text{$n$ times} = \{(x_1,x_2,\ldots,x_n) : x_1,x_2,\ldots,x_n \in A\}.\]
+	\end{definition}
+
+\subsection*{1.3}
+
+    \begin{definition}{Subset}
+		Suppose $A$ and $B$ are sets. If every element of $A$ is also an element of $B$, then we say $A$ is a \emph{subset} of $B$, and we denote this as $A \subseteq B$. We write $A \not\subseteq B$ if $A$ is not a subset of $B$.
+	\end{definition}
+
+\subsection*{1.4}
+
+    \begin{definition}{Power Set}
+		If $A$ is a set, the \emph{power set} of $A$ is another set, denoted as $\mathcal{P}(A)$ and defined to be the set of all subsets of $A$. In symbols,
+			\[\mathcal{P}(A) = \{X : X \subseteq A\}.\]
+    \end{definition}
+	
+\subsection*{1.5}
+
+    \begin{definition}{Union}
+		Suppose $A$ and $B$ are sets. The \emph{union} of $A$ and $B$ is the set
+				\[A\cup B = \{x : x \in A \text{ or } x \in B\}.\]
+	\end{definition}
+	
+	\begin{definition}{Intersection}
+		Suppose $A$ and $B$ are sets. The \emph{intersection} of $A$ and $B$ is the set
+			\[A\cap B = \{x : x \in A \text{ and } x \in B\}.\]
+	\end{definition}
+	
+	\begin{definition}{Set Difference}
+		Suppose $A$ and $B$ are sets. The \emph{difference} of $A$ and $B$ is the set
+				\[A - B = \{x : x \in A \text{ and } x \not\in B\}.\]
+	\end{definition}
+	
+\subsection*{1.6}
+
+    \begin{definition}{Universal Set}
+		The \emph{universal set} is a set fixed within the framework of a theory and consisting of all objects considered in this theory.
+	\end{definition}
+	
+	\begin{definition}{Complement}
+		Let $A$ be a set with a universal set $U$. The \emph{complement} of $A$ denoted $\overline{A}$, is the set 
+		\[\overline{A} = U - A.\]
+	\end{definition}
+
+\subsection*{1.8}
+
+    \begin{definition}{Index Set}
+		An \emph{index set} is a set whose members index the elements of another set.
+	\end{definition}
+	
+	\begin{definition}{$A_1 \cup A_2 \cup \cdots \cup A_n$}
+		Suppose $A_1,A_2,\ldots,A_n$ are sets. Then
+			\[\emph{A_1\cup A_2 \cup \cdots \cup A_n} = \{x : x \in A_i \text{ for at least one set } A_i, \text{ for } 1 \leq i \leq n\}.\]
+	\end{definition}
+	
+	\begin{definition}{$A_1 \cap A_2 \cap \cdots \cap A_n$}
+		Suppose $A_1,A_2,\ldots,A_n$ are sets. Then
+			\[\emph{A_1\cap A_2 \cap \cdots \cap A_n} = \{x : x \in A_i \text{ for every set } A_i, \text{ for } 1 \leq i \leq n\}.\]
+	\end{definition}
+	
+	\begin{definition}{$\bigcup_{i=1}^\infty A_i$}
+		Suppose $\{A_i\}_{i \in \N}$ is a family of sets. Then
+			\[\emph{\bigcup_{i=1}^\infty A_i} = A_1\cup A_2 \cup \cdots = \{x : x \in A_i \text{ for at least one set } A_i, \text{ with } 1 \leq i\}.\]
+	\end{definition}
+	
+	\begin{definition}{$\bigcap_{i=1}^\infty A_i$}
+		Suppose $\{A_i\}_{i \in \N}$ is a family of sets. Then
+			\[\emph{\bigcap_{i=1}^\infty A_i} = A_1\cap A_2 \cap \cdots = \{x : x \in A_i \text{ for every } A_i, \text{ with } 1 \leq i\}.\]
+	\end{definition}
+	
+	\begin{definition}{$\bigcup_{\alpha \in I} A_\alpha$}
+		If $A_\alpha$ is a set for every $\alpha$ in some index set $I \neq \varnothing$, then
+			\[\emph{\bigcup_{\alpha \in I} A_\alpha} = \{x : x \in A_\alpha \text{ for at least one set } A_\alpha \text{ with } \alpha \in I\}.\]
+	\end{definition}
+	
+	\begin{definition}{$\bigcap_{\alpha \in I} A_\alpha$}
+		If $A_\alpha$ is a set for every $\alpha$ in some index set $I \neq \varnothing$, then
+			\[\emph{\bigcap_{\alpha \in I} A_\alpha} = \{x : x \in A_\alpha \text{ for every set } A_\alpha \text{ with } \alpha \in I\}.\]
+	\end{definition}
+
+\section*{Chapter 2}
+
+\subsection*{2.1}
+
+    \begin{definition}{Statement}
+		A \emph{statement} is a well-formed sentence or mathematical expression that is either true or false.
+	\end{definition}
+	
+	\begin{definition}{Propositional Function}
+		A \emph{propositional function} is a well-formed expression, containing variables, which becomes a statement upon substitution of these variables with appropriate values.
+	\end{definition}
+	
+\subsection*{2.2}
+
+    \begin{definition}{Logical Operator, Connective}{}
+		A \emph{logical operator} (or \emph{connective}) on mathematical statements is a word or combination of words that combines one or more mathematical statements to make a new statement.
+	\end{definition}
+	
+	\begin{definition}{Compound Statement}{}
+		A \emph{compound statement} is a statement that contains one or more operators.
+	\end{definition}
+	
+\subsection*{2.4}
+
+    \begin{definition}{Converse}
+		Given statements $P$ and $Q$ then the \emph{converse} of $P \Rightarrow Q$ is $Q \Rightarrow P$.
+	\end{definition}
+	
+	\begin{definition}{Inverse}
+		Given statements $P$ and $Q$ then the \emph{inverse} of $P \Rightarrow Q$ is $\neg P \Rightarrow \neg Q$.
+	\end{definition}
+	
+\subsection*{2.6}
+
+    \begin{definition}{Logically Equivalent}
+		Two statements $P$ and $Q$ are considered \emph{logically equivalent}, $P \equiv Q$, if the truth tables yield the same outcomes for corresponding input values of component statements.
+	\end{definition}
+	
+	\begin{definition}{Contrapositive}
+		Given statements $P$ and $Q$, then the \emph{contrapositive} of the conditional statement $P \Rightarrow Q$ is $\neg Q \Rightarrow \neg P$.
+	\end{definition}
+	
+\subsection*{2.7}
+
+    \begin{definition}{Universal Quantifier}
+		The symbol $\forall$ is called the universal quantifier. $\forall$ stands for the phrase \textit{``For all''} or \textit{``For every"}, or \textit{``For each"}.
+	\end{definition}
+	
+	\begin{definition}{Existential Quantifier}
+		The symbol $\exists$ is called the existential quantifier. $\exists$ stands for the phrase \textit{``There exists a"} or \textit{``There is a"}. 
+	\end{definition}
+	
+\section*{Chapter 4}
+
+\subsection*{4.2}
+
+    \begin{definition}{Even (integer)}
+		An integer $n$ is \emph{even} if $n = 2a$ for some integer $a$.
+	\end{definition}
+	
+	\begin{definition}{Odd (integer)}
+		An integer $n$ is \emph{odd} if $n = 2a+1$ for some integer $a$.
+	\end{definition}
+	
+	\begin{definition}{Parity (integer)}
+		\emph{Parity} is the attribute of an integer being either even or odd.
+	\end{definition}
+	
+	\begin{definition}{Divides}
+		Suppose $a$ and $b$ are integers. We say that $a$ \emph{divides} $b$, written $a \mid b$, if $b = ac$ for some $c \in \Z$.
+	\end{definition}
+	
+	\begin{definition}{Prime}
+		A number $n \in \Z^+$ is \emph{prime} if it has exactly two unique positive integer divisors, 1 and $n$.
+	\end{definition}
+	
+	\begin{definition}{Composite}
+		A number $n \in \Z^+$ is \emph{composite} if it has more than two positive integer divisors.
+	\end{definition}
+	
+	\begin{definition}{Greatest Common Divisor (intuitive)}
+		The \emph{greatest common divisor} of integers $a$ and $b$, denoted $\gcd(a,b)$, is the largest integer that divides both $a$ and $b$.
+	\end{definition}
+	
+	\begin{definition}{Least Common Multiple}
+		The \emph{least common multiple} of nonzero integers $a$ and $b$, denoted $\operatorname{lcm}(a,b)$, is the smallest integer in $\Z^+$ that is a multiple of both $a$ and $b$.
+	\end{definition}
+	
+\section*{Chapter 5}
+
+\subsection*{5.2}
+
+    \begin{definition}{Congruence Modulo $n$}
+		Given integers $a$ and $b$ and $n \in \Z^{+}$, we say that $a$ and $b$ are \emph{congruent modulo $n$} if $n \mid (a-b)$. We express this as $a \equiv b \mod{n}$.
+	\end{definition}
+	
+	
+\section*{Chapter 6}
+
+\subsection*{6.1}
+
+    \begin{definition}{Rational (number)}
+		A real number $x$ is \emph{rational} if $x = a\slash b$ for some $a,b \in \Z$.
+	\end{definition}
+	
+	\begin{definition}{Irrational (number)}
+		A real number $x$ is \emph{irrational} if it is not rational; that is, if $x \neq a\slash b$ for every $a,b \in \Z$.
+	\end{definition}
+
+
+\section*{Chapter 8}
+
+\subsection*{8.3}
+
+    \begin{definition}{Equal (sets)}
+		Let $A$ and $B$ be sets. Then $A = B$ if $A \subseteq B$ and $B \subseteq A$.
+	\end{definition}
+	
+	
+\section*{Chapter 10}
+
+\subsection*{10.1}
+
+    \begin{definition}{Inductive Set}
+	    A set $T$ that is a subset of $\mathbb{Z}$ is an \emph{inductive set} provided that for each integer $k$, if $k \in T$, then $k+1 \in T$.
+	\end{definition}
+	
+	
+
+\section*{Chapter 11}
+
+\subsection*{11.1}
+
+    \begin{definition}{Relation on $A$}
+		A \emph{relation} on a set $A$ is a subset $R \subseteq A \times A$. We often abbreviate the statement $(x,y) \in R$ as $x \sim y$.
+	\end{definition}
+	
+\subsection*{11.2}
+
+    \begin{definition}{Reflexive}
+		A relation $R$ is \emph{reflexive} if $x \sim x$ for every $x\in A$.
+	\end{definition}
+
+	\begin{definition}{Symmetric}
+		A relation $R$ is \emph{symmetric} if $x \sim y$ implies that $y \sim x$ for all $x,y \in A$.
+	\end{definition}
+
+	\begin{definition}{Transitive}
+		A relation $R$ is \emph{transitive} if when $x \sim y$ and $y \sim z$ then $x \sim z$ for all $x,y,z \in A$.
+	\end{definition}
+
+	\begin{definition}{Antisymmetric}
+		A relation $R$ is \emph{antisymmetric} if when $x \sim y$ and $y \sim x$ then $x = y$.
+	\end{definition}
+	
+\subsection*{11.3}
+
+    \begin{definition}{Equivalence Relation}
+		A relation $R$ on a set $A$ is an \emph{equivalence relation} if it is reflexive, symmetric and transitive.
+	\end{definition}
+	
+	\begin{definition}{Equivalence Class Containing $a$}
+		Suppose $R$ is an equivalence relation on a set $A$. Given any element $a \in A$, the \emph{equivalence class containing $a$} is the subset $\{x \in A : x \sim a\}$ of $A$ consisting of all elements of $A$ that relate to $a$. This set is denote as $[a]$.
+	\end{definition}
+	
+\subsection*{11.4}
+
+    \begin{definition}{Partition}
+		A \emph{partition} of a set $A$ is a set of nonempty subsets of $A$ such that the union of all the subsets equals $A$, and the intersection of any two different subsets is empty.
+	\end{definition}
+
+\subsection*{11.6}
+
+    \begin{definition}{Relation from $A$ to $B$}
+		A \emph{relation} from a set $A$ to $B$ is a subset $R \subseteq A \times B$. We often abbreviate the statement $(x,y) \in R$ as $x \sim y$.
+	\end{definition}
+	
+\section*{Chapter 12}
+
+\subsection*{12.1}
+
+    \begin{definition}{Function, Mapping}
+		Suppose $A$ and $B$ are sets. A \emph{function} or \emph{mapping} $f$ from $A$ to $B$, denoted $f : A \rightarrow B$, is a relation $f \subseteq A \times B$ from $A$ to $B$, satisfying the property that for each $a,b \in A$, if $a = b$ and $(a,c),(b,d) \in f$ then $c = d$. The statement $(a,b) \in f$ is abbreviated $f(a) = b$.
+	\end{definition}
+	
+	\begin{definition}{Domain}
+		Given some function $f : A \to B$, then the set $A$ is called the \emph{domain}.
+	\end{definition}
+	
+	\begin{definition}{Codomain}
+		Given some function $f : A \to B$, then the set $B$ is called the \emph{codomain}.
+	\end{definition}
+	
+	\begin{definition}{Range, Image}
+		Given some function $f : A \to B$ the set 
+			\[f(A) = \{ f(a) : a \in A\} \subseteq B\]
+		is called the \emph{range} of $f$ or \emph{image} of $A$ under $f$.
+
+	\medskip
+
+		Similarly $f(a) \in B$ is the \emph{image} of $a$ under $f$.
+	\end{definition}
+	
+	\begin{definition}{Equal (functions)}{}
+		Two functions $f$ and $g$ are \emph{equal} provided that
+			\begin{itemize}
+				\item[$\bullet$] The domain of $f$ equals the domain of $g$.
+			
+				\item[$\bullet$] The codomain of $f$ equals the codomain of $g$.
+			
+				\item[$\bullet$] For each $x$ in the domain of $f$ (which equals the domain of $g$), $f(x) = g(x)$.
+			\end{itemize}
+	\end{definition}
+	
+	
+\subsection*{12.2}
+
+    \begin{definition}{Injective, One-to-one}
+		A function $f: A \to B$ is \emph{injective} if for all $a,a' \in A$, $f(a) = f(a')$ implies $a = a'$.
+	\end{definition}
+	
+	\begin{definition}{Surjective, Onto}
+		A function $f: A \to B$ is \emph{surjective} if for every $b \in B$ there is an $a \in A$ with $f(a) = b$.
+	\end{definition}
+	
+	\begin{definition}{Bijective}
+		A function $f: A \to B$ is \emph{bijective} if $f$ is both injective and surjective.
+	\end{definition}
+	
+\subsection*{12.4}
+
+    \begin{definition}{Composition}
+		Suppose $f: A \to B$ and $g:B \to C$ are functions with the property that the codomain of $f$ equals the domain of $g$. The \emph{composition} of $f$ with $g$ is another function, denoted $g \circ f : A \to C$ and defined as follows: If $x \in A$, then $(g\circ f)(x) = g(f(x))$.
+	\end{definition}
+	
+\subsection*{12.5}
+
+    \begin{definition}{Inverse Relation}
+		Given a relation $R$ from $A$ to $B$, the \emph{inverse relation} of $R$ is the relation from $B$ to $A$ defined as $R^{-1} = \{(y,x) : (x,y) \in R\}$. 
+	\end{definition}
+
+    \begin{definition}{Identity Function}
+		For a set $A$, the \emph{identity function} on $A$ is the function $\id_A: A \to A$ defined as $\id_A(x) = x$ for every $x \in A$.
+	\end{definition}
+
+	\begin{definition}{Inverse Function}
+		A map $g: B \to A$ is an \emph{inverse function} of $f: A \to B$ if $g \circ f = \id_A$ and $f\circ g = \id_B$.
+	\end{definition}
+
+	\begin{definition}{Invertible}
+		A function is said to be \emph{invertible} if it has an inverse. We usually write $f^{-1}$ for the inverse of $f$.
+	\end{definition}
+	
+\subsection*{12.6}
+
+    \begin{definition}{Preimage (of a set)}
+		Suppose $f: A \to B$ is a function. If $Y \subset B$, the \emph{preimage of $Y$} is the set $f^{-1} = \{x \in A : f(x) \in Y\} \subseteq A$.
+	\end{definition}
+	
+	
+\section*{Chapter 14}
+
+\subsection*{14.1}
+
+    \begin{definition}{Equipollent}
+        Two sets $A$ and $B$ are \emph{equipollent}, or have the \emph{same cardinality}, written $\abs{A} = \abs{B}$, if there exists a bijective function $f: A \to B$. If no such bijective function $f$ exists, then the sets are not equipollent, or have unequal cardinalities, written $\abs{A} \neq \abs{B}$.
+    \end{definition}
+    
+\subsection*{14.2}
+
+    \begin{definition}{Countably Infinite}
+        Suppose $A$ is a set. Then $A$ is \emph{countably infinite} if $\abs{N} = \abs{A}$, that is, if there exists a bijection $\N \to A$.
+    \end{definition}
+    
+    \begin{definition}{Countable}
+        Suppose $A$ is a set. The set $A$ is \emph{countable} if it is finite or countably infinite.
+    \end{definition}
+    
+    \begin{definition}{Uncountable}
+        Suppose $A$ is a set. The set $A$ is \emph{uncountable} if it is infinite and not equipollent with $\N$.
+    \end{definition}
+    
+    \begin{definition}{$\aleph_0$}
+        The cardinality of the natural numbers is denoted as $\aleph_0$. That is $\abs{\N} = \aleph_0$.
+    \end{definition}
+	
+
+\end{document}
+
+
+    \begin{definition}{}
+        
+    \end{definition}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
