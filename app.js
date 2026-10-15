@@ -390,8 +390,7 @@
 
     elements.btnShuffleDeck.addEventListener('click', shuffleCurrentDeck);
     
-    // Flipping mechanics (card click or button click)
-    elements.flashcard.addEventListener('click', flipCard);
+    // Flipping mechanics (ONLY via dedicated Flip button or keyboard shortcuts per user preference)
     elements.btnFlipCard.addEventListener('click', (e) => {
       e.stopPropagation();
       flipCard();
@@ -418,7 +417,7 @@
       // Only active during study view
       if (state.currentView !== 'study') return;
 
-      if (e.code === 'Space' || e.key === ' ') {
+      if (e.code === 'Space' || e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
         flipCard();
       } else if (e.code === 'ArrowRight' || e.key === 'j' || e.key === 'J') {
