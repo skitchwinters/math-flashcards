@@ -167,6 +167,19 @@ def deploy():
             deployment_id = data.get('id')
             url = data.get('url')
             alias = data.get('alias', [])
+            # Ensure project remains public (no Vercel login required)
+            try:
+                patch_req = urllib.request.Request(
+                    f'https://api.vercel.com/v9/projects/{PROJECT_NAME}',
+                    data=json.dumps({'ssoProtection': None}).encode('utf-8'),
+                    headers={'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'},
+                    method='PATCH'
+                )
+                with urllib.request.urlopen(patch_req, timeout=10):
+                    pass
+            except Exception:
+                pass
+
             print(f"\n================ DEPLOYMENT SUCCESS ================")
             print(f"Deployment ID: {deployment_id}")
             print(f"Preview URL:   https://{url}")
