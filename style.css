@@ -572,10 +572,26 @@ body::before {
   justify-content: center;
   text-align: left;
   font-size: 1.15rem;
-  line-height: 1.65;
+  line-height: 1.6;
   color: #e2e8f0;
-  padding: 1.25rem 0;
+  padding: 0.5rem 0;
   overflow-x: auto;
+}
+
+.card-content-body .katex-display {
+  margin: 0.65rem 0 !important;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.card-content-body p,
+.card-content-body .def-paragraph {
+  margin-bottom: 0.65rem;
+}
+
+.card-content-body p:last-child,
+.card-content-body .def-paragraph:last-child {
+  margin-bottom: 0;
 }
 
 /* Math & Definition formatting inside card */

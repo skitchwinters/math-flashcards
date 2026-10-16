@@ -20,8 +20,12 @@
     "\\ip": "\\langle #1 \\rangle",
     "\\intr": "\\operatorname{int}",
     "\\dom": "\\operatorname{dom}",
-    "\\inc": "\\text{\\footnotesize\\phantom{.}I\\phantom{.}",
-    "\\rbracket": "]"
+    "\\inc": "\\text{\\footnotesize\\phantom{.}I\\phantom{.}}",
+    "\\rbracket": "]",
+    "\\abs": "\\left|#1\\right|",
+    "\\norm": "\\left\\|#1\\right\\|",
+    "\\slash": "/",
+    "\\emph": "\\textcolor{red}{#1}"
   };
 
   // Application State
@@ -286,7 +290,7 @@
 
     // Populate Card Back (Definition)
     elements.cardSectionLabel.textContent = card.section ? `Section ${card.section}` : card.chapter;
-    elements.cardDefinition.innerHTML = card.definition;
+    elements.cardDefinition.innerHTML = formatDefinitionHtml(card.definition);
     renderMath(elements.cardDefinition);
 
     // Update Next Button label if last card
@@ -300,10 +304,27 @@
     elements.btnPrevCard.disabled = state.currentIndex === 0;
   }
 
+  function formatDefinitionHtml(rawText) {
+    if (!rawText) return '';
+    const blocks = rawText.split(/\n\s*\n/);
+    if (blocks.length > 1) {
+      return blocks.map(b => {
+        b = b.trim();
+        if (!b) return '';
+        if (b.startsWith('<ul') || b.startsWith('<div class="def-table')) {
+          return b;
+        }
+        return `<p class="def-paragraph">${b}</p>`;
+      }).join('');
+    }
+    return rawText;
+  }
+
   /**
    * Toggle 3D card flip
    */
   function flipCard() {
+    if (isNavigating) return;
     state.isFlipped = !state.isFlipped;
     elements.flashcard.classList.toggle('flipped', state.isFlipped);
     elements.btnFlipCard.innerHTML = state.isFlipped ? 
@@ -311,23 +332,57 @@
       `<span>Flip Card</span> <span class="kbd-hint">Space</span>`;
   }
 
+  let isNavigating = false;
+
   /**
    * Advance to next card or trigger completion
+   * If definition is showing, flips back to term FIRST before transitioning
    */
   function nextCard() {
-    if (state.currentIndex < state.deck.length - 1) {
+    if (isNavigating) return;
+
+    if (state.currentIndex >= state.deck.length - 1) {
+      showCompletionScreen();
+      return;
+    }
+
+    if (state.isFlipped) {
+      isNavigating = true;
+      state.isFlipped = false;
+      elements.flashcard.classList.remove('flipped');
+      elements.btnFlipCard.innerHTML = `<span>Flip Card</span> <span class="kbd-hint">Space</span>`;
+      
+      // Wait for card flip animation to rotate back to term before changing card content
+      setTimeout(() => {
+        state.currentIndex++;
+        renderCurrentCard();
+        isNavigating = false;
+      }, 300);
+    } else {
       state.currentIndex++;
       renderCurrentCard();
-    } else {
-      showCompletionScreen();
     }
   }
 
   /**
    * Return to previous card
+   * If definition is showing, flips back to term FIRST before transitioning
    */
   function prevCard() {
-    if (state.currentIndex > 0) {
+    if (isNavigating || state.currentIndex <= 0) return;
+
+    if (state.isFlipped) {
+      isNavigating = true;
+      state.isFlipped = false;
+      elements.flashcard.classList.remove('flipped');
+      elements.btnFlipCard.innerHTML = `<span>Flip Card</span> <span class="kbd-hint">Space</span>`;
+
+      setTimeout(() => {
+        state.currentIndex--;
+        renderCurrentCard();
+        isNavigating = false;
+      }, 300);
+    } else {
       state.currentIndex--;
       renderCurrentCard();
     }

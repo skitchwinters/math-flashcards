@@ -115,7 +115,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Cartesian Power $A^n$",
-          "definition": "For any set $A$ and a positive integer $n$, the <span class=\"emph\">Cartesian power $A^n$</span> is\n\t        \\[A^n =\\underbrace{A \\times A \\times \\cdots \\times A}_\\text{$n$ times} = \\{(x_1,x_2,\\ldots,x_n) : x_1,x_2,\\ldots,x_n \\in A\\}.\\]"
+          "definition": "For any set $A$ and a positive integer $n$, the <span class=\"emph\">Cartesian power</span>$A^n$} is\n\\[A^n =\\underbrace{A \\times A \\times \\cdots \\times A}_\\text{$n$ times} = \\{(x_1,x_2,\\ldots,x_n) : x_1,x_2,\\ldots,x_n \\in A\\}.\\]"
         },
         {
           "id": "MATH-301-c9",
@@ -131,7 +131,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Power Set",
-          "definition": "If $A$ is a set, the <span class=\"emph\">power set</span> of $A$ is another set, denoted as $\\mathcal{P}(A)$ and defined to be the set of all subsets of $A$. In symbols,\n\t\t\t\\[\\mathcal{P}(A) = \\{X : X \\subseteq A\\}.\\]"
+          "definition": "If $A$ is a set, the <span class=\"emph\">power set</span> of $A$ is another set, denoted as $\\mathcal{P}(A)$ and defined to be the set of all subsets of $A$. In symbols,\n\\[\\mathcal{P}(A) = \\{X : X \\subseteq A\\}.\\]"
         },
         {
           "id": "MATH-301-c11",
@@ -139,7 +139,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Union",
-          "definition": "Suppose $A$ and $B$ are sets. The <span class=\"emph\">union</span> of $A$ and $B$ is the set\n\t\t\t\t\\[A\\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}.\\]"
+          "definition": "Suppose $A$ and $B$ are sets. The <span class=\"emph\">union</span> of $A$ and $B$ is the set\n\\[A\\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}.\\]"
         },
         {
           "id": "MATH-301-c12",
@@ -147,7 +147,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Intersection",
-          "definition": "Suppose $A$ and $B$ are sets. The <span class=\"emph\">intersection</span> of $A$ and $B$ is the set\n\t\t\t\\[A\\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}.\\]"
+          "definition": "Suppose $A$ and $B$ are sets. The <span class=\"emph\">intersection</span> of $A$ and $B$ is the set\n\\[A\\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}.\\]"
         },
         {
           "id": "MATH-301-c13",
@@ -155,7 +155,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Set Difference",
-          "definition": "Suppose $A$ and $B$ are sets. The <span class=\"emph\">difference</span> of $A$ and $B$ is the set\n\t\t\t\t\\[A - B = \\{x : x \\in A \\text{ and } x \\not\\in B\\}.\\]"
+          "definition": "Suppose $A$ and $B$ are sets. The <span class=\"emph\">difference</span> of $A$ and $B$ is the set\n\\[A - B = \\{x : x \\in A \\text{ and } x \\not\\in B\\}.\\]"
         },
         {
           "id": "MATH-301-c14",
@@ -171,7 +171,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Complement",
-          "definition": "Let $A$ be a set with a universal set $U$. The <span class=\"emph\">complement</span> of $A$ denoted $\\overline{A}$, is the set \n\t\t\\[\\overline{A} = U - A.\\]"
+          "definition": "Let $A$ be a set with a universal set $U$. The <span class=\"emph\">complement</span> of $A$ denoted $\\overline{A}$, is the set\n\\[\\overline{A} = U - A.\\]"
         },
         {
           "id": "MATH-301-c16",
@@ -187,7 +187,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "$A_1 \\cup A_2 \\cup \\cdots \\cup A_n$",
-          "definition": "Suppose $A_1,A_2,\\ldots,A_n$ are sets. Then\n\t\t\t\\[<span class=\"emph\">A_1\\cup A_2 \\cup \\cdots \\cup A_n</span> = \\{x : x \\in A_i \\text{ for at least one set } A_i, \\text{ for } 1 \\leq i \\leq n\\}.\\]"
+          "definition": "Suppose $A_1,A_2,\\ldots,A_n$ are sets. Then\n\\[\\emph{A_1\\cup A_2 \\cup \\cdots \\cup A_n} = \\{x : x \\in A_i \\text{ for at least one set } A_i, \\text{ for } 1 \\leq i \\leq n\\}.\\]"
         },
         {
           "id": "MATH-301-c18",
@@ -195,7 +195,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "$A_1 \\cap A_2 \\cap \\cdots \\cap A_n$",
-          "definition": "Suppose $A_1,A_2,\\ldots,A_n$ are sets. Then\n\t\t\t\\[<span class=\"emph\">A_1\\cap A_2 \\cap \\cdots \\cap A_n</span> = \\{x : x \\in A_i \\text{ for every set } A_i, \\text{ for } 1 \\leq i \\leq n\\}.\\]"
+          "definition": "Suppose $A_1,A_2,\\ldots,A_n$ are sets. Then\n\\[\\emph{A_1\\cap A_2 \\cap \\cdots \\cap A_n} = \\{x : x \\in A_i \\text{ for every set } A_i, \\text{ for } 1 \\leq i \\leq n\\}.\\]"
         },
         {
           "id": "MATH-301-c19",
@@ -203,7 +203,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "$\\bigcup_{i=1}^\\infty A_i$",
-          "definition": "Suppose $\\{A_i\\}_{i \\in \\N}$ is a family of sets. Then\n\t\t\t\\[\\emph{\\bigcup_{i=1}^\\infty A_i} = A_1\\cup A_2 \\cup \\cdots = \\{x : x \\in A_i \\text{ for at least one set } A_i, \\text{ with } 1 \\leq i\\}.\\]"
+          "definition": "Suppose $\\{A_i\\}_{i \\in \\N}$ is a family of sets. Then\n\\[\\emph{\\bigcup_{i=1}^\\infty A_i} = A_1\\cup A_2 \\cup \\cdots = \\{x : x \\in A_i \\text{ for at least one set } A_i, \\text{ with } 1 \\leq i\\}.\\]"
         },
         {
           "id": "MATH-301-c20",
@@ -211,7 +211,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "$\\bigcap_{i=1}^\\infty A_i$",
-          "definition": "Suppose $\\{A_i\\}_{i \\in \\N}$ is a family of sets. Then\n\t\t\t\\[\\emph{\\bigcap_{i=1}^\\infty A_i} = A_1\\cap A_2 \\cap \\cdots = \\{x : x \\in A_i \\text{ for every } A_i, \\text{ with } 1 \\leq i\\}.\\]"
+          "definition": "Suppose $\\{A_i\\}_{i \\in \\N}$ is a family of sets. Then\n\\[\\emph{\\bigcap_{i=1}^\\infty A_i} = A_1\\cap A_2 \\cap \\cdots = \\{x : x \\in A_i \\text{ for every } A_i, \\text{ with } 1 \\leq i\\}.\\]"
         },
         {
           "id": "MATH-301-c21",
@@ -219,7 +219,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "$\\bigcup_{\\alpha \\in I} A_\\alpha$",
-          "definition": "If $A_\\alpha$ is a set for every $\\alpha$ in some index set $I \\neq \\varnothing$, then\n\t\t\t\\[\\emph{\\bigcup_{\\alpha \\in I} A_\\alpha} = \\{x : x \\in A_\\alpha \\text{ for at least one set } A_\\alpha \\text{ with } \\alpha \\in I\\}.\\]"
+          "definition": "If $A_\\alpha$ is a set for every $\\alpha$ in some index set $I \\neq \\varnothing$, then\n\\[\\emph{\\bigcup_{\\alpha \\in I} A_\\alpha} = \\{x : x \\in A_\\alpha \\text{ for at least one set } A_\\alpha \\text{ with } \\alpha \\in I\\}.\\]"
         },
         {
           "id": "MATH-301-c22",
@@ -227,7 +227,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "$\\bigcap_{\\alpha \\in I} A_\\alpha$",
-          "definition": "If $A_\\alpha$ is a set for every $\\alpha$ in some index set $I \\neq \\varnothing$, then\n\t\t\t\\[\\emph{\\bigcap_{\\alpha \\in I} A_\\alpha} = \\{x : x \\in A_\\alpha \\text{ for every set } A_\\alpha \\text{ with } \\alpha \\in I\\}.\\]"
+          "definition": "If $A_\\alpha$ is a set for every $\\alpha$ in some index set $I \\neq \\varnothing$, then\n\\[\\emph{\\bigcap_{\\alpha \\in I} A_\\alpha} = \\{x : x \\in A_\\alpha \\text{ for every set } A_\\alpha \\text{ with } \\alpha \\in I\\}.\\]"
         },
         {
           "id": "MATH-301-c23",
@@ -379,7 +379,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 5",
           "section": "",
           "term": "Congruence Modulo $n$",
-          "definition": "Given integers $a$ and $b$ and $n \\in \\Z^{+}$, we say that $a$ and $b$ are <span class=\"emph\">congruent modulo $n$</span> if $n \\mid (a-b)$. We express this as $a \\equiv b \\mod{n}$."
+          "definition": "Given integers $a$ and $b$ and $n \\in \\Z^{+}$, we say that $a$ and $b$ are <span class=\"emph\">congruent modulo</span>$n$} if $n \\mid (a-b)$. We express this as $a \\equiv b \\mod{n}$."
         },
         {
           "id": "MATH-301-c42",
@@ -467,7 +467,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 11",
           "section": "",
           "term": "Equivalence Class Containing $a$",
-          "definition": "Suppose $R$ is an equivalence relation on a set $A$. Given any element $a \\in A$, the <span class=\"emph\">equivalence class containing $a$</span> is the subset $\\{x \\in A : x \\sim a\\}$ of $A$ consisting of all elements of $A$ that relate to $a$. This set is denote as $[a]$."
+          "definition": "Suppose $R$ is an equivalence relation on a set $A$. Given any element $a \\in A$, the <span class=\"emph\">equivalence class containing</span>$a$} is the subset $\\{x \\in A : x \\sim a\\}$ of $A$ consisting of all elements of $A$ that relate to $a$. This set is denote as $[a]$."
         },
         {
           "id": "MATH-301-c53",
@@ -515,7 +515,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 12",
           "section": "",
           "term": "Range, Image",
-          "definition": "Given some function $f : A \\to B$ the set \n\t\t\t\\[f(A) = \\{ f(a) : a \\in A\\} \\subseteq B\\]\n\t\tis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\n\t\n\n\t\tSimilarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
+          "definition": "Given some function $f : A \\to B$ the set\n\\[f(A) = \\{ f(a) : a \\in A\\} \\subseteq B\\]\nis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\nSimilarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
         },
         {
           "id": "MATH-301-c59",
@@ -523,7 +523,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 12",
           "section": "",
           "term": "Equal (functions)",
-          "definition": "Two functions $f$ and $g$ are <span class=\"emph\">equal</span> provided that\n\t\t\t<ul class=\"def-list\">\n<li>The domain of $f$ equals the domain of $g$.</li>\n<li>The codomain of $f$ equals the codomain of $g$.</li>\n<li>For each $x$ in the domain of $f$ (which equals the domain of $g$), $f(x) = g(x)$.</li>\n</ul>"
+          "definition": "Two functions $f$ and $g$ are <span class=\"emph\">equal</span> provided that\n <ul class=\"def-list\">\n<li>The domain of $f$ equals the domain of $g$.</li>\n<li>The codomain of $f$ equals the codomain of $g$.</li>\n<li>For each $x$ in the domain of $f$ (which equals the domain of $g$), $f(x) = g(x)$.</li>\n</ul>"
         },
         {
           "id": "MATH-301-c60",
@@ -595,7 +595,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 12",
           "section": "",
           "term": "Preimage (of a set)",
-          "definition": "Suppose $f: A \\to B$ is a function. If $Y \\subset B$, the <span class=\"emph\">preimage of $Y$</span> is the set $f^{-1} = \\{x \\in A : f(x) \\in Y\\} \\subseteq A$."
+          "definition": "Suppose $f: A \\to B$ is a function. If $Y \\subset B$, the <span class=\"emph\">preimage of</span>$Y$} is the set $f^{-1} = \\{x \\in A : f(x) \\in Y\\} \\subseteq A$."
         },
         {
           "id": "MATH-301-c69",
@@ -711,7 +711,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "IF, AND, OR (Conditional, Conjunction, Disjunction)",
-          "definition": "\\[\n        \t\t\\begin{array}{ccc}\n        \t\tA & <span class=\"emph\">\\implies</span> & B \\\\ \\hline\n        \t\tT &     \\textbf{T}    & T \\\\\n        \t\tT &     \\textbf{F}    & F \\\\\n        \t\tF &     \\textbf{T}    & T \\\\\n        \t\tF &     \\textbf{T}    & F \n        \t\t\\end{array}\n        \t\t\\qquad\n        \t\t\\begin{array}{ccc}\n        \t\tA & <span class=\"emph\">\\wedge</span> & B \\\\ \\hline\n        \t\tT &     \\textbf{T}    & T \\\\\n        \t\tT &     \\textbf{F}    & F \\\\\n        \t\tF &     \\textbf{F}    & T \\\\\n        \t\tF &     \\textbf{F}    & F \n        \t\t\\end{array}\n        \t\t\\qquad\n        \t\t\\begin{array}{ccc}\n        \t\tA & <span class=\"emph\">\\vee</span> & B \\\\ \\hline\n        \t\tT &     \\textbf{T}    & T \\\\\n        \t\tT &     \\textbf{T}    & F \\\\\n        \t\tF &     \\textbf{T}    & T \\\\\n        \t\tF &     \\textbf{F}    & F \n        \t\t\\end{array}\n    \t\t\\]"
+          "definition": "\\[\\begin{array}{ccc}\n         A & \\emph{\\implies} & B \\\\ \\hline\n         T &     \\textbf{T}    & T \\\\\n         T &     \\textbf{F}    & F \\\\\n         F &     \\textbf{T}    & T \\\\\n         F &     \\textbf{T}    & F \n         \\end{array}\n         \\qquad\n         \\begin{array}{ccc}\n         A & \\emph{\\wedge} & B \\\\ \\hline\n         T &     \\textbf{T}    & T \\\\\n         T &     \\textbf{F}    & F \\\\\n         F &     \\textbf{F}    & T \\\\\n         F &     \\textbf{F}    & F \n         \\end{array}\n         \\qquad\n         \\begin{array}{ccc}\n         A & \\emph{\\vee} & B \\\\ \\hline\n         T &     \\textbf{T}    & T \\\\\n         T &     \\textbf{T}    & F \\\\\n         F &     \\textbf{T}    & T \\\\\n         F &     \\textbf{F}    & F \n         \\end{array}\\]"
         },
         {
           "id": "MATH-410-c3",
@@ -727,7 +727,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "General Linear Group",
-          "definition": "The <span class=\"emph\">general linear group over $\\R$</span>, $GL_n(\\R)$, is the group of $n \\times n$ invertible matrices with entries in $\\R$."
+          "definition": "The <span class=\"emph\">general linear group over</span>$\\R$}, $GL_n(\\R)$, is the group of $n \\times n$ invertible matrices with entries in $\\R$."
         },
         {
           "id": "MATH-410-c5",
@@ -735,7 +735,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Special Linear Group",
-          "definition": "The <span class=\"emph\">special linear group over $\\R$</span>, $SL_n(\\R)$, is the group of $n \\times n$ matrices with entries in $\\R$ and determinant 1."
+          "definition": "The <span class=\"emph\">special linear group over</span>$\\R$}, $SL_n(\\R)$, is the group of $n \\times n$ matrices with entries in $\\R$ and determinant 1."
         },
         {
           "id": "MATH-410-c6",
@@ -783,7 +783,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Union",
-          "definition": "The <span class=\"emph\">union</span>, $A \\cup B$, of two sets $A$ and $B$ is defined as\n    \t    \\[A \\cup B = \\{x : x \\in A \\text{ or } x\\in B\\}.\\]"
+          "definition": "The <span class=\"emph\">union</span>, $A \\cup B$, of two sets $A$ and $B$ is defined as\n\\[A \\cup B = \\{x : x \\in A \\text{ or } x\\in B\\}.\\]"
         },
         {
           "id": "MATH-410-c12",
@@ -791,7 +791,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Intersection",
-          "definition": "The <span class=\"emph\">intersection</span>, $A \\cap B$, of $A$ and $B$ is defined as \n    \t    \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}.\\]"
+          "definition": "The <span class=\"emph\">intersection</span>, $A \\cap B$, of $A$ and $B$ is defined as\n\\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}.\\]"
         },
         {
           "id": "MATH-410-c13",
@@ -807,7 +807,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Complement",
-          "definition": "For any set $A \\subset U$, we define the <span class=\"emph\">complement</span> of $A$, denoted $A'$, to be the set\n    \t    \\[A' = \\{ x : x \\in U \\text{ and } x \\notin A\\}.\\]"
+          "definition": "For any set $A \\subset U$, we define the <span class=\"emph\">complement</span> of $A$, denoted $A'$, to be the set\n\\[A' = \\{ x : x \\in U \\text{ and } x \\notin A\\}.\\]"
         },
         {
           "id": "MATH-410-c15",
@@ -815,7 +815,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Difference",
-          "definition": "The <span class=\"emph\">difference</span> of two sets $A$ and $B$ is defined as\n        \t\\[A \\backslash B = A \\cap B' = \\{x : x\\in A \\text{ and } x \\notin B\\}.\\]"
+          "definition": "The <span class=\"emph\">difference</span> of two sets $A$ and $B$ is defined as\n\\[A \\backslash B = A \\cap B' = \\{x : x\\in A \\text{ and } x \\notin B\\}.\\]"
         },
         {
           "id": "MATH-410-c16",
@@ -823,7 +823,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Cartesian Product",
-          "definition": "Given sets $A$ and $B$, we can define a new set $A \\times B$, called the <span class=\"emph\">Cartesian product</span> of $A$ and $B$, as a set of ordered pairs. That is,\n        \t\\[A \\times B = \\{(a,b) : a \\in A \\text{ and } b \\in B\\}.\\]"
+          "definition": "Given sets $A$ and $B$, we can define a new set $A \\times B$, called the <span class=\"emph\">Cartesian product</span> of $A$ and $B$, as a set of ordered pairs. That is,\n\\[A \\times B = \\{(a,b) : a \\in A \\text{ and } b \\in B\\}.\\]"
         },
         {
           "id": "MATH-410-c17",
@@ -831,7 +831,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Cartesian Product of $n$ Sets",
-          "definition": "We define the <span class=\"emph\">Cartesian product of $n$ sets</span> to be\n        \t\\[A_1 \\times \\cdots \\times A_n = \\{(a_1, \\ldots , a_n) : a_i \\in A_i \\text{ for }i = 1,\\dots , n\\}.\\]"
+          "definition": "We define the <span class=\"emph\">Cartesian product of</span>$n$ sets} to be\n\\[A_1 \\times \\cdots \\times A_n = \\{(a_1, \\ldots , a_n) : a_i \\in A_i \\text{ for }i = 1,\\dots , n\\}.\\]"
         },
         {
           "id": "MATH-410-c18",
@@ -871,7 +871,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Range, Image",
-          "definition": "Given some function $f : A \\to B$ the set \n        \t\\[f(A) = \\{ f(a) : a \\in A\\} \\subset B\\]\n        is called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n        \n        \n        \n        Similarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
+          "definition": "Given some function $f : A \\to B$ the set\n\\[f(A) = \\{ f(a) : a \\in A\\} \\subset B\\]\nis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\nSimilarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
         },
         {
           "id": "MATH-410-c23",
@@ -879,7 +879,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Preimage",
-          "definition": "Given some function $f : A \\to B$ with $f(a) = b$ then\n        \t\\[f^{-1}(b) = \\{x \\in A : f(x) = b\\}\\]\n        and\n        \t\\[a \\in f^{-1}(b).\\]\n        We refer to $f^{-1}(b)$ as the <span class=\"emph\">preimage</span> of $b$ under $f$.\n        \n        \n        \n        Let $C \\subset B$. We similarly define\n        \t\\[f^{-1}(C) = \\{ x \\in A: f(x) \\in C\\}\\]\n        as the <span class=\"emph\">preimage</span> of $C$ under $f$."
+          "definition": "Given some function $f : A \\to B$ with $f(a) = b$ then\n\\[f^{-1}(b) = \\{x \\in A : f(x) = b\\}\\]\nand\n\\[a \\in f^{-1}(b).\\]\nWe refer to $f^{-1}(b)$ as the <span class=\"emph\">preimage</span> of $b$ under $f$.\n\nLet $C \\subset B$. We similarly define\n\\[f^{-1}(C) = \\{ x \\in A: f(x) \\in C\\}\\]\nas the <span class=\"emph\">preimage</span> of $C$ under $f$."
         },
         {
           "id": "MATH-410-c24",
@@ -967,7 +967,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Equivalence Relation",
-          "definition": "An <span class=\"emph\">equivalence relation</span> on a set $X$ is a relation $R \\subset X \\times X$ such that \n        \t<ul class=\"def-list\">\n<li>$(x,x)\\in R$ for all $x \\in X$ (<span class=\"emph\">reflexive property</span>);</li>\n<li>$(x,y) \\in R$ implies $(y,x) \\in R$ (<span class=\"emph\">symmetric property</span>);</li>\n<li>$(x,y)$ and $(y,z) \\in R$ imply $(x,z) \\in R$ (<span class=\"emph\">transitive property</span>).</li>\n</ul>"
+          "definition": "An <span class=\"emph\">equivalence relation</span> on a set $X$ is a relation $R \\subset X \\times X$ such that \n         <ul class=\"def-list\">\n<li>$(x,x)\\in R$ for all $x \\in X$ (<span class=\"emph\">reflexive property</span>);</li>\n<li>$(x,y) \\in R$ implies $(y,x) \\in R$ (<span class=\"emph\">symmetric property</span>);</li>\n<li>$(x,y)$ and $(y,z) \\in R$ imply $(x,z) \\in R$ (<span class=\"emph\">transitive property</span>).</li>\n</ul>"
         },
         {
           "id": "MATH-410-c35",
@@ -991,7 +991,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Congruence Module $n$",
-          "definition": "Let $r$ and $s$ be two integers and suppose that $n \\in \\N$. We say that $r$ is <span class=\"emph\">congruent</span> to $s$ <span class=\"emph\">modulo $n$</span>, or $r$ is congruent to $s$ mod $n$, if $r-s$ is evenly divisible by $n$; that is, $r-s = nk$ for some $k \\in \\Z$. We write\n        \t\\[r \\equiv s \\mod{n}.\\]"
+          "definition": "Let $r$ and $s$ be two integers and suppose that $n \\in \\N$. We say that $r$ is <span class=\"emph\">congruent</span> to $s$ <span class=\"emph\">modulo</span>$n$}, or $r$ is congruent to $s$ mod $n$, if $r-s$ is evenly divisible by $n$; that is, $r-s = nk$ for some $k \\in \\Z$. We write\n\\[r \\equiv s \\mod{n}.\\]"
         },
         {
           "id": "MATH-410-c38",
@@ -1103,7 +1103,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "Group",
-          "definition": "A <span class=\"emph\">group</span> is a set $G$ together with a binary operation, $\\star$, $(G, \\star)$, that satisfies the following axioms.\n        \n        \n        \n        \t<div class=\"def-table-wrap\"><table class=\"def-table\">\n<tr><td>}\n            \t\\textbf{Closure*}</td><td>$G$ is closed under the binary operation $\\star$. That is, given $a,b \\in G$ then $a \\star b \\in G$.</td></tr>\n<tr><td>\\textbf{Associativity}</td><td>The binary operation is associative:\n            \t\t\\[(a \\star b)\\star c = a \\star (b \\star c),\\]\n            \t\tfor $a,b,c \\in G$.</td></tr>\n<tr><td>\\textbf{Identity}</td><td>There exists an element $e \\in G$, called the <span class=\"emph\">identity element</span> in $G$, such that for any element $a \\in G$\n            \t\t\\[e \\star a = a \\star e = a.\\] \\vspace{-10pt}</td></tr>\n<tr><td>\\textbf{Inverse}</td><td>For each element $a \\in G$, there exists an <span class=\"emph\">inverse element</span> in $G$, denoted by $a^{-1}$, such that \n            \t\t\\[a \\star a^{-1} = a^{-1} \\star a = e.\\]</td></tr>\n</table></div>\n        \t\\vspace{-15pt}"
+          "definition": "A <span class=\"emph\">group</span> is a set $G$ together with a binary operation, $\\star$, $(G, \\star)$, that satisfies the following axioms.\n\n<div class=\"def-table-wrap\"><table class=\"def-table\">\n<tr><td>}\n             \\textbf{Closure*}</td><td>$G$ is closed under the binary operation $\\star$. That is, given $a,b \\in G$ then $a \\star b \\in G$.</td></tr>\n<tr><td>\\textbf{Associativity}</td><td>The binary operation is associative:\n\\[(a \\star b)\\star c = a \\star (b \\star c),\\]\nfor $a,b,c \\in G$.</td></tr>\n<tr><td>\\textbf{Identity}</td><td>There exists an element $e \\in G$, called the <span class=\"emph\">identity element</span> in $G$, such that for any element $a \\in G$\n\\[e \\star a = a \\star e = a.\\]\n\\vspace{-10pt}</td></tr>\n<tr><td>\\textbf{Inverse}</td><td>For each element $a \\in G$, there exists an <span class=\"emph\">inverse element</span> in $G$, denoted by $a^{-1}$, such that\n\\[a \\star a^{-1} = a^{-1} \\star a = e.\\]\n</td></tr>\n</table></div>\n         \\vspace{-15pt}"
         },
         {
           "id": "MATH-410-c52",
@@ -1111,7 +1111,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "Abelian Group, Commutative Group",
-          "definition": "A group $G$ for which the binary operation, $\\star$, commutes is called an <span class=\"emph\">abelian group</span> or <span class=\"emph\">commutative group</span>. That is, given $a,b \\in G$ then \n        \t\\[a \\star b = b \\star a.\\]\n        A group without this property is called a <span class=\"emph\">nonabelian</span> or <span class=\"emph\">noncommutative</span> group."
+          "definition": "A group $G$ for which the binary operation, $\\star$, commutes is called an <span class=\"emph\">abelian group</span> or <span class=\"emph\">commutative group</span>. That is, given $a,b \\in G$ then\n\\[a \\star b = b \\star a.\\]\nA group without this property is called a <span class=\"emph\">nonabelian</span> or <span class=\"emph\">noncommutative</span> group."
         },
         {
           "id": "MATH-410-c53",
@@ -1135,7 +1135,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "$U(n)$, Group of Units",
-          "definition": "<span class=\"emph\">$U(n)$</span> or <span class=\"emph\">the group of units of $\\Z_n$</span> is the set of elements in $\\Z_n$ that have multiplicative inverses.\n        \n        \n        \n        Equivalently (Proposition 3.4 (6)), as a set,\n        \t\\[U(n) = \\{ k \\in \\Z_n : k \\neq 0, \\gcd(k,n) = 1\\}.\\]"
+          "definition": "<span class=\"emph\"></span>$U(n)$} or <span class=\"emph\">the group of units of</span>$\\Z_n$} is the set of elements in $\\Z_n$ that have multiplicative inverses.\n\nEquivalently (Proposition 3.4 (6)), as a set,\n\\[U(n) = \\{ k \\in \\Z_n : k \\neq 0, \\gcd(k,n) = 1\\}.\\]"
         },
         {
           "id": "MATH-410-c56",
@@ -1167,7 +1167,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "Center (of a group)",
-          "definition": "Let $G$ be a group. Then the set\n            \\[Z(G) = \\{x \\in G : gx = xg \\text{ for all } g \\in G\\}\\]\n        is a subgroup of $G$ called the <span class=\"emph\">center</span> of $G$."
+          "definition": "Let $G$ be a group. Then the set\n\\[Z(G) = \\{x \\in G : gx = xg \\text{ for all } g \\in G\\}\\]\nis a subgroup of $G$ called the <span class=\"emph\">center</span> of $G$."
         },
         {
           "id": "MATH-410-c60",
@@ -1207,7 +1207,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Complex Numbers",
-          "definition": "The <span class=\"emph\">complex numbers</span> are defined as \n        \t\\[\\C  = \\{a + bi : a,b \\in \\R\\},\\]\n        where $i^2 = -1$. If $z = a+bi$, then $a$ is the <span class=\"emph\">real part</span> of $z$ and $b$ is the <span class=\"emph\">imaginary part</span> of $z$."
+          "definition": "The <span class=\"emph\">complex numbers</span> are defined as\n\\[\\C  = \\{a + bi : a,b \\in \\R\\},\\]\nwhere $i^2 = -1$. If $z = a+bi$, then $a$ is the <span class=\"emph\">real part</span> of $z$ and $b$ is the <span class=\"emph\">imaginary part</span> of $z$."
         },
         {
           "id": "MATH-410-c65",
@@ -1231,7 +1231,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Circle Group",
-          "definition": "The group\n        \t\\[\\mathbb{T} =\\{z \\in \\C : |z| = 1\\},\\]\n        is called the <span class=\"emph\">circle group</span>."
+          "definition": "The group\n\\[\\mathbb{T} =\\{z \\in \\C : |z| = 1\\},\\]\nis called the <span class=\"emph\">circle group</span>."
         },
         {
           "id": "MATH-410-c68",
@@ -1239,7 +1239,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "$n$th Root of Unity",
-          "definition": "The complex numbers satisfying the equation\n        \t\\[z^n = 1\\]\n        are called the <span class=\"emph\">$n$th roots of unity</span>."
+          "definition": "The complex numbers satisfying the equation\n\\[z^n = 1\\]\nare called the <span class=\"emph\"></span>$n$th roots of unity}."
         },
         {
           "id": "MATH-410-c69",
@@ -1247,7 +1247,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Primitive $n$th Root of Unity",
-          "definition": "A generator for the group of the $n$th roots of unity is called a <span class=\"emph\">primitive $n$th root of unity</span>."
+          "definition": "A generator for the group of the $n$th roots of unity is called a <span class=\"emph\">primitive</span>$n$th root of unity}."
         },
         {
           "id": "MATH-410-c70",
@@ -1263,7 +1263,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 5",
           "section": "",
           "term": "Symmetric Group",
-          "definition": "The group consisting of all the permutations on a set with $n$ elements under the operation of composition is called the <span class=\"emph\">symmetric group on $n$ letters</span>."
+          "definition": "The group consisting of all the permutations on a set with $n$ elements under the operation of composition is called the <span class=\"emph\">symmetric group on</span>$n$ letters}."
         },
         {
           "id": "MATH-410-c72",
@@ -1271,7 +1271,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 5",
           "section": "",
           "term": "Cycle of Length $k$",
-          "definition": "A permutation $\\sigma \\in S_X$ is a <span class=\"emph\">cycle of length $k$</span> if there exists elements $a_1, a_2, \\cdots, a_k \\in X$ such that\n        \t\\begin{align*}\n        \t\t\\sigma(a_1) &= a_2 \\\\\n        \t\t\\sigma(a_2) &= a_3 \\\\\n        \t\t&\\vdots \\\\\n        \t\t\\sigma(a_k) &= a_1,\n        \t\\end{align*}\n        and $\\sigma(x)=x$ for all other elements $x \\in X$. We will write $(a_1, a_2, \\ldots, a_k)$ to denote the cycle $\\sigma$."
+          "definition": "A permutation $\\sigma \\in S_X$ is a <span class=\"emph\">cycle of length</span>$k$} if there exists elements $a_1, a_2, \\cdots, a_k \\in X$ such that\n         \\begin{align*}\n         \\sigma(a_1) &= a_2 \\\\\n         \\sigma(a_2) &= a_3 \\\\\n         &\\vdots \\\\\n         \\sigma(a_k) &= a_1,\n         \\end{align*}\n        and $\\sigma(x)=x$ for all other elements $x \\in X$. We will write $(a_1, a_2, \\ldots, a_k)$ to denote the cycle $\\sigma$."
         },
         {
           "id": "MATH-410-c73",
@@ -1311,7 +1311,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 5",
           "section": "",
           "term": "Alternating Group on $n$ Letters",
-          "definition": "The group $A_n$ consisting of all even permutations of $S_n$ is called the <span class=\"emph\">alternating group on $n$ letters</span>."
+          "definition": "The group $A_n$ consisting of all even permutations of $S_n$ is called the <span class=\"emph\">alternating group on</span>$n$ letters}."
         },
         {
           "id": "MATH-410-c78",
@@ -1319,7 +1319,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 5",
           "section": "",
           "term": "$n$th Dihedral Group",
-          "definition": "For $n=3,4, \\ldots$ we define the <span class=\"emph\">$n$th dihedral group</span> to be the group of rigid motions of a regular $n$-gon. We will denote this group by $D_n$."
+          "definition": "For $n=3,4, \\ldots$ we define the <span class=\"emph\"></span>$n$th dihedral group} to be the group of rigid motions of a regular $n$-gon. We will denote this group by $D_n$."
         },
         {
           "id": "MATH-410-c79",
@@ -1327,7 +1327,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 5",
           "section": "",
           "term": "Orbit (of $x$ under a function $\\sigma$)",
-          "definition": "The <span class=\"emph\">orbit</span> of $x \\in X$ under $\\sigma \\in S_X$ is the set\n            \\[\\mathcal{O}_{x,\\sigma} = \\{\\sigma^n(x) : n \\in \\Z\\}.\\]"
+          "definition": "The <span class=\"emph\">orbit</span> of $x \\in X$ under $\\sigma \\in S_X$ is the set\n\\[\\mathcal{O}_{x,\\sigma} = \\{\\sigma^n(x) : n \\in \\Z\\}.\\]"
         },
         {
           "id": "MATH-410-c80",
@@ -1335,7 +1335,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 6",
           "section": "",
           "term": "Left Coset, Right Coset, Representative",
-          "definition": "Let $G$ be a group and $H$ a subgroup of $G$. Define a <span class=\"emph\">left coset</span> of $H$ with <span class=\"emph\">representative</span> $g \\in G$ to be the set\n        \t\\[gH = \\{gh : h \\in H\\}.\\]\n        <span class=\"emph\">Right cosets</span> can be defined similarly by\n        \t\\[Hg = \\{hg : h \\in H\\}.\\]"
+          "definition": "Let $G$ be a group and $H$ a subgroup of $G$. Define a <span class=\"emph\">left coset</span> of $H$ with <span class=\"emph\">representative</span> $g \\in G$ to be the set\n\\[gH = \\{gh : h \\in H\\}.\\]\n<span class=\"emph\">Right cosets</span> can be defined similarly by\n\\[Hg = \\{hg : h \\in H\\}.\\]"
         },
         {
           "id": "MATH-410-c81",
@@ -1351,7 +1351,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 9",
           "section": "",
           "term": "Isomorphic, Isomorphism",
-          "definition": "Two groups $(G, \\cdot)$ and $(H, \\circ)$ are <span class=\"emph\">isomorphic</span> ($\\cong$) if there exists a bijection $\\varphi: G \\rightarrow H$ such that the group operation is preserved; that is,\n        \t\\[\\varphi(a \\cdot b) = \\varphi(a)\\circ \\varphi(b)\\]\n        for all $a$ and $b$ in $G$. If $G$ is isomorphic to $H$, we write $G \\cong H$. The map $\\varphi$ is called an <span class=\"emph\">isomorphism</span>."
+          "definition": "Two groups $(G, \\cdot)$ and $(H, \\circ)$ are <span class=\"emph\">isomorphic</span> ($\\cong$) if there exists a bijection $\\varphi: G \\rightarrow H$ such that the group operation is preserved; that is,\n\\[\\varphi(a \\cdot b) = \\varphi(a)\\circ \\varphi(b)\\]\nfor all $a$ and $b$ in $G$. If $G$ is isomorphic to $H$, we write $G \\cong H$. The map $\\varphi$ is called an <span class=\"emph\">isomorphism</span>."
         },
         {
           "id": "MATH-410-c83",
@@ -1375,7 +1375,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 9",
           "section": "",
           "term": "Internal Direct Product",
-          "definition": "Let $G$ be a group with subgroups $H$ and $K$ satisfying the following conditions.\n        \t<ul class=\"def-list\">\n<li>$G = HK = \\{ hk : h\\in H, k \\in K\\}$;</li>\n<li>$H \\cap K = \\{e\\}$;</li>\n<li>$hk = kh$ for all $k \\in K$ and $h \\in H$.</li>\n</ul>\n        Then we say that $G$ is the <span class=\"emph\">internal direct product</span> of $H$ and $K$."
+          "definition": "Let $G$ be a group with subgroups $H$ and $K$ satisfying the following conditions.\n         <ul class=\"def-list\">\n<li>$G = HK = \\{ hk : h\\in H, k \\in K\\}$;</li>\n<li>$H \\cap K = \\{e\\}$;</li>\n<li>$hk = kh$ for all $k \\in K$ and $h \\in H$.</li>\n</ul>\n        Then we say that $G$ is the <span class=\"emph\">internal direct product</span> of $H$ and $K$."
         },
         {
           "id": "MATH-410-c86",
@@ -1407,7 +1407,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 10",
           "section": "",
           "term": "Centralizer",
-          "definition": "The <span class=\"emph\">centralizer</span> of an element $g$ in a group $G$ is the set\n            \\[C(g) = \\{x \\in G : xg = gx\\}.\\]"
+          "definition": "The <span class=\"emph\">centralizer</span> of an element $g$ in a group $G$ is the set\n\\[C(g) = \\{x \\in G : xg = gx\\}.\\]"
         },
         {
           "id": "MATH-410-c90",
@@ -1415,7 +1415,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 11",
           "section": "",
           "term": "homomorphism, homomorphic image",
-          "definition": "A <span class=\"emph\">homomorphism</span> between groups $(G, \\cdot)$ and $(H, \\circ)$ is a map $\\phi : G \\rightarrow H$ such that\n        \t\\[\\phi(g_1 \\cdot g_2) = \\phi(g_1)\\circ \\phi(g_2)\\]\n        for $g_1, g_2 \\in G$. The range of $\\phi$ in $H$ is called the <span class=\"emph\">homomorphic image</span> of $\\phi$."
+          "definition": "A <span class=\"emph\">homomorphism</span> between groups $(G, \\cdot)$ and $(H, \\circ)$ is a map $\\phi : G \\rightarrow H$ such that\n\\[\\phi(g_1 \\cdot g_2) = \\phi(g_1)\\circ \\phi(g_2)\\]\nfor $g_1, g_2 \\in G$. The range of $\\phi$ in $H$ is called the <span class=\"emph\">homomorphic image</span> of $\\phi$."
         },
         {
           "id": "MATH-410-c91",
@@ -1463,7 +1463,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 11",
           "section": "",
           "term": "Natural Homomorphism/Canonical Homomorphism",
-          "definition": "Let $H$ be a normal subgroup of $G$. Define the <span class=\"emph\">natural</span> or <span class=\"emph\">canonical homomorphism</span>\n        \t\\[\\phi : G \\rightarrow G\\slash H\\]\n        by\n        \t\\[\\phi(g) = gH.\\]"
+          "definition": "Let $H$ be a normal subgroup of $G$. Define the <span class=\"emph\">natural</span> or <span class=\"emph\">canonical homomorphism</span>\n\\[\\phi : G \\rightarrow G\\slash H\\]\nby\n\\[\\phi(g) = gH.\\]"
         },
         {
           "id": "MATH-410-c97",
@@ -1543,7 +1543,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 0",
           "section": "",
           "term": "Union",
-          "definition": "Let $S$ be a given set and let $A \\subseteq S$ and $B \\subseteq S$. Define \n\t\t\t\\[A \\cup B = \\{x \\in S : x \\in A \\text{ or } x \\in B\\},\\]\n\t\twhich is read \"the set of all $x \\in S$ that are members of $A$ or $B$ (or both).\" The set $A \\cup B$ is called the <span class=\"emph\">union</span> of $A$ and $B$."
+          "definition": "Let $S$ be a given set and let $A \\subseteq S$ and $B \\subseteq S$. Define\n\\[A \\cup B = \\{x \\in S : x \\in A \\text{ or } x \\in B\\},\\]\nwhich is read \"the set of all $x \\in S$ that are members of $A$ or $B$ (or both).\" The set $A \\cup B$ is called the <span class=\"emph\">union</span> of $A$ and $B$."
         },
         {
           "id": "MATH-461-c6",
@@ -1551,7 +1551,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 0",
           "section": "",
           "term": "Intersection",
-          "definition": "Let $S$ be a given set and let $A \\subseteq S$ and $B \\subseteq S$. Define\n\t\t\t\\[A \\cap B = \\{x \\in S : x \\in A \\text{ and } x \\in B\\},\\]\n\t\twhich is read \"the set of all $x \\in S$ that are members of both $A$ and $B$.\" The set $A \\cap B$ is called the <span class=\"emph\">intersection</span> of $A$ and $B$."
+          "definition": "Let $S$ be a given set and let $A \\subseteq S$ and $B \\subseteq S$. Define\n\\[A \\cap B = \\{x \\in S : x \\in A \\text{ and } x \\in B\\},\\]\nwhich is read \"the set of all $x \\in S$ that are members of both $A$ and $B$.\" The set $A \\cap B$ is called the <span class=\"emph\">intersection</span> of $A$ and $B$."
         },
         {
           "id": "MATH-461-c7",
@@ -1559,7 +1559,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 0",
           "section": "",
           "term": "Complement",
-          "definition": "For $A \\subseteq S$. We form the <span class=\"emph\">complement</span> of $A$ in $S$ be defining\n\t\t\t\\[A^C = \\{ x \\in S : x \\notin A \\}.\\]"
+          "definition": "For $A \\subseteq S$. We form the <span class=\"emph\">complement</span> of $A$ in $S$ be defining\n\\[A^C = \\{ x \\in S : x \\notin A \\}.\\]"
         },
         {
           "id": "MATH-461-c8",
@@ -1567,7 +1567,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 0",
           "section": "",
           "term": "Relative Complement, Set Difference",
-          "definition": "For $A \\subseteq S$ and $B \\subseteq S$, we form the <span class=\"emph\">complement of $A$ relative to $B$</span> by defining\n\t\t\t\\[B\\backslash A = \\{x \\in B : x \\notin A\\}.\\]"
+          "definition": "For $A \\subseteq S$ and $B \\subseteq S$, we form the <span class=\"emph\">complement of</span>$A$ relative to $B$} by defining\n\\[B\\backslash A = \\{x \\in B : x \\notin A\\}.\\]"
         },
         {
           "id": "MATH-461-c9",
@@ -1575,7 +1575,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 0",
           "section": "",
           "term": "Cartesian Product",
-          "definition": "Given sets $A$ and $B$, define the <span class=\"emph\">Cartesian product</span> $A \\times B$ of $A$ and $B$ to be the set of all ordered pairs $(a,b)$ with $a \\in A$ and $b \\in B$; i.e. \n\t\t\t\\[A \\times B = \\{ (a,b) : a \\in A \\text{ and } b\\in B\\}.\\]"
+          "definition": "Given sets $A$ and $B$, define the <span class=\"emph\">Cartesian product</span> $A \\times B$ of $A$ and $B$ to be the set of all ordered pairs $(a,b)$ with $a \\in A$ and $b \\in B$; i.e.\n\\[A \\times B = \\{ (a,b) : a \\in A \\text{ and } b\\in B\\}.\\]"
         },
         {
           "id": "MATH-461-c10",
@@ -1647,7 +1647,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 0",
           "section": "",
           "term": "Image (of a set)",
-          "definition": "For $f: S \\to T$ and $A \\subseteq S$, we define $f(A) = \\{f(x) \\in T : x \\in A\\}$ to be the <span class=\"emph\">image of $A$ under $f$</span>."
+          "definition": "For $f: S \\to T$ and $A \\subseteq S$, we define $f(A) = \\{f(x) \\in T : x \\in A\\}$ to be the <span class=\"emph\">image of</span>$A$ under $f$}."
         },
         {
           "id": "MATH-461-c19",
@@ -1815,7 +1815,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Absolute Value, Magnitude",
-          "definition": "The <span class=\"emph\">absolute value</span> or <span class=\"emph\">magnitude</span> of a number $x$, denoted $\\abs{x}$, is defined by \n    \t\t\\[\\abs{x} = \\left\\{\n    \t\t\t\\begin{matrix}\n    \t\t\t\tx, & x \\geq 0 \\\\\n    \t\t\t\t-x, & x < 0\n    \t\t\t\\end{matrix}\n    \t\t\\right.\n    \t\t\\]"
+          "definition": "The <span class=\"emph\">absolute value</span> or <span class=\"emph\">magnitude</span> of a number $x$, denoted $\\abs{x}$, is defined by\n\\[\\abs{x} = \\left\\{\n     \\begin{matrix}\n     x, & x \\geq 0 \\\\\n     -x, & x < 0\n     \\end{matrix}\n     \\right.\\]"
         },
         {
           "id": "MATH-461-c40",
@@ -1839,7 +1839,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "(1.2.1) Converge",
-          "definition": "A sequence $x_n$ is said to <span class=\"emph\">converge</span> if there exists a real number $x$ such that if for every $\\varepsilon > 0$ there is a natural number $N$ such that $\\abs{x_n - x} < \\varepsilon$ whenever $n \\geq N$. In this case we write\n    \t\t\\[\\lim_{n \\to \\infty} x_n = x\\]\n    \tor \n    \t\t\\[x_n \\to x \\text{ as } n \\to \\infty.\\]"
+          "definition": "A sequence $x_n$ is said to <span class=\"emph\">converge</span> if there exists a real number $x$ such that if for every $\\varepsilon > 0$ there is a natural number $N$ such that $\\abs{x_n - x} < \\varepsilon$ whenever $n \\geq N$. In this case we write\n\\[\\lim_{n \\to \\infty} x_n = x\\]\nor\n\\[x_n \\to x \\text{ as } n \\to \\infty.\\]"
         },
         {
           "id": "MATH-461-c43",
@@ -1999,7 +1999,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Euclidean $n$-space",
-          "definition": "<span class=\"emph\">Euclidean $n$-space</span>, denote $\\R^n$, consists of all ordered $n$-tuples of real numbers. Symbolically,\n\t\t\t\\[\\R^n = \\{(x_1,\\ldots,x_n) : x_1,\\ldots, x_n \\in \\R\\}.\\]\n\t\tThus, $\\R^n = \\R \\times \\cdots \\times \\R$ ($n$ times) is the Cartesian product of $\\R$ with itself $n$ times."
+          "definition": "<span class=\"emph\">Euclidean</span>$n$-space}, denote $\\R^n$, consists of all ordered $n$-tuples of real numbers. Symbolically,\n\\[\\R^n = \\{(x_1,\\ldots,x_n) : x_1,\\ldots, x_n \\in \\R\\}.\\]\nThus, $\\R^n = \\R \\times \\cdots \\times \\R$ ($n$ times) is the Cartesian product of $\\R$ with itself $n$ times."
         },
         {
           "id": "MATH-461-c63",
@@ -2007,7 +2007,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Real Vector Space",
-          "definition": "A <span class=\"emph\">real vector space</span> $\\mathcal{V}$ is a set of elements called <span class=\"emph\">vectors</span>, with given operations of <span class=\"emph\">vector addition</span>, $+ : \\mathcal{V}\\times\\mathcal{V} \\to \\mathcal{V}$ and <span class=\"emph\">scalar multiplication</span>, $\\cdot : \\R \\times \\mathcal{V} \\to \\mathcal{V}$, such that:\n\t\t\n\t\t\t<ul class=\"def-list\">\n<li>$v+w = w+v$ for every $v$ and $w$ in $\\mathcal{V}$. \\hfill \\textbf{commutativity}</li>\n<li>$(v+u)+w = v+(u+w)$. \\hfill \\textbf{associativity}</li>\n<li>There is a zero vector 0 such that $v+0=v$ for every $v$ in $\\mathcal{V}$. \\hfill \\textbf{zero vector}</li>\n<li>For each $v$ in $\\mathcal{V}$ there is a vector $-v$ such that $v + (-v) = 0$. \\hfill \\textbf{additive inverses}</li>\n<li>For $\\lambda \\in \\R$ and $v,w$ in $\\mathcal{V}$, $\\lambda \\cdot (v + w) = \\lambda v + \\lambda \\cdot w$. \\hfill \\textbf{distributivity}</li>\n<li>For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $\\lambda(m \\cdot v) = (\\lambda m)\\cdot v$. \\hfill \\textbf{compatibility}</li>\n<li>For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $(\\lambda + m) \\cdot v = \\lambda \\cdot v + m \\cdot v$. \\hfill \\textbf{distributivity}</li>\n<li>$1 \\cdot v = v$ for every $v \\in \\mathcal{V}$. \\hfill \\textbf{multiplicative identity}</li>\n</ul>"
+          "definition": "A <span class=\"emph\">real vector space</span> $\\mathcal{V}$ is a set of elements called <span class=\"emph\">vectors</span>, with given operations of <span class=\"emph\">vector addition</span>, $+ : \\mathcal{V}\\times\\mathcal{V} \\to \\mathcal{V}$ and <span class=\"emph\">scalar multiplication</span>, $\\cdot : \\R \\times \\mathcal{V} \\to \\mathcal{V}$, such that:\n \n <ul class=\"def-list\">\n<li>$v+w = w+v$ for every $v$ and $w$ in $\\mathcal{V}$. \\hfill \\textbf{commutativity}</li>\n<li>$(v+u)+w = v+(u+w)$. \\hfill \\textbf{associativity}</li>\n<li>There is a zero vector 0 such that $v+0=v$ for every $v$ in $\\mathcal{V}$. \\hfill \\textbf{zero vector}</li>\n<li>For each $v$ in $\\mathcal{V}$ there is a vector $-v$ such that $v + (-v) = 0$. \\hfill \\textbf{additive inverses}</li>\n<li>For $\\lambda \\in \\R$ and $v,w$ in $\\mathcal{V}$, $\\lambda \\cdot (v + w) = \\lambda v + \\lambda \\cdot w$. \\hfill \\textbf{distributivity}</li>\n<li>For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $\\lambda(m \\cdot v) = (\\lambda m)\\cdot v$. \\hfill \\textbf{compatibility}</li>\n<li>For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $(\\lambda + m) \\cdot v = \\lambda \\cdot v + m \\cdot v$. \\hfill \\textbf{distributivity}</li>\n<li>$1 \\cdot v = v$ for every $v \\in \\mathcal{V}$. \\hfill \\textbf{multiplicative identity}</li>\n</ul>"
         },
         {
           "id": "MATH-461-c64",
@@ -2015,7 +2015,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Norm",
-          "definition": "The <span class=\"emph\">length</span> or <span class=\"emph\">norm</span> of a vector $x$ in $\\R^n$ is defined by\n\t\t\t\\[\\norm{x} = \\left\\{\\sum_{i=1}^n x_i^2\\right\\}^{1/2},\\]\n\t\twhere $x = (x_1, \\ldots, x_n)$."
+          "definition": "The <span class=\"emph\">length</span> or <span class=\"emph\">norm</span> of a vector $x$ in $\\R^n$ is defined by\n\\[\\norm{x} = \\left\\{\\sum_{i=1}^n x_i^2\\right\\}^{1/2},\\]\nwhere $x = (x_1, \\ldots, x_n)$."
         },
         {
           "id": "MATH-461-c65",
@@ -2023,7 +2023,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Distance",
-          "definition": "The <span class=\"emph\">distance</span> between two vectors $x$ and $y$ is the real number\n\t\t\t\\[d(x,y) := \\norm{x-y} = \\left\\{\\sum_{i=1}^n (x_i - y_i)^2\\right\\}^{1/2}.\\]"
+          "definition": "The <span class=\"emph\">distance</span> between two vectors $x$ and $y$ is the real number\n\\[d(x,y) := \\norm{x-y} = \\left\\{\\sum_{i=1}^n (x_i - y_i)^2\\right\\}^{1/2}.\\]"
         },
         {
           "id": "MATH-461-c66",
@@ -2031,7 +2031,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Inner Product",
-          "definition": "The <span class=\"emph\">inner product</span> of $x$ and $y$ is defined by\n\t\t\t\\[\\ip{x,y} = \\sum_{i=1}^n x_iy_i.\\]"
+          "definition": "The <span class=\"emph\">inner product</span> of $x$ and $y$ is defined by\n\\[\\ip{x,y} = \\sum_{i=1}^n x_iy_i.\\]"
         },
         {
           "id": "MATH-461-c67",
@@ -2039,7 +2039,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Orthogonal",
-          "definition": "If $x,y \\in \\R^n$, we call them <span class=\"emph\">orthogonal</span> if and only if $\\ip{x,y} = 0$.\n\t\t\n        \n\n\t    Two subspaces $S$ and $T$ are orthogonal if and only if $\\ip{x,y} = 0$ for all $x \\in S$ and $y \\in T$."
+          "definition": "If $x,y \\in \\R^n$, we call them <span class=\"emph\">orthogonal</span> if and only if $\\ip{x,y} = 0$.\n\nTwo subspaces $S$ and $T$ are orthogonal if and only if $\\ip{x,y} = 0$ for all $x \\in S$ and $y \\in T$."
         },
         {
           "id": "MATH-461-c68",
@@ -2047,7 +2047,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 1",
           "section": "",
           "term": "Metric",
-          "definition": "A <span class=\"emph\">metric</span> on a set $X$ is a function $d: X \\times X \\to [0,\\infty)$ such that, for all $x,y,z \\in X$\n\t\t\t<ul class=\"def-list\">\n<li>\\setlength</li>\n<li>sep{6pt}</li>\n<li>$d(x,y) \\geq 0$ \\hfill \\textbf{positivity}</li>\n<li>$d(x,y) = 0$ iff $x = y$. \\hfill \\textbf{nondegeneracy}</li>\n<li>$d(x,y) = d(y,x)$. \\hfill \\textbf{symmetry}</li>\n<li>$d(x,y) \\leq d(x,z) + d(z,y)$. \\hfill \\textbf{triangle inequality}</li>\n</ul>"
+          "definition": "A <span class=\"emph\">metric</span> on a set $X$ is a function $d: X \\times X \\to [0,\\infty)$ such that, for all $x,y,z \\in X$\n <ul class=\"def-list\">\n<li>\\setlength</li>\n<li>sep{6pt}</li>\n<li>$d(x,y) \\geq 0$ \\hfill \\textbf{positivity}</li>\n<li>$d(x,y) = 0$ iff $x = y$. \\hfill \\textbf{nondegeneracy}</li>\n<li>$d(x,y) = d(y,x)$. \\hfill \\textbf{symmetry}</li>\n<li>$d(x,y) \\leq d(x,z) + d(z,y)$. \\hfill \\textbf{triangle inequality}</li>\n</ul>"
         },
         {
           "id": "MATH-461-c69",
@@ -2079,7 +2079,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 2",
           "section": "",
           "term": "$\\varepsilon$-ball, $\\varepsilon$-neighborhood",
-          "definition": "Let $(M,d)$ be a metric space. For each fixed $x \\in M$ and $\\varepsilon > 0$, the set\n\t\t\t\\[B(x,\\varepsilon) = \\{ y \\in M : d(x,y) < \\varepsilon\\}\\]\n\t\tis called the <span class=\"emph\">$\\varepsilon$-ball</span> about $x$ (also called the <span class=\"emph\">$\\varepsilon$-neighborhood</span> or <span class=\"emph\">$\\varepsilon$-disk</span> about $x$)."
+          "definition": "Let $(M,d)$ be a metric space. For each fixed $x \\in M$ and $\\varepsilon > 0$, the set\n\\[B(x,\\varepsilon) = \\{ y \\in M : d(x,y) < \\varepsilon\\}\\]\nis called the <span class=\"emph\"></span>$\\varepsilon$-ball} about $x$ (also called the <span class=\"emph\"></span>$\\varepsilon$-neighborhood} or <span class=\"emph\"></span>$\\varepsilon$-disk} about $x$)."
         },
         {
           "id": "MATH-461-c73",
@@ -2151,7 +2151,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 2",
           "section": "",
           "term": "Boundary",
-          "definition": "For a given set $A$ in a metric space $(M,d)$, the <span class=\"emph\">boundary</span> is defined to be the set\n\t\t\t\\[\\operatorname{bd}(A) = \\operatorname{cl}(A) \\cap \\operatorname{cl}(M \\backslash A).\\]\n\t\tSometimes the notation $\\partial A = \\operatorname{bd}(A)$ is used."
+          "definition": "For a given set $A$ in a metric space $(M,d)$, the <span class=\"emph\">boundary</span> is defined to be the set\n\\[\\operatorname{bd}(A) = \\operatorname{cl}(A) \\cap \\operatorname{cl}(M \\backslash A).\\]\nSometimes the notation $\\partial A = \\operatorname{bd}(A)$ is used."
         },
         {
           "id": "MATH-461-c82",
@@ -2159,7 +2159,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 2",
           "section": "",
           "term": "Converge",
-          "definition": "\\label{converge}\n\t\tLet $(M,d)$ be a metric space and $x_k$ a sequence of points in $M$. We say that $x_k$ <span class=\"emph\">converges</span> to a point $x \\in M$ written\n\t\t\t\\[\\lim_{k\\to\\infty}x_k = x\\]\n\t\tor $x \\to x$ as $k \\to \\infty$, provided that for every open set $U$ containing $x$, there is an integer $N$ such that $x_k \\in U$ whenever $k \\geq N$."
+          "definition": "\\label{converge}\n Let $(M,d)$ be a metric space and $x_k$ a sequence of points in $M$. We say that $x_k$ <span class=\"emph\">converges</span> to a point $x \\in M$ written\n\\[\\lim_{k\\to\\infty}x_k = x\\]\nor $x \\to x$ as $k \\to \\infty$, provided that for every open set $U$ containing $x$, there is an integer $N$ such that $x_k \\in U$ whenever $k \\geq N$."
         },
         {
           "id": "MATH-461-c83",
@@ -2255,7 +2255,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "Totally Bounded",
-          "definition": "A set $A \\subseteq M$ is called <span class=\"emph\">totally bounded</span> if for each $\\varepsilon > 0$ there is a finite set $\\{x_1, \\ldots, x_N\\}$ in $M$ such that \n\t\t\t\\[A \\subseteq \\bigcup_{i=1}^N B(x_i,\\varepsilon).\\]"
+          "definition": "A set $A \\subseteq M$ is called <span class=\"emph\">totally bounded</span> if for each $\\varepsilon > 0$ there is a finite set $\\{x_1, \\ldots, x_N\\}$ in $M$ such that\n\\[A \\subseteq \\bigcup_{i=1}^N B(x_i,\\varepsilon).\\]"
         },
         {
           "id": "MATH-461-c95",
@@ -2279,7 +2279,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "Lie in a Set $A$",
-          "definition": "A path $\\varphi$ is said to <span class=\"emph\">lie in a set $A$</span> if $\\varphi(t) \\in A$ for all $t \\in [a,b]$."
+          "definition": "A path $\\varphi$ is said to <span class=\"emph\">lie in a set</span>$A$} if $\\varphi(t) \\in A$ for all $t \\in [a,b]$."
         },
         {
           "id": "MATH-461-c98",
@@ -2295,7 +2295,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 3",
           "section": "",
           "term": "Separate",
-          "definition": "Let $A$ be a subset of a metric space $M$. Two open sets $U$, and $V$ are said to <span class=\"emph\">separate</span> $A$ if they satisfy these conditions:\n\t\t\t<ul class=\"def-list\">\n<li>$U \\cap V \\cap A = \\varnothing$</li>\n<li>$A \\cap U \\neq \\varnothing$</li>\n<li>$A \\cap V \\neq \\varnothing$</li>\n<li>$A \\subseteq U \\cup V$.</li>\n</ul>"
+          "definition": "Let $A$ be a subset of a metric space $M$. Two open sets $U$, and $V$ are said to <span class=\"emph\">separate</span> $A$ if they satisfy these conditions:\n <ul class=\"def-list\">\n<li>$U \\cap V \\cap A = \\varnothing$</li>\n<li>$A \\cap U \\neq \\varnothing$</li>\n<li>$A \\cap V \\neq \\varnothing$</li>\n<li>$A \\subseteq U \\cup V$.</li>\n</ul>"
         },
         {
           "id": "MATH-461-c100",
@@ -2335,7 +2335,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Limit of $f$",
-          "definition": "Let $(M,d)$ and $(N,\\rho)$ be two metric space, $A \\subseteq M$, and $f: A \\to N$ a given mapping. Further, suppose $x_0$ is an accumulation point of $A$. We say that $b \\in N$ is the <span class=\"emph\">limit of $f$ at $x_0$</span>, written\n\t\t\t\\[\\lim_{x \\to x_0} f(x) = b,\\]\n\t\tif given any $\\varepsilon > 0$ there exists $\\delta > 0$ (possibly depending on $f$, $x_0$, and $\\varepsilon$) such that for all $x \\in A$ satisfying $x \\neq x_0$ and $d(x_0,x) < \\delta$, we have $\\rho(f(x),b) < \\varepsilon$."
+          "definition": "Let $(M,d)$ and $(N,\\rho)$ be two metric space, $A \\subseteq M$, and $f: A \\to N$ a given mapping. Further, suppose $x_0$ is an accumulation point of $A$. We say that $b \\in N$ is the <span class=\"emph\">limit of</span>$f$ at $x_0$}, written\n\\[\\lim_{x \\to x_0} f(x) = b,\\]\nif given any $\\varepsilon > 0$ there exists $\\delta > 0$ (possibly depending on $f$, $x_0$, and $\\varepsilon$) such that for all $x \\in A$ satisfying $x \\neq x_0$ and $d(x_0,x) < \\delta$, we have $\\rho(f(x),b) < \\varepsilon$."
         },
         {
           "id": "MATH-461-c105",
@@ -2343,7 +2343,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Continuous at $x_0$",
-          "definition": "Let $A \\subseteq M$, $f: A \\to N$, and $x_0 \\in A$. We say that $f$ is <span class=\"emph\">continuous at $x_0$</span> if either $x_0$ is not an accumulation point of $A$, or $\\lim_{x \\to x_0} f(x) = f(x_0)$."
+          "definition": "Let $A \\subseteq M$, $f: A \\to N$, and $x_0 \\in A$. We say that $f$ is <span class=\"emph\">continuous at</span>$x_0$} if either $x_0$ is not an accumulation point of $A$, or $\\lim_{x \\to x_0} f(x) = f(x_0)$."
         },
         {
           "id": "MATH-461-c106",
@@ -2351,7 +2351,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Continuous (on $B$)",
-          "definition": "A function $f: A \\subseteq M \\to N$ is called <span class=\"emph\">continuous on the set $B \\subseteq A$</span> if $f$ is continuous at each point of $B$. If we say that $f$ is <span class=\"emph\">continuous</span>, we mean that $f$ is continuous on its domain $A$."
+          "definition": "A function $f: A \\subseteq M \\to N$ is called <span class=\"emph\">continuous on the set</span>$B \\subseteq A$} if $f$ is continuous at each point of $B$. If we say that $f$ is <span class=\"emph\">continuous</span>, we mean that $f$ is continuous on its domain $A$."
         },
         {
           "id": "MATH-461-c107",
@@ -2359,7 +2359,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Uniformly Continuous",
-          "definition": "Let $(M,d)$ and $(N,\\rho)$ be metric spaces, $A \\subseteq M$, $f: A \\to N$, and $B \\subseteq A$. We say that $f$ is <span class=\"emph\">uniformly continuous on the set $B$</span> if for every $\\varepsilon > 0$ there is a $\\delta > 0$ such that $x,y \\in B$ and $d(x,y) < \\delta$ imply $\\rho(f(x),f(y)) < \\varepsilon$."
+          "definition": "Let $(M,d)$ and $(N,\\rho)$ be metric spaces, $A \\subseteq M$, $f: A \\to N$, and $B \\subseteq A$. We say that $f$ is <span class=\"emph\">uniformly continuous on the set</span>$B$} if for every $\\varepsilon > 0$ there is a $\\delta > 0$ such that $x,y \\in B$ and $d(x,y) < \\delta$ imply $\\rho(f(x),f(y)) < \\varepsilon$."
         },
         {
           "id": "MATH-461-c108",
@@ -2367,7 +2367,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Differentiable at $x_0$",
-          "definition": "Let the function $f$ be defined on some open interval containing $x_0 \\in \\R$. We say that $f$ is <span class=\"emph\">differentiable at $x_0$</span> if\n\t\t\t\\[f'(x_0) = \\lim_{h \\to 0} \\dfrac{f(x_0 + h) - f(x_0)}{h} = \\lim_{x \\to x_0} \\dfrac{f(x) - f(x_0)}{x - x_0}\\]\n\t\texists. We call $f'(x_0)$ the derivative of $f$ at $x_0$."
+          "definition": "Let the function $f$ be defined on some open interval containing $x_0 \\in \\R$. We say that $f$ is <span class=\"emph\">differentiable at</span>$x_0$} if\n\\[f'(x_0) = \\lim_{h \\to 0} \\dfrac{f(x_0 + h) - f(x_0)}{h} = \\lim_{x \\to x_0} \\dfrac{f(x) - f(x_0)}{x - x_0}\\]\nexists. We call $f'(x_0)$ the derivative of $f$ at $x_0$."
         },
         {
           "id": "MATH-461-c109",
@@ -2375,7 +2375,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Class $C^1$",
-          "definition": "If $f$ is differentiable on $(a,b)$ and $f'$ is continuous, we say that $f$ is of <span class=\"emph\">class $C^1$</span>."
+          "definition": "If $f$ is differentiable on $(a,b)$ and $f'$ is continuous, we say that $f$ is of <span class=\"emph\">class</span>$C^1$}."
         },
         {
           "id": "MATH-461-c110",
@@ -2383,7 +2383,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Class $C^n$",
-          "definition": "If $f^{(n)}$ exists for $0,\\ldots, n$ and is continuous on $(a,b)$ then we say that $f$ is of <span class=\"emph\">class $C^n$</span>."
+          "definition": "If $f^{(n)}$ exists for $0,\\ldots, n$ and is continuous on $(a,b)$ then we say that $f$ is of <span class=\"emph\">class</span>$C^n$}."
         },
         {
           "id": "MATH-461-c111",
@@ -2391,7 +2391,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Increasing at $x_0$",
-          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">increasing at $x_0$</span> if there is an interval $(a,b)$ containing $x_0$ such that:\n\t\t\t<ul class=\"def-list\">\n<li>If $a < x < x_0$, then $f(x) \\leq f(x_0)$.</li>\n<li>If $x_0 < x < b$, then $f(x) \\geq f(x_0)$.</li>\n</ul>"
+          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">increasing at</span>$x_0$} if there is an interval $(a,b)$ containing $x_0$ such that:\n <ul class=\"def-list\">\n<li>If $a < x < x_0$, then $f(x) \\leq f(x_0)$.</li>\n<li>If $x_0 < x < b$, then $f(x) \\geq f(x_0)$.</li>\n</ul>"
         },
         {
           "id": "MATH-461-c112",
@@ -2399,7 +2399,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Decreasing at $x_0$",
-          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">decreasing at $x_0$</span> if there is an interval $(a,b)$ containing $x_0$ such that:\n\t\t\t<ul class=\"def-list\">\n<li>If $a < x < x_0$, then $f(x) \\geq f(x_0)$.</li>\n<li>If $x_0 < x < b$, then $f(x) \\leq f(x_0)$.</li>\n</ul>"
+          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">decreasing at</span>$x_0$} if there is an interval $(a,b)$ containing $x_0$ such that:\n <ul class=\"def-list\">\n<li>If $a < x < x_0$, then $f(x) \\geq f(x_0)$.</li>\n<li>If $x_0 < x < b$, then $f(x) \\leq f(x_0)$.</li>\n</ul>"
         },
         {
           "id": "MATH-461-c113",
@@ -2415,7 +2415,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Upper Sum",
-          "definition": "Let $A \\subseteq \\R$ be a bounded set and $f: A \\to \\R$ a bounded function. As $A$ is bounded then $A \\subseteq [a,b]$ for some $a,b \\in \\R$. Define $f^* : [a,b] \\to \\R$ by\n\t\t\t\\[f^*(x) = \\left\\{\n\t\t\t\t\\begin{matrix}\n\t\t\t\tf(x) &: x \\in A \\\\\n\t\t\t\t0 &: x \\not\\in A\n\t\t\t\t\\end{matrix}\\right.\n\t\t\t.\\]\n\t\tPartitioning $[a,b]$ we get $a = x_0 < x_1 < \\cdots < x_{n-1} < x_n = b$. We denote this partition by $P = \\{x_0,\\ldots,x_n\\}$. Then we define the <span class=\"emph\">upper sum</span>\n\t\t\t\\[U(f,P) = \\sum_{i=0}^{n-1}\\big(\\sup\\{f^*(x) : x \\in [x_i,x_{i+1}]\\}\\big)(x_{i+1}-x_i).\\]"
+          "definition": "Let $A \\subseteq \\R$ be a bounded set and $f: A \\to \\R$ a bounded function. As $A$ is bounded then $A \\subseteq [a,b]$ for some $a,b \\in \\R$. Define $f^* : [a,b] \\to \\R$ by\n\\[f^*(x) = \\left\\{\n \\begin{matrix}\n f(x) &: x \\in A \\\\\n 0 &: x \\not\\in A\n \\end{matrix}\\right.\n .\\]\nPartitioning $[a,b]$ we get $a = x_0 < x_1 < \\cdots < x_{n-1} < x_n = b$. We denote this partition by $P = \\{x_0,\\ldots,x_n\\}$. Then we define the <span class=\"emph\">upper sum</span>\n\\[U(f,P) = \\sum_{i=0}^{n-1}\\big(\\sup\\{f^*(x) : x \\in [x_i,x_{i+1}]\\}\\big)(x_{i+1}-x_i).\\]"
         },
         {
           "id": "MATH-461-c115",
@@ -2423,7 +2423,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Lower Sum",
-          "definition": "Let $A \\subseteq \\R$ be a bounded set and $f: A \\to \\R$ a bounded function. As $A$ is bounded then $A \\subseteq [a,b]$ for some $a,b \\in \\R$. Define $f^* : [a,b] \\to \\R$ by\n\t\t\t\\[f^*(x) = \\left\\{\n\t\t\t\t\\begin{matrix}\n\t\t\t\tf(x) &: x \\in A \\\\\n\t\t\t\t0 &: x \\not\\in A\n\t\t\t\t\\end{matrix}\\right.\n\t\t\t.\\]\n\t\tPartitioning $[a,b]$ we get $a = x_0 < x_1 < \\cdots < x_{n-1} < x_n = b$. We denote this partition by $P = \\{x_0,\\ldots,x_n\\}$. Then we define the <span class=\"emph\">lower sum</span>\n\t\t\t\\[L(f,P) = \\sum_{i=0}^{n-1}\\big(\\inf\\{f^*(x) : x \\in [x_i,x_{i+1}]\\}\\big)(x_{i+1}-x_i).\\]"
+          "definition": "Let $A \\subseteq \\R$ be a bounded set and $f: A \\to \\R$ a bounded function. As $A$ is bounded then $A \\subseteq [a,b]$ for some $a,b \\in \\R$. Define $f^* : [a,b] \\to \\R$ by\n\\[f^*(x) = \\left\\{\n \\begin{matrix}\n f(x) &: x \\in A \\\\\n 0 &: x \\not\\in A\n \\end{matrix}\\right.\n .\\]\nPartitioning $[a,b]$ we get $a = x_0 < x_1 < \\cdots < x_{n-1} < x_n = b$. We denote this partition by $P = \\{x_0,\\ldots,x_n\\}$. Then we define the <span class=\"emph\">lower sum</span>\n\\[L(f,P) = \\sum_{i=0}^{n-1}\\big(\\inf\\{f^*(x) : x \\in [x_i,x_{i+1}]\\}\\big)(x_{i+1}-x_i).\\]"
         },
         {
           "id": "MATH-461-c116",
@@ -2431,7 +2431,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Upper Integral",
-          "definition": "The <span class=\"emph\">upper integral</span> is given by\n\t\t\t\\[S = \\overline{\\int_A} f(x) \\ dx = \\inf\\{U(f,P) : P \\text{ partitions } [a,b]\\}.\\]"
+          "definition": "The <span class=\"emph\">upper integral</span> is given by\n\\[S = \\overline{\\int_A} f(x) \\ dx = \\inf\\{U(f,P) : P \\text{ partitions } [a,b]\\}.\\]"
         },
         {
           "id": "MATH-461-c117",
@@ -2439,7 +2439,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Lower Integral",
-          "definition": "The <span class=\"emph\">upper integral</span> is given by\n\t\t\t\\[s = \\underline{\\int_A} f(x) \\ dx = \\sup\\{L(f,P) : P \\text{ partitions } [a,b]\\}.\\]"
+          "definition": "The <span class=\"emph\">upper integral</span> is given by\n\\[s = \\underline{\\int_A} f(x) \\ dx = \\sup\\{L(f,P) : P \\text{ partitions } [a,b]\\}.\\]"
         },
         {
           "id": "MATH-461-c118",
@@ -2447,7 +2447,7 @@ window.FLASHCARD_DATA = {
           "chapter": "Chapter 4",
           "section": "",
           "term": "Riemann Integrable (Integrable)",
-          "definition": "We say that $f$ is <span class=\"emph\">Riemann integrable</span> (or just <span class=\"emph\">integrable</span>, or that the <span class=\"emph\">integral exists</span>, for short) if $s = S$. The common value $s = S$ is denoted by $\\int_A f$ or by $\\int_A f(x) \\ dx$. If $A = [a,b]$, we write\n\t\t\t\\[\\int_a^b f(x) \\ dx = \\int_A f = \\int_a^b f.\\]"
+          "definition": "We say that $f$ is <span class=\"emph\">Riemann integrable</span> (or just <span class=\"emph\">integrable</span>, or that the <span class=\"emph\">integral exists</span>, for short) if $s = S$. The common value $s = S$ is denoted by $\\int_A f$ or by $\\int_A f(x) \\ dx$. If $A = [a,b]$, we write\n\\[\\int_a^b f(x) \\ dx = \\int_A f = \\int_a^b f.\\]"
         },
         {
           "id": "MATH-461-c119",
