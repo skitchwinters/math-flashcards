@@ -6,7 +6,7 @@ window.FLASHCARD_DATA = {
     {
       "id": "MATH-301",
       "code": "MATH 301",
-      "title": "Discrete Mathematics",
+      "title": "Intro to Proofs",
       "textbook": "Book of Proof (Hammack)",
       "color": "#3b82f6",
       "totalTerms": 74,

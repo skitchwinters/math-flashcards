@@ -1,7 +1,7 @@
 # Jessup Math Flashcards
 
 A bespoke, responsive web application for studying mathematical definitions across Jessup University upper-division courses:
-- **MATH 301**: Discrete Mathematics (*Book of Proof* by Richard Hammack) — 74 definitions across 10 chapters.
+- **MATH 301**: Intro to Proofs (*Book of Proof* by Richard Hammack) — 74 definitions across 10 chapters.
 - **MATH 410**: Abstract Algebra (*Contemporary Abstract Algebra* by Joseph Gallian) — 97 definitions across 10 chapters.
 - **MATH 461**: Real Analysis (*Elementary Classical Analysis* by Jerrold E. Marsden & Michael J. Hoffman) — 120 definitions across 5 chapters.
 

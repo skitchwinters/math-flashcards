@@ -21,7 +21,7 @@ COURSES = [
     {
         "id": "MATH-301",
         "code": "MATH 301",
-        "title": "Discrete Mathematics",
+        "title": "Intro to Proofs",
         "textbook": "Book of Proof (Hammack)",
         "repo": "skitchwinters/MATH-301-Extras",
         "filename": "Definitions_Hammack.tex",
