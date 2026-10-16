@@ -566,16 +566,15 @@ body::before {
 }
 
 .card-content-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto 0;
+  display: block;
   text-align: left;
   font-size: 1.15rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: #e2e8f0;
   padding: 0.5rem 0;
   overflow-x: auto;
+  width: 100%;
 }
 
 .card-content-body .katex-display {
