@@ -292,71 +292,289 @@ body::before {
   color: var(--accent-blue);
 }
 
+/* Chapter Accordion List & Cards */
 .chapter-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
   margin-bottom: 2rem;
 }
 
-.chapter-card {
+.chapter-accordion {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 1rem 1.25rem;
+  overflow: hidden;
+  transition: border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chapter-accordion:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.chapter-accordion.full-selected {
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.08);
+}
+
+.chapter-accordion.partial-selected {
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.chapter-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.9rem 1.15rem;
   cursor: pointer;
   user-select: none;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 1rem;
+  background: var(--bg-surface);
+  transition: background 0.15s ease;
 }
 
-.chapter-card:hover {
+.chapter-header:hover {
   background: var(--bg-card-hover);
-  border-color: rgba(255, 255, 255, 0.2);
 }
 
-.chapter-card.selected {
-  background: rgba(59, 130, 246, 0.12);
-  border-color: var(--accent-blue);
+.chapter-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-grow: 1;
+  min-width: 0;
 }
 
+/* Tri-state Chapter Checkbox */
 .chapter-checkbox {
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
   border: 2px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   transition: all 0.2s;
+  cursor: pointer;
+  background: transparent;
 }
 
-.chapter-card.selected .chapter-checkbox {
+.chapter-checkbox:hover {
+  border-color: var(--accent-blue);
+}
+
+.chapter-checkbox.full {
   background: var(--accent-blue);
   border-color: var(--accent-blue);
   color: #fff;
 }
 
-.chapter-checkbox svg {
+.chapter-checkbox.partial {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.chapter-checkbox .icon-check,
+.chapter-checkbox .icon-partial {
   display: none;
 }
 
-.chapter-card.selected .chapter-checkbox svg {
+.chapter-checkbox.full .icon-check {
   display: block;
 }
 
-.chapter-info h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
+.chapter-checkbox.partial .icon-partial {
+  display: block;
 }
 
-.chapter-info p {
+.chapter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.chapter-info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.chapter-status-text {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.chapter-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.btn-toggle-expand {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chapter-header:hover .btn-toggle-expand {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chevron-icon {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chapter-accordion.expanded .chevron-icon {
+  transform: rotate(180deg);
+}
+
+/* Accordion Body & Cards Drawer */
+.chapter-body {
+  display: none;
+  background: rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.9rem 1.15rem 1.15rem 1.15rem;
+}
+
+.chapter-sub-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   font-size: 0.8rem;
   color: var(--text-muted);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chapter-sub-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-sub-action {
+  background: none;
+  border: none;
+  color: var(--accent-blue);
+  font-size: 0.775rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.btn-sub-action:hover {
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.sub-sep {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.chapter-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.6rem;
+}
+
+/* Individual Card Select Item */
+.card-select-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 44px;
+}
+
+.card-select-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.card-select-item.selected {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.45);
+}
+
+.card-item-checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+  background: transparent;
+}
+
+.card-select-item.selected .card-item-checkbox {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #fff;
+}
+
+.card-item-checkbox svg {
+  display: none;
+}
+
+.card-select-item.selected .card-item-checkbox svg {
+  display: block;
+}
+
+.card-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.card-item-term {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.card-item-section {
+  font-size: 0.725rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .bottom-action-bar {
@@ -814,5 +1032,21 @@ body::before {
     min-height: 50px;
     font-size: 0.95rem;
     padding: 0.75rem 1rem;
+  }
+  
+  .chapter-header {
+    padding: 0.8rem 0.95rem;
+  }
+  
+  .chapter-body {
+    padding: 0.75rem 0.85rem 1rem 0.85rem;
+  }
+  
+  .chapter-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-select-item {
+    padding: 0.6rem 0.75rem;
   }
 }

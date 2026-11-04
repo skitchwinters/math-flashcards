@@ -32,7 +32,8 @@
   const state = {
     courses: [],
     currentCourse: null,
-    selectedChapters: new Set(),
+    selectedCardIds: new Set(),
+    expandedChapters: new Set(),
     deck: [],
     currentIndex: 0,
     isFlipped: false,
@@ -53,6 +54,7 @@
     chapterGrid: document.getElementById('chapter-grid'),
     btnSelectAllChapters: document.getElementById('btn-select-all'),
     btnClearAllChapters: document.getElementById('btn-clear-all'),
+    btnToggleAllExpand: document.getElementById('btn-toggle-all-expand'),
     btnStartStudying: document.getElementById('btn-start-studying'),
     selectedCountBadge: document.getElementById('selected-count-badge'),
     btnBackToCourses: document.getElementById('btn-back-to-courses'),
@@ -171,6 +173,29 @@
   }
 
   /**
+   * Helper: Get all cards belonging to a chapter in current course
+   */
+  function getCardsInChapter(chapterName) {
+    if (!state.currentCourse) return [];
+    return state.currentCourse.cards.filter(c => c.chapter === chapterName);
+  }
+
+  /**
+   * Helper: Calculate selection count in a chapter
+   */
+  function getChapterSelectionStats(chapterName) {
+    const cards = getCardsInChapter(chapterName);
+    const selectedCount = cards.filter(c => state.selectedCardIds.has(c.id)).length;
+    return {
+      total: cards.length,
+      selected: selectedCount,
+      all: cards.length > 0 && selectedCount === cards.length,
+      none: selectedCount === 0,
+      partial: selectedCount > 0 && selectedCount < cards.length
+    };
+  }
+
+  /**
    * User selects a course -> navigate to Chapter Selection
    */
   function selectCourse(course) {
@@ -178,83 +203,315 @@
     elements.chapterCourseTitle.textContent = `${course.code}: ${course.title}`;
     elements.chapterCourseBadge.textContent = course.code;
     
-    // Default: nothing selected per user directive
-    state.selectedChapters = new Set();
+    // Default: nothing selected and chapters collapsed per user directive
+    state.selectedCardIds = new Set();
+    state.expandedChapters = new Set();
     
     renderChapterSelection();
     setView('chapters');
   }
 
   /**
-   * Render Chapter selection list with checkboxes & counts
+   * Render Chapter Selection View with expandable accordions and individual card checkboxes
    */
   function renderChapterSelection() {
     if (!state.currentCourse) return;
     elements.chapterGrid.innerHTML = '';
 
     state.currentCourse.chapters.forEach(ch => {
-      const isSelected = state.selectedChapters.has(ch.name);
-      
-      const card = document.createElement('div');
-      card.className = `chapter-card ${isSelected ? 'selected' : ''}`;
-      
-      card.innerHTML = `
-        <div class="chapter-checkbox">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
+      const chapterCards = getCardsInChapter(ch.name);
+      const isExpanded = state.expandedChapters.has(ch.name);
+      const stats = getChapterSelectionStats(ch.name);
+
+      const accordion = document.createElement('div');
+      accordion.className = `chapter-accordion ${isExpanded ? 'expanded' : ''} ${stats.all ? 'full-selected' : stats.partial ? 'partial-selected' : 'none-selected'}`;
+      accordion.dataset.chapter = ch.name;
+
+      // Header row
+      const header = document.createElement('div');
+      header.className = 'chapter-header';
+      header.innerHTML = `
+        <div class="chapter-header-left">
+          <div class="chapter-checkbox ${stats.all ? 'full' : stats.partial ? 'partial' : 'none'}" 
+               role="checkbox" 
+               aria-checked="${stats.all ? 'true' : stats.partial ? 'mixed' : 'false'}" 
+               title="Toggle all in ${ch.name}">
+            <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <svg class="icon-partial" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="chapter-info">
+            <h3>${ch.name}</h3>
+            <p class="chapter-status-text">${stats.selected > 0 ? `<strong style="color: var(--accent-blue);">${stats.selected}</strong> of ${stats.total} selected` : `0 of ${stats.total} selected`}</p>
+          </div>
         </div>
-        <div class="chapter-info">
-          <h3>${ch.name}</h3>
-          <p>${ch.count} ${ch.count === 1 ? 'definition' : 'definitions'}</p>
+        <div class="chapter-header-right">
+          <button class="btn-toggle-expand" aria-label="Expand or collapse ${ch.name}">
+            <svg class="chevron-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
         </div>
       `;
 
-      card.addEventListener('click', () => {
-        if (state.selectedChapters.has(ch.name)) {
-          state.selectedChapters.delete(ch.name);
-        } else {
-          state.selectedChapters.add(ch.name);
-        }
-        renderChapterSelection();
+      // Clicking chapter checkbox toggles all cards in this chapter
+      const checkboxEl = header.querySelector('.chapter-checkbox');
+      checkboxEl.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleChapterAll(ch.name);
       });
 
-      elements.chapterGrid.appendChild(card);
+      // Clicking header toggles accordion expand
+      header.addEventListener('click', () => {
+        toggleChapterAccordion(ch.name);
+      });
+
+      // Body (Cards List Drawer)
+      const body = document.createElement('div');
+      body.className = 'chapter-body';
+      body.style.display = isExpanded ? 'block' : 'none';
+
+      // Sub-actions bar
+      const subBar = document.createElement('div');
+      subBar.className = 'chapter-sub-bar';
+      subBar.innerHTML = `
+        <span class="chapter-sub-bar-count">${stats.selected > 0 ? `<strong style="color: var(--accent-blue);">${stats.selected}</strong> of ${stats.total} terms selected` : `0 of ${stats.total} terms selected`}</span>
+        <div class="chapter-sub-actions">
+          <button class="btn-sub-action btn-select-chapter-all">Select Chapter</button>
+          <span class="sub-sep">•</span>
+          <button class="btn-sub-action btn-deselect-chapter-all">Deselect Chapter</button>
+        </div>
+      `;
+
+      subBar.querySelector('.btn-select-chapter-all').addEventListener('click', (e) => {
+        e.stopPropagation();
+        chapterCards.forEach(c => state.selectedCardIds.add(c.id));
+        updateChapterUI(ch.name);
+        updateSelectionSummary();
+      });
+
+      subBar.querySelector('.btn-deselect-chapter-all').addEventListener('click', (e) => {
+        e.stopPropagation();
+        chapterCards.forEach(c => state.selectedCardIds.delete(c.id));
+        updateChapterUI(ch.name);
+        updateSelectionSummary();
+      });
+
+      body.appendChild(subBar);
+
+      // Cards Grid
+      const cardsGrid = document.createElement('div');
+      cardsGrid.className = 'chapter-cards-grid';
+
+      chapterCards.forEach(card => {
+        const isCardSelected = state.selectedCardIds.has(card.id);
+        const cardItem = document.createElement('div');
+        cardItem.className = `card-select-item ${isCardSelected ? 'selected' : ''}`;
+        cardItem.dataset.cardId = card.id;
+        cardItem.setAttribute('role', 'checkbox');
+        cardItem.setAttribute('aria-checked', isCardSelected ? 'true' : 'false');
+
+        cardItem.innerHTML = `
+          <div class="card-item-checkbox">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="card-item-content">
+            <div class="card-item-term">${card.term}</div>
+            ${card.section ? `<span class="card-item-section">Sec ${card.section}</span>` : ''}
+          </div>
+        `;
+
+        cardItem.addEventListener('click', () => {
+          toggleCardSelection(card.id, ch.name);
+        });
+
+        cardsGrid.appendChild(cardItem);
+      });
+
+      body.appendChild(cardsGrid);
+      accordion.appendChild(header);
+      accordion.appendChild(body);
+      elements.chapterGrid.appendChild(accordion);
     });
 
+    // Render KaTeX for mathematical notation in all term titles!
+    renderMath(elements.chapterGrid);
+
+    updateSelectionSummary();
+    syncAccordionExpandStates();
+  }
+
+  /**
+   * Toggle individual card selection
+   */
+  function toggleCardSelection(cardId, chapterName) {
+    if (state.selectedCardIds.has(cardId)) {
+      state.selectedCardIds.delete(cardId);
+    } else {
+      state.selectedCardIds.add(cardId);
+    }
+    updateChapterUI(chapterName);
     updateSelectionSummary();
   }
 
   /**
-   * Update Chapter selection count badge and enable/disable start button
+   * Toggle all cards in a specific chapter
+   */
+  function toggleChapterAll(chapterName) {
+    const cards = getCardsInChapter(chapterName);
+    const stats = getChapterSelectionStats(chapterName);
+    
+    if (stats.all) {
+      cards.forEach(c => state.selectedCardIds.delete(c.id));
+    } else {
+      cards.forEach(c => state.selectedCardIds.add(c.id));
+    }
+    
+    updateChapterUI(chapterName);
+    updateSelectionSummary();
+  }
+
+  /**
+   * Toggle accordion expansion for a specific chapter
+   */
+  function toggleChapterAccordion(chapterName) {
+    if (state.expandedChapters.has(chapterName)) {
+      state.expandedChapters.delete(chapterName);
+    } else {
+      state.expandedChapters.add(chapterName);
+    }
+    syncAccordionExpandStates();
+  }
+
+  /**
+   * Toggle expand/collapse all chapters
+   */
+  function toggleAllExpand() {
+    if (!state.currentCourse) return;
+    const allChapterNames = state.currentCourse.chapters.map(ch => ch.name);
+    if (state.expandedChapters.size === allChapterNames.length) {
+      state.expandedChapters.clear();
+    } else {
+      state.expandedChapters = new Set(allChapterNames);
+    }
+    syncAccordionExpandStates();
+  }
+
+  /**
+   * Update a single chapter's UI in-place without re-rendering the DOM
+   */
+  function updateChapterUI(chapterName) {
+    const accordions = Array.from(elements.chapterGrid.querySelectorAll('.chapter-accordion'));
+    const accordion = accordions.find(el => el.dataset.chapter === chapterName);
+    if (!accordion) return;
+
+    const stats = getChapterSelectionStats(chapterName);
+    const checkbox = accordion.querySelector('.chapter-checkbox');
+    const statusText = accordion.querySelector('.chapter-status-text');
+    const subBarCount = accordion.querySelector('.chapter-sub-bar-count');
+
+    // Update checkbox class & attributes
+    checkbox.classList.remove('none', 'partial', 'full');
+    accordion.classList.remove('none-selected', 'partial-selected', 'full-selected');
+
+    if (stats.all) {
+      checkbox.classList.add('full');
+      accordion.classList.add('full-selected');
+      checkbox.setAttribute('aria-checked', 'true');
+    } else if (stats.partial) {
+      checkbox.classList.add('partial');
+      accordion.classList.add('partial-selected');
+      checkbox.setAttribute('aria-checked', 'mixed');
+    } else {
+      checkbox.classList.add('none');
+      accordion.classList.add('none-selected');
+      checkbox.setAttribute('aria-checked', 'false');
+    }
+
+    if (statusText) {
+      statusText.innerHTML = stats.selected > 0 
+        ? `<strong style="color: var(--accent-blue);">${stats.selected}</strong> of ${stats.total} selected`
+        : `0 of ${stats.total} selected`;
+    }
+
+    if (subBarCount) {
+      subBarCount.innerHTML = stats.selected > 0 
+        ? `<strong style="color: var(--accent-blue);">${stats.selected}</strong> of ${stats.total} terms selected`
+        : `0 of ${stats.total} terms selected`;
+    }
+
+    // Update individual card items inside this chapter
+    const cardItems = accordion.querySelectorAll('.card-select-item');
+    cardItems.forEach(item => {
+      const cardId = item.dataset.cardId;
+      const isSelected = state.selectedCardIds.has(cardId);
+      item.classList.toggle('selected', isSelected);
+      item.setAttribute('aria-checked', isSelected ? 'true' : 'false');
+    });
+  }
+
+  /**
+   * Sync all selection UI across every chapter
+   */
+  function syncAllSelectionUI() {
+    if (!state.currentCourse) return;
+    state.currentCourse.chapters.forEach(ch => updateChapterUI(ch.name));
+    updateSelectionSummary();
+  }
+
+  /**
+   * Sync accordion open/close display and button label
+   */
+  function syncAccordionExpandStates() {
+    if (!state.currentCourse) return;
+    const allCount = state.currentCourse.chapters.length;
+    const isAllExpanded = allCount > 0 && state.expandedChapters.size === allCount;
+
+    if (elements.btnToggleAllExpand) {
+      elements.btnToggleAllExpand.textContent = isAllExpanded ? 'Collapse All' : 'Expand All';
+    }
+
+    const accordions = elements.chapterGrid.querySelectorAll('.chapter-accordion');
+    accordions.forEach(acc => {
+      const chName = acc.dataset.chapter;
+      const isExpanded = state.expandedChapters.has(chName);
+      acc.classList.toggle('expanded', isExpanded);
+      const body = acc.querySelector('.chapter-body');
+      if (body) {
+        body.style.display = isExpanded ? 'block' : 'none';
+      }
+    });
+  }
+
+  /**
+   * Update selection count badge and enable/disable start button
    */
   function updateSelectionSummary() {
     if (!state.currentCourse) return;
     
-    let totalCards = 0;
-    state.currentCourse.chapters.forEach(ch => {
-      if (state.selectedChapters.has(ch.name)) {
-        totalCards += ch.count;
-      }
-    });
-
-    elements.selectedCountBadge.innerHTML = `<strong>${totalCards}</strong> definitions selected`;
-    elements.btnStartStudying.disabled = totalCards === 0;
-    if (totalCards === 0) {
-      elements.btnStartStudying.innerHTML = `Select Chapters to Start`;
+    const totalSelected = state.selectedCardIds.size;
+    elements.selectedCountBadge.innerHTML = `<strong>${totalSelected}</strong> definition${totalSelected === 1 ? '' : 's'} selected`;
+    elements.btnStartStudying.disabled = totalSelected === 0;
+    if (totalSelected === 0) {
+      elements.btnStartStudying.innerHTML = `Select Cards to Start (0 Selected)`;
     } else {
-      elements.btnStartStudying.innerHTML = `Start Studying (${totalCards}) <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>`;
+      elements.btnStartStudying.innerHTML = `Start Studying (${totalSelected}) <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>`;
     }
   }
 
   /**
-   * Start study session with selected chapters
+   * Start study session with selected cards
    */
   function startStudySession() {
-    if (!state.currentCourse || state.selectedChapters.size === 0) return;
+    if (!state.currentCourse || state.selectedCardIds.size === 0) return;
 
-    // Filter cards belonging to selected chapters
-    const eligibleCards = state.currentCourse.cards.filter(c => state.selectedChapters.has(c.chapter));
+    // Filter cards belonging to selected cards
+    const eligibleCards = state.currentCourse.cards.filter(c => state.selectedCardIds.has(c.id));
     if (eligibleCards.length === 0) return;
 
     // Shuffle cards
@@ -407,10 +664,12 @@
   function showCompletionScreen() {
     elements.completeCourseTitle.textContent = `${state.currentCourse.code}: ${state.currentCourse.title}`;
     elements.completeTotalCards.textContent = state.deck.length;
-    elements.completeTotalChapters.textContent = state.selectedChapters.size;
+
+    const uniqueChapters = Array.from(new Set(state.deck.map(c => c.chapter)));
+    elements.completeTotalChapters.textContent = uniqueChapters.length;
     
-    const chList = Array.from(state.selectedChapters).join(', ');
-    elements.completeSummaryText.textContent = `You reviewed all ${state.deck.length} definitions across ${state.selectedChapters.size} chosen chapters (${chList}).`;
+    const chList = uniqueChapters.join(', ');
+    elements.completeSummaryText.textContent = `You reviewed all ${state.deck.length} definitions across ${uniqueChapters.length} chosen chapter${uniqueChapters.length === 1 ? '' : 's'} (${chList}).`;
 
     setView('complete');
   }
@@ -429,14 +688,18 @@
     
     elements.btnSelectAllChapters.addEventListener('click', () => {
       if (!state.currentCourse) return;
-      state.selectedChapters = new Set(state.currentCourse.chapters.map(c => c.name));
-      renderChapterSelection();
+      state.selectedCardIds = new Set(state.currentCourse.cards.map(c => c.id));
+      syncAllSelectionUI();
     });
 
     elements.btnClearAllChapters.addEventListener('click', () => {
-      state.selectedChapters.clear();
-      renderChapterSelection();
+      state.selectedCardIds.clear();
+      syncAllSelectionUI();
     });
+
+    if (elements.btnToggleAllExpand) {
+      elements.btnToggleAllExpand.addEventListener('click', toggleAllExpand);
+    }
 
     elements.btnStartStudying.addEventListener('click', startStudySession);
 
