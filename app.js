@@ -150,7 +150,12 @@
       card.className = 'course-card';
       
       const badgeClass = course.code.includes('301') ? 'badge-301' : 
-                         course.code.includes('410') ? 'badge-410' : 'badge-461';
+                         course.code.includes('410') ? 'badge-410' :
+                         course.code.includes('461') ? 'badge-461' :
+                         course.code.includes('350') ? 'badge-350' :
+                         course.code.includes('140') ? 'badge-140' :
+                         course.code.includes('141') ? 'badge-141' :
+                         course.code.includes('102') ? 'badge-102' : 'badge-301';
 
       card.innerHTML = `
         <div>

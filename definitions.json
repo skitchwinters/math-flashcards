@@ -1,6 +1,6 @@
 {
-  "totalCourses": 3,
-  "totalDefinitions": 291,
+  "totalCourses": 7,
+  "totalDefinitions": 466,
   "courses": [
     {
       "id": "MATH-301",
@@ -8,7 +8,7 @@
       "title": "Intro to Proofs",
       "textbook": "Book of Proof (Hammack)",
       "color": "#3b82f6",
-      "totalTerms": 74,
+      "totalTerms": 73,
       "chapters": [
         {
           "name": "Chapter 1",
@@ -48,7 +48,7 @@
         },
         {
           "name": "Chapter 14",
-          "count": 6
+          "count": 5
         }
       ],
       "cards": [
@@ -635,14 +635,6 @@
           "section": "",
           "term": "$\\aleph_0$",
           "definition": "The cardinality of the natural numbers is denoted as $\\aleph_0$. That is $\\abs{\\N} = \\aleph_0$."
-        },
-        {
-          "id": "MATH-301-c74",
-          "courseId": "MATH-301",
-          "chapter": "Chapter 14",
-          "section": "",
-          "term": "",
-          "definition": ""
         }
       ]
     },
@@ -652,7 +644,7 @@
       "title": "Abstract Algebra",
       "textbook": "Contemporary Abstract Algebra (Gallian)",
       "color": "#8b5cf6",
-      "totalTerms": 97,
+      "totalTerms": 96,
       "chapters": [
         {
           "name": "Chapter 1",
@@ -689,10 +681,6 @@
         {
           "name": "Chapter 11",
           "count": 7
-        },
-        {
-          "name": "Chapter 16",
-          "count": 1
         }
       ],
       "cards": [
@@ -1463,14 +1451,6 @@
           "section": "",
           "term": "Natural Homomorphism/Canonical Homomorphism",
           "definition": "Let $H$ be a normal subgroup of $G$. Define the <span class=\"emph\">natural</span> or <span class=\"emph\">canonical homomorphism</span>\n\\[\\phi : G \\rightarrow G\\slash H\\]\nby\n\\[\\phi(g) = gH.\\]"
-        },
-        {
-          "id": "MATH-410-c97",
-          "courseId": "MATH-410",
-          "chapter": "Chapter 16",
-          "section": "",
-          "term": "",
-          "definition": ""
         }
       ]
     },
@@ -1480,7 +1460,7 @@
       "title": "Real Analysis",
       "textbook": "Elementary Classical Analysis (Marsden & Hoffman)",
       "color": "#10b981",
-      "totalTerms": 120,
+      "totalTerms": 119,
       "chapters": [
         {
           "name": "Chapter 0",
@@ -1500,7 +1480,7 @@
         },
         {
           "name": "Chapter 4",
-          "count": 17
+          "count": 16
         }
       ],
       "cards": [
@@ -2455,14 +2435,1562 @@
           "section": "",
           "term": "Antiderivative",
           "definition": "For $f: [a,b] \\to \\R$, an <span class=\"emph\">antiderivative</span> of $f$ is a continuous function $F : [a,b] \\to \\R$ such that $F$ is differentiable on $(a,b)$ and $F'(x) = f(x)$ for $a < x < b$."
+        }
+      ]
+    },
+    {
+      "id": "MATH-350",
+      "code": "MATH 350",
+      "title": "Modern Geometry",
+      "textbook": "Euclidean & Non-Euclidean Geometries (Greenberg)",
+      "color": "#f59e0b",
+      "totalTerms": 74,
+      "chapters": [
+        {
+          "name": "Chapter 1",
+          "count": 14
         },
         {
-          "id": "MATH-461-c120",
-          "courseId": "MATH-461",
+          "name": "Chapter 2",
+          "count": 13
+        },
+        {
+          "name": "Chapter 3",
+          "count": 15
+        },
+        {
+          "name": "Chapter 4",
+          "count": 16
+        },
+        {
+          "name": "Chapter 5",
+          "count": 2
+        },
+        {
+          "name": "Chapter 6",
+          "count": 7
+        },
+        {
+          "name": "Chapter 7",
+          "count": 7
+        }
+      ],
+      "cards": [
+        {
+          "id": "MATH-350-c1",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Geometry",
+          "definition": "The word <span class=\"emph\">geometry</span> comes from the Greek \\textit{geometrein}; \\textit{geo} meaning “earth\" and \\textit{metrein} meaning “to measure\"."
+        },
+        {
+          "id": "MATH-350-c2",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Axiomatic Method",
+          "definition": "The <span class=\"emph\">axiomatic method</span> is a method of proving that the results are correct and organizing them into a logical structure."
+        },
+        {
+          "id": "MATH-350-c3",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Undefined Terms, Primitive Terms",
+          "definition": "<span class=\"emph\">Undefined terms</span> or those terms used within an axiomatic system that we do not define in order to avoid either circular reasoning or an infinite regression. The undefined terms are also called <span class=\"emph\">primitive terms</span>."
+        },
+        {
+          "id": "MATH-350-c4",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Segment",
+          "definition": "Given distinct points $A$ and $B$, the <span class=\"emph\">segment</span> $AB$ is the set whose members are the points $A$ and $B$ and all points $C$ that lie on the line $\\overleftrightarrow{AB}$ and are between $A$ and $B$."
+        },
+        {
+          "id": "MATH-350-c5",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Circle",
+          "definition": "Given distinct points $O$ and $A$. The set of all points $P$ such that segment $OP$ is congruent to segment $OA$ is called <span class=\"emph\">the circle with</span>$O$ as center and $OA$ as radius}. For each point $P$ in that set, we say that $P$ \\textit{lies on} the circle and $OP$ is called the \\textit{radius} of the circle."
+        },
+        {
+          "id": "MATH-350-c6",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Ray",
+          "definition": "The <span class=\"emph\">ray</span> $\\overrightarrow{AB}$ is the following set of points lying on the line $\\overleftrightarrow{AB}$: those points that belong to the segment $AB$ and all points $C$ on $\\overleftrightarrow{AB}$ such that $B$ is between $A$ and $C$. The ray $\\overrightarrow{AB}$ is said to \\textit{emanate from the vertex $A$} and to be \\textit{part} of line $\\overleftrightarrow{AB}$."
+        },
+        {
+          "id": "MATH-350-c7",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Opposite (Rays)",
+          "definition": "Rays $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$ are <span class=\"emph\">opposite</span> if they are distinct, if they emanate from the same point $A$, and if they are part of the same line $\\overleftrightarrow{AB} = \\overleftrightarrow{AC}$."
+        },
+        {
+          "id": "MATH-350-c8",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Angle with Vertex $A$",
+          "definition": "An <span class=\"emph\">Angle with vertex</span>$A$} is a point $A$ together with two distinct non-opposite rays $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$ (called the \\textit{sides} of the angle) emanating from $A$."
+        },
+        {
+          "id": "MATH-350-c9",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Supplementary Angles",
+          "definition": "If two angles $\\sphericalangle DAB$ and $\\sphericalangle CAD$ have a common side $\\overrightarrow{AD}$ and the other two sides $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$ form opposite rays, the angles are <span class=\"emph\">supplements</span> of each other, or <span class=\"emph\">supplementary angles</span>."
+        },
+        {
+          "id": "MATH-350-c10",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Right Angle",
+          "definition": "An angle $\\sphericalangle BAD$ is a <span class=\"emph\">right angle</span> if it has a supplementary angle to which it is congruent."
+        },
+        {
+          "id": "MATH-350-c11",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Transversal",
+          "definition": "A <span class=\"emph\">transversal</span> to two distinct lines is another line that intersects both of them in distinct points."
+        },
+        {
+          "id": "MATH-350-c12",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Perpendicular",
+          "definition": "Given lines $l$ and $m$ that intersect at a point $A$. if there is a ray $\\overrightarrow{AB}$ that is part of $l$ and a ray $\\overrightarrow{AC}$ that is part of $m$ such that $\\sphericalangle BAC$ is a right angle, we say $l$ and $m$ are <span class=\"emph\">perpendicular</span>."
+        },
+        {
+          "id": "MATH-350-c13",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Quadrilateral",
+          "definition": "Given four points, $A$, $B$, $C$, and $D$, no three of which are collinear and such that any pair of segments $AB$, $BC$, $CD$, and $DA$ either have no point in common or have only an end point in common. We can then define the <span class=\"emph\">quadrilateral</span> $\\square ABCD$ to consist of the four segments mentioned, which are called its sides, the four points being called its vertices."
+        },
+        {
+          "id": "MATH-350-c14",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 1",
+          "section": "",
+          "term": "Rectangle",
+          "definition": "A quadrilateral with four right angles."
+        },
+        {
+          "id": "MATH-350-c15",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Collinear",
+          "definition": "Three or more points $A$, $B$, $C$, \\ldots \\ are <span class=\"emph\">collinear</span> if there exists a line incident with all of them."
+        },
+        {
+          "id": "MATH-350-c16",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Concurrent",
+          "definition": "Three or more lines $l$, $m$, $n$, \\ldots \\ are <span class=\"emph\">concurrent</span> if there exists a point incident with all of them."
+        },
+        {
+          "id": "MATH-350-c17",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Parallel",
+          "definition": "Lines $l$ and $m$ are <span class=\"emph\">parallel</span> if they are distinct lines and no point is incident with both of them."
+        },
+        {
+          "id": "MATH-350-c18",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Interpretation (of a system)",
+          "definition": "Given a formal system, we <span class=\"emph\">interpret</span> the system when we give the undefined terms a particular meaning and then interpret statements about those undefined terms by substituting the interpreted meanings."
+        },
+        {
+          "id": "MATH-350-c19",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Model",
+          "definition": "A <span class=\"emph\">model</span> of a formal system is an interpretation of the undefined terms for which the axioms hold true."
+        },
+        {
+          "id": "MATH-350-c20",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Independent",
+          "definition": "We call a statement <span class=\"emph\">independent</span> of given axioms if it is impossible to either prove or disprove the statement from those axioms."
+        },
+        {
+          "id": "MATH-350-c21",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Antipodal Points",
+          "definition": "Two points on a sphere are <span class=\"emph\">antipodal</span> if a straight line in three-space joining them passes through the center of the sphere."
+        },
+        {
+          "id": "MATH-350-c22",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Consistent (axiomatized theory)",
+          "definition": "An axiomatized theory is called <span class=\"emph\">consistent</span> if no contradiction can be proved from the axioms."
+        },
+        {
+          "id": "MATH-350-c23",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Isomorphism (of models)",
+          "definition": "An <span class=\"emph\">isomorphism</span> of two models of an axiomatic system is a one-to-one correspondence between the basic objects of the system that preserves all the basic relations of the system."
+        },
+        {
+          "id": "MATH-350-c24",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Projective Plane",
+          "definition": "A <span class=\"emph\">projective plane</span> is a model of incidence geometry having the elliptic parallel property (any two lines meet) and such that every line has at least three distinct points lying on it (strengthened Incidence Axiom 2)."
+        },
+        {
+          "id": "MATH-350-c25",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Affine Plane",
+          "definition": "An <span class=\"emph\">affine plane</span> is a model of incidence geometry having the following Euclidean parallel property:\n\\[\\forall l \\ \\forall P \\ (\\neg (P \\inc l) \\Rightarrow \\exists !m \\ (P \\inc m \\wedge l \\parallel m)).\\]"
+        },
+        {
+          "id": "MATH-350-c26",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Equivalence Relation",
+          "definition": "A relation that is reflexive, symmetric, and transitive is called an <span class=\"emph\">equivalence relation</span>."
+        },
+        {
+          "id": "MATH-350-c27",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 2",
+          "section": "",
+          "term": "Triangle",
+          "definition": "A <span class=\"emph\">triangle</span> is a set of three noncollinear points."
+        },
+        {
+          "id": "MATH-350-c28",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Same Side (of a line)",
+          "definition": "Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A = B$ or if segment $AB$ contains no point lying on $l$, we say $A$ and $B$ are <span class=\"emph\">on the same side of</span>$l$}."
+        },
+        {
+          "id": "MATH-350-c29",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Opposite Side (of a line)",
+          "definition": "Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A \\neq B$ and segment $AB$ intersects $l$, we say that $A$ and $B$ are <span class=\"emph\">on opposite sides of</span>$l$}."
+        },
+        {
+          "id": "MATH-350-c30",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Interior (of an angle)",
+          "definition": "Given an angle $\\sphericalangle CAB$, define a point $D$ to be in the <span class=\"emph\">interior</span> of $\\sphericalangle CAB$ if $D$ is on the same side of $\\overleftrightarrow{AC}$ as $B$ and if $D$ is also on the same side of $\\overleftrightarrow{AB}$ as $C$."
+        },
+        {
+          "id": "MATH-350-c31",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Between (rays)",
+          "definition": "Ray $\\overrightarrow{AD}$ is <span class=\"emph\">between</span> rays $\\overrightarrow{AC}$ and $\\overrightarrow{AB}$ if $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$ are not opposite rays and $D$ is interior to $\\sphericalangle CAB$."
+        },
+        {
+          "id": "MATH-350-c32",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Interior (of a triangle)",
+          "definition": "The <span class=\"emph\">interior</span> of a triangle is the intersection of the interiors of its three angles."
+        },
+        {
+          "id": "MATH-350-c33",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Exterior (of a triangle)",
+          "definition": "A point is <span class=\"emph\">exterior</span> to the triangle if it is not in the interior and does not lie on any side of the triangle."
+        },
+        {
+          "id": "MATH-350-c34",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Congruent (triangles)",
+          "definition": "Triangles $\\triangle ABC$ and $\\triangle DEF$ are <span class=\"emph\">congruent</span> if there exists a one-to-one correspondence between their vertices such that corresponding sides are congruent and corresponding angles are congruent."
+        },
+        {
+          "id": "MATH-350-c35",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "$<$ (segments)",
+          "definition": "<span class=\"emph\"></span>$AB < CD$} or ( $CD > AB$) means that there exists a point $E$ between $C$ and $D$ such that $AB \\cong CE$."
+        },
+        {
+          "id": "MATH-350-c36",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "$<$ (angles)",
+          "definition": "$\\sphericalangle ABC < \\sphericalangle DEF$ means there is a ray $\\overrightarrow{EG}$ between $\\overrightarrow{ED}$ and $\\overrightarrow{EF}$ such that $\\sphericalangle ABC \\cong \\sphericalangle GEF$."
+        },
+        {
+          "id": "MATH-350-c37",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Acute",
+          "definition": "An angle is <span class=\"emph\">acute</span> if it is less than a right angle."
+        },
+        {
+          "id": "MATH-350-c38",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Obtuse",
+          "definition": "An angle is <span class=\"emph\">obtuse</span> if it is greater than a right angle."
+        },
+        {
+          "id": "MATH-350-c39",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Hilbert Plane",
+          "definition": "A model of our incidence, betweenness, and congruence axioms is called a <span class=\"emph\">Hilbert plane</span>."
+        },
+        {
+          "id": "MATH-350-c40",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Dedekind Cut",
+          "definition": "A pair of subsets $\\sigma_1$ and $\\sigma_2$ with the properties in Dedekind's axiom is called a <span class=\"emph\">Dedekind cut</span> of the line."
+        },
+        {
+          "id": "MATH-350-c41",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Real Euclidean Plane",
+          "definition": "A <span class=\"emph\">real Euclidean plane</span> is a Hilbert plane in which Hilbert's Euclidean axiom of parallelism and Dedekind's axiom hold."
+        },
+        {
+          "id": "MATH-350-c42",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 3",
+          "section": "",
+          "term": "Euclidean Plane",
+          "definition": "A <span class=\"emph\">Euclidean plane</span> is a Hilbert plane in which Hilbert's Euclidean axiom of parallelism and the circle-circle continuity principle hold."
+        },
+        {
+          "id": "MATH-350-c43",
+          "courseId": "MATH-350",
           "chapter": "Chapter 4",
           "section": "",
-          "term": "",
-          "definition": ""
+          "term": "Neutral Geometry",
+          "definition": "<span class=\"emph\">Neutral geometry</span> is the study of geometry assuming the incidence, betweenness, and congruence axioms, along with the continuity axiom, but without assuming any parallel postulate."
+        },
+        {
+          "id": "MATH-350-c44",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Interior Angles (to a transversal)",
+          "definition": "Let $t$ be a transversal to lines $l$ and $l'$, with $t$ meeting $l$ at $B$ and $l'$ at $B'$. Choose points $A$ and $C$ on $l$ such that $A \\ast B \\ast C$; choose points $A'$ and $C'$ on $l'$ such that $A$ and $A'$ are on the same side of $t$ and such that $A' \\ast B' \\ast C'$. The following four angles are called <span class=\"emph\">interior</span>: $\\sphericalangle A'B'B$, $\\sphericalangle ABB'$, $\\sphericalangle C'B'B$, $\\sphericalangle CBB'$."
+        },
+        {
+          "id": "MATH-350-c45",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Alternate Interior Angles",
+          "definition": "Let $t$ be a transversal to lines $l$ and $l'$, with $t$ meeting $l$ at $B$ and $l'$ at $B'$. Choose points $A$ and $C$ on $l$ such that $A \\ast B \\ast C$; choose points $A'$ and $C'$ on $l'$ such that $A$ and $A'$ are on the same side of $t$ and such that $A' \\ast B' \\ast C'$. Then the two pairs ($\\sphericalangle ABB'$, $\\sphericalangle C'B'B$) and ($\\sphericalangle A'B'B$, $\\sphericalangle CBB'$) are called pairs of <span class=\"emph\">alternate interior angles.</span>"
+        },
+        {
+          "id": "MATH-350-c46",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Exterior Angle",
+          "definition": "An angle supplementary to an angle of a triangle is called an <span class=\"emph\">exterior angle</span> of that triangle."
+        },
+        {
+          "id": "MATH-350-c47",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Remote Interior Angles",
+          "definition": "Given an exterior angle of a triangle, the two angles of the triangle, not supplementary to the exterior angle are called <span class=\"emph\">remote interior angles</span>."
+        },
+        {
+          "id": "MATH-350-c48",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Complementary Angles",
+          "definition": "If $(\\sphericalangle B)^\\circ + (\\sphericalangle C)^\\circ = 90^\\circ$, then $\\sphericalangle B$ and $\\sphericalangle C$ are called $\\emph{complements}$ of each other and are said to be <span class=\"emph\">complementary angles</span>."
+        },
+        {
+          "id": "MATH-350-c49",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Bi-right Quadrilateral",
+          "definition": "Quadrilateral $\\square ABDC$ in which the adjacent angles $\\sphericalangle A$ and $\\sphericalangle B$ are right angles will be called <span class=\"emph\">bi-right</span>."
+        },
+        {
+          "id": "MATH-350-c50",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Base (of a bi-right quadrilateral)",
+          "definition": "Given a bi-right quadrilateral $\\square ABDC$ side $AB$ joining the right angles will be called the <span class=\"emph\">base</span> with respect to this labeling."
+        },
+        {
+          "id": "MATH-350-c51",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Summit (of a bi-right quadrilateral)",
+          "definition": "Given a bi-right quadrilateral $\\square ABDC$ side $CD$, the side opposite the base, will be called the <span class=\"emph\">summit</span> with respect to this labeling."
+        },
+        {
+          "id": "MATH-350-c52",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Saccheri Quadrilateral",
+          "definition": "An isosceles bi-right quadrilateral $\\square ABDC$ is one whose sides $CA$ and $DB$ are congruent and is called a <span class=\"emph\">Saccheri quadrilateral</span>."
+        },
+        {
+          "id": "MATH-350-c53",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Lambert Quadrilateral",
+          "definition": "A quadrilateral with at least three right angles is called a <span class=\"emph\">Lambert quadrilateral</span>."
+        },
+        {
+          "id": "MATH-350-c54",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Semi-Euclidean",
+          "definition": "A Hilbert plane is called <span class=\"emph\">semi-Euclidean</span> if all Lambert quadrilaterals and all Saccheri quadrilaterals are rectangles."
+        },
+        {
+          "id": "MATH-350-c55",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Acute Angle Hypothesis",
+          "definition": "If the fourth angle of every Lambert quadrilateral in a Hilbert plane is acute, we say that the plane satisfies the <span class=\"emph\">acute angle hypothesis</span>."
+        },
+        {
+          "id": "MATH-350-c56",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Obtuse Angle Hypothesis",
+          "definition": "If the fourth angle of every Lambert quadrilateral in a Hilbert plane is obtuse, we say that the plane satisfies the <span class=\"emph\">obtuse angle hypothesis</span>."
+        },
+        {
+          "id": "MATH-350-c57",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Right Angle Hypothesis",
+          "definition": "If the fourth angle of every Lambert quadrilateral in a Hilbert plane is right, we say that the plane satisfies the <span class=\"emph\">right angle hypothesis</span>."
+        },
+        {
+          "id": "MATH-350-c58",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 4",
+          "section": "",
+          "term": "Convex Quadrilateral",
+          "definition": "Quadrilateral $\\square ABCD$ is called <span class=\"emph\">convex</span> if it has a pair of opposite sides, e.g., $AB$ and $CD$, such that $CD$ is contained in one of the half-planes bounded by $\\overleftrightarrow{AB}$, and $AB$ is contained in of the the half-planes bounded by $\\overleftrightarrow{CD}$."
+        },
+        {
+          "id": "MATH-350-c59",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 5",
+          "section": "",
+          "term": "Equidistant Locus",
+          "definition": "Given a line $l$ and a segment $PQ$ of a line perpendicular to $l$ at $Q$, we can consider the set of all points $P'$ on the same side of $l$ as $P$ such that if $Q'$ is the foot of the perpendicular from $P'$ to $l$, then $PQ \\cong P'Q'$. Call that set the <span class=\"emph\">equidistant locus to</span>$l$ through $P$}."
+        },
+        {
+          "id": "MATH-350-c60",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 5",
+          "section": "",
+          "term": "Similar Triangles",
+          "definition": "Two triangles are <span class=\"emph\">similar</span> if their vertices can be put in one-to-one correspondence in such a way that corresponding angles are congruent (AAA). We use the notation $\\triangle ABC \\sim \\triangle DEF$ to indicate that these triangles are similar when $A$, $B$, $C$ correspond, respectively, to $D$, $E$, $F$."
+        },
+        {
+          "id": "MATH-350-c61",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Non-Euclidean Hilbert Plane",
+          "definition": "A Hilbert plane satisfying the negation of Hilbert's Euclidean Parallel Postulate will be called a <span class=\"emph\">non-Euclidean Hilbert plane</span>."
+        },
+        {
+          "id": "MATH-350-c62",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Defect",
+          "definition": "Given a triangle $\\triangle ABC$, the sum of whose interior angles is less than 180$^\\circ$, the supplement of an angle constructed by successively juxtaposing the three angles of $\\triangle ABC$ is called the <span class=\"emph\">defect</span> of the triangle, and is denoted $\\delta(ABC)$."
+        },
+        {
+          "id": "MATH-350-c63",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Limiting Parallel Ray",
+          "definition": "Given a line $l$ and a point $P$ not on $l$, let $Q$ be the foot of the perpendicular from $P$ to $l$. A <span class=\"emph\">limiting parallel ray</span> to $l$ emanating from $P$ is a ray $\\overrightarrow{PX}$ that does not intersect $l$ and such that for every ray $\\overrightarrow{PY}$ which is between $\\overrightarrow{PQ}$ and $\\overrightarrow{PX}$, $\\overrightarrow{PY}$, intersects $l$."
+        },
+        {
+          "id": "MATH-350-c64",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Hyperbolic Plane",
+          "definition": "A Hilbert plane in which Hilbert's hyperbolic axiom of parallels holds is called a <span class=\"emph\">hyperbolic plane</span>."
+        },
+        {
+          "id": "MATH-350-c65",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Angles of Parallelism",
+          "definition": "Given limiting parallel rays $\\overrightarrow{PX}$ and $\\overrightarrow{PX'}$ to line $l$ through $P$ with $Q$ being the foot of the perpendicular from $P$ to $l$, the acute angles $\\sphericalangle XPQ$ and $\\sphericalangle X'PQ$ are called <span class=\"emph\">angles of parallelism</span> for segment $PQ$."
+        },
+        {
+          "id": "MATH-350-c66",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Real Hyperbolic Plane",
+          "definition": "A non-Euclidean plane satisfying Dedekind's axiom is called a <span class=\"emph\">real hyperbolic plane</span>."
+        },
+        {
+          "id": "MATH-350-c67",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 6",
+          "section": "",
+          "term": "Line of Enclosure",
+          "definition": "Given angle $\\sphericalangle ABC$ a line $l$ that is a limiting parallel to both sides $\\overrightarrow{BA}$ and $\\overrightarrow{BC}$ is called a <span class=\"emph\">line of enclosure</span>."
+        },
+        {
+          "id": "MATH-350-c68",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Inverse (of a point $P$ with respect to circle $\\gamma$)",
+          "definition": "Let $\\gamma$ be a circle of radius $r$, and center $O$. For any point $P \\neq O$ the <span class=\"emph\">inverse</span> $P'$ of $P$ with respect to $\\gamma$ is the unique point $P'$ on ray $\\overrightarrow{OP}$ such that $(\\overline{OP})(\\overline{OP'}) = r^2$."
+        },
+        {
+          "id": "MATH-350-c69",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Pole (of a chord)",
+          "definition": "If $TU$ is a chord of circle $\\gamma$ which is not a diameter, then the <span class=\"emph\">pole</span> of $TU$ is the point of intersection of the tangents to $\\gamma$ at $T$ and $U$."
+        },
+        {
+          "id": "MATH-350-c70",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Interior of $\\gamma$",
+          "definition": "Let $\\gamma$ be a circle with center $O$ and point $R$ on $\\gamma$. The <span class=\"emph\">interior</span> of $\\gamma$ consists of all points $X$ such that $OX < OR$."
+        },
+        {
+          "id": "MATH-350-c71",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Ordinary Points",
+          "definition": "In either the Poincar\\'e or Klein models of hyperbolic geometry using the circle $\\gamma$, points in the interior of $\\gamma$ are called <span class=\"emph\">ordinary points</span>."
+        },
+        {
+          "id": "MATH-350-c72",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Ideal Points",
+          "definition": "In either the Poincar\\'e or Klein models of hyperbolic geometry using the circle $\\gamma$, points on the circle $\\gamma$ are called <span class=\"emph\">ideal points</span>."
+        },
+        {
+          "id": "MATH-350-c73",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Ultra-Ideal Points",
+          "definition": "In either the Poincar\\'e or Klein models of hyperbolic geometry using the circle $\\gamma$, points outside of $\\gamma$ are called <span class=\"emph\">ultra-ideal points</span>."
+        },
+        {
+          "id": "MATH-350-c74",
+          "courseId": "MATH-350",
+          "chapter": "Chapter 7",
+          "section": "",
+          "term": "Orthogonal Circles",
+          "definition": "Two Euclidean circles $\\gamma$ and $\\delta$ are <span class=\"emph\">orthogonal</span> if at each point of intersection the radii of $\\gamma$ and $\\delta$ through that point are perpendicular."
+        }
+      ]
+    },
+    {
+      "id": "MATH-140",
+      "code": "MATH 140",
+      "title": "Calculus I",
+      "textbook": "APEX Calculus (Hartman)",
+      "color": "#06b6d4",
+      "totalTerms": 26,
+      "chapters": [
+        {
+          "name": "Chapter 1: Limits",
+          "count": 8
+        },
+        {
+          "name": "Chapter 2: Derivatives",
+          "count": 6
+        },
+        {
+          "name": "Chapter 3: The Graphical Behavior of Functions",
+          "count": 6
+        },
+        {
+          "name": "Chapter 4: Applications of the Derivative",
+          "count": 1
+        },
+        {
+          "name": "Chapter 5: Integration",
+          "count": 5
+        }
+      ],
+      "cards": [
+        {
+          "id": "MATH-140-c1",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.2.1 • Sec 2 (Epsilon-Delta Definition of a Limit)",
+          "term": "The Limit of a Function $f$",
+          "definition": "Let $I$ be an open interval containing $c$, and let $f$ be a function defined on $I$ except possibly at $c$. The <span class=\"emph\">limit of</span>$f(x)$, as $x$ approaches $c$ is $L$}, denoted by\n\\[\\lim_{x \\rightarrow c} f(x) = L,\\]\nmeans that given any $\\varepsilon > 0$, there exists $\\delta > 0$ such that for all $x$ in $I$ with $x \\neq c$, if $\\abs{x - c} < \\delta$, then $\\abs{f(x) - L} < \\varepsilon$."
+        },
+        {
+          "id": "MATH-140-c2",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.5.1 • Sec 5 (Continuity)",
+          "term": "Continuous Function",
+          "definition": "Let $f$ be a function defined on an open interval $I$ containing $c$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>$f$ is <span class=\"emph\">continuous at</span>$c$} if $\\displaystyle \\lim_{x \\rightarrow c} f(x) = f(c)$.</li>\n<li>$f$ is <span class=\"emph\">continuous on</span>$I$} if $f$ is continuous at $c$ for all values of $c$ in $I$. If $f$ is continuous on $(-\\infty , \\infty)$, that is $\\R$, we say $f$ is <span class=\"emph\">continuous everywhere</span>.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-140-c3",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.5.2 • Sec 5 (Continuity)",
+          "term": "Continuity on Closed Intervals",
+          "definition": "Let $f$ be defined on the closed interval $[a,b]$ for some real numbers $a,b$. Then $f$ is <span class=\"emph\">continuous on</span>$[a,b]$} if:\n\n <ul class=\"def-list\">\n<li>\\setlength</li>\n<li>sep{10pt}</li>\n<li>$f$ is continuous on $(a,b)$,</li>\n<li>$\\displaystyle \\lim_{x\\rightarrow a^+} f(x) = f(a)$ and</li>\n<li>$\\displaystyle \\lim_{x\\rightarrow b^-} f(x) = f(b)$.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-140-c4",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.6.1a • Sec 6 (Limits Involving Infinity)",
+          "term": "Limits of Infinity, $\\infty$",
+          "definition": "Let $I$ be an open interval containing $c$, and let $f$ be a function defined on $I$, except possibly at $c$. We say the <span class=\"emph\">limit of</span>$f(x)$, as $x$ approaches $c$ is infinity}, denoted by\n\\[\\displaystyle \\lim_{x \\rightarrow c} f(x) = \\infty\\]\nif for every $M > 0$ there exists $\\delta > 0$ such that for all $x \\neq c$, if $\\abs{x - c} < \\delta$, then $f(x) > M$."
+        },
+        {
+          "id": "MATH-140-c5",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.6.2a • Sec 6 (Limits Involving Infinity)",
+          "term": "One-Sided Limits of Infinity",
+          "definition": "Let $f$ be a function defined on $(a,c)$ for some $a < c$. The <span class=\"emph\">limit of</span>$f(x)$, as $x$ approaches $c$ from the left, is infinity}, or, <span class=\"emph\">the left-handed limit of</span>$f$ at $c$ is infinity}, denoted by\n\\[\\lim_{x \\to c^-} f(x) = \\infty,\\]\nmeans given any $N > 0$, there exists $\\delta > 0$ such that for all $a < x < c$, if $\\abs{x - c} < \\delta$, then $f(x) > N$."
+        },
+        {
+          "id": "MATH-140-c6",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.6.3 • Sec 6 (Limits Involving Infinity)",
+          "term": "Vertical Asymptote",
+          "definition": "Let $I$ be an interval that either contains $c$ or has $c$ as an endpoint, and let $f$ be a function defined on $I$, except possible at $c$. If the limit of $f(x)$ as $x$ approaches $c$ from either the left or right (or both) is $\\infty$ or $-\\infty$, then the line $x = c$ is a <span class=\"emph\">vertical asymptote</span> of $f$."
+        },
+        {
+          "id": "MATH-140-c7",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Sec 6 (Limits Involving Infinity)",
+          "term": "Indeterminate Form",
+          "definition": "\\footnote{\\tiny Weisstein, Eric W. \"Indeterminate.\" From MathWorld--A Wolfram Web Resource. \\url{http://mathworld.wolfram.com/Indeterminate.html}}\n        A mathematical expression can be said to be <span class=\"emph\">indeterminate</span> if it is not definitively or precisely determined. Certain forms of limits are said to be indeterminate when merely knowing the limiting behavior of individual parts of the expression is not sufficient to actually determine the overall limit.\n\nThere are seven indeterminate forms involving 0,1, and $\\infty$:\n\\[\\dfrac{0}{0}, 0 \\cdot \\infty, \\dfrac{\\infty}{\\infty}, \\infty - \\infty, 0^0, \\infty^0, 1^\\infty.\\]"
+        },
+        {
+          "id": "MATH-140-c8",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 1: Limits",
+          "section": "Def 1.6.4 • Sec 6 (Limits Involving Infinity)",
+          "term": "Limits at Infinity and Horizontal Asymptote",
+          "definition": "Let $L$ be a real number.\n        <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>Let $f$ be a function defined on $(a,\\infty)$ for some number $a$. The <span class=\"emph\">limit of</span>$f$ at infinity is $L$}, or $\\displaystyle \\lim_{x\\rightarrow \\infty} f(x) = L$, if for every $\\varepsilon > 0$ there exists $M > a$ such that if $x > M$, then $\\abs{f(x) - L}< \\varepsilon$.</li>\n<li>Let $f$ be a function defined on $(-\\infty, b)$ for some number $b$. The <span class=\"emph\">limit of</span>$f$ at negative infinity is $L$}, or $\\displaystyle \\lim_{x \\rightarrow -\\infty} f(x) = L$, if for every $\\varepsilon > 0$ there exists $M < b$ such that if $x < M$, then $\\abs{f(x) - L} < \\varepsilon$.</li>\n<li>If $\\displaystyle \\lim_{x \\rightarrow \\infty} f(x) = L$ or $\\displaystyle \\lim_{x\\rightarrow -\\infty} f(x) = L$, we say that $y = L$ is a <span class=\"emph\">horizontal asymptote</span> of $f$.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-140-c9",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 2: Derivatives",
+          "section": "Def 2.1.1 • Sec 1 (Instantaneous Rates of Change: The Derivative)",
+          "term": "Derivative at a Point",
+          "definition": "Let $f$ be a continuous function on an open interval $I$ and let $c$ be in $I$. The <span class=\"emph\">derivative of</span>$f$ at $c$}, denoted $f'(c)$ is\n\\[\\lim_{h \\rightarrow 0} \\dfrac{f(c+h) - f(c)}{h},\\]\nprovided the limit exists. If the limit exists, we say that <span class=\"emph\"></span>$f$ is differentiable at $c$}; if the limit does not exist, then <span class=\"emph\"></span>$f$ is not differentiable at $c$}. If $f$ is differentiable at every point in $I$, then <span class=\"emph\"></span>$f$ is differentiable on $I$}."
+        },
+        {
+          "id": "MATH-140-c10",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 2: Derivatives",
+          "section": "Def 2.1.2 • Sec 1 (Instantaneous Rates of Change: The Derivative)",
+          "term": "Tangent Line",
+          "definition": "Let $f$ be continuous on an open interval $I$ and differentiable at $c$, for some $c$ in $I$. The line with equation $\\ell(x) = f'(c)(x-c) + f(c)$ is the <span class=\"emph\">tangent line</span> to the graph of $f$ at $c$; that is, it is the line through $\\left(c,f(c)\\right)$ whose slope is the derivative of $f$ at $c$."
+        },
+        {
+          "id": "MATH-140-c11",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 2: Derivatives",
+          "section": "Def 2.1.3 • Sec 1 (Instantaneous Rates of Change: The Derivative)",
+          "term": "Normal Line",
+          "definition": "Let $f$ be continuous on an open interval $I$ and differentiable at $c$, for some $c$ in $I$. The <span class=\"emph\">normal line</span> to the graph of $f$ at $c$ is the line with equation\n\\[n(x) = \\dfrac{-1}{f'(c)}(x-c)+f(c),\\]\nwhere $f'(c) \\neq 0$. When $f'(c) = 0$, the normal line is the vertical line through $\\left(c, f(c)\\right)$; that is, $x = c$."
+        },
+        {
+          "id": "MATH-140-c12",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 2: Derivatives",
+          "section": "Def 2.1.4 • Sec 1 (Instantaneous Rates of Change: The Derivative)",
+          "term": "Derivative Function",
+          "definition": "Let $f$ be a differentiable function on an open interval $I$. The function\n\\[f'(x) = \\lim_{h \\rightarrow 0} \\dfrac{f(x+h) - f(x)}{h}\\]\nis <span class=\"emph\">the derivative of</span>$f$}.\n\n\\textbf{Notation:} \\\\\nLet $y = f(x)$. The following notations all represent the derivative:\n\\[f'(x) = y' = \\dfrac{dy}{dx} = \\dfrac{df}{dx} = \\dfrac{d}{dx}(f) = \\dfrac{d}{dx}(y).\\]"
+        },
+        {
+          "id": "MATH-140-c13",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 2: Derivatives",
+          "section": "Def 2.3.1 • Sec 3 (Basic Differentiation Rules)",
+          "term": "Higher Order Derivatives",
+          "definition": "Let $y = f(x)$ be a differentiable function on $I$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>The <span class=\"emph\">second derivative of</span>$f$} is:\n\\[f”(x) = \\dfrac{d}{dx} f'(x) = \\dfrac{d}{dx}\\dfrac{dy}{dx} = \\dfrac{d^2y}{dx^2} = y”.\\]\n</li>\n<li>The <span class=\"emph\">third derivative of</span>$f$} is:\n\\[f”'(x) = \\dfrac{d}{dx} f”(x) = \\dfrac{d}{dx}\\dfrac{d^2y}{dx^2} = \\dfrac{d^3y}{dx^3} = y”'.\\]\n</li>\n<li>The <span class=\"emph\"></span>$n^\\text{th}$ derivative of $f$} is:\n\\[f^{(n)}(x) = \\dfrac{d}{dx} f^{(n-1)}(x) = \\dfrac{d}{dx}\\dfrac{d^{n-1}y}{dx^{n-1}} = \\dfrac{d^ny}{dx^n} = y^{(n)}.\\]\n</li>\n</ul>"
+        },
+        {
+          "id": "MATH-140-c14",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 2: Derivatives",
+          "section": "Def (Stitz-Zeager) • Sec 7 (Derivatives of Inverse Functions)",
+          "term": "Inverse Functions",
+          "definition": "Suppose $f$ and $g$ are two functions such that\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>$(g \\circ f)(x) = x$ for all $x$ in the domain of $f$ and</li>\n<li>$(f \\circ g)(x) = x$ for all $x$ in the domain of $g$</li>\n</ul>\n\nthen $f$ and $g$ are <span class=\"emph\">inverses</span> of each other and the functions $f$ and $g$ are said to be <span class=\"emph\">invertible</span>."
+        },
+        {
+          "id": "MATH-140-c15",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 3: The Graphical Behavior of Functions",
+          "section": "Def 3.1.1 • Sec 1 (Extreme Values)",
+          "term": "Extreme Values",
+          "definition": "Let $f$ be defined on an interval $I$ containing $c$.\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>$f(c)$ is the <span class=\"emph\">minimum</span> (also, <span class=\"emph\">absolute minimum</span>) of $f$ on $I$ if $f(c) \\leq f(x)$ for all $x$ in $I$.</li>\n<li>$f(c)$ is the <span class=\"emph\">maximum</span> (also, <span class=\"emph\">absolute maximum</span>) of $f$ on $I$ if $f(c) \\geq f(x)$ for all $x$ in $I$.</li>\n</ul>\nThe maximum and minimum values are the <span class=\"emph\">extreme values</span>, or <span class=\"emph\">extrema</span>, of $f$ on $I$."
+        },
+        {
+          "id": "MATH-140-c16",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 3: The Graphical Behavior of Functions",
+          "section": "Def 3.1.2 • Sec 1 (Extreme Values)",
+          "term": "Relative Minimum and Relative Maximum",
+          "definition": "Let $f$ be defined on an interval $I$ containing $c$.\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>If there is a $\\delta > 0$ such that $f(c) \\leq f(x)$ for all $x$ in $I$ where $\\abs{x - c} < \\delta$, then $f(c)$ is a <span class=\"emph\">relative minimum</span> of $f$. We also say that $f$ has a relative minimum at $(c,f(c))$.</li>\n<li>If there is a $\\delta >0$ such that $f(c) \\geq f(x)$ for all $x$ in $I$ where $\\abs{x - c} < \\delta$, then $f(c)$ is a <span class=\"emph\">relative maximum</span> of $f$. We also say that $f$ has a relative maximum at $(c,f(c))$.</li>\n</ul>\nThe relative maximum and minimum values comprise the <span class=\"emph\">relative extrema</span> of $f$."
+        },
+        {
+          "id": "MATH-140-c17",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 3: The Graphical Behavior of Functions",
+          "section": "Def 3.1.3 • Sec 1 (Extreme Values)",
+          "term": "Critical Numbers and Critical Points",
+          "definition": "Let $f$ be defined at $c$. The value $c$ is a <span class=\"emph\">critical number</span> (or <span class=\"emph\">critical value</span>) of $f$ if $f'(c)=0$ or $f'(c)$ is not defined.\n\nIf $c$ is a critical number of $f$, then the point $(c,f(c))$ is a <span class=\"emph\">critical point</span> of $f$."
+        },
+        {
+          "id": "MATH-140-c18",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 3: The Graphical Behavior of Functions",
+          "section": "Def 3.3.1 • Sec 3 (Increasing and Decreasing Functions)",
+          "term": "Increasing and Decreasing Functions",
+          "definition": "Let $f$ be a function defined on an interval $I$.\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>$f$ is <span class=\"emph\">increasing</span> on $I$ if for every $a < b$ in $I$, $f(a) \\leq f(b)$.</li>\n<li>$f$ is <span class=\"emph\">decreasing</span> on $I$ if for every $a < b$ in $I$, $f(a) \\geq f(b)$.</li>\n</ul>\nA function is <span class=\"emph\">strictly increasing</span> when $a < b$ in $I$ implies $f(a) < f(b)$, with a similar definition holding for <span class=\"emph\">strictly decreasing</span>."
+        },
+        {
+          "id": "MATH-140-c19",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 3: The Graphical Behavior of Functions",
+          "section": "Def 3.4.1 • Sec 4 (Concavity and the Second Derivative)",
+          "term": "Concave Up and Concave Down",
+          "definition": "Let $f$ be differentiable on an interval $I$. The graph of $f$ is <span class=\"emph\">concave up</span> on $I$ if $f'$ is increasing. The graph of $f$ is <span class=\"emph\">concave down</span> on $I$ if $f'$ is decreasing. If $f'$ is constant then the graph of $f$ is said to have <span class=\"emph\">no concavity</span>."
+        },
+        {
+          "id": "MATH-140-c20",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 3: The Graphical Behavior of Functions",
+          "section": "Def 3.4.2 • Sec 4 (Concavity and the Second Derivative)",
+          "term": "Point of Inflection",
+          "definition": "A <span class=\"emph\">point of inflection</span> is a point on the graph of $f$ at which the concavity of $f$ changes."
+        },
+        {
+          "id": "MATH-140-c21",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 4: Applications of the Derivative",
+          "section": "Def 4.4.1 • Sec 4 (Differentials)",
+          "term": "Differentials of $x$ and $y$",
+          "definition": "Let $y = f(x)$ be differentiable. The <span class=\"emph\">differential of</span>$x$}, denoted $dx$, is any nonzero real number (usually take to be a small number). The <span class=\"emph\">differential of</span>$y$}, denoted $dy$ is\n\\[dy = f'(x)dx.\\]"
+        },
+        {
+          "id": "MATH-140-c22",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 5: Integration",
+          "section": "Def 5.1.1 • Sec 1 (Antiderivatives and Indefinite Integration)",
+          "term": "Antiderivatives and Indefinite Integrals",
+          "definition": "Let a function $f(x)$ be given. An <span class=\"emph\">antiderivative</span> of $f(x)$ is a function $F(x)$ such that $F'(x) = f(x)$.\n\nThe set of all antiderivatives of $f(x)$ is the <span class=\"emph\">indefinite integral of</span>$f$}, denoted by\n\\[\\int f(x) \\ dx.\\]\nThe function $f(x)$ is called the <span class=\"emph\">integrand</span> and $dx$ is the <span class=\"emph\">differential of</span>$x$}."
+        },
+        {
+          "id": "MATH-140-c23",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 5: Integration",
+          "section": "Def 5.2.1 • Sec 2 (The Definite Integral)",
+          "term": "The Definite Integral, Total Signed Area",
+          "definition": "Let $y = f(x)$ be defined on a closed interval $[a,b]$. The <span class=\"emph\">total signed area from</span>$x = a$ to $x = b$ under $f$} is:\n \\small\n\\[(\\text{area under } f \\text{ and above the } x \\text{-axis on } [a,b]) - (\\text{area above } f \\text{ and under the } x \\text{-axis on } [a,b]).\\]\nThe <span class=\"emph\">definite integral</span>$f$ on $[a,b]$} is the total signed area of $f$ on $[a,b]$, denoted\n\\[\\int_a^b f(x)\\ dx,\\]\nwhere $a$ and $b$ are the <span class=\"emph\">bounds of integration</span>."
+        },
+        {
+          "id": "MATH-140-c24",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 5: Integration",
+          "section": "Def 5.3.2 • Sec 3 (Riemann Sums)",
+          "term": "Riemann Sum",
+          "definition": "Let $f$ be defined on the closed interval $[a,b]$ and let $\\Delta x$ be a partition of $[a,b]$, with\n\\[a = x_1 < x_2 < \\cdots < x_n < x_{n+1} = b.\\]\nLet $\\Delta x_i$ denote the length of the $i^{\\text{th}}$ subinterval $[x_1, x_{i+1}]$ and let $c_i$ denote any value in the $i^{\\text{th}}$ subinterval.\n \n The sum\n\\[\\sum_{i=1}^n f(c_i) \\Delta x_i\\]\nis a <span class=\"emph\">Riemann sum</span> of $f$ on $[a,b]$."
+        },
+        {
+          "id": "MATH-140-c25",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 5: Integration",
+          "section": "Def 5.4.1 • Sec 4 (The Fundamental Theorem of Calculus)",
+          "term": "The Average Value of $f$ on $[a,b]$",
+          "definition": "Let $f$ be continuous on $[a,b]$. The <span class=\"emph\">average value of</span>$f$ on $[a,b]$} is $f(c)$, where $c$ is a value in $[a,b]$ guaranteed by the Mean Value Theorem. I.e.,\n\\[\\text{Average Value of } f \\text{ on } [a,b] = \\dfrac{1}{b-a}\\int_a^b f(x) \\ dx.\\]"
+        },
+        {
+          "id": "MATH-140-c26",
+          "courseId": "MATH-140",
+          "chapter": "Chapter 5: Integration",
+          "section": "Sec 5 (Numerical Integration)",
+          "term": "Elementary Functions",
+          "definition": "An <span class=\"emph\">elementary function</span> is any function that is a combination of polynomials, \\textit{n}$^\\text{th}$ roots, rational, exponential, logarithmic and trigonometric functions."
+        }
+      ]
+    },
+    {
+      "id": "MATH-141",
+      "code": "MATH 141",
+      "title": "Calculus II",
+      "textbook": "APEX Calculus (Hartman)",
+      "color": "#e11d48",
+      "totalTerms": 22,
+      "chapters": [
+        {
+          "name": "Chapter 6: Techniques of Antidifferentiation",
+          "count": 2
+        },
+        {
+          "name": "Chapter 8: Sequences and Series",
+          "count": 13
+        },
+        {
+          "name": "Chapter 9: Curves in the Plane",
+          "count": 7
+        }
+      ],
+      "cards": [
+        {
+          "id": "MATH-141-c1",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 6: Techniques of Antidifferentiation",
+          "section": "Def 24 • Sec 8 (Improper Integration)",
+          "term": "Improper Integrals with Infinite Bounds; Converge, Diverge",
+          "definition": "<ul class=\"def-list\">\n<li>Let $f$ be a continuous on $[a,\\infty)$. Define\n\\[\\int_{a}^\\infty f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{b \\to \\infty} \\int_a^b f(x) \\ dx.\\]\n</li>\n<li>Let $f$ be a continuous function on $(-\\infty,b]$. Define\n\\[\\int_{-\\infty}^b f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{a \\to -\\infty} \\int_a^b f(x) \\ dx.\\]\n</li>\n<li>Let $f$ be a continuous function on $(-\\infty,\\infty)$. Let $c$ be any real number; define\n\\[\\int_{-\\infty}^\\infty f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{a \\to -\\infty} \\int_a^c f(x) \\ dx + \\lim_{b \\to \\infty} \\int_c^b f(x) \\ dx.\\]\n</li>\n</ul>\n \nAn improper integral is said to \\textbf{converge} if its corresponding limit exists; otherwise, it \\textbf{diverges}. The improper integral in part 3 converges if an only if both of its limits exist."
+        },
+        {
+          "id": "MATH-141-c2",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 6: Techniques of Antidifferentiation",
+          "section": "Def 25 • Sec 8 (Improper Integration)",
+          "term": "Improper Integration with Infinite Range",
+          "definition": "Let $f(x)$ be a continuous function on $[a,b]$ except at $c$, $a \\leq c \\leq b$, where $x = c$ is a vertical asymptote of $f$. Define\n\\[\\int_a^b f(x) \\ dx = \\lim_{t \\to c^-} \\int_a^t f(x) \\ dx + \\lim_{t \\to c^+} \\int_t^b f(x) \\ dx.\\]"
+        },
+        {
+          "id": "MATH-141-c3",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 27 • Sec 1 (Sequences)",
+          "term": "Sequence",
+          "definition": "A <span class=\"emph\">sequence</span> is a function $a(n)$ whose domain is $\\N$. The <span class=\"emph\">range</span> of a sequence is the set of all distinct values of $a(n)$.\n\nThe <span class=\"emph\">terms</span> of a sequence are the values $a(1)$, $a(2)$, \\ldots, which are usually denote with subscripts $a_1, a_2, \\ldots$.\n\nA sequence $a(n)$ is often denoted as $\\{a_n\\}$."
+        },
+        {
+          "id": "MATH-141-c4",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 28 • Sec 1 (Sequences)",
+          "term": "Limit of a Sequence, Convergent, Divergent",
+          "definition": "Let $\\{a_n\\}$ be a sequence and let $L$ be a real number. Given any $\\varepsilon > 0$, if an $m$ can be found such that $\\abs{a_n - L} < \\varepsilon$ for all $n > m$, then we say the <span class=\"emph\">limit of</span>$\\{a_n\\}$, as $n$ approaches infinity, is $L$}, denoted\n\\[\\lim_{n \\to \\infty} a_n = L.\\]\nIf $\\lim_{n \\to \\infty} a_n$ exists, we say the sequence <span class=\"emph\">converges</span>; otherwise, the sequence <span class=\"emph\">diverges</span>."
+        },
+        {
+          "id": "MATH-141-c5",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 29 • Sec 1 (Sequences)",
+          "term": "Bounded and Unbounded Sequences",
+          "definition": "A sequence $\\{a_n\\}$ is said to be <span class=\"emph\">bounded</span> if there exists real numbers $m$ and $M$ such that $m < a_n < M$ for all $n$ in $\\N$.\n\nA sequence $\\{a_n\\}$ is said to be <span class=\"emph\">unbounded</span> if it is not bounded.\n\nA sequence $\\{a_n\\}$ is said to be <span class=\"emph\">bounded above</span> if there exists an $M$ such that $a_n < M$ for all $n$ in $\\N$; it is <span class=\"emph\">bounded below</span> if there exists an $m$ such that $m < a_n$ for all $n$ in $\\N$."
+        },
+        {
+          "id": "MATH-141-c6",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 30 • Sec 1 (Sequences)",
+          "term": "Monotonic Sequence",
+          "definition": "<ul class=\"def-list\">\n<li>A sequence $\\{A_n\\}$ is <span class=\"emph\">monotonically increasing</span> if $a_n \\leq a_{n+1}$ for all $n$, i.e.,\n\\[a_1 \\leq a_2 \\leq a_3 \\leq \\cdots \\leq a_n \\leq a_{n+1} \\cdots\\]\n</li>\n<li>A sequence $\\{a_n\\}$ is <span class=\"emph\">monotonically decreasing</span> if $a_n \\geq a_{n+1}$ for all $n$, i.e.,\n\\[a_1 \\geq a_2 \\geq a_3 \\geq \\cdots \\geq a_n \\geq a_{n+1} \\cdots\\]\n</li>\n<li>A sequence is <span class=\"emph\">monotonic</span> if it is monotonically increasing or monotonically decreasing.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c7",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 31 • Sec 2 (Infinite Series)",
+          "term": "Infinite Series, $n^{\\text{th}$ Partial Sums, Convergence, Divergence",
+          "definition": "Let $\\{a_n\\}$ be a sequence.\n <ul class=\"def-list\">\n<li>The sum $\\displaystyle \\sum_{n=1}^{\\infty} a_n$ is an <span class=\"emph\">infinite series</span> (or, simply <span class=\"emph\">series</span> ).</li>\n<li>Let $\\displaystyle S_n = \\sum_{i=1}^n a_i$; the sequence $\\{S_n\\}$ is the sequence of the <span class=\"emph\"></span>$n^{\\text{th}}$ partials sums} of $\\{a_n\\}$.</li>\n<li>If the sequence $\\{S_n\\}$ <span class=\"emph\">converges</span> to $L$, we say the series $\\displaystyle \\sum_{n=1} ^\\infty a_n$ converges to $L$, and we write $\\displaystyle \\sum_{n=1}^\\infty a_n = L$.</li>\n<li>If the sequence $\\{S_n\\}$ diverges, the series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">diverges</span>.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c8",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 32 • Sec 2 (Infinite Series)",
+          "term": "Geometric Series",
+          "definition": "A <span class=\"emph\">geometric series</span> is a series of the form\n\\[\\sum_{n=0}^\\infty r^n = 1 + r + r^2 + r^3 + \\cdots + r^n + \\cdots\\]\nNote that the index starts at $n = 0$, not $n=1$."
+        },
+        {
+          "id": "MATH-141-c9",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 33 • Sec 2 (Infinite Series)",
+          "term": "$p$-Series, General $p$-Series",
+          "definition": "<ul class=\"def-list\">\n<li>A <span class=\"emph\"></span>$p$-series} is a series of the form\n\\[\\sum_{n=1}^\\infty \\dfrac{1}{n^p}, \\qquad \\text{where } p > 0.\\]\n</li>\n<li>A <span class=\"emph\">general</span>$p$-series} is a series of the form\n\\[\\sum_{n=1}^\\infty \\dfrac{1}{(an+b)^p}, \\qquad \\text{where } p > 0 \\text{ and } a, \\ b \\text{ are real numbers}.\\]\n</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c10",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 34 • Sec 5 (Alternating Series and Absolute Convergence)",
+          "term": "Alternating Series",
+          "definition": "Let $\\{a_n\\}$ be a positive sequence. An <span class=\"emph\">alternating series</span> is a series of either the form\n\\[\\sum_{n=1}^\\infty (-1)^na_n \\qquad \\text{or} \\qquad \\sum_{n=1}^\\infty (-1)^{n+1}a_n.\\]"
+        },
+        {
+          "id": "MATH-141-c11",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 35 • Sec 5 (Alternating Series and Absolute Convergence)",
+          "term": "Absolute and Conditional Convergence",
+          "definition": "<ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>A series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">converges absolutely</span> if $\\displaystyle \\sum_{n=1}^\\infty \\abs{a_n}$ converges.</li>\n<li>A series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">converges conditionally</span> if $\\displaystyle \\sum_{n=1}^\\infty a_n$ converges but $\\displaystyle \\sum_{n=1}^\\infty \\abs{a_n}$ diverges.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c12",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 36 • Sec 6 (Power Series)",
+          "term": "Power Series",
+          "definition": "Let $\\{a_n\\}$ be a sequence, let $x$ be a variable, and let $c$ be a real number.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The <span class=\"emph\">power series in</span>$x$} is the series\n\\[\\sum_{n=0}^\\infty a_nx^n = a_0 + a_1x + a_2x^2 + a_3x^3 + \\cdots\\]\n</li>\n<li>The <span class=\"emph\">power series in</span>$x$ centered at $c$} is the series\n\\[\\sum_{n=0}^\\infty a_n(x-c)^n = a_0 + a_1(x-c) + a_2(x-c)^2 + a_3(x-c)^3 + \\cdots\\]\n</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c13",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 37 • Sec 6 (Power Series)",
+          "term": "Radius and Interval of Convergence",
+          "definition": "<ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The number $R$ given in Theorem 73 is the <span class=\"emph\">radius of convergence</span> of a given series. When a series converges only for $x = c$, we say the radius of convergence is $0$, i.e., $R = 0$. When the series converges for all $x$, we say the series has an infinite radius of convergence, i.e., $R = \\infty$.</li>\n<li>The <span class=\"emph\">interval of convergence</span> is the set of all values of $x$ for which the series converges.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c14",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 38 • Sec 7 (Taylor Polynomials)",
+          "term": "Taylor Polynomial, Maclaurin Polynomial",
+          "definition": "Let $f$ be a function whose first $n$ derivatives exist at $x = c$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The <span class=\"emph\">Taylor polynomial of degree</span>$n$ of $f$ at $x = c$} is\n\\[p_n(x) = f(c) + f'(c)(x-c) + \\dfrac{f”(c)}{2!}(x-c)^2 + \\dfrac{f”'(c)}{3!}(x-c)^3 + \\cdots + \\dfrac{f^{(n)}(c)}{n!}(x-c)^n.\\]\n</li>\n<li>A special case of the Taylor polynomial is the Maclaurin polynomial, where $c = 0$. That is, the <span class=\"emph\">Maclaurin polynomial of degree</span>$n$ of $f$} is\n\\[p_n(x) = f(0) + f'(0)x + \\dfrac{f”(0)}{2!}x^2 + \\dfrac{f”'(0)}{3!}x^3 + \\cdots + \\dfrac{f^{(n)}(0)}{n!}x^n.\\]\n</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c15",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 8: Sequences and Series",
+          "section": "Def 39 • Sec 8 (Taylor Series)",
+          "term": "Taylor and Maclaurin Series",
+          "definition": "Let $f(x)$ have derivatives of all orders at $x = c$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The <span class=\"emph\">Taylor Series of</span>$f(x)$, centered at $c$} is\n\\[\\sum_{n=0}^\\infty \\dfrac{f^{(n)}(c)}{n!}(x-c)^n.\\]\n</li>\n<li>Setting $c = 0$ gives the <span class=\"emph\">Maclaurin Series of</span>$f(x)$}:\n\\[\\sum_{n=0}^\\infty \\dfrac{f^{(n)}(0)}{n!}x^n.\\]\n</li>\n</ul>"
+        },
+        {
+          "id": "MATH-141-c16",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 40 • Sec 1 (Conic Sections)",
+          "term": "Parabola",
+          "definition": "A <span class=\"emph\">parabola</span> is the locus of all points equidistant from a point (called a <span class=\"emph\">focus</span>) and a line (called the <span class=\"emph\">directrix</span>) that does not contain the focus."
+        },
+        {
+          "id": "MATH-141-c17",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 41 • Sec 1 (Conic Sections)",
+          "term": "Ellipse",
+          "definition": "An <span class=\"emph\">ellipse</span> is the locus of all points whose sum of distances from two fixed points, each a <span class=\"emph\">focus</span> of the ellipse, is constant."
+        },
+        {
+          "id": "MATH-141-c18",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 42 • Sec 1 (Conic Sections)",
+          "term": "Eccentricity of an Ellipse",
+          "definition": "The eccentricity $e$ of an ellipse is $e = \\dfrac{c}{a}$."
+        },
+        {
+          "id": "MATH-141-c19",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 43 • Sec 1 (Conic Sections)",
+          "term": "Hyperbola",
+          "definition": "A <span class=\"emph\">hyperbola</span> is the locus of all points where the absolute value of difference of distances from two fixed points, each a focus of the hyperbola, is constant."
+        },
+        {
+          "id": "MATH-141-c20",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 44 • Sec 1 (Conic Sections)",
+          "term": "Eccentricity of a Hyperbola",
+          "definition": "The eccentricity of a hyperbola is $e = \\dfrac{c}{a}$."
+        },
+        {
+          "id": "MATH-141-c21",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 45 • Sec 2 (Parametric Equations)",
+          "term": "Parametric Equations and Curves",
+          "definition": "Let $f$ and $g$ be continuous functions on an interval $I$. The set of all points $(x,y) = \\big(f(t), g(t)\\big)$ in the Cartesian plane, as $t$ varies over $I$, is the <span class=\"emph\">graph</span> of the <span class=\"emph\">parametric equations</span> $x = f(t)$ and $y = g(t)$, where $t$ is the <span class=\"emph\">parameter</span>. A <span class=\"emph\">curve</span> is a graph along with the parametric equations that define it."
+        },
+        {
+          "id": "MATH-141-c22",
+          "courseId": "MATH-141",
+          "chapter": "Chapter 9: Curves in the Plane",
+          "section": "Def 46 • Sec 2 (Parametric Equations)",
+          "term": "Smooth",
+          "definition": "A curve $C$ defined by $x = f(t)$, $y = g(t)$ is <span class=\"emph\">smooth</span> on an interval $I$ if $f'$ and $g'$ are continuous on $I$ and not simultaneously 0 (except possibly at the endpoints of $I$). A curve is <span class=\"emph\">piecewise smooth</span> on $I$ if $I$ can be partitioned into subintervals where $C$ is smooth on each subinterval."
+        }
+      ]
+    },
+    {
+      "id": "MATH-102",
+      "code": "MATH 102",
+      "title": "Precalculus & Trigonometry",
+      "textbook": "Precalculus (Stewart / OpenStax)",
+      "color": "#6366f1",
+      "totalTerms": 56,
+      "chapters": [
+        {
+          "name": "Chapter 1: Functions",
+          "count": 22
+        },
+        {
+          "name": "Chapter 2: Linear Functions",
+          "count": 5
+        },
+        {
+          "name": "Chapter 3: Polynomial and Rational Functions",
+          "count": 15
+        },
+        {
+          "name": "Chapter 4: Exponential and Logarithmic Functions",
+          "count": 3
+        },
+        {
+          "name": "Chapter 5: Trigonometric Functions",
+          "count": 7
+        },
+        {
+          "name": "Chapter 6: Periodic Functions",
+          "count": 4
+        }
+      ],
+      "cards": [
+        {
+          "id": "MATH-102-c1",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 1 (Functions and Function Notation)",
+          "term": "Relation, Domain, Range",
+          "definition": "A <span class=\"emph\">relation</span> is a set of ordered pairs. The set of first components of each ordered pair is called the <span class=\"emph\">domain</span> and the set of second components of each ordered pair is called the <span class=\"emph\">range</span>."
+        },
+        {
+          "id": "MATH-102-c2",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 1 (Functions and Function Notation)",
+          "term": "Function",
+          "definition": "A <span class=\"emph\">function</span> is a relation in which each possible input value leads to exactly one output value. We say \"the output is a function of the input.\" All allowed input values make up the domain, and their outputs make up the range."
+        },
+        {
+          "id": "MATH-102-c3",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 1 (Functions and Function Notation)",
+          "term": "Function Notation",
+          "definition": "The notation $y = f(x)$ defines a function named $f$. This is read as \"$y$ is a function of \"x\". The letter $x$ represents the independent variable. The letter $y$, or $f(x)$, represents the dependent variable."
+        },
+        {
+          "id": "MATH-102-c4",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 1 (Functions and Function Notation)",
+          "term": "One-to-one Function",
+          "definition": "A <span class=\"emph\">one-to-one function</span> is a function in which each output value corresponds to exactly one input value."
+        },
+        {
+          "id": "MATH-102-c5",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 2 (Domain and Range)",
+          "term": "Piecewise Function",
+          "definition": "A <span class=\"emph\">piecewise function</span> is a function in which more than one formula is used to the define the output over different pieces of the domain. Each formula has its own domain, and the domain of the function is the union of all these smaller domains. We notate a piecewise function by\n\\[f(x) = \\left\\{\n \\begin{array}{ccl}\n \\text{formula } 1 && \\textbf{if } x \\text{ is in the domain } 1 \\\\\n \\text{formula } 2 && \\textbf{if } x \\text{ is in the domain } 2 \\\\\n \\text{formula } 3 && \\textbf{if } x \\text{ is in the domain } 3 \n \\end{array}\n \\right..\\]"
+        },
+        {
+          "id": "MATH-102-c6",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Rate of Change, Average Rate of Change",
+          "definition": "A <span class=\"emph\">rate of change</span> describes how an output quantity changes relative to the change in the input quantity. The units on a rate of change are “output units per input units.\" \n\nThe <span class=\"emph\">average rate of change</span> between two input values is the total change of the function values (output values) divided by the change in the input values.\n\\[\\dfrac{\\Delta y}{\\Delta x} = \\dfrac{f(x_2) - f(x_1)}{x_2 - x_1}.\\]"
+        },
+        {
+          "id": "MATH-102-c7",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Local Maximum",
+          "definition": "A function $f$ has a <span class=\"emph\">local maximum</span> at $x = b$ if there exists an interval $(a,c)$ with $a < b < c$ such that, for any $x$ in the interval $(a,c)$, $f(x) \\leq f(b)$."
+        },
+        {
+          "id": "MATH-102-c8",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Local Minimum",
+          "definition": "A function $f$ has a <span class=\"emph\">local minimum</span> at $x = b$ if there exists an interval $(a,c)$ with $a < b < c$ such that, for any $x$ in the interval $(a,c)$, $f(x) \\geq f(b)$."
+        },
+        {
+          "id": "MATH-102-c9",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Increasing Function",
+          "definition": "A function $f$ is an <span class=\"emph\">increasing function</span> on an open interval if $f(b) > f(a)$ for any two input values $a$ and $b$ in the given interval where $b > a$."
+        },
+        {
+          "id": "MATH-102-c10",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Decreasing Function",
+          "definition": "A function $f$ is a <span class=\"emph\">decreasing function</span> on an open interval if $f(b) < f(a)$ for any two input value $a$ and $b$ in the given interval where $b > a$."
+        },
+        {
+          "id": "MATH-102-c11",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Local Maximum (informal)",
+          "definition": "A value of the input where a function changes from increasing to decreasing (as we go from left to right, that is, as the input variable increases) is called a <span class=\"emph\">local maximum</span>. If a function has more than one, we say it has local maxima."
+        },
+        {
+          "id": "MATH-102-c12",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
+          "term": "Local Minimum (informal)",
+          "definition": "A value of the input where a function changes from decreasing to increasing (as we go from left to right, that is, as the input variable increases) is called <span class=\"emph\">local minimum</span>. If a function has more than one, we say it has local minima."
+        },
+        {
+          "id": "MATH-102-c13",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 4 (Composition of Functions)",
+          "term": "Composition of Functions",
+          "definition": "When the output of one function is used as the input of another, we call the entire operation a <span class=\"emph\">composition of functions</span>. For any input $x$ and functions $f$ and $g$, this action defines a <span class=\"emph\">composite function</span>, which we write as $f \\circ g$ such that\n\\[(f \\circ g)(x) = f(g(x)).\\]\nThe domain of the composite function $f \\circ g$ is all $x$ such that $x$ is in the domain of $g$ and $g(x)$ is in the domain of $f$."
+        },
+        {
+          "id": "MATH-102-c14",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 4 (Composition of Functions)",
+          "term": "Domain of a Composite Function",
+          "definition": "The <span class=\"emph\">domain of a composite function</span> $f(g(x))$ is the set of those inputs $x$ in the domain of $g$ for which $g(x)$ is in the domain of $f$."
+        },
+        {
+          "id": "MATH-102-c15",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 5 (Transformation of Functions)",
+          "term": "Vertical Shift",
+          "definition": "Given a function $f(x)$, a new function $g(x) = f(x) + k$, where $k$ is a constant, is a <span class=\"emph\">vertical shift</span> of the function $f(x)$. All the output values change by $k$ units. If $k$ is positive, the graph will shift up. If $k$ is negative, the graph will shift down."
+        },
+        {
+          "id": "MATH-102-c16",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 5 (Transformation of Functions)",
+          "term": "Horizontal Shift",
+          "definition": "Given a function $f$, a new function $g(x) = f(x-h)$, where $h$ is a constant, is a <span class=\"emph\">horizontal shift</span> of the function $f$. If $h$ is positive, the graph will shift right. If $h$ is negative, the graph will shift left."
+        },
+        {
+          "id": "MATH-102-c17",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 5 (Transformation of Functions)",
+          "term": "Vertical Reflection, Horizontal Reflection",
+          "definition": "Given a function $f(x)$, a new function $g(x) = -f(x)$ is a <span class=\"emph\">vertical reflection</span> of the function $f(x)$, sometimes called a reflection about (or over, or through) the $x$-axis.\n\nGiven a function $f(x)$, a new function $g(x) = f(-x)$ is a <span class=\"emph\">horizontal reflection</span> of the function $f(x)$, sometimes c alled a reflection about the $y$-axis."
+        },
+        {
+          "id": "MATH-102-c18",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 5 (Transformation of Functions)",
+          "term": "Vertical Stretch and  Compression",
+          "definition": "Given a function $f(x)$, a new function $g(x) = af(x)$, where $a$ is a constant, is <span class=\"emph\">vertical stretch</span> or <span class=\"emph\">vertical compression</span> of the function $f(x)$.\n <ul class=\"def-list\">\n<li>If $a > 1$, then the graph will be stretched.</li>\n<li>If $0 < a < 1$, then the graph will be compressed.</li>\n<li>If $a < 0$, then there will be a combination of a vertical stretch or compression with a vertical reflection.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-102-c19",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 5 (Transformation of Functions)",
+          "term": "Horizontal Stretches and  Compressions",
+          "definition": "Given a function $f(x)$, a new function $g(x) = f(bx)$, where $b$ is a constant, is a <span class=\"emph\">horizontal stretch</span> or <span class=\"emph\">horizontal compression</span> of the function $f(x)$.\n <ul class=\"def-list\">\n<li>If $b > 1$, then the graph will be compressed by $\\dfrac{1}{b}$.</li>\n<li>If $0 < b < 1$, then the graph will be stretched by $\\dfrac{1}{b}$.</li>\n<li>If $b < 0$, then there will be combination of a horizontal stretch or compression with a horizontal reflection.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-102-c20",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 5 (Transformation of Functions)",
+          "term": "Even and Odd Functions",
+          "definition": "A function is called an <span class=\"emph\">even function</span> if for every input $x$: $f(-x) = f(x)$. The graph of an even function is symmetric about the $y$-axis.\n\nA function is called an <span class=\"emph\">odd function</span> if for every input $x$: $f(-x) = -f(x)$. The graph of an odd function is symmetric about the origin."
+        },
+        {
+          "id": "MATH-102-c21",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 6 (Absolute Value Functions)",
+          "term": "Absolute Value",
+          "definition": "We define the <span class=\"emph\">absolute value</span> of a real number $x$ by the following piece-wise function:\n\\[\\abs{x} = \\left\\{\n \\begin{matrix}\n x & \\text{ if } x \\geq 0 \\\\\n -x & \\text{ if } x < 0\n \\end{matrix}\n \\right..\\]"
+        },
+        {
+          "id": "MATH-102-c22",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 1: Functions",
+          "section": "Sec 7 (Inverse Functions)",
+          "term": "Inverse Function",
+          "definition": "For any one-to-one function $f(x) = y$, a function $f^{-1}(x)$ is an <span class=\"emph\">inverse function</span> of $f$ if $f^{-1}(y) = x$. This can also be written as\n\\[(f \\circ f^{-1})(x) = x,\\]\nfor all $x$ in the domain of $f$. It also follows that $(f^{-1} \\circ f)(x) = x$ for all $x$ in the domain of $f^{-1}$."
+        },
+        {
+          "id": "MATH-102-c23",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 2: Linear Functions",
+          "section": "Sec 1 (Linear Functions)",
+          "term": "Linear Function",
+          "definition": "A <span class=\"emph\">linear function</span> is a function whose graph is a line. Linear functions can be written in the slope-intercept form\n\\[f(x) = mx + b\\]\nwhere $b$ is the <span class=\"emph\"></span>$y$-intercept}, and $m$ is the rate of change, or <span class=\"emph\">slope</span> of the function."
+        },
+        {
+          "id": "MATH-102-c24",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 2: Linear Functions",
+          "section": "Sec 2 (Graphs of Linear Functions)",
+          "term": "$x$-intercepts",
+          "definition": "The <span class=\"emph\"></span>$x$-intercepts} of a function are the values of $x$ for which $f(x) = 0$. In the case of a linear function, there is exactly one $x$-intercept and it can be found by solving the equation $0 = mx + b$."
+        },
+        {
+          "id": "MATH-102-c25",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 2: Linear Functions",
+          "section": "Sec 2 (Graphs of Linear Functions)",
+          "term": "Horizontal Line, Vertical Line",
+          "definition": "A <span class=\"emph\">horizontal line</span> is a line defined by an equation of the form $f(x) = b$.\n\nA <span class=\"emph\">vertical line</span> is a  line defined by an equation in the form $x = a$."
+        },
+        {
+          "id": "MATH-102-c26",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 2: Linear Functions",
+          "section": "Sec 2 (Graphs of Linear Functions)",
+          "term": "Parallel Lines, Coincide",
+          "definition": "Two lines are <span class=\"emph\">parallel lines</span> if they do not intersect.$^{*}$ The slopes of the lines are the same.\n\\[f(x) = m_1x + b_1 \\qquad \\text{and} \\qquad g(x) = m_2x + b_2\\]\nare parallel if $m_1 = m_2$ and $b_1 \\neq b_2$. If $m_1 = m_2$ and $b_1 = b_2$ we say that the lines <span class=\"emph\">coincide</span> or are <span class=\"emph\">coincident</span>."
+        },
+        {
+          "id": "MATH-102-c27",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 2: Linear Functions",
+          "section": "Sec 2 (Graphs of Linear Functions)",
+          "term": "Perpendicular Lines",
+          "definition": "Two lines are <span class=\"emph\">perpendicular lines</span> if they intersect at right angles.\n\\[f(x) = m_1x + b \\qquad \\text{and} \\qquad g(x) = m_2x + b_2\\]\nare perpendicular if\n\\[m_1m_2 = -1, \\quad \\text{or equivalently} \\quad m_2 = -\\dfrac{1}{m_1}.\\]\nThus, the slopes are negative reciprocals of each other."
+        },
+        {
+          "id": "MATH-102-c28",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 2 (Quadratic Functions)",
+          "term": "Quadratic Function",
+          "definition": "A <span class=\"emph\">quadratic function</span> is a polynomial function of degree two. That is, a quadratic function has the form\n\\[f(x) = ax^2 + bx + c,\\]\nwhere $a,b,c \\in\\R$ and $a \\neq 0$. The coefficient $a$ is called the <span class=\"emph\">leading coefficient</span> while $c$ is called the constant term."
+        },
+        {
+          "id": "MATH-102-c29",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 3 (Power Functions and Polynomial Functions)",
+          "term": "Power Function",
+          "definition": "A <span class=\"emph\">power function</span> is a function that can be represented in the form\n\\[f(x) = kx^p\\]\nwhere $k$ and $p$ are real numbers."
+        },
+        {
+          "id": "MATH-102-c30",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 3 (Power Functions and Polynomial Functions)",
+          "term": "Polynomial Function",
+          "definition": "Let $n$ be a nonnegative integer. A <span class=\"emph\">polynomial function</span> is a function that can be written in the form\n\\[f(x) = a_nx^n + \\cdots + a_2x^2 + a_1x^1 + a_0.\\]\nThis is called the general form of a polynomial function. Each $a_i$ is a coefficient and can be any real number. Each product $a_ix^i$ is a term of the polynomial function.\n\nThe term $a_nx^n$ is the leading term while $a_n$ is the leading coefficient. The degree of $f(x)$ is $n$."
+        },
+        {
+          "id": "MATH-102-c31",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 3 (Power Functions and Polynomial Functions)",
+          "term": "Turning Point",
+          "definition": "A <span class=\"emph\">turning point</span> of a graph is a point at which the graph changes direction from increasing to decreasing or decreasing to increasing."
+        },
+        {
+          "id": "MATH-102-c32",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 4 (Graphs of Polynomial Functions)",
+          "term": "Multiplicity",
+          "definition": "If a polynomial contains a factor of the form $(x-h)^p$, the behavior near the $x$-intercept $h$ is determined by the power $p$. We say that $x=h$ is a zero of <span class=\"emph\">multiplicty</span> $p$."
+        },
+        {
+          "id": "MATH-102-c33",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 4 (Graphs of Polynomial Functions)",
+          "term": "Global Maximum, Global Minimum",
+          "definition": "A local maximum or local minimum at $x=a$ is the output at the highest or lowest point on the graph in an open interval around $x=a$. If a function has a local maximum at $a$, then $f(a) \\geq f(x)$ for all $x$ in an open interval around $x=a$. If a function has a local minimum at $a$, then $f(a) \\leq f(x)$ for all $x$ in an open interval around $x=a$.\n\n\\indent A <span class=\"emph\">global maximum</span> or <span class=\"emph\">global minimum</span> is the output at the highest or lowest point of the function. If a function has a global maximum at $x=a$, then $f(x) \\geq f(a)$ for all $x$. If a function has a global minimum at $a$ then $f(a) \\leq f(x)$ for all $x$."
+        },
+        {
+          "id": "MATH-102-c34",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 5 (Dividing Polynomials)",
+          "term": "Synthetic Division",
+          "definition": "<span class=\"emph\">Synthetic division</span> is a notational shortcut that can be used when the divisor is a binomial in the form $x - k$. In synthetic division, only the coefficients are used in the division process."
+        },
+        {
+          "id": "MATH-102-c35",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 7 (Rational Functions)",
+          "term": "Rational Function",
+          "definition": "A <span class=\"emph\">rational function</span> is a function that can be written as the quotient of two polynomial functions $P(x)$ and $Q(x)$, where $Q(x) \\neq 0$:\n\\[f(x) = \\dfrac{P(x)}{Q(x)} = \\dfrac{a_px^p + a_{p-1}x^{p-1} + \\cdots + a_1 x + a_0}{b_qx^q + b_{q-1}x^{q-1} + \\cdots + b_1x + b_0}, \\quad Q(x) \\neq 0.\\]"
+        },
+        {
+          "id": "MATH-102-c36",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 7 (Rational Functions)",
+          "term": "Asymptote",
+          "definition": "An <span class=\"emph\">asymptote</span> is a line or curve that a function approaches arbitrarily closely."
+        },
+        {
+          "id": "MATH-102-c37",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 7 (Rational Functions)",
+          "term": "Vertical Asymptote",
+          "definition": "A <span class=\"emph\">vertical asymptote</span> of a graph is a vertical line $x = a$ where the graph tends toward positive or negative infinity as the inputs approach $a$. We write\n\n\\begin{quote}\n \\centering $f(x) \\to \\infty$ as $x \\to a$.\n \\end{quote}\n or\n\n\\begin{quote}\n \\centering $f(x) \\to -\\infty$ as $x \\to a$.\n \\end{quote}"
+        },
+        {
+          "id": "MATH-102-c38",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 7 (Rational Functions)",
+          "term": "Horizontal Asymptote",
+          "definition": "A <span class=\"emph\">horizontal asymptote</span> of a graph is a horizontal line $y = b$ where the graph approaches the line as the inputs increase or decrease without bound. We write\n\n\\begin{quote}\n \\centering $f(x) \\to b$ as $x \\to \\infty$.\n \\end{quote}\n or\n\n\\begin{quote}\n \\centering $f(x) \\to b$ as $x \\to -\\infty$.\n \\end{quote}"
+        },
+        {
+          "id": "MATH-102-c39",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec 7 (Rational Functions)",
+          "term": "Removable Discontinuity",
+          "definition": "A <span class=\"emph\">removable discontinuity</span> occurs in the graph of a rational function at $x = a$ if $a$ is a zero for a factor in the denominator that is common with a factor in the numerator."
+        },
+        {
+          "id": "MATH-102-c40",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Sec Supplamental 1 (Distance and Midpoint Formulas; Circles)",
+          "term": "Distance Formula",
+          "definition": "Given points $(x_1, y_1)$ and $(x_2, y_2)$ in $\\R^2$ the distance between them $d$ is given by the <span class=\"emph\">Distance Formula</span>\n\\[d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}.\\]"
+        },
+        {
+          "id": "MATH-102-c41",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Def (Geometric) • Sec Supplamental 1 (Distance and Midpoint Formulas; Circles)",
+          "term": "Circle",
+          "definition": "A <span class=\"emph\">circle</span> is the locus of all points equidistant from a given center."
+        },
+        {
+          "id": "MATH-102-c42",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 3: Polynomial and Rational Functions",
+          "section": "Def (Analytical) • Sec Supplamental 1 (Distance and Midpoint Formulas; Circles)",
+          "term": "Circle",
+          "definition": "A <span class=\"emph\">circle</span> is defined by a radius $r$ and center $(h,k)$ and is given by the equation\n\\[r^2 = (x - h)^2 + (y - k)^2.\\]\nThis equation is the \\textit{standard form} of the equation of a circle."
+        },
+        {
+          "id": "MATH-102-c43",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 4: Exponential and Logarithmic Functions",
+          "section": "Sec 1-4 (Basic Properties of Exponential and Logarithmic Functions)",
+          "term": "Exponential Function",
+          "definition": "For any real number $x$, an exponential function is a function with the form\n\\[f(x) = ab^x\\]\nwhere $a$ is a nonzero real number called the initial value, and $b$ is any positive real number such that $b \\neq 1$."
+        },
+        {
+          "id": "MATH-102-c44",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 4: Exponential and Logarithmic Functions",
+          "section": "Sec 1-4 (Basic Properties of Exponential and Logarithmic Functions)",
+          "term": "Logarithmic Function to the Base $a$",
+          "definition": "The <span class=\"emph\">logarithmic function to the base</span>$a$}, where $a > 0$ and $a \\neq 1$, is denoted by $y = \\operatorname{log}_a{x}$ (read as “$y$ is the logarithm with base $a$ of $x$\") and is defined by\n\\[y = \\operatorname{log}_a{x} \\text{ \\ \\ if and only if \\ \\ } x = a^y.\\]\nThe domain of the logarithmic function $y = \\operatorname{log}_a{x}$ is $x > 0$ while its range is all real numbers."
+        },
+        {
+          "id": "MATH-102-c45",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 4: Exponential and Logarithmic Functions",
+          "section": "Sec 1-4 (Basic Properties of Exponential and Logarithmic Functions)",
+          "term": "The Natural Logarithm",
+          "definition": "If the base of a logarithmic function is the number $e$, then we have the <span class=\"emph\">natural logarithm function</span>. This function occurs so frequently in applications that it is given a special symbol, $\\ln$."
+        },
+        {
+          "id": "MATH-102-c46",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 1 (Angles)",
+          "term": "Radian",
+          "definition": "One <span class=\"emph\">radian</span> is the measure of the central angle of a circle such that the length of the arc between the initial side and the terminal side is equal to the radius of the circle.\n\nThe <span class=\"emph\">radian measure</span> of an angle is the ratio of the length of the arc subtended by the angle to the radius of the circle."
+        },
+        {
+          "id": "MATH-102-c47",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 1 (Angles)",
+          "term": "Coterminal Angles",
+          "definition": "<span class=\"emph\">Coterminal angles</span> are two angles in standard position that have the same terminal side."
+        },
+        {
+          "id": "MATH-102-c48",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 1 (Angles)",
+          "term": "Reference Angle",
+          "definition": "An angle's <span class=\"emph\">reference angle</span> is the size of the smallest acute angle, $t'$ formed by the terminal side of the angle $t$ and the horizontal axis."
+        },
+        {
+          "id": "MATH-102-c49",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 2 (Unit Circle: Sine and Cosine Functions)",
+          "term": "Sine, Cosine",
+          "definition": "Let $t$ be a real number and $(a,b)$ a point on the unit circle corresponding to the angle $t$ in standard position. Then the sine function evaluated at $t$ is the $y$-coordinate of the associated point. That is\n\\[\\sin(t) = b.\\]\nLikewise cosine is defined to be the $x$-coordinate of the associated point. Thus\n\\[\\cos(t) = a.\\]"
+        },
+        {
+          "id": "MATH-102-c50",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 3 (The Other Trigonometric Functions)",
+          "term": "Secant, Cosecant, Tangent, Cotangent",
+          "definition": "If $t$ is a real number and $(x,y)$ is a point where the terminal side of an angle $t$ radians intercepts the unit circle, then\n \\begin{align*}\n \\sec(t) &= \\dfrac{1}{x}, \\qquad x \\neq 0 \\\\\n \\csc(t) &= \\dfrac{1}{y}, \\qquad y \\neq 0 \\\\\n \\tan(t) &= \\dfrac{y}{x}, \\qquad x \\neq 0 \\\\\n \\cot(t) &= \\dfrac{x}{y}, \\qquad y \\neq 0 \n \\end{align*}"
+        },
+        {
+          "id": "MATH-102-c51",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 3 (The Other Trigonometric Functions)",
+          "term": "Even Function, Odd Function",
+          "definition": "A function $f(x)$ is even if $f(-x) = f(x)$ and a function is odd if $f(-x) = -f(x)$."
+        },
+        {
+          "id": "MATH-102-c52",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 5: Trigonometric Functions",
+          "section": "Sec 4 (Right Triangle Trigonometry)",
+          "term": "Sine, Cosine, Tangent (Right Triangle Definition)",
+          "definition": "Given a right triangle with an acute angle of $t$,\n\\[\\sin(t) = \\dfrac{\\text{opposite}}{\\text{hypotenuse}} \\qquad \\cos(t) = \\dfrac{\\text{adjacent}}{\\text{hypotenuse}} \\qquad \\tan(t) = \\dfrac{\\text{opposite}}{\\text{adjacent}}\\]"
+        },
+        {
+          "id": "MATH-102-c53",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 6: Periodic Functions",
+          "section": "Sec 1 (Graphs of the Sine and Cosine Functions)",
+          "term": "Sine Function, Cosine Function",
+          "definition": "A <span class=\"emph\">sine function</span> has the form\n \\begin{center}\n \\href{https://www.desmos.com/calculator/pwzacgm3jk}{$\\displaystyle y = A\\sin(Bx - C) + D$,}\n \\end{center}\n where $A$, $B$, $C$, and $D$ are real numbers. Likewise a cosine function has the form\n \\begin{center}\n \\href{https://www.desmos.com/calculator/eyaylapg3w}{$\\displaystyle y = A\\cos(Bx - C) + D$.}\n \\end{center}"
+        },
+        {
+          "id": "MATH-102-c54",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 6: Periodic Functions",
+          "section": "Sec 1 (Graphs of the Sine and Cosine Functions)",
+          "term": "Phase Shift, Period, Amplitude, Midline",
+          "definition": "Let $A$, $B$, $C$, and $D$ be real numbers and $y = A\\sin(Bx - C) + D$, a sine curve. Then we may write\n\\[y = A\\sin\\left(B\\left(x - \\dfrac{C}{B}\\right)\\right) + D,\\]\nwhere \n <ul class=\"def-list\">\n<li>$\\abs{A}$ is the <span class=\"emph\">amplitude</span>,</li>\n<li>$D$ is the <span class=\"emph\">midline</span>,</li>\n<li>$\\dfrac{C}{B}$ is the <span class=\"emph\">phase shift</span>,</li>\n<li>and $\\dfrac{2\\pi}{B}$ is the <span class=\"emph\">period</span>.</li>\n</ul>"
+        },
+        {
+          "id": "MATH-102-c55",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 6: Periodic Functions",
+          "section": "Sec 3 (Inverse Trigonometric Functions)",
+          "term": "Inverse Function",
+          "definition": "For any one-to-one function $f(x) = y$, a function $f^{-1}(x)$ is an <span class=\"emph\">inverse function</span> of $f$ if $f^{-1}(y) = x$. This can also be written as\n\\[(f \\circ f^{-1})(x) = x,\\]\nfor all $x$ in the domain of $f$. It also follows that $(f^{-1} \\circ f)(x) = x$ for all $x$ in the domain of $f^{-1}$."
+        },
+        {
+          "id": "MATH-102-c56",
+          "courseId": "MATH-102",
+          "chapter": "Chapter 6: Periodic Functions",
+          "section": "Sec 3 (Inverse Trigonometric Functions)",
+          "term": "Arcsine, Arccos, Arctan",
+          "definition": "For angles in the interval $\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$, if $\\sin(y) = x$, then $\\arcsin(x) = y$.\n\nFor angles in the interval $[0,\\pi]$, if $\\cos(y) = x$, then $\\arccos(x) = y$.\n\nFor angles in the interval $\\left(-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)$, if $\\tan(y) = x$, then $\\arctan(x) = y$."
         }
       ]
     }

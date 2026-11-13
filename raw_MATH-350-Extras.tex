@@ -1,0 +1,447 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\newcommand{\inc}{\text{\footnotesize\phantom{.}I\phantom{.}}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\newcounter{definition}[section]
+\newenvironment{definition}[2][]{\refstepcounter{definition} \noindent\textbf{Definition~\thedefinition #1 -- #2} \par \rmfamily}{\bigskip}
+   
+\renewcommand{\emph}[1]{\textcolor{red}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+    \textbf{Chapter 1}
+\end{center}
+
+
+    \begin{definition}{Geometry}
+        The word \emph{geometry} comes from the Greek \textit{geometrein}; \textit{geo} meaning ``earth" and \textit{metrein} meaning ``to measure".
+    \end{definition}
+    
+
+    \begin{definition}{Axiomatic Method}
+        The \emph{axiomatic method} is a method of proving that the results are correct and organizing them into a logical structure.
+    \end{definition}
+    
+    
+    \begin{definition}{Undefined Terms, Primitive Terms}
+        \emph{Undefined terms} or those terms used within an axiomatic system that we do not define in order to avoid either circular reasoning or an infinite regression. The undefined terms are also called \emph{primitive terms}.
+    \end{definition}
+    
+    
+    \begin{definition}{Segment}
+        Given distinct points $A$ and $B$, the \emph{segment} $AB$ is the set whose members are the points $A$ and $B$ and all points $C$ that lie on the line $\overleftrightarrow{AB}$ and are between $A$ and $B$.
+    \end{definition}
+    
+    
+    \begin{definition}{Circle}
+        Given distinct points $O$ and $A$. The set of all points $P$ such that segment $OP$ is congruent to segment $OA$ is called \emph{the circle with $O$ as center and $OA$ as radius}. For each point $P$ in that set, we say that $P$ \textit{lies on} the circle and $OP$ is called the \textit{radius} of the circle.
+    \end{definition}
+    
+    
+    \begin{definition}{Ray}
+        The \emph{ray} $\overrightarrow{AB}$ is the following set of points lying on the line $\overleftrightarrow{AB}$: those points that belong to the segment $AB$ and all points $C$ on $\overleftrightarrow{AB}$ such that $B$ is between $A$ and $C$. The ray $\overrightarrow{AB}$ is said to \textit{emanate from the vertex $A$} and to be \textit{part} of line $\overleftrightarrow{AB}$.
+    \end{definition}
+    
+    
+    \begin{definition}{Opposite (Rays)}
+        Rays $\overrightarrow{AB}$ and $\overrightarrow{AC}$ are \emph{opposite} if they are distinct, if they emanate from the same point $A$, and if they are part of the same line $\overleftrightarrow{AB} = \overleftrightarrow{AC}$.
+    \end{definition}
+    
+    
+    \begin{definition}{Angle with Vertex $A$}
+        An \emph{Angle with vertex $A$} is a point $A$ together with two distinct non-opposite rays $\overrightarrow{AB}$ and $\overrightarrow{AC}$ (called the \textit{sides} of the angle) emanating from $A$.    
+    \end{definition}
+    
+    \begin{definition}{Supplementary Angles} %pg 19
+        If two angles $\sphericalangle DAB$ and $\sphericalangle CAD$ have a common side $\overrightarrow{AD}$ and the other two sides $\overrightarrow{AB}$ and $\overrightarrow{AC}$ form opposite rays, the angles are \emph{supplements} of each other, or \emph{supplementary angles}.
+    \end{definition}
+    
+    \begin{definition}{Right Angle} %pg 19
+        An angle $\sphericalangle BAD$ is a \emph{right angle} if it has a supplementary angle to which it is congruent.
+    \end{definition}
+    
+
+    \begin{definition}{Transversal} %pg 41
+        A \emph{transversal} to two distinct lines is another line that intersects both of them in distinct points.
+    \end{definition}
+    
+    
+    \begin{definition}{Perpendicular} %pg 42
+        Given lines $l$ and $m$ that intersect at a point $A$. if there is a ray $\overrightarrow{AB}$ that is part of $l$ and a ray $\overrightarrow{AC}$ that is part of $m$ such that $\sphericalangle BAC$ is a right angle, we say $l$ and $m$ are \emph{perpendicular}.
+    \end{definition}
+    
+    
+    \begin{definition}{Quadrilateral} %pg 44
+        Given four points, $A$, $B$, $C$, and $D$, no three of which are collinear and such that any pair of segments $AB$, $BC$, $CD$, and $DA$ either have no point in common or have only an end point in common. We can then define the \emph{quadrilateral} $\square ABCD$ to consist of the four segments mentioned, which are called its sides, the four points being called its vertices.
+    \end{definition}
+    
+    
+    \begin{definition}{Rectangle}
+        A quadrilateral with four right angles.
+    \end{definition}
+    
+    
+\begin{center}
+    \textbf{Chapter 2}
+\end{center}
+    
+    
+    \begin{definition}{Collinear}
+        Three or more points $A$, $B$, $C$, \ldots \ are \emph{collinear} if there exists a line incident with all of them.
+    \end{definition}
+    
+    
+    \begin{definition}{Concurrent}
+        Three or more lines $l$, $m$, $n$, \ldots \ are \emph{concurrent} if there exists a point incident with all of them.
+    \end{definition}
+    
+    
+    \begin{definition}{Parallel}
+        Lines $l$ and $m$ are \emph{parallel} if they are distinct lines and no point is incident with both of them.
+    \end{definition}
+    
+    
+    \begin{definition}{Interpretation (of a system)}
+        Given a formal system, we \emph{interpret} the system when we give the undefined terms a particular meaning and then interpret statements about those undefined terms by substituting the interpreted meanings.
+    \end{definition}
+    
+    
+    \begin{definition}{Model}
+        A \emph{model} of a formal system is an interpretation of the undefined terms for which the axioms hold true.
+    \end{definition}
+    
+    
+    \begin{definition}{Independent}
+        We call a statement \emph{independent} of given axioms if it is impossible to either prove or disprove the statement from those axioms.
+    \end{definition}
+    
+    
+    \begin{definition}{Antipodal Points}
+        Two points on a sphere are \emph{antipodal} if a straight line in three-space joining them passes through the center of the sphere.
+    \end{definition}
+    
+    
+    \begin{definition}{Consistent (axiomatized theory)}
+        An axiomatized theory is called \emph{consistent} if no contradiction can be proved from the axioms.
+    \end{definition}
+    
+    
+    \begin{definition}{Isomorphism (of models)}
+        An \emph{isomorphism} of two models of an axiomatic system is a one-to-one correspondence between the basic objects of the system that preserves all the basic relations of the system.
+    \end{definition}
+    
+    
+    \begin{definition}{Projective Plane}
+        A \emph{projective plane} is a model of incidence geometry having the elliptic parallel property (any two lines meet) and such that every line has at least three distinct points lying on it (strengthened Incidence Axiom 2).
+    \end{definition}
+    
+    
+    \begin{definition}{Affine Plane}
+        An \emph{affine plane} is a model of incidence geometry having the following Euclidean parallel property:
+            \[\forall l \ \forall P \ (\neg (P \inc l) \Rightarrow \exists !m \ (P \inc m \wedge l \parallel m)).\]
+    \end{definition}
+    
+    
+    \begin{definition}{Equivalence Relation}
+        A relation that is reflexive, symmetric, and transitive is called an \emph{equivalence relation}.
+    \end{definition}
+    
+    
+    \begin{definition}{Triangle} %pg 98
+        A \emph{triangle} is a set of three noncollinear points.
+    \end{definition}
+    
+    
+\begin{center}
+    \textbf{Chapter 3}
+\end{center}
+
+    
+    \begin{definition}{Same Side (of a line)}
+        Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A = B$ or if segment $AB$ contains no point lying on $l$, we say $A$ and $B$ are \emph{on the same side of $l$}.
+    \end{definition}
+    
+    
+    \begin{definition}{Opposite Side (of a line)}
+        Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A \neq B$ and segment $AB$ intersects $l$, we say that $A$ and $B$ are \emph{on opposite sides of $l$}.
+    \end{definition}
+    
+    
+    \begin{definition}{Interior (of an angle)}
+        Given an angle $\sphericalangle CAB$, define a point $D$ to be in the \emph{interior} of $\sphericalangle CAB$ if $D$ is on the same side of $\overleftrightarrow{AC}$ as $B$ and if $D$ is also on the same side of $\overleftrightarrow{AB}$ as $C$.
+    \end{definition}
+    
+    
+    \begin{definition}{Between (rays)}
+        Ray $\overrightarrow{AD}$ is \emph{between} rays $\overrightarrow{AC}$ and $\overrightarrow{AB}$ if $\overrightarrow{AB}$ and $\overrightarrow{AC}$ are not opposite rays and $D$ is interior to $\sphericalangle CAB$.
+    \end{definition}
+    
+    
+    \begin{definition}{Interior (of a triangle)}
+        The \emph{interior} of a triangle is the intersection of the interiors of its three angles.
+    \end{definition}
+    
+    
+    \begin{definition}{Exterior (of a triangle)}
+        A point is \emph{exterior} to the triangle if it is not in the interior and does not lie on any side of the triangle.
+    \end{definition}
+    
+    
+    \begin{definition}{Congruent (triangles)}
+        Triangles $\triangle ABC$ and $\triangle DEF$ are \emph{congruent} if there exists a one-to-one correspondence between their vertices such that corresponding sides are congruent and corresponding angles are congruent.
+    \end{definition}
+    
+    
+    \begin{definition}{$<$ (segments)}
+        \emph{$AB < CD$} or ( $CD > AB$) means that there exists a point $E$ between $C$ and $D$ such that $AB \cong CE$.
+    \end{definition}
+    
+    
+    \begin{definition}{$<$ (angles)}
+        $\sphericalangle ABC < \sphericalangle DEF$ means there is a ray $\overrightarrow{EG}$ between $\overrightarrow{ED}$ and $\overrightarrow{EF}$ such that $\sphericalangle ABC \cong \sphericalangle GEF$.
+    \end{definition}
+    
+    
+    \begin{definition}{Acute}
+        An angle is \emph{acute} if it is less than a right angle.
+    \end{definition}
+    
+    
+    \begin{definition}{Obtuse}
+        An angle is \emph{obtuse} if it is greater than a right angle.
+    \end{definition}
+    
+    
+    \begin{definition}{Hilbert Plane}
+        A model of our incidence, betweenness, and congruence axioms is called a \emph{Hilbert plane}.
+    \end{definition}
+    
+    
+    \begin{definition}{Dedekind Cut}
+        A pair of subsets $\sigma_1$ and $\sigma_2$ with the properties in Dedekind's axiom is called a \emph{Dedekind cut} of the line.
+    \end{definition}
+    
+    
+    \begin{definition}{Real Euclidean Plane}
+        A \emph{real Euclidean plane} is a Hilbert plane in which Hilbert's Euclidean axiom of parallelism and Dedekind's axiom hold.
+    \end{definition}
+
+
+    \begin{definition}{Euclidean Plane}
+        A \emph{Euclidean plane} is a Hilbert plane in which Hilbert's Euclidean axiom of parallelism and the circle-circle continuity principle hold.
+    \end{definition}
+
+
+\begin{center}
+    \textbf{Chapter 4}
+\end{center}
+
+
+    \begin{definition}{Neutral Geometry} %pg 161
+        \emph{Neutral geometry} is the study of geometry assuming the incidence, betweenness, and congruence axioms, along with the continuity axiom, but without assuming any parallel postulate. 
+    \end{definition}
+    
+    
+    \begin{definition}{Interior Angles (to a transversal)} %pg 162
+        Let $t$ be a transversal to lines $l$ and $l'$, with $t$ meeting $l$ at $B$ and $l'$ at $B'$. Choose points $A$ and $C$ on $l$ such that $A \ast B \ast C$; choose points $A'$ and $C'$ on $l'$ such that $A$ and $A'$ are on the same side of $t$ and such that $A' \ast B' \ast C'$. The following four angles are called \emph{interior}: $\sphericalangle A'B'B$, $\sphericalangle ABB'$, $\sphericalangle C'B'B$, $\sphericalangle CBB'$.
+    \end{definition}
+    
+    
+    \begin{definition}{Alternate Interior Angles} %pg 162
+        Let $t$ be a transversal to lines $l$ and $l'$, with $t$ meeting $l$ at $B$ and $l'$ at $B'$. Choose points $A$ and $C$ on $l$ such that $A \ast B \ast C$; choose points $A'$ and $C'$ on $l'$ such that $A$ and $A'$ are on the same side of $t$ and such that $A' \ast B' \ast C'$. Then the two pairs ($\sphericalangle ABB'$, $\sphericalangle C'B'B$) and ($\sphericalangle A'B'B$, $\sphericalangle CBB'$) are called pairs of \emph{alternate interior angles.}
+    \end{definition}
+    
+    
+    \begin{definition}{Exterior Angle} %pg 164
+        An angle supplementary to an angle of a triangle is called an \emph{exterior angle} of that triangle.
+    \end{definition}
+    
+    
+    \begin{definition}{Remote Interior Angles} %pg 164
+        Given an exterior angle of a triangle, the two angles of the triangle, not supplementary to the exterior angle are called \emph{remote interior angles}.
+    \end{definition}
+    
+    
+    \begin{definition}{Complementary Angles} %pg 171
+        If $(\sphericalangle B)^\circ + (\sphericalangle C)^\circ = 90^\circ$, then $\sphericalangle B$ and $\sphericalangle C$ are called $\emph{complements}$ of each other and are said to be \emph{complementary angles}.
+    \end{definition}
+    
+    
+    \begin{definition}{Bi-right Quadrilateral} %pg 176
+        Quadrilateral $\square ABDC$ in which the adjacent angles $\sphericalangle A$ and $\sphericalangle B$ are right angles will be called \emph{bi-right}.
+    \end{definition}
+    
+    
+    \begin{definition}{Base (of a bi-right quadrilateral)} %pg 177
+        Given a bi-right quadrilateral $\square ABDC$ side $AB$ joining the right angles will be called the \emph{base} with respect to this labeling.
+    \end{definition}
+    
+    
+    \begin{definition}{Summit (of a bi-right quadrilateral)} %pg 177
+        Given a bi-right quadrilateral $\square ABDC$ side $CD$, the side opposite the base, will be called the \emph{summit} with respect to this labeling.
+    \end{definition}
+    
+    
+    \begin{definition}{Saccheri Quadrilateral} %pg 177
+        An isosceles bi-right quadrilateral $\square ABDC$ is one whose sides $CA$ and $DB$ are congruent and is called a \emph{Saccheri quadrilateral}.
+    \end{definition}
+    
+    
+    \begin{definition}{Lambert Quadrilateral} %pg 180
+        A quadrilateral with at least three right angles is called a \emph{Lambert quadrilateral}.
+    \end{definition}
+    
+    
+    \begin{definition}{Semi-Euclidean} %pg 182
+        A Hilbert plane is called \emph{semi-Euclidean} if all Lambert quadrilaterals and all Saccheri quadrilaterals are rectangles.
+    \end{definition}
+    
+    
+    \begin{definition}{Acute Angle Hypothesis} %pg 182
+        If the fourth angle of every Lambert quadrilateral in a Hilbert plane is acute, we say that the plane satisfies the \emph{acute angle hypothesis}.
+    \end{definition}
+    
+    
+    \begin{definition}{Obtuse Angle Hypothesis} %pg 182
+        If the fourth angle of every Lambert quadrilateral in a Hilbert plane is obtuse, we say that the plane satisfies the \emph{obtuse angle hypothesis}.
+    \end{definition}
+    
+    
+    \begin{definition}{Right Angle Hypothesis} %pg 182
+        If the fourth angle of every Lambert quadrilateral in a Hilbert plane is right, we say that the plane satisfies the \emph{right angle hypothesis}.
+    \end{definition}
+    
+    
+    \begin{definition}{Convex Quadrilateral} %pg 187
+        Quadrilateral $\square ABCD$ is called \emph{convex} if it has a pair of opposite sides, e.g., $AB$ and $CD$, such that $CD$ is contained in one of the half-planes bounded by $\overleftrightarrow{AB}$, and $AB$ is contained in of the the half-planes bounded by $\overleftrightarrow{CD}$.
+    \end{definition}
+    
+
+\begin{center}
+    \textbf{Chapter 5}
+\end{center} 
+
+    
+    \begin{definition}{Equidistant Locus} %pg 213
+        Given a line $l$ and a segment $PQ$ of a line perpendicular to $l$ at $Q$, we can consider the set of all points $P'$ on the same side of $l$ as $P$ such that if $Q'$ is the foot of the perpendicular from $P'$ to $l$, then $PQ \cong P'Q'$. Call that set the \emph{equidistant locus to $l$ through $P$}. 
+    \end{definition}
+    
+    
+    \begin{definition}{Similar Triangles} %pg 215
+        Two triangles are \emph{similar} if their vertices can be put in one-to-one correspondence in such a way that corresponding angles are congruent (AAA). We use the notation $\triangle ABC \sim \triangle DEF$ to indicate that these triangles are similar when $A$, $B$, $C$ correspond, respectively, to $D$, $E$, $F$.
+    \end{definition}
+    
+    
+\begin{center}
+    \textbf{Chapter 6}
+\end{center}
+    
+    
+    \begin{definition}{Non-Euclidean Hilbert Plane} %pg 250
+        A Hilbert plane satisfying the negation of Hilbert's Euclidean Parallel Postulate will be called a \emph{non-Euclidean Hilbert plane}.
+    \end{definition}
+    
+    
+    \begin{definition}{Defect} %pg 252
+        Given a triangle $\triangle ABC$, the sum of whose interior angles is less than 180$^\circ$, the supplement of an angle constructed by successively juxtaposing the three angles of $\triangle ABC$ is called the \emph{defect} of the triangle, and is denoted $\delta(ABC)$.
+    \end{definition}
+    
+    
+    \begin{definition}{Limiting Parallel Ray} %pg 259
+        Given a line $l$ and a point $P$ not on $l$, let $Q$ be the foot of the perpendicular from $P$ to $l$. A \emph{limiting parallel ray} to $l$ emanating from $P$ is a ray $\overrightarrow{PX}$ that does not intersect $l$ and such that for every ray $\overrightarrow{PY}$ which is between $\overrightarrow{PQ}$ and $\overrightarrow{PX}$, $\overrightarrow{PY}$, intersects $l$.
+    \end{definition}
+    
+    
+    \begin{definition}{Hyperbolic Plane} %pg 260
+        A Hilbert plane in which Hilbert's hyperbolic axiom of parallels holds is called a \emph{hyperbolic plane}.
+    \end{definition}
+    
+    
+    \begin{definition}{Angles of Parallelism} %pg 260
+        Given limiting parallel rays $\overrightarrow{PX}$ and $\overrightarrow{PX'}$ to line $l$ through $P$ with $Q$ being the foot of the perpendicular from $P$ to $l$, the acute angles $\sphericalangle XPQ$ and $\sphericalangle X'PQ$ are called \emph{angles of parallelism} for segment $PQ$.
+    \end{definition}
+    
+    
+    \begin{definition}{Real Hyperbolic Plane} %pg 262
+        A non-Euclidean plane satisfying Dedekind's axiom is called a \emph{real hyperbolic plane}.
+    \end{definition}
+    
+    \begin{definition}{Line of Enclosure} %pg 282
+        Given angle $\sphericalangle ABC$ a line $l$ that is a limiting parallel to both sides $\overrightarrow{BA}$ and $\overrightarrow{BC}$ is called a \emph{line of enclosure}.
+    \end{definition}
+    
+    
+\begin{center}
+    \textbf{Chapter 7}
+\end{center}
+
+    
+    \begin{definition}{Inverse (of a point $P$ with respect to circle $\gamma$)} %pg 314
+        Let $\gamma$ be a circle of radius $r$, and center $O$. For any point $P \neq O$ the \emph{inverse} $P'$ of $P$ with respect to $\gamma$ is the unique point $P'$ on ray $\overrightarrow{OP}$ such that $(\overline{OP})(\overline{OP'}) = r^2$.
+    \end{definition}
+    
+    
+    \begin{definition}{Pole (of a chord)} %pg 314
+        If $TU$ is a chord of circle $\gamma$ which is not a diameter, then the \emph{pole} of $TU$ is the point of intersection of the tangents to $\gamma$ at $T$ and $U$.
+    \end{definition}
+    
+    
+    \begin{definition}{Interior of $\gamma$} %pg 298
+        Let $\gamma$ be a circle with center $O$ and point $R$ on $\gamma$. The \emph{interior} of $\gamma$ consists of all points $X$ such that $OX < OR$.
+    \end{definition}
+    
+    
+    \begin{definition}{Ordinary Points} %pg 310 
+        In either the Poincar\'e or Klein models of hyperbolic geometry using the circle $\gamma$, points in the interior of $\gamma$ are called \emph{ordinary points}.
+    \end{definition}
+    
+    
+    \begin{definition}{Ideal Points} %pg 301
+        In either the Poincar\'e or Klein models of hyperbolic geometry using the circle $\gamma$, points on the circle $\gamma$ are called \emph{ideal points}.
+    \end{definition}
+    
+    
+    \begin{definition}{Ultra-Ideal Points} %pg 310 
+        In either the Poincar\'e or Klein models of hyperbolic geometry using the circle $\gamma$, points outside of $\gamma$ are called \emph{ultra-ideal points}.
+    \end{definition}
+    
+    
+    \begin{definition}{Orthogonal Circles} %pg 302
+        Two Euclidean circles $\gamma$ and $\delta$ are \emph{orthogonal} if at each point of intersection the radii of $\gamma$ and $\delta$ through that point are perpendicular.
+    \end{definition}
+    
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
