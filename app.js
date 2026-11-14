@@ -327,7 +327,7 @@
           </div>
           <div class="card-item-content">
             <div class="card-item-term">${card.term}</div>
-            ${card.section ? `<span class="card-item-section">Sec ${card.section}</span>` : ''}
+            ${card.section ? `<span class="card-item-section">${formatSectionLabel(card.section)}</span>` : ''}
           </div>
         `;
 
@@ -555,7 +555,7 @@
     renderMath(elements.cardTerm);
 
     // Populate Card Back (Definition)
-    elements.cardSectionLabel.textContent = card.section ? `Section ${card.section}` : card.chapter;
+    elements.cardSectionLabel.textContent = card.section ? formatSectionLabel(card.section) : card.chapter;
     elements.cardDefinition.innerHTML = formatDefinitionHtml(card.definition);
     renderMath(elements.cardDefinition);
 
@@ -570,6 +570,11 @@
     elements.btnPrevCard.disabled = state.currentIndex === 0;
   }
 
+  function formatSectionLabel(section) {
+    if (!section) return '';
+    return /^(Def|Sec)\b/i.test(section) ? section : `Sec ${section}`;
+  }
+
   function formatDefinitionHtml(rawText) {
     if (!rawText) return '';
     const blocks = rawText.split(/\n\s*\n/);
@@ -577,7 +582,7 @@
       return blocks.map(b => {
         b = b.trim();
         if (!b) return '';
-        if (b.startsWith('<ul') || b.startsWith('<div class="def-table')) {
+        if (b.startsWith('<ul') || b.startsWith('<ol') || b.startsWith('<div class="def-')) {
           return b;
         }
         return `<p class="def-paragraph">${b}</p>`;

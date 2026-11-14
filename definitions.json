@@ -114,7 +114,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Cartesian Power $A^n$",
-          "definition": "For any set $A$ and a positive integer $n$, the <span class=\"emph\">Cartesian power</span>$A^n$} is\n\\[A^n =\\underbrace{A \\times A \\times \\cdots \\times A}_\\text{$n$ times} = \\{(x_1,x_2,\\ldots,x_n) : x_1,x_2,\\ldots,x_n \\in A\\}.\\]"
+          "definition": "For any set $A$ and a positive integer $n$, the <span class=\"emph\">Cartesian power $A^n$</span> is\n\\[A^n =\\underbrace{A \\times A \\times \\cdots \\times A}_\\text{$n$ times} = \\{(x_1,x_2,\\ldots,x_n) : x_1,x_2,\\ldots,x_n \\in A\\}.\\]"
         },
         {
           "id": "MATH-301-c9",
@@ -298,7 +298,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "Universal Quantifier",
-          "definition": "The symbol $\\forall$ is called the universal quantifier. $\\forall$ stands for the phrase \\textit{“For all”} or \\textit{“For every\"}, or \\textit{“For each\"}."
+          "definition": "The symbol $\\forall$ is called the universal quantifier. $\\forall$ stands for the phrase <em>“For all”</em> or <em>“For every\"</em>, or <em>“For each\"</em>."
         },
         {
           "id": "MATH-301-c32",
@@ -306,7 +306,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "Existential Quantifier",
-          "definition": "The symbol $\\exists$ is called the existential quantifier. $\\exists$ stands for the phrase \\textit{“There exists a\"} or \\textit{“There is a\"}."
+          "definition": "The symbol $\\exists$ is called the existential quantifier. $\\exists$ stands for the phrase <em>“There exists a\"</em> or <em>“There is a\"</em>."
         },
         {
           "id": "MATH-301-c33",
@@ -378,7 +378,7 @@
           "chapter": "Chapter 5",
           "section": "",
           "term": "Congruence Modulo $n$",
-          "definition": "Given integers $a$ and $b$ and $n \\in \\Z^{+}$, we say that $a$ and $b$ are <span class=\"emph\">congruent modulo</span>$n$} if $n \\mid (a-b)$. We express this as $a \\equiv b \\mod{n}$."
+          "definition": "Given integers $a$ and $b$ and $n \\in \\Z^{+}$, we say that $a$ and $b$ are <span class=\"emph\">congruent modulo $n$</span> if $n \\mid (a-b)$. We express this as $a \\equiv b \\mod{n}$."
         },
         {
           "id": "MATH-301-c42",
@@ -466,7 +466,7 @@
           "chapter": "Chapter 11",
           "section": "",
           "term": "Equivalence Class Containing $a$",
-          "definition": "Suppose $R$ is an equivalence relation on a set $A$. Given any element $a \\in A$, the <span class=\"emph\">equivalence class containing</span>$a$} is the subset $\\{x \\in A : x \\sim a\\}$ of $A$ consisting of all elements of $A$ that relate to $a$. This set is denote as $[a]$."
+          "definition": "Suppose $R$ is an equivalence relation on a set $A$. Given any element $a \\in A$, the <span class=\"emph\">equivalence class containing $a$</span> is the subset $\\{x \\in A : x \\sim a\\}$ of $A$ consisting of all elements of $A$ that relate to $a$. This set is denote as $[a]$."
         },
         {
           "id": "MATH-301-c53",
@@ -514,7 +514,7 @@
           "chapter": "Chapter 12",
           "section": "",
           "term": "Range, Image",
-          "definition": "Given some function $f : A \\to B$ the set\n\\[f(A) = \\{ f(a) : a \\in A\\} \\subseteq B\\]\nis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\nSimilarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
+          "definition": "Given some function $f : A \\to B$ the set\n\\[f(A) = \\{ f(a) : a \\in A\\} \\subseteq B\\]\nis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\n Similarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
         },
         {
           "id": "MATH-301-c59",
@@ -522,7 +522,7 @@
           "chapter": "Chapter 12",
           "section": "",
           "term": "Equal (functions)",
-          "definition": "Two functions $f$ and $g$ are <span class=\"emph\">equal</span> provided that\n <ul class=\"def-list\">\n<li>The domain of $f$ equals the domain of $g$.</li>\n<li>The codomain of $f$ equals the codomain of $g$.</li>\n<li>For each $x$ in the domain of $f$ (which equals the domain of $g$), $f(x) = g(x)$.</li>\n</ul>"
+          "definition": "Two functions $f$ and $g$ are <span class=\"emph\">equal</span> provided that\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">$\\bullet$</span> The domain of $f$ equals the domain of $g$.</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> The codomain of $f$ equals the codomain of $g$.</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> For each $x$ in the domain of $f$ (which equals the domain of $g$), $f(x) = g(x)$.</li>\n</ul>"
         },
         {
           "id": "MATH-301-c60",
@@ -594,7 +594,7 @@
           "chapter": "Chapter 12",
           "section": "",
           "term": "Preimage (of a set)",
-          "definition": "Suppose $f: A \\to B$ is a function. If $Y \\subset B$, the <span class=\"emph\">preimage of</span>$Y$} is the set $f^{-1} = \\{x \\in A : f(x) \\in Y\\} \\subseteq A$."
+          "definition": "Suppose $f: A \\to B$ is a function. If $Y \\subset B$, the <span class=\"emph\">preimage of $Y$</span> is the set $f^{-1} = \\{x \\in A : f(x) \\in Y\\} \\subseteq A$."
         },
         {
           "id": "MATH-301-c69",
@@ -698,7 +698,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "IF, AND, OR (Conditional, Conjunction, Disjunction)",
-          "definition": "\\[\\begin{array}{ccc}\n         A & \\emph{\\implies} & B \\\\ \\hline\n         T &     \\textbf{T}    & T \\\\\n         T &     \\textbf{F}    & F \\\\\n         F &     \\textbf{T}    & T \\\\\n         F &     \\textbf{T}    & F \n         \\end{array}\n         \\qquad\n         \\begin{array}{ccc}\n         A & \\emph{\\wedge} & B \\\\ \\hline\n         T &     \\textbf{T}    & T \\\\\n         T &     \\textbf{F}    & F \\\\\n         F &     \\textbf{F}    & T \\\\\n         F &     \\textbf{F}    & F \n         \\end{array}\n         \\qquad\n         \\begin{array}{ccc}\n         A & \\emph{\\vee} & B \\\\ \\hline\n         T &     \\textbf{T}    & T \\\\\n         T &     \\textbf{T}    & F \\\\\n         F &     \\textbf{T}    & T \\\\\n         F &     \\textbf{F}    & F \n         \\end{array}\\]"
+          "definition": "\\[\\begin{array}{ccc}\n A & \\emph{\\implies} & B \\\\ \\hline\n T & \\textbf{T} & T \\\\\n T & \\textbf{F} & F \\\\\n F & \\textbf{T} & T \\\\\n F & \\textbf{T} & F \n \\end{array}\n \\qquad\n \\begin{array}{ccc}\n A & \\emph{\\wedge} & B \\\\ \\hline\n T & \\textbf{T} & T \\\\\n T & \\textbf{F} & F \\\\\n F & \\textbf{F} & T \\\\\n F & \\textbf{F} & F \n \\end{array}\n \\qquad\n \\begin{array}{ccc}\n A & \\emph{\\vee} & B \\\\ \\hline\n T & \\textbf{T} & T \\\\\n T & \\textbf{T} & F \\\\\n F & \\textbf{T} & T \\\\\n F & \\textbf{F} & F \n \\end{array}\\]"
         },
         {
           "id": "MATH-410-c3",
@@ -714,7 +714,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "General Linear Group",
-          "definition": "The <span class=\"emph\">general linear group over</span>$\\R$}, $GL_n(\\R)$, is the group of $n \\times n$ invertible matrices with entries in $\\R$."
+          "definition": "The <span class=\"emph\">general linear group over $\\R$</span>, $GL_n(\\R)$, is the group of $n \\times n$ invertible matrices with entries in $\\R$."
         },
         {
           "id": "MATH-410-c5",
@@ -722,7 +722,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Special Linear Group",
-          "definition": "The <span class=\"emph\">special linear group over</span>$\\R$}, $SL_n(\\R)$, is the group of $n \\times n$ matrices with entries in $\\R$ and determinant 1."
+          "definition": "The <span class=\"emph\">special linear group over $\\R$</span>, $SL_n(\\R)$, is the group of $n \\times n$ matrices with entries in $\\R$ and determinant 1."
         },
         {
           "id": "MATH-410-c6",
@@ -762,7 +762,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Universal Set",
-          "definition": "The <span class=\"emph\">universal set</span> is a set fixed within the framework of a theory and consisting of all objects considered in this theory.\n        \n        \\underline{\\hspace{3in}}\\\\\n        {\\tiny Weisstein, Eric W. \"Universal Set.\" From MathWorld--A Wolfram Web Resource. http://mathworld.wolfram.com/UniversalSet.html}"
+          "definition": "The <span class=\"emph\">universal set</span> is a set fixed within the framework of a theory and consisting of all objects considered in this theory.\n\n<div class=\"def-footnote\">Weisstein, Eric W. \"Universal Set.\" From MathWorld–A Wolfram Web Resource. <a href=\"http://mathworld.wolfram.com/UniversalSet.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"def-link\">http://mathworld.wolfram.com/UniversalSet.html</a></div>"
         },
         {
           "id": "MATH-410-c11",
@@ -818,7 +818,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Cartesian Product of $n$ Sets",
-          "definition": "We define the <span class=\"emph\">Cartesian product of</span>$n$ sets} to be\n\\[A_1 \\times \\cdots \\times A_n = \\{(a_1, \\ldots , a_n) : a_i \\in A_i \\text{ for }i = 1,\\dots , n\\}.\\]"
+          "definition": "We define the <span class=\"emph\">Cartesian product of $n$ sets</span> to be\n\\[A_1 \\times \\cdots \\times A_n = \\{(a_1, \\ldots , a_n) : a_i \\in A_i \\text{ for }i = 1,\\dots , n\\}.\\]"
         },
         {
           "id": "MATH-410-c18",
@@ -858,7 +858,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Range, Image",
-          "definition": "Given some function $f : A \\to B$ the set\n\\[f(A) = \\{ f(a) : a \\in A\\} \\subset B\\]\nis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\nSimilarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
+          "definition": "Given some function $f : A \\to B$ the set\n\\[f(A) = \\{ f(a) : a \\in A\\} \\subset B\\]\nis called the <span class=\"emph\">range</span> of $f$ or <span class=\"emph\">image</span> of $A$ under $f$.\n\n Similarly $f(a) \\in B$ is the <span class=\"emph\">image</span> of $a$ under $f$."
         },
         {
           "id": "MATH-410-c23",
@@ -866,7 +866,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Preimage",
-          "definition": "Given some function $f : A \\to B$ with $f(a) = b$ then\n\\[f^{-1}(b) = \\{x \\in A : f(x) = b\\}\\]\nand\n\\[a \\in f^{-1}(b).\\]\nWe refer to $f^{-1}(b)$ as the <span class=\"emph\">preimage</span> of $b$ under $f$.\n\nLet $C \\subset B$. We similarly define\n\\[f^{-1}(C) = \\{ x \\in A: f(x) \\in C\\}\\]\nas the <span class=\"emph\">preimage</span> of $C$ under $f$."
+          "definition": "Given some function $f : A \\to B$ with $f(a) = b$ then\n\\[f^{-1}(b) = \\{x \\in A : f(x) = b\\}\\]\nand\n\\[a \\in f^{-1}(b).\\]\nWe refer to $f^{-1}(b)$ as the <span class=\"emph\">preimage</span> of $b$ under $f$.\n\n Let $C \\subset B$. We similarly define\n\\[f^{-1}(C) = \\{ x \\in A: f(x) \\in C\\}\\]\nas the <span class=\"emph\">preimage</span> of $C$ under $f$."
         },
         {
           "id": "MATH-410-c24",
@@ -954,7 +954,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Equivalence Relation",
-          "definition": "An <span class=\"emph\">equivalence relation</span> on a set $X$ is a relation $R \\subset X \\times X$ such that \n         <ul class=\"def-list\">\n<li>$(x,x)\\in R$ for all $x \\in X$ (<span class=\"emph\">reflexive property</span>);</li>\n<li>$(x,y) \\in R$ implies $(y,x) \\in R$ (<span class=\"emph\">symmetric property</span>);</li>\n<li>$(x,y)$ and $(y,z) \\in R$ imply $(x,z) \\in R$ (<span class=\"emph\">transitive property</span>).</li>\n</ul>"
+          "definition": "An <span class=\"emph\">equivalence relation</span> on a set $X$ is a relation $R \\subset X \\times X$ such that \n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> $(x,x)\\in R$ for all $x \\in X$ (<span class=\"emph\">reflexive property</span>);</li>\n<li><span class=\"list-item-label\">2.</span> $(x,y) \\in R$ implies $(y,x) \\in R$ (<span class=\"emph\">symmetric property</span>);</li>\n<li><span class=\"list-item-label\">3.</span> $(x,y)$ and $(y,z) \\in R$ imply $(x,z) \\in R$ (<span class=\"emph\">transitive property</span>).</li>\n</ul>"
         },
         {
           "id": "MATH-410-c35",
@@ -978,7 +978,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Congruence Module $n$",
-          "definition": "Let $r$ and $s$ be two integers and suppose that $n \\in \\N$. We say that $r$ is <span class=\"emph\">congruent</span> to $s$ <span class=\"emph\">modulo</span>$n$}, or $r$ is congruent to $s$ mod $n$, if $r-s$ is evenly divisible by $n$; that is, $r-s = nk$ for some $k \\in \\Z$. We write\n\\[r \\equiv s \\mod{n}.\\]"
+          "definition": "Let $r$ and $s$ be two integers and suppose that $n \\in \\N$. We say that $r$ is <span class=\"emph\">congruent</span> to $s$ <span class=\"emph\">modulo $n$</span>, or $r$ is congruent to $s$ mod $n$, if $r-s$ is evenly divisible by $n$; that is, $r-s = nk$ for some $k \\in \\Z$. We write\n\\[r \\equiv s \\mod{n}.\\]"
         },
         {
           "id": "MATH-410-c38",
@@ -1090,7 +1090,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "Group",
-          "definition": "A <span class=\"emph\">group</span> is a set $G$ together with a binary operation, $\\star$, $(G, \\star)$, that satisfies the following axioms.\n\n<div class=\"def-table-wrap\"><table class=\"def-table\">\n<tr><td>}\n             \\textbf{Closure*}</td><td>$G$ is closed under the binary operation $\\star$. That is, given $a,b \\in G$ then $a \\star b \\in G$.</td></tr>\n<tr><td>\\textbf{Associativity}</td><td>The binary operation is associative:\n\\[(a \\star b)\\star c = a \\star (b \\star c),\\]\nfor $a,b,c \\in G$.</td></tr>\n<tr><td>\\textbf{Identity}</td><td>There exists an element $e \\in G$, called the <span class=\"emph\">identity element</span> in $G$, such that for any element $a \\in G$\n\\[e \\star a = a \\star e = a.\\]\n\\vspace{-10pt}</td></tr>\n<tr><td>\\textbf{Inverse}</td><td>For each element $a \\in G$, there exists an <span class=\"emph\">inverse element</span> in $G$, denoted by $a^{-1}$, such that\n\\[a \\star a^{-1} = a^{-1} \\star a = e.\\]\n</td></tr>\n</table></div>\n         \\vspace{-15pt}"
+          "definition": "A <span class=\"emph\">group</span> is a set $G$ together with a binary operation, $\\star$, $(G, \\star)$, that satisfies the following axioms.\n\n<div class=\"def-table-wrap\"><table class=\"def-table\">\n<tr><td><strong>Closure*</strong></td><td>$G$ is closed under the binary operation $\\star$. That is, given $a,b \\in G$ then $a \\star b \\in G$.</td></tr>\n<tr><td><strong>Associativity</strong></td><td>The binary operation is associative:\n\\[(a \\star b)\\star c = a \\star (b \\star c),\\]\nfor $a,b,c \\in G$.</td></tr>\n<tr><td><strong>Identity</strong></td><td>There exists an element $e \\in G$, called the <span class=\"emph\">identity element</span> in $G$, such that for any element $a \\in G$\n\\[e \\star a = a \\star e = a.\\]\n</td></tr>\n<tr><td><strong>Inverse</strong></td><td>For each element $a \\in G$, there exists an <span class=\"emph\">inverse element</span> in $G$, denoted by $a^{-1}$, such that\n\\[a \\star a^{-1} = a^{-1} \\star a = e.\\]\n</td></tr>\n</table></div>"
         },
         {
           "id": "MATH-410-c52",
@@ -1122,7 +1122,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "$U(n)$, Group of Units",
-          "definition": "<span class=\"emph\"></span>$U(n)$} or <span class=\"emph\">the group of units of</span>$\\Z_n$} is the set of elements in $\\Z_n$ that have multiplicative inverses.\n\nEquivalently (Proposition 3.4 (6)), as a set,\n\\[U(n) = \\{ k \\in \\Z_n : k \\neq 0, \\gcd(k,n) = 1\\}.\\]"
+          "definition": "<span class=\"emph\">$U(n)$</span> or <span class=\"emph\">the group of units of $\\Z_n$</span> is the set of elements in $\\Z_n$ that have multiplicative inverses.\n\n Equivalently (Proposition 3.4 (6)), as a set,\n\\[U(n) = \\{ k \\in \\Z_n : k \\neq 0, \\gcd(k,n) = 1\\}.\\]"
         },
         {
           "id": "MATH-410-c56",
@@ -1170,7 +1170,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Cyclic Group",
-          "definition": "Let $G$ be a group. If $G$ contains some element $a$ such that \\linebreak $G = \\cyc{a} = \\{a^k : k \\in \\Z\\}$, then $G$ is a <span class=\"emph\">cyclic group</span>."
+          "definition": "Let $G$ be a group. If $G$ contains some element $a$ such that $G = \\cyc{a} = \\{a^k : k \\in \\Z\\}$, then $G$ is a <span class=\"emph\">cyclic group</span>."
         },
         {
           "id": "MATH-410-c62",
@@ -1194,7 +1194,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Complex Numbers",
-          "definition": "The <span class=\"emph\">complex numbers</span> are defined as\n\\[\\C  = \\{a + bi : a,b \\in \\R\\},\\]\nwhere $i^2 = -1$. If $z = a+bi$, then $a$ is the <span class=\"emph\">real part</span> of $z$ and $b$ is the <span class=\"emph\">imaginary part</span> of $z$."
+          "definition": "The <span class=\"emph\">complex numbers</span> are defined as\n\\[\\C = \\{a + bi : a,b \\in \\R\\},\\]\nwhere $i^2 = -1$. If $z = a+bi$, then $a$ is the <span class=\"emph\">real part</span> of $z$ and $b$ is the <span class=\"emph\">imaginary part</span> of $z$."
         },
         {
           "id": "MATH-410-c65",
@@ -1226,7 +1226,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "$n$th Root of Unity",
-          "definition": "The complex numbers satisfying the equation\n\\[z^n = 1\\]\nare called the <span class=\"emph\"></span>$n$th roots of unity}."
+          "definition": "The complex numbers satisfying the equation\n\\[z^n = 1\\]\nare called the <span class=\"emph\">$n$th roots of unity</span>."
         },
         {
           "id": "MATH-410-c69",
@@ -1234,7 +1234,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Primitive $n$th Root of Unity",
-          "definition": "A generator for the group of the $n$th roots of unity is called a <span class=\"emph\">primitive</span>$n$th root of unity}."
+          "definition": "A generator for the group of the $n$th roots of unity is called a <span class=\"emph\">primitive $n$th root of unity</span>."
         },
         {
           "id": "MATH-410-c70",
@@ -1250,7 +1250,7 @@
           "chapter": "Chapter 5",
           "section": "",
           "term": "Symmetric Group",
-          "definition": "The group consisting of all the permutations on a set with $n$ elements under the operation of composition is called the <span class=\"emph\">symmetric group on</span>$n$ letters}."
+          "definition": "The group consisting of all the permutations on a set with $n$ elements under the operation of composition is called the <span class=\"emph\">symmetric group on $n$ letters</span>."
         },
         {
           "id": "MATH-410-c72",
@@ -1258,7 +1258,7 @@
           "chapter": "Chapter 5",
           "section": "",
           "term": "Cycle of Length $k$",
-          "definition": "A permutation $\\sigma \\in S_X$ is a <span class=\"emph\">cycle of length</span>$k$} if there exists elements $a_1, a_2, \\cdots, a_k \\in X$ such that\n         \\begin{align*}\n         \\sigma(a_1) &= a_2 \\\\\n         \\sigma(a_2) &= a_3 \\\\\n         &\\vdots \\\\\n         \\sigma(a_k) &= a_1,\n         \\end{align*}\n        and $\\sigma(x)=x$ for all other elements $x \\in X$. We will write $(a_1, a_2, \\ldots, a_k)$ to denote the cycle $\\sigma$."
+          "definition": "A permutation $\\sigma \\in S_X$ is a <span class=\"emph\">cycle of length $k$</span> if there exists elements $a_1, a_2, \\cdots, a_k \\in X$ such that\n\\[\\begin{aligned}\n\\sigma(a_1) &= a_2 \\\\\n \\sigma(a_2) &= a_3 \\\\\n &\\vdots \\\\\n \\sigma(a_k) &= a_1,\n\\end{aligned}\\]\nand $\\sigma(x)=x$ for all other elements $x \\in X$. We will write $(a_1, a_2, \\ldots, a_k)$ to denote the cycle $\\sigma$."
         },
         {
           "id": "MATH-410-c73",
@@ -1298,7 +1298,7 @@
           "chapter": "Chapter 5",
           "section": "",
           "term": "Alternating Group on $n$ Letters",
-          "definition": "The group $A_n$ consisting of all even permutations of $S_n$ is called the <span class=\"emph\">alternating group on</span>$n$ letters}."
+          "definition": "The group $A_n$ consisting of all even permutations of $S_n$ is called the <span class=\"emph\">alternating group on $n$ letters</span>."
         },
         {
           "id": "MATH-410-c78",
@@ -1306,7 +1306,7 @@
           "chapter": "Chapter 5",
           "section": "",
           "term": "$n$th Dihedral Group",
-          "definition": "For $n=3,4, \\ldots$ we define the <span class=\"emph\"></span>$n$th dihedral group} to be the group of rigid motions of a regular $n$-gon. We will denote this group by $D_n$."
+          "definition": "For $n=3,4, \\ldots$ we define the <span class=\"emph\">$n$th dihedral group</span> to be the group of rigid motions of a regular $n$-gon. We will denote this group by $D_n$."
         },
         {
           "id": "MATH-410-c79",
@@ -1362,7 +1362,7 @@
           "chapter": "Chapter 9",
           "section": "",
           "term": "Internal Direct Product",
-          "definition": "Let $G$ be a group with subgroups $H$ and $K$ satisfying the following conditions.\n         <ul class=\"def-list\">\n<li>$G = HK = \\{ hk : h\\in H, k \\in K\\}$;</li>\n<li>$H \\cap K = \\{e\\}$;</li>\n<li>$hk = kh$ for all $k \\in K$ and $h \\in H$.</li>\n</ul>\n        Then we say that $G$ is the <span class=\"emph\">internal direct product</span> of $H$ and $K$."
+          "definition": "Let $G$ be a group with subgroups $H$ and $K$ satisfying the following conditions.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">$\\bullet$</span> $G = HK = \\{ hk : h\\in H, k \\in K\\}$;</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> $H \\cap K = \\{e\\}$;</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> $hk = kh$ for all $k \\in K$ and $h \\in H$.</li>\n</ul>\n\n Then we say that $G$ is the <span class=\"emph\">internal direct product</span> of $H$ and $K$."
         },
         {
           "id": "MATH-410-c86",
@@ -1378,7 +1378,7 @@
           "chapter": "Chapter 10",
           "section": "",
           "term": "Factor Group, Quotient Group",
-          "definition": "If $N$ is a normal subgroup of a group $G$, then the cosets of $N$ in $G$ form a group $G\\slash N$ under the operation $(aN)(bN) = abN$ (additively $(a+N)+(b+N)=a+b+N$). This group is called the <span class=\"emph\">factor</span> or <span class=\"emph\">quotient group</span> of $G$ and $N$. This is sometime pronounced “$G$ mod  $N$\"."
+          "definition": "If $N$ is a normal subgroup of a group $G$, then the cosets of $N$ in $G$ form a group $G\\slash N$ under the operation $(aN)(bN) = abN$ (additively $(a+N)+(b+N)=a+b+N$). This group is called the <span class=\"emph\">factor</span> or <span class=\"emph\">quotient group</span> of $G$ and $N$. This is sometime pronounced “$G$ mod $N$\"."
         },
         {
           "id": "MATH-410-c88",
@@ -1546,7 +1546,7 @@
           "chapter": "Chapter 0",
           "section": "",
           "term": "Relative Complement, Set Difference",
-          "definition": "For $A \\subseteq S$ and $B \\subseteq S$, we form the <span class=\"emph\">complement of</span>$A$ relative to $B$} by defining\n\\[B\\backslash A = \\{x \\in B : x \\notin A\\}.\\]"
+          "definition": "For $A \\subseteq S$ and $B \\subseteq S$, we form the <span class=\"emph\">complement of $A$ relative to $B$</span> by defining\n\\[B\\backslash A = \\{x \\in B : x \\notin A\\}.\\]"
         },
         {
           "id": "MATH-461-c9",
@@ -1626,7 +1626,7 @@
           "chapter": "Chapter 0",
           "section": "",
           "term": "Image (of a set)",
-          "definition": "For $f: S \\to T$ and $A \\subseteq S$, we define $f(A) = \\{f(x) \\in T : x \\in A\\}$ to be the <span class=\"emph\">image of</span>$A$ under $f$}."
+          "definition": "For $f: S \\to T$ and $A \\subseteq S$, we define $f(A) = \\{f(x) \\in T : x \\in A\\}$ to be the <span class=\"emph\">image of $A$ under $f$</span>."
         },
         {
           "id": "MATH-461-c19",
@@ -1794,7 +1794,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Absolute Value, Magnitude",
-          "definition": "The <span class=\"emph\">absolute value</span> or <span class=\"emph\">magnitude</span> of a number $x$, denoted $\\abs{x}$, is defined by\n\\[\\abs{x} = \\left\\{\n     \\begin{matrix}\n     x, & x \\geq 0 \\\\\n     -x, & x < 0\n     \\end{matrix}\n     \\right.\\]"
+          "definition": "The <span class=\"emph\">absolute value</span> or <span class=\"emph\">magnitude</span> of a number $x$, denoted $\\abs{x}$, is defined by\n\\[\\abs{x} = \\left\\{\n \\begin{matrix}\n x, & x \\geq 0 \\\\\n -x, & x < 0\n \\end{matrix}\n \\right.\\]"
         },
         {
           "id": "MATH-461-c40",
@@ -1962,7 +1962,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Limit Superior",
-          "definition": "Let $x_n$ be a sequence in $\\R$ that is bounded above. The <span class=\"emph\">limit superior</span> of $x_n$ is the largest cluster point of $x_n$,  i.e., the $\\sup$ of the set of cluster points. If the set of cluster points is empty, we set $\\limsup x_n = -\\infty$; if the sequence is not bounded above, we set $\\limsup x_n = +\\infty$."
+          "definition": "Let $x_n$ be a sequence in $\\R$ that is bounded above. The <span class=\"emph\">limit superior</span> of $x_n$ is the largest cluster point of $x_n$, i.e., the $\\sup$ of the set of cluster points. If the set of cluster points is empty, we set $\\limsup x_n = -\\infty$; if the sequence is not bounded above, we set $\\limsup x_n = +\\infty$."
         },
         {
           "id": "MATH-461-c61",
@@ -1978,7 +1978,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Euclidean $n$-space",
-          "definition": "<span class=\"emph\">Euclidean</span>$n$-space}, denote $\\R^n$, consists of all ordered $n$-tuples of real numbers. Symbolically,\n\\[\\R^n = \\{(x_1,\\ldots,x_n) : x_1,\\ldots, x_n \\in \\R\\}.\\]\nThus, $\\R^n = \\R \\times \\cdots \\times \\R$ ($n$ times) is the Cartesian product of $\\R$ with itself $n$ times."
+          "definition": "<span class=\"emph\">Euclidean $n$-space</span>, denote $\\R^n$, consists of all ordered $n$-tuples of real numbers. Symbolically,\n\\[\\R^n = \\{(x_1,\\ldots,x_n) : x_1,\\ldots, x_n \\in \\R\\}.\\]\nThus, $\\R^n = \\R \\times \\cdots \\times \\R$ ($n$ times) is the Cartesian product of $\\R$ with itself $n$ times."
         },
         {
           "id": "MATH-461-c63",
@@ -1986,7 +1986,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Real Vector Space",
-          "definition": "A <span class=\"emph\">real vector space</span> $\\mathcal{V}$ is a set of elements called <span class=\"emph\">vectors</span>, with given operations of <span class=\"emph\">vector addition</span>, $+ : \\mathcal{V}\\times\\mathcal{V} \\to \\mathcal{V}$ and <span class=\"emph\">scalar multiplication</span>, $\\cdot : \\R \\times \\mathcal{V} \\to \\mathcal{V}$, such that:\n \n <ul class=\"def-list\">\n<li>$v+w = w+v$ for every $v$ and $w$ in $\\mathcal{V}$. \\hfill \\textbf{commutativity}</li>\n<li>$(v+u)+w = v+(u+w)$. \\hfill \\textbf{associativity}</li>\n<li>There is a zero vector 0 such that $v+0=v$ for every $v$ in $\\mathcal{V}$. \\hfill \\textbf{zero vector}</li>\n<li>For each $v$ in $\\mathcal{V}$ there is a vector $-v$ such that $v + (-v) = 0$. \\hfill \\textbf{additive inverses}</li>\n<li>For $\\lambda \\in \\R$ and $v,w$ in $\\mathcal{V}$, $\\lambda \\cdot (v + w) = \\lambda v + \\lambda \\cdot w$. \\hfill \\textbf{distributivity}</li>\n<li>For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $\\lambda(m \\cdot v) = (\\lambda m)\\cdot v$. \\hfill \\textbf{compatibility}</li>\n<li>For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $(\\lambda + m) \\cdot v = \\lambda \\cdot v + m \\cdot v$. \\hfill \\textbf{distributivity}</li>\n<li>$1 \\cdot v = v$ for every $v \\in \\mathcal{V}$. \\hfill \\textbf{multiplicative identity}</li>\n</ul>"
+          "definition": "A <span class=\"emph\">real vector space</span> $\\mathcal{V}$ is a set of elements called <span class=\"emph\">vectors</span>, with given operations of <span class=\"emph\">vector addition</span>, $+ : \\mathcal{V}\\times\\mathcal{V} \\to \\mathcal{V}$ and <span class=\"emph\">scalar multiplication</span>, $\\cdot : \\R \\times \\mathcal{V} \\to \\mathcal{V}$, such that:\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">i.</span> $v+w = w+v$ for every $v$ and $w$ in $\\mathcal{V}$. <span class=\"axiom-tag\">commutativity</span></li>\n<li><span class=\"list-item-label\">ii.</span> $(v+u)+w = v+(u+w)$. <span class=\"axiom-tag\">associativity</span></li>\n<li><span class=\"list-item-label\">iii.</span> There is a zero vector 0 such that $v+0=v$ for every $v$ in $\\mathcal{V}$. <span class=\"axiom-tag\">zero vector</span></li>\n<li><span class=\"list-item-label\">iv.</span> For each $v$ in $\\mathcal{V}$ there is a vector $-v$ such that $v + (-v) = 0$. <span class=\"axiom-tag\">additive inverses</span></li>\n<li><span class=\"list-item-label\">v.</span> For $\\lambda \\in \\R$ and $v,w$ in $\\mathcal{V}$, $\\lambda \\cdot (v + w) = \\lambda v + \\lambda \\cdot w$. <span class=\"axiom-tag\">distributivity</span></li>\n<li><span class=\"list-item-label\">vi.</span> For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $\\lambda(m \\cdot v) = (\\lambda m)\\cdot v$. <span class=\"axiom-tag\">compatibility</span></li>\n<li><span class=\"list-item-label\">vii.</span> For $\\lambda, m \\in \\R$ and $v$ in $\\mathcal{V}$, $(\\lambda + m) \\cdot v = \\lambda \\cdot v + m \\cdot v$. <span class=\"axiom-tag\">distributivity</span></li>\n<li><span class=\"list-item-label\">viii.</span> $1 \\cdot v = v$ for every $v \\in \\mathcal{V}$. <span class=\"axiom-tag\">multiplicative identity</span></li>\n</ul>"
         },
         {
           "id": "MATH-461-c64",
@@ -2018,7 +2018,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Orthogonal",
-          "definition": "If $x,y \\in \\R^n$, we call them <span class=\"emph\">orthogonal</span> if and only if $\\ip{x,y} = 0$.\n\nTwo subspaces $S$ and $T$ are orthogonal if and only if $\\ip{x,y} = 0$ for all $x \\in S$ and $y \\in T$."
+          "definition": "If $x,y \\in \\R^n$, we call them <span class=\"emph\">orthogonal</span> if and only if $\\ip{x,y} = 0$.\n\n Two subspaces $S$ and $T$ are orthogonal if and only if $\\ip{x,y} = 0$ for all $x \\in S$ and $y \\in T$."
         },
         {
           "id": "MATH-461-c68",
@@ -2026,7 +2026,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Metric",
-          "definition": "A <span class=\"emph\">metric</span> on a set $X$ is a function $d: X \\times X \\to [0,\\infty)$ such that, for all $x,y,z \\in X$\n <ul class=\"def-list\">\n<li>\\setlength</li>\n<li>sep{6pt}</li>\n<li>$d(x,y) \\geq 0$ \\hfill \\textbf{positivity}</li>\n<li>$d(x,y) = 0$ iff $x = y$. \\hfill \\textbf{nondegeneracy}</li>\n<li>$d(x,y) = d(y,x)$. \\hfill \\textbf{symmetry}</li>\n<li>$d(x,y) \\leq d(x,z) + d(z,y)$. \\hfill \\textbf{triangle inequality}</li>\n</ul>"
+          "definition": "A <span class=\"emph\">metric</span> on a set $X$ is a function $d: X \\times X \\to [0,\\infty)$ such that, for all $x,y,z \\in X$\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">i.</span> $d(x,y) \\geq 0$ <span class=\"axiom-tag\">positivity</span></li>\n<li><span class=\"list-item-label\">ii.</span> $d(x,y) = 0$ iff $x = y$. <span class=\"axiom-tag\">nondegeneracy</span></li>\n<li><span class=\"list-item-label\">iii.</span> $d(x,y) = d(y,x)$. <span class=\"axiom-tag\">symmetry</span></li>\n<li><span class=\"list-item-label\">iv.</span> $d(x,y) \\leq d(x,z) + d(z,y)$. <span class=\"axiom-tag\">triangle inequality</span></li>\n</ul>"
         },
         {
           "id": "MATH-461-c69",
@@ -2042,7 +2042,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Normed Space",
-          "definition": "A <span class=\"emph\">normed space</span> (or <span class=\"emph\">normal vector space</span>) $(\\mathcal{V},\\norm{\\cdot})$ is a vector space $\\mathcal{V}$ and a function $\\norm{\\cdot}: \\mathcal{V} \\to \\R$ satisfying the properties of  a norm on $\\mathcal{V}$."
+          "definition": "A <span class=\"emph\">normed space</span> (or <span class=\"emph\">normal vector space</span>) $(\\mathcal{V},\\norm{\\cdot})$ is a vector space $\\mathcal{V}$ and a function $\\norm{\\cdot}: \\mathcal{V} \\to \\R$ satisfying the properties of a norm on $\\mathcal{V}$."
         },
         {
           "id": "MATH-461-c71",
@@ -2058,7 +2058,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "$\\varepsilon$-ball, $\\varepsilon$-neighborhood",
-          "definition": "Let $(M,d)$ be a metric space. For each fixed $x \\in M$ and $\\varepsilon > 0$, the set\n\\[B(x,\\varepsilon) = \\{ y \\in M : d(x,y) < \\varepsilon\\}\\]\nis called the <span class=\"emph\"></span>$\\varepsilon$-ball} about $x$ (also called the <span class=\"emph\"></span>$\\varepsilon$-neighborhood} or <span class=\"emph\"></span>$\\varepsilon$-disk} about $x$)."
+          "definition": "Let $(M,d)$ be a metric space. For each fixed $x \\in M$ and $\\varepsilon > 0$, the set\n\\[B(x,\\varepsilon) = \\{ y \\in M : d(x,y) < \\varepsilon\\}\\]\nis called the <span class=\"emph\">$\\varepsilon$-ball</span> about $x$ (also called the <span class=\"emph\">$\\varepsilon$-neighborhood</span> or <span class=\"emph\">$\\varepsilon$-disk</span> about $x$)."
         },
         {
           "id": "MATH-461-c73",
@@ -2066,7 +2066,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "Open Set",
-          "definition": "A set $A \\subseteq M$ is said to be <span class=\"emph\">open</span> if for each $x \\in A$, there  exists an $\\varepsilon > 0$ such that $D(x,\\varepsilon) \\subseteq A$."
+          "definition": "A set $A \\subseteq M$ is said to be <span class=\"emph\">open</span> if for each $x \\in A$, there exists an $\\varepsilon > 0$ such that $D(x,\\varepsilon) \\subseteq A$."
         },
         {
           "id": "MATH-461-c74",
@@ -2138,7 +2138,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "Converge",
-          "definition": "\\label{converge}\n Let $(M,d)$ be a metric space and $x_k$ a sequence of points in $M$. We say that $x_k$ <span class=\"emph\">converges</span> to a point $x \\in M$ written\n\\[\\lim_{k\\to\\infty}x_k = x\\]\nor $x \\to x$ as $k \\to \\infty$, provided that for every open set $U$ containing $x$, there is an integer $N$ such that $x_k \\in U$ whenever $k \\geq N$."
+          "definition": "Let $(M,d)$ be a metric space and $x_k$ a sequence of points in $M$. We say that $x_k$ <span class=\"emph\">converges</span> to a point $x \\in M$ written\n\\[\\lim_{k\\to\\infty}x_k = x\\]\nor $x \\to x$ as $k \\to \\infty$, provided that for every open set $U$ containing $x$, there is an integer $N$ such that $x_k \\in U$ whenever $k \\geq N$."
         },
         {
           "id": "MATH-461-c83",
@@ -2258,7 +2258,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "Lie in a Set $A$",
-          "definition": "A path $\\varphi$ is said to <span class=\"emph\">lie in a set</span>$A$} if $\\varphi(t) \\in A$ for all $t \\in [a,b]$."
+          "definition": "A path $\\varphi$ is said to <span class=\"emph\">lie in a set $A$</span> if $\\varphi(t) \\in A$ for all $t \\in [a,b]$."
         },
         {
           "id": "MATH-461-c98",
@@ -2274,7 +2274,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "Separate",
-          "definition": "Let $A$ be a subset of a metric space $M$. Two open sets $U$, and $V$ are said to <span class=\"emph\">separate</span> $A$ if they satisfy these conditions:\n <ul class=\"def-list\">\n<li>$U \\cap V \\cap A = \\varnothing$</li>\n<li>$A \\cap U \\neq \\varnothing$</li>\n<li>$A \\cap V \\neq \\varnothing$</li>\n<li>$A \\subseteq U \\cup V$.</li>\n</ul>"
+          "definition": "Let $A$ be a subset of a metric space $M$. Two open sets $U$, and $V$ are said to <span class=\"emph\">separate</span> $A$ if they satisfy these conditions:\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">i.</span> $U \\cap V \\cap A = \\varnothing$</li>\n<li><span class=\"list-item-label\">ii.</span> $A \\cap U \\neq \\varnothing$</li>\n<li><span class=\"list-item-label\">iii.</span> $A \\cap V \\neq \\varnothing$</li>\n<li><span class=\"list-item-label\">iv.</span> $A \\subseteq U \\cup V$.</li>\n</ul>"
         },
         {
           "id": "MATH-461-c100",
@@ -2314,7 +2314,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Limit of $f$",
-          "definition": "Let $(M,d)$ and $(N,\\rho)$ be two metric space, $A \\subseteq M$, and $f: A \\to N$ a given mapping. Further, suppose $x_0$ is an accumulation point of $A$. We say that $b \\in N$ is the <span class=\"emph\">limit of</span>$f$ at $x_0$}, written\n\\[\\lim_{x \\to x_0} f(x) = b,\\]\nif given any $\\varepsilon > 0$ there exists $\\delta > 0$ (possibly depending on $f$, $x_0$, and $\\varepsilon$) such that for all $x \\in A$ satisfying $x \\neq x_0$ and $d(x_0,x) < \\delta$, we have $\\rho(f(x),b) < \\varepsilon$."
+          "definition": "Let $(M,d)$ and $(N,\\rho)$ be two metric space, $A \\subseteq M$, and $f: A \\to N$ a given mapping. Further, suppose $x_0$ is an accumulation point of $A$. We say that $b \\in N$ is the <span class=\"emph\">limit of $f$ at $x_0$</span>, written\n\\[\\lim_{x \\to x_0} f(x) = b,\\]\nif given any $\\varepsilon > 0$ there exists $\\delta > 0$ (possibly depending on $f$, $x_0$, and $\\varepsilon$) such that for all $x \\in A$ satisfying $x \\neq x_0$ and $d(x_0,x) < \\delta$, we have $\\rho(f(x),b) < \\varepsilon$."
         },
         {
           "id": "MATH-461-c105",
@@ -2322,7 +2322,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Continuous at $x_0$",
-          "definition": "Let $A \\subseteq M$, $f: A \\to N$, and $x_0 \\in A$. We say that $f$ is <span class=\"emph\">continuous at</span>$x_0$} if either $x_0$ is not an accumulation point of $A$, or $\\lim_{x \\to x_0} f(x) = f(x_0)$."
+          "definition": "Let $A \\subseteq M$, $f: A \\to N$, and $x_0 \\in A$. We say that $f$ is <span class=\"emph\">continuous at $x_0$</span> if either $x_0$ is not an accumulation point of $A$, or $\\lim_{x \\to x_0} f(x) = f(x_0)$."
         },
         {
           "id": "MATH-461-c106",
@@ -2330,7 +2330,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Continuous (on $B$)",
-          "definition": "A function $f: A \\subseteq M \\to N$ is called <span class=\"emph\">continuous on the set</span>$B \\subseteq A$} if $f$ is continuous at each point of $B$. If we say that $f$ is <span class=\"emph\">continuous</span>, we mean that $f$ is continuous on its domain $A$."
+          "definition": "A function $f: A \\subseteq M \\to N$ is called <span class=\"emph\">continuous on the set $B \\subseteq A$</span> if $f$ is continuous at each point of $B$. If we say that $f$ is <span class=\"emph\">continuous</span>, we mean that $f$ is continuous on its domain $A$."
         },
         {
           "id": "MATH-461-c107",
@@ -2338,7 +2338,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Uniformly Continuous",
-          "definition": "Let $(M,d)$ and $(N,\\rho)$ be metric spaces, $A \\subseteq M$, $f: A \\to N$, and $B \\subseteq A$. We say that $f$ is <span class=\"emph\">uniformly continuous on the set</span>$B$} if for every $\\varepsilon > 0$ there is a $\\delta > 0$ such that $x,y \\in B$ and $d(x,y) < \\delta$ imply $\\rho(f(x),f(y)) < \\varepsilon$."
+          "definition": "Let $(M,d)$ and $(N,\\rho)$ be metric spaces, $A \\subseteq M$, $f: A \\to N$, and $B \\subseteq A$. We say that $f$ is <span class=\"emph\">uniformly continuous on the set $B$</span> if for every $\\varepsilon > 0$ there is a $\\delta > 0$ such that $x,y \\in B$ and $d(x,y) < \\delta$ imply $\\rho(f(x),f(y)) < \\varepsilon$."
         },
         {
           "id": "MATH-461-c108",
@@ -2346,7 +2346,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Differentiable at $x_0$",
-          "definition": "Let the function $f$ be defined on some open interval containing $x_0 \\in \\R$. We say that $f$ is <span class=\"emph\">differentiable at</span>$x_0$} if\n\\[f'(x_0) = \\lim_{h \\to 0} \\dfrac{f(x_0 + h) - f(x_0)}{h} = \\lim_{x \\to x_0} \\dfrac{f(x) - f(x_0)}{x - x_0}\\]\nexists. We call $f'(x_0)$ the derivative of $f$ at $x_0$."
+          "definition": "Let the function $f$ be defined on some open interval containing $x_0 \\in \\R$. We say that $f$ is <span class=\"emph\">differentiable at $x_0$</span> if\n\\[f'(x_0) = \\lim_{h \\to 0} \\dfrac{f(x_0 + h) - f(x_0)}{h} = \\lim_{x \\to x_0} \\dfrac{f(x) - f(x_0)}{x - x_0}\\]\nexists. We call $f'(x_0)$ the derivative of $f$ at $x_0$."
         },
         {
           "id": "MATH-461-c109",
@@ -2354,7 +2354,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Class $C^1$",
-          "definition": "If $f$ is differentiable on $(a,b)$ and $f'$ is continuous, we say that $f$ is of <span class=\"emph\">class</span>$C^1$}."
+          "definition": "If $f$ is differentiable on $(a,b)$ and $f'$ is continuous, we say that $f$ is of <span class=\"emph\">class $C^1$</span>."
         },
         {
           "id": "MATH-461-c110",
@@ -2362,7 +2362,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Class $C^n$",
-          "definition": "If $f^{(n)}$ exists for $0,\\ldots, n$ and is continuous on $(a,b)$ then we say that $f$ is of <span class=\"emph\">class</span>$C^n$}."
+          "definition": "If $f^{(n)}$ exists for $0,\\ldots, n$ and is continuous on $(a,b)$ then we say that $f$ is of <span class=\"emph\">class $C^n$</span>."
         },
         {
           "id": "MATH-461-c111",
@@ -2370,7 +2370,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Increasing at $x_0$",
-          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">increasing at</span>$x_0$} if there is an interval $(a,b)$ containing $x_0$ such that:\n <ul class=\"def-list\">\n<li>If $a < x < x_0$, then $f(x) \\leq f(x_0)$.</li>\n<li>If $x_0 < x < b$, then $f(x) \\geq f(x_0)$.</li>\n</ul>"
+          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">increasing at $x_0$</span> if there is an interval $(a,b)$ containing $x_0$ such that:\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">i.</span> If $a < x < x_0$, then $f(x) \\leq f(x_0)$.</li>\n<li><span class=\"list-item-label\">ii.</span> If $x_0 < x < b$, then $f(x) \\geq f(x_0)$.</li>\n</ul>"
         },
         {
           "id": "MATH-461-c112",
@@ -2378,7 +2378,7 @@
           "chapter": "Chapter 4",
           "section": "",
           "term": "Decreasing at $x_0$",
-          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">decreasing at</span>$x_0$} if there is an interval $(a,b)$ containing $x_0$ such that:\n <ul class=\"def-list\">\n<li>If $a < x < x_0$, then $f(x) \\geq f(x_0)$.</li>\n<li>If $x_0 < x < b$, then $f(x) \\leq f(x_0)$.</li>\n</ul>"
+          "definition": "We say that a function $f$ defined in a neighborhood of $x_0$ is <span class=\"emph\">decreasing at $x_0$</span> if there is an interval $(a,b)$ containing $x_0$ such that:\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">i.</span> If $a < x < x_0$, then $f(x) \\geq f(x_0)$.</li>\n<li><span class=\"list-item-label\">ii.</span> If $x_0 < x < b$, then $f(x) \\leq f(x_0)$.</li>\n</ul>"
         },
         {
           "id": "MATH-461-c113",
@@ -2482,7 +2482,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Geometry",
-          "definition": "The word <span class=\"emph\">geometry</span> comes from the Greek \\textit{geometrein}; \\textit{geo} meaning “earth\" and \\textit{metrein} meaning “to measure\"."
+          "definition": "The word <span class=\"emph\">geometry</span> comes from the Greek <em>geometrein</em>; <em>geo</em> meaning “earth\" and <em>metrein</em> meaning “to measure\"."
         },
         {
           "id": "MATH-350-c2",
@@ -2514,7 +2514,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Circle",
-          "definition": "Given distinct points $O$ and $A$. The set of all points $P$ such that segment $OP$ is congruent to segment $OA$ is called <span class=\"emph\">the circle with</span>$O$ as center and $OA$ as radius}. For each point $P$ in that set, we say that $P$ \\textit{lies on} the circle and $OP$ is called the \\textit{radius} of the circle."
+          "definition": "Given distinct points $O$ and $A$. The set of all points $P$ such that segment $OP$ is congruent to segment $OA$ is called <span class=\"emph\">the circle with $O$ as center and $OA$ as radius</span>. For each point $P$ in that set, we say that $P$ <em>lies on</em> the circle and $OP$ is called the <em>radius</em> of the circle."
         },
         {
           "id": "MATH-350-c6",
@@ -2522,7 +2522,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Ray",
-          "definition": "The <span class=\"emph\">ray</span> $\\overrightarrow{AB}$ is the following set of points lying on the line $\\overleftrightarrow{AB}$: those points that belong to the segment $AB$ and all points $C$ on $\\overleftrightarrow{AB}$ such that $B$ is between $A$ and $C$. The ray $\\overrightarrow{AB}$ is said to \\textit{emanate from the vertex $A$} and to be \\textit{part} of line $\\overleftrightarrow{AB}$."
+          "definition": "The <span class=\"emph\">ray</span> $\\overrightarrow{AB}$ is the following set of points lying on the line $\\overleftrightarrow{AB}$: those points that belong to the segment $AB$ and all points $C$ on $\\overleftrightarrow{AB}$ such that $B$ is between $A$ and $C$. The ray $\\overrightarrow{AB}$ is said to <em>emanate from the vertex $A$</em> and to be <em>part</em> of line $\\overleftrightarrow{AB}$."
         },
         {
           "id": "MATH-350-c7",
@@ -2538,7 +2538,7 @@
           "chapter": "Chapter 1",
           "section": "",
           "term": "Angle with Vertex $A$",
-          "definition": "An <span class=\"emph\">Angle with vertex</span>$A$} is a point $A$ together with two distinct non-opposite rays $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$ (called the \\textit{sides} of the angle) emanating from $A$."
+          "definition": "An <span class=\"emph\">Angle with vertex $A$</span> is a point $A$ together with two distinct non-opposite rays $\\overrightarrow{AB}$ and $\\overrightarrow{AC}$ (called the <em>sides</em> of the angle) emanating from $A$."
         },
         {
           "id": "MATH-350-c9",
@@ -2594,7 +2594,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "Collinear",
-          "definition": "Three or more points $A$, $B$, $C$, \\ldots \\ are <span class=\"emph\">collinear</span> if there exists a line incident with all of them."
+          "definition": "Three or more points $A$, $B$, $C$, … are <span class=\"emph\">collinear</span> if there exists a line incident with all of them."
         },
         {
           "id": "MATH-350-c16",
@@ -2602,7 +2602,7 @@
           "chapter": "Chapter 2",
           "section": "",
           "term": "Concurrent",
-          "definition": "Three or more lines $l$, $m$, $n$, \\ldots \\ are <span class=\"emph\">concurrent</span> if there exists a point incident with all of them."
+          "definition": "Three or more lines $l$, $m$, $n$, … are <span class=\"emph\">concurrent</span> if there exists a point incident with all of them."
         },
         {
           "id": "MATH-350-c17",
@@ -2698,7 +2698,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "Same Side (of a line)",
-          "definition": "Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A = B$ or if segment $AB$ contains no point lying on $l$, we say $A$ and $B$ are <span class=\"emph\">on the same side of</span>$l$}."
+          "definition": "Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A = B$ or if segment $AB$ contains no point lying on $l$, we say $A$ and $B$ are <span class=\"emph\">on the same side of $l$</span>."
         },
         {
           "id": "MATH-350-c29",
@@ -2706,7 +2706,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "Opposite Side (of a line)",
-          "definition": "Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A \\neq B$ and segment $AB$ intersects $l$, we say that $A$ and $B$ are <span class=\"emph\">on opposite sides of</span>$l$}."
+          "definition": "Let $l$ be any line, and $A$ and $B$ any points that do not lie on $l$. If $A \\neq B$ and segment $AB$ intersects $l$, we say that $A$ and $B$ are <span class=\"emph\">on opposite sides of $l$</span>."
         },
         {
           "id": "MATH-350-c30",
@@ -2754,7 +2754,7 @@
           "chapter": "Chapter 3",
           "section": "",
           "term": "$<$ (segments)",
-          "definition": "<span class=\"emph\"></span>$AB < CD$} or ( $CD > AB$) means that there exists a point $E$ between $C$ and $D$ such that $AB \\cong CE$."
+          "definition": "<span class=\"emph\">$AB < CD$</span> or ( $CD > AB$) means that there exists a point $E$ between $C$ and $D$ such that $AB \\cong CE$."
         },
         {
           "id": "MATH-350-c36",
@@ -2946,7 +2946,7 @@
           "chapter": "Chapter 5",
           "section": "",
           "term": "Equidistant Locus",
-          "definition": "Given a line $l$ and a segment $PQ$ of a line perpendicular to $l$ at $Q$, we can consider the set of all points $P'$ on the same side of $l$ as $P$ such that if $Q'$ is the foot of the perpendicular from $P'$ to $l$, then $PQ \\cong P'Q'$. Call that set the <span class=\"emph\">equidistant locus to</span>$l$ through $P$}."
+          "definition": "Given a line $l$ and a segment $PQ$ of a line perpendicular to $l$ at $Q$, we can consider the set of all points $P'$ on the same side of $l$ as $P$ such that if $Q'$ is the foot of the perpendicular from $P'$ to $l$, then $PQ \\cong P'Q'$. Call that set the <span class=\"emph\">equidistant locus to $l$ through $P$</span>."
         },
         {
           "id": "MATH-350-c60",
@@ -3106,7 +3106,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Def 1.2.1 • Sec 2 (Epsilon-Delta Definition of a Limit)",
           "term": "The Limit of a Function $f$",
-          "definition": "Let $I$ be an open interval containing $c$, and let $f$ be a function defined on $I$ except possibly at $c$. The <span class=\"emph\">limit of</span>$f(x)$, as $x$ approaches $c$ is $L$}, denoted by\n\\[\\lim_{x \\rightarrow c} f(x) = L,\\]\nmeans that given any $\\varepsilon > 0$, there exists $\\delta > 0$ such that for all $x$ in $I$ with $x \\neq c$, if $\\abs{x - c} < \\delta$, then $\\abs{f(x) - L} < \\varepsilon$."
+          "definition": "Let $I$ be an open interval containing $c$, and let $f$ be a function defined on $I$ except possibly at $c$. The <span class=\"emph\">limit of $f(x)$, as $x$ approaches $c$ is $L$</span>, denoted by\n\\[\\lim_{x \\rightarrow c} f(x) = L,\\]\nmeans that given any $\\varepsilon > 0$, there exists $\\delta > 0$ such that for all $x$ in $I$ with $x \\neq c$, if $\\abs{x - c} < \\delta$, then $\\abs{f(x) - L} < \\varepsilon$."
         },
         {
           "id": "MATH-140-c2",
@@ -3114,7 +3114,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Def 1.5.1 • Sec 5 (Continuity)",
           "term": "Continuous Function",
-          "definition": "Let $f$ be a function defined on an open interval $I$ containing $c$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>$f$ is <span class=\"emph\">continuous at</span>$c$} if $\\displaystyle \\lim_{x \\rightarrow c} f(x) = f(c)$.</li>\n<li>$f$ is <span class=\"emph\">continuous on</span>$I$} if $f$ is continuous at $c$ for all values of $c$ in $I$. If $f$ is continuous on $(-\\infty , \\infty)$, that is $\\R$, we say $f$ is <span class=\"emph\">continuous everywhere</span>.</li>\n</ul>"
+          "definition": "Let $f$ be a function defined on an open interval $I$ containing $c$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> $f$ is <span class=\"emph\">continuous at $c$</span> if $\\displaystyle \\lim_{x \\rightarrow c} f(x) = f(c)$.</li>\n<li><span class=\"list-item-label\">2.</span> $f$ is <span class=\"emph\">continuous on $I$</span> if $f$ is continuous at $c$ for all values of $c$ in $I$. If $f$ is continuous on $(-\\infty , \\infty)$, that is $\\R$, we say $f$ is <span class=\"emph\">continuous everywhere</span>.</li>\n</ul>"
         },
         {
           "id": "MATH-140-c3",
@@ -3122,7 +3122,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Def 1.5.2 • Sec 5 (Continuity)",
           "term": "Continuity on Closed Intervals",
-          "definition": "Let $f$ be defined on the closed interval $[a,b]$ for some real numbers $a,b$. Then $f$ is <span class=\"emph\">continuous on</span>$[a,b]$} if:\n\n <ul class=\"def-list\">\n<li>\\setlength</li>\n<li>sep{10pt}</li>\n<li>$f$ is continuous on $(a,b)$,</li>\n<li>$\\displaystyle \\lim_{x\\rightarrow a^+} f(x) = f(a)$ and</li>\n<li>$\\displaystyle \\lim_{x\\rightarrow b^-} f(x) = f(b)$.</li>\n</ul>"
+          "definition": "Let $f$ be defined on the closed interval $[a,b]$ for some real numbers $a,b$. Then $f$ is <span class=\"emph\">continuous on $[a,b]$</span> if:\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> $f$ is continuous on $(a,b)$,</li>\n<li><span class=\"list-item-label\">2.</span> $\\displaystyle \\lim_{x\\rightarrow a^+} f(x) = f(a)$ and</li>\n<li><span class=\"list-item-label\">3.</span> $\\displaystyle \\lim_{x\\rightarrow b^-} f(x) = f(b)$.</li>\n</ul>"
         },
         {
           "id": "MATH-140-c4",
@@ -3130,7 +3130,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Def 1.6.1a • Sec 6 (Limits Involving Infinity)",
           "term": "Limits of Infinity, $\\infty$",
-          "definition": "Let $I$ be an open interval containing $c$, and let $f$ be a function defined on $I$, except possibly at $c$. We say the <span class=\"emph\">limit of</span>$f(x)$, as $x$ approaches $c$ is infinity}, denoted by\n\\[\\displaystyle \\lim_{x \\rightarrow c} f(x) = \\infty\\]\nif for every $M > 0$ there exists $\\delta > 0$ such that for all $x \\neq c$, if $\\abs{x - c} < \\delta$, then $f(x) > M$."
+          "definition": "Let $I$ be an open interval containing $c$, and let $f$ be a function defined on $I$, except possibly at $c$. We say the <span class=\"emph\">limit of $f(x)$, as $x$ approaches $c$ is infinity</span>, denoted by\n\\[\\displaystyle \\lim_{x \\rightarrow c} f(x) = \\infty\\]\nif for every $M > 0$ there exists $\\delta > 0$ such that for all $x \\neq c$, if $\\abs{x - c} < \\delta$, then $f(x) > M$."
         },
         {
           "id": "MATH-140-c5",
@@ -3138,7 +3138,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Def 1.6.2a • Sec 6 (Limits Involving Infinity)",
           "term": "One-Sided Limits of Infinity",
-          "definition": "Let $f$ be a function defined on $(a,c)$ for some $a < c$. The <span class=\"emph\">limit of</span>$f(x)$, as $x$ approaches $c$ from the left, is infinity}, or, <span class=\"emph\">the left-handed limit of</span>$f$ at $c$ is infinity}, denoted by\n\\[\\lim_{x \\to c^-} f(x) = \\infty,\\]\nmeans given any $N > 0$, there exists $\\delta > 0$ such that for all $a < x < c$, if $\\abs{x - c} < \\delta$, then $f(x) > N$."
+          "definition": "Let $f$ be a function defined on $(a,c)$ for some $a < c$. The <span class=\"emph\">limit of $f(x)$, as $x$ approaches $c$ from the left, is infinity</span>, or, <span class=\"emph\">the left-handed limit of $f$ at $c$ is infinity</span>, denoted by\n\\[\\lim_{x \\to c^-} f(x) = \\infty,\\]\nmeans given any $N > 0$, there exists $\\delta > 0$ such that for all $a < x < c$, if $\\abs{x - c} < \\delta$, then $f(x) > N$."
         },
         {
           "id": "MATH-140-c6",
@@ -3154,7 +3154,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Sec 6 (Limits Involving Infinity)",
           "term": "Indeterminate Form",
-          "definition": "\\footnote{\\tiny Weisstein, Eric W. \"Indeterminate.\" From MathWorld--A Wolfram Web Resource. \\url{http://mathworld.wolfram.com/Indeterminate.html}}\n        A mathematical expression can be said to be <span class=\"emph\">indeterminate</span> if it is not definitively or precisely determined. Certain forms of limits are said to be indeterminate when merely knowing the limiting behavior of individual parts of the expression is not sufficient to actually determine the overall limit.\n\nThere are seven indeterminate forms involving 0,1, and $\\infty$:\n\\[\\dfrac{0}{0}, 0 \\cdot \\infty, \\dfrac{\\infty}{\\infty}, \\infty - \\infty, 0^0, \\infty^0, 1^\\infty.\\]"
+          "definition": "A mathematical expression can be said to be <span class=\"emph\">indeterminate</span> if it is not definitively or precisely determined. Certain forms of limits are said to be indeterminate when merely knowing the limiting behavior of individual parts of the expression is not sufficient to actually determine the overall limit.\n\n There are seven indeterminate forms involving 0,1, and $\\infty$:\n\\[\\dfrac{0}{0}, 0 \\cdot \\infty, \\dfrac{\\infty}{\\infty}, \\infty - \\infty, 0^0, \\infty^0, 1^\\infty.\\]\n\n<div class=\"def-footnote\">Weisstein, Eric W. \"Indeterminate.\" From MathWorld–A Wolfram Web Resource. <a href=\"http://mathworld.wolfram.com/Indeterminate.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"def-link\">http://mathworld.wolfram.com/Indeterminate.html</a></div>"
         },
         {
           "id": "MATH-140-c8",
@@ -3162,7 +3162,7 @@
           "chapter": "Chapter 1: Limits",
           "section": "Def 1.6.4 • Sec 6 (Limits Involving Infinity)",
           "term": "Limits at Infinity and Horizontal Asymptote",
-          "definition": "Let $L$ be a real number.\n        <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>Let $f$ be a function defined on $(a,\\infty)$ for some number $a$. The <span class=\"emph\">limit of</span>$f$ at infinity is $L$}, or $\\displaystyle \\lim_{x\\rightarrow \\infty} f(x) = L$, if for every $\\varepsilon > 0$ there exists $M > a$ such that if $x > M$, then $\\abs{f(x) - L}< \\varepsilon$.</li>\n<li>Let $f$ be a function defined on $(-\\infty, b)$ for some number $b$. The <span class=\"emph\">limit of</span>$f$ at negative infinity is $L$}, or $\\displaystyle \\lim_{x \\rightarrow -\\infty} f(x) = L$, if for every $\\varepsilon > 0$ there exists $M < b$ such that if $x < M$, then $\\abs{f(x) - L} < \\varepsilon$.</li>\n<li>If $\\displaystyle \\lim_{x \\rightarrow \\infty} f(x) = L$ or $\\displaystyle \\lim_{x\\rightarrow -\\infty} f(x) = L$, we say that $y = L$ is a <span class=\"emph\">horizontal asymptote</span> of $f$.</li>\n</ul>"
+          "definition": "Let $L$ be a real number.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> Let $f$ be a function defined on $(a,\\infty)$ for some number $a$. The <span class=\"emph\">limit of $f$ at infinity is $L$</span>, or $\\displaystyle \\lim_{x\\rightarrow \\infty} f(x) = L$, if for every $\\varepsilon > 0$ there exists $M > a$ such that if $x > M$, then $\\abs{f(x) - L}< \\varepsilon$.</li>\n<li><span class=\"list-item-label\">2.</span> Let $f$ be a function defined on $(-\\infty, b)$ for some number $b$. The <span class=\"emph\">limit of $f$ at negative infinity is $L$</span>, or $\\displaystyle \\lim_{x \\rightarrow -\\infty} f(x) = L$, if for every $\\varepsilon > 0$ there exists $M < b$ such that if $x < M$, then $\\abs{f(x) - L} < \\varepsilon$.</li>\n<li><span class=\"list-item-label\">3.</span> If $\\displaystyle \\lim_{x \\rightarrow \\infty} f(x) = L$ or $\\displaystyle \\lim_{x\\rightarrow -\\infty} f(x) = L$, we say that $y = L$ is a <span class=\"emph\">horizontal asymptote</span> of $f$.</li>\n</ul>"
         },
         {
           "id": "MATH-140-c9",
@@ -3170,7 +3170,7 @@
           "chapter": "Chapter 2: Derivatives",
           "section": "Def 2.1.1 • Sec 1 (Instantaneous Rates of Change: The Derivative)",
           "term": "Derivative at a Point",
-          "definition": "Let $f$ be a continuous function on an open interval $I$ and let $c$ be in $I$. The <span class=\"emph\">derivative of</span>$f$ at $c$}, denoted $f'(c)$ is\n\\[\\lim_{h \\rightarrow 0} \\dfrac{f(c+h) - f(c)}{h},\\]\nprovided the limit exists. If the limit exists, we say that <span class=\"emph\"></span>$f$ is differentiable at $c$}; if the limit does not exist, then <span class=\"emph\"></span>$f$ is not differentiable at $c$}. If $f$ is differentiable at every point in $I$, then <span class=\"emph\"></span>$f$ is differentiable on $I$}."
+          "definition": "Let $f$ be a continuous function on an open interval $I$ and let $c$ be in $I$. The <span class=\"emph\">derivative of $f$ at $c$</span>, denoted $f'(c)$ is\n\\[\\lim_{h \\rightarrow 0} \\dfrac{f(c+h) - f(c)}{h},\\]\nprovided the limit exists. If the limit exists, we say that <span class=\"emph\">$f$ is differentiable at $c$</span>; if the limit does not exist, then <span class=\"emph\">$f$ is not differentiable at $c$</span>. If $f$ is differentiable at every point in $I$, then <span class=\"emph\">$f$ is differentiable on $I$</span>."
         },
         {
           "id": "MATH-140-c10",
@@ -3194,7 +3194,7 @@
           "chapter": "Chapter 2: Derivatives",
           "section": "Def 2.1.4 • Sec 1 (Instantaneous Rates of Change: The Derivative)",
           "term": "Derivative Function",
-          "definition": "Let $f$ be a differentiable function on an open interval $I$. The function\n\\[f'(x) = \\lim_{h \\rightarrow 0} \\dfrac{f(x+h) - f(x)}{h}\\]\nis <span class=\"emph\">the derivative of</span>$f$}.\n\n\\textbf{Notation:} \\\\\nLet $y = f(x)$. The following notations all represent the derivative:\n\\[f'(x) = y' = \\dfrac{dy}{dx} = \\dfrac{df}{dx} = \\dfrac{d}{dx}(f) = \\dfrac{d}{dx}(y).\\]"
+          "definition": "Let $f$ be a differentiable function on an open interval $I$. The function\n\\[f'(x) = \\lim_{h \\rightarrow 0} \\dfrac{f(x+h) - f(x)}{h}\\]\nis <span class=\"emph\">the derivative of $f$</span>.\n\n<strong>Notation:</strong> <br>\nLet $y = f(x)$. The following notations all represent the derivative:\n\\[f'(x) = y' = \\dfrac{dy}{dx} = \\dfrac{df}{dx} = \\dfrac{d}{dx}(f) = \\dfrac{d}{dx}(y).\\]"
         },
         {
           "id": "MATH-140-c13",
@@ -3202,7 +3202,7 @@
           "chapter": "Chapter 2: Derivatives",
           "section": "Def 2.3.1 • Sec 3 (Basic Differentiation Rules)",
           "term": "Higher Order Derivatives",
-          "definition": "Let $y = f(x)$ be a differentiable function on $I$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>The <span class=\"emph\">second derivative of</span>$f$} is:\n\\[f”(x) = \\dfrac{d}{dx} f'(x) = \\dfrac{d}{dx}\\dfrac{dy}{dx} = \\dfrac{d^2y}{dx^2} = y”.\\]\n</li>\n<li>The <span class=\"emph\">third derivative of</span>$f$} is:\n\\[f”'(x) = \\dfrac{d}{dx} f”(x) = \\dfrac{d}{dx}\\dfrac{d^2y}{dx^2} = \\dfrac{d^3y}{dx^3} = y”'.\\]\n</li>\n<li>The <span class=\"emph\"></span>$n^\\text{th}$ derivative of $f$} is:\n\\[f^{(n)}(x) = \\dfrac{d}{dx} f^{(n-1)}(x) = \\dfrac{d}{dx}\\dfrac{d^{n-1}y}{dx^{n-1}} = \\dfrac{d^ny}{dx^n} = y^{(n)}.\\]\n</li>\n</ul>"
+          "definition": "Let $y = f(x)$ be a differentiable function on $I$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> The <span class=\"emph\">second derivative of $f$</span> is:\n\\[f''(x) = \\dfrac{d}{dx} f'(x) = \\dfrac{d}{dx}\\dfrac{dy}{dx} = \\dfrac{d^2y}{dx^2} = y''.\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> The <span class=\"emph\">third derivative of $f$</span> is:\n\\[f'''(x) = \\dfrac{d}{dx} f''(x) = \\dfrac{d}{dx}\\dfrac{d^2y}{dx^2} = \\dfrac{d^3y}{dx^3} = y'''.\\]\n</li>\n<li><span class=\"list-item-label\">3.</span> The <span class=\"emph\">$n^\\text{th}$ derivative of $f$</span> is:\n\\[f^{(n)}(x) = \\dfrac{d}{dx} f^{(n-1)}(x) = \\dfrac{d}{dx}\\dfrac{d^{n-1}y}{dx^{n-1}} = \\dfrac{d^ny}{dx^n} = y^{(n)}.\\]\n</li>\n</ul>"
         },
         {
           "id": "MATH-140-c14",
@@ -3210,7 +3210,7 @@
           "chapter": "Chapter 2: Derivatives",
           "section": "Def (Stitz-Zeager) • Sec 7 (Derivatives of Inverse Functions)",
           "term": "Inverse Functions",
-          "definition": "Suppose $f$ and $g$ are two functions such that\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>$(g \\circ f)(x) = x$ for all $x$ in the domain of $f$ and</li>\n<li>$(f \\circ g)(x) = x$ for all $x$ in the domain of $g$</li>\n</ul>\n\nthen $f$ and $g$ are <span class=\"emph\">inverses</span> of each other and the functions $f$ and $g$ are said to be <span class=\"emph\">invertible</span>."
+          "definition": "Suppose $f$ and $g$ are two functions such that\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> $(g \\circ f)(x) = x$ for all $x$ in the domain of $f$ and</li>\n<li><span class=\"list-item-label\">2.</span> $(f \\circ g)(x) = x$ for all $x$ in the domain of $g$</li>\n</ul>\n\nthen $f$ and $g$ are <span class=\"emph\">inverses</span> of each other and the functions $f$ and $g$ are said to be <span class=\"emph\">invertible</span>."
         },
         {
           "id": "MATH-140-c15",
@@ -3218,7 +3218,7 @@
           "chapter": "Chapter 3: The Graphical Behavior of Functions",
           "section": "Def 3.1.1 • Sec 1 (Extreme Values)",
           "term": "Extreme Values",
-          "definition": "Let $f$ be defined on an interval $I$ containing $c$.\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>$f(c)$ is the <span class=\"emph\">minimum</span> (also, <span class=\"emph\">absolute minimum</span>) of $f$ on $I$ if $f(c) \\leq f(x)$ for all $x$ in $I$.</li>\n<li>$f(c)$ is the <span class=\"emph\">maximum</span> (also, <span class=\"emph\">absolute maximum</span>) of $f$ on $I$ if $f(c) \\geq f(x)$ for all $x$ in $I$.</li>\n</ul>\nThe maximum and minimum values are the <span class=\"emph\">extreme values</span>, or <span class=\"emph\">extrema</span>, of $f$ on $I$."
+          "definition": "Let $f$ be defined on an interval $I$ containing $c$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> $f(c)$ is the <span class=\"emph\">minimum</span> (also, <span class=\"emph\">absolute minimum</span>) of $f$ on $I$ if $f(c) \\leq f(x)$ for all $x$ in $I$.</li>\n<li><span class=\"list-item-label\">2.</span> $f(c)$ is the <span class=\"emph\">maximum</span> (also, <span class=\"emph\">absolute maximum</span>) of $f$ on $I$ if $f(c) \\geq f(x)$ for all $x$ in $I$.</li>\n</ul>\n\nThe maximum and minimum values are the <span class=\"emph\">extreme values</span>, or <span class=\"emph\">extrema</span>, of $f$ on $I$."
         },
         {
           "id": "MATH-140-c16",
@@ -3226,7 +3226,7 @@
           "chapter": "Chapter 3: The Graphical Behavior of Functions",
           "section": "Def 3.1.2 • Sec 1 (Extreme Values)",
           "term": "Relative Minimum and Relative Maximum",
-          "definition": "Let $f$ be defined on an interval $I$ containing $c$.\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>If there is a $\\delta > 0$ such that $f(c) \\leq f(x)$ for all $x$ in $I$ where $\\abs{x - c} < \\delta$, then $f(c)$ is a <span class=\"emph\">relative minimum</span> of $f$. We also say that $f$ has a relative minimum at $(c,f(c))$.</li>\n<li>If there is a $\\delta >0$ such that $f(c) \\geq f(x)$ for all $x$ in $I$ where $\\abs{x - c} < \\delta$, then $f(c)$ is a <span class=\"emph\">relative maximum</span> of $f$. We also say that $f$ has a relative maximum at $(c,f(c))$.</li>\n</ul>\nThe relative maximum and minimum values comprise the <span class=\"emph\">relative extrema</span> of $f$."
+          "definition": "Let $f$ be defined on an interval $I$ containing $c$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> If there is a $\\delta > 0$ such that $f(c) \\leq f(x)$ for all $x$ in $I$ where $\\abs{x - c} < \\delta$, then $f(c)$ is a <span class=\"emph\">relative minimum</span> of $f$. We also say that $f$ has a relative minimum at $(c,f(c))$.</li>\n<li><span class=\"list-item-label\">2.</span> If there is a $\\delta >0$ such that $f(c) \\geq f(x)$ for all $x$ in $I$ where $\\abs{x - c} < \\delta$, then $f(c)$ is a <span class=\"emph\">relative maximum</span> of $f$. We also say that $f$ has a relative maximum at $(c,f(c))$.</li>\n</ul>\n\nThe relative maximum and minimum values comprise the <span class=\"emph\">relative extrema</span> of $f$."
         },
         {
           "id": "MATH-140-c17",
@@ -3242,7 +3242,7 @@
           "chapter": "Chapter 3: The Graphical Behavior of Functions",
           "section": "Def 3.3.1 • Sec 3 (Increasing and Decreasing Functions)",
           "term": "Increasing and Decreasing Functions",
-          "definition": "Let $f$ be a function defined on an interval $I$.\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{15pt}</li>\n<li>$f$ is <span class=\"emph\">increasing</span> on $I$ if for every $a < b$ in $I$, $f(a) \\leq f(b)$.</li>\n<li>$f$ is <span class=\"emph\">decreasing</span> on $I$ if for every $a < b$ in $I$, $f(a) \\geq f(b)$.</li>\n</ul>\nA function is <span class=\"emph\">strictly increasing</span> when $a < b$ in $I$ implies $f(a) < f(b)$, with a similar definition holding for <span class=\"emph\">strictly decreasing</span>."
+          "definition": "Let $f$ be a function defined on an interval $I$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> $f$ is <span class=\"emph\">increasing</span> on $I$ if for every $a < b$ in $I$, $f(a) \\leq f(b)$.</li>\n<li><span class=\"list-item-label\">2.</span> $f$ is <span class=\"emph\">decreasing</span> on $I$ if for every $a < b$ in $I$, $f(a) \\geq f(b)$.</li>\n</ul>\n\nA function is <span class=\"emph\">strictly increasing</span> when $a < b$ in $I$ implies $f(a) < f(b)$, with a similar definition holding for <span class=\"emph\">strictly decreasing</span>."
         },
         {
           "id": "MATH-140-c19",
@@ -3266,7 +3266,7 @@
           "chapter": "Chapter 4: Applications of the Derivative",
           "section": "Def 4.4.1 • Sec 4 (Differentials)",
           "term": "Differentials of $x$ and $y$",
-          "definition": "Let $y = f(x)$ be differentiable. The <span class=\"emph\">differential of</span>$x$}, denoted $dx$, is any nonzero real number (usually take to be a small number). The <span class=\"emph\">differential of</span>$y$}, denoted $dy$ is\n\\[dy = f'(x)dx.\\]"
+          "definition": "Let $y = f(x)$ be differentiable. The <span class=\"emph\">differential of $x$</span>, denoted $dx$, is any nonzero real number (usually take to be a small number). The <span class=\"emph\">differential of $y$</span>, denoted $dy$ is\n\\[dy = f'(x)dx.\\]"
         },
         {
           "id": "MATH-140-c22",
@@ -3274,7 +3274,7 @@
           "chapter": "Chapter 5: Integration",
           "section": "Def 5.1.1 • Sec 1 (Antiderivatives and Indefinite Integration)",
           "term": "Antiderivatives and Indefinite Integrals",
-          "definition": "Let a function $f(x)$ be given. An <span class=\"emph\">antiderivative</span> of $f(x)$ is a function $F(x)$ such that $F'(x) = f(x)$.\n\nThe set of all antiderivatives of $f(x)$ is the <span class=\"emph\">indefinite integral of</span>$f$}, denoted by\n\\[\\int f(x) \\ dx.\\]\nThe function $f(x)$ is called the <span class=\"emph\">integrand</span> and $dx$ is the <span class=\"emph\">differential of</span>$x$}."
+          "definition": "Let a function $f(x)$ be given. An <span class=\"emph\">antiderivative</span> of $f(x)$ is a function $F(x)$ such that $F'(x) = f(x)$.\n\nThe set of all antiderivatives of $f(x)$ is the <span class=\"emph\">indefinite integral of $f$</span>, denoted by\n\\[\\int f(x) \\ dx.\\]\nThe function $f(x)$ is called the <span class=\"emph\">integrand</span> and $dx$ is the <span class=\"emph\">differential of $x$</span>."
         },
         {
           "id": "MATH-140-c23",
@@ -3282,7 +3282,7 @@
           "chapter": "Chapter 5: Integration",
           "section": "Def 5.2.1 • Sec 2 (The Definite Integral)",
           "term": "The Definite Integral, Total Signed Area",
-          "definition": "Let $y = f(x)$ be defined on a closed interval $[a,b]$. The <span class=\"emph\">total signed area from</span>$x = a$ to $x = b$ under $f$} is:\n \\small\n\\[(\\text{area under } f \\text{ and above the } x \\text{-axis on } [a,b]) - (\\text{area above } f \\text{ and under the } x \\text{-axis on } [a,b]).\\]\nThe <span class=\"emph\">definite integral</span>$f$ on $[a,b]$} is the total signed area of $f$ on $[a,b]$, denoted\n\\[\\int_a^b f(x)\\ dx,\\]\nwhere $a$ and $b$ are the <span class=\"emph\">bounds of integration</span>."
+          "definition": "Let $y = f(x)$ be defined on a closed interval $[a,b]$. The <span class=\"emph\">total signed area from $x = a$ to $x = b$ under $f$</span> is:\n\\[(\\text{area under } f \\text{ and above the } x \\text{-axis on } [a,b]) - (\\text{area above } f \\text{ and under the } x \\text{-axis on } [a,b]).\\]\nThe <span class=\"emph\">definite integral $f$ on $[a,b]$</span> is the total signed area of $f$ on $[a,b]$, denoted\n\\[\\int_a^b f(x)\\ dx,\\]\nwhere $a$ and $b$ are the <span class=\"emph\">bounds of integration</span>."
         },
         {
           "id": "MATH-140-c24",
@@ -3298,7 +3298,7 @@
           "chapter": "Chapter 5: Integration",
           "section": "Def 5.4.1 • Sec 4 (The Fundamental Theorem of Calculus)",
           "term": "The Average Value of $f$ on $[a,b]$",
-          "definition": "Let $f$ be continuous on $[a,b]$. The <span class=\"emph\">average value of</span>$f$ on $[a,b]$} is $f(c)$, where $c$ is a value in $[a,b]$ guaranteed by the Mean Value Theorem. I.e.,\n\\[\\text{Average Value of } f \\text{ on } [a,b] = \\dfrac{1}{b-a}\\int_a^b f(x) \\ dx.\\]"
+          "definition": "Let $f$ be continuous on $[a,b]$. The <span class=\"emph\">average value of $f$ on $[a,b]$</span> is $f(c)$, where $c$ is a value in $[a,b]$ guaranteed by the Mean Value Theorem. I.e.,\n\\[\\text{Average Value of } f \\text{ on } [a,b] = \\dfrac{1}{b-a}\\int_a^b f(x) \\ dx.\\]"
         },
         {
           "id": "MATH-140-c26",
@@ -3306,7 +3306,7 @@
           "chapter": "Chapter 5: Integration",
           "section": "Sec 5 (Numerical Integration)",
           "term": "Elementary Functions",
-          "definition": "An <span class=\"emph\">elementary function</span> is any function that is a combination of polynomials, \\textit{n}$^\\text{th}$ roots, rational, exponential, logarithmic and trigonometric functions."
+          "definition": "An <span class=\"emph\">elementary function</span> is any function that is a combination of polynomials, <em>n</em>$^\\text{th}$ roots, rational, exponential, logarithmic and trigonometric functions."
         }
       ]
     },
@@ -3338,7 +3338,7 @@
           "chapter": "Chapter 6: Techniques of Antidifferentiation",
           "section": "Def 24 • Sec 8 (Improper Integration)",
           "term": "Improper Integrals with Infinite Bounds; Converge, Diverge",
-          "definition": "<ul class=\"def-list\">\n<li>Let $f$ be a continuous on $[a,\\infty)$. Define\n\\[\\int_{a}^\\infty f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{b \\to \\infty} \\int_a^b f(x) \\ dx.\\]\n</li>\n<li>Let $f$ be a continuous function on $(-\\infty,b]$. Define\n\\[\\int_{-\\infty}^b f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{a \\to -\\infty} \\int_a^b f(x) \\ dx.\\]\n</li>\n<li>Let $f$ be a continuous function on $(-\\infty,\\infty)$. Let $c$ be any real number; define\n\\[\\int_{-\\infty}^\\infty f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{a \\to -\\infty} \\int_a^c f(x) \\ dx + \\lim_{b \\to \\infty} \\int_c^b f(x) \\ dx.\\]\n</li>\n</ul>\n \nAn improper integral is said to \\textbf{converge} if its corresponding limit exists; otherwise, it \\textbf{diverges}. The improper integral in part 3 converges if an only if both of its limits exist."
+          "definition": "<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> Let $f$ be a continuous on $[a,\\infty)$. Define\n\\[\\int_{a}^\\infty f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{b \\to \\infty} \\int_a^b f(x) \\ dx.\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> Let $f$ be a continuous function on $(-\\infty,b]$. Define\n\\[\\int_{-\\infty}^b f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{a \\to -\\infty} \\int_a^b f(x) \\ dx.\\]\n</li>\n<li><span class=\"list-item-label\">3.</span> Let $f$ be a continuous function on $(-\\infty,\\infty)$. Let $c$ be any real number; define\n\\[\\int_{-\\infty}^\\infty f(x) \\ dx \\quad \\text{to be} \\quad \\lim_{a \\to -\\infty} \\int_a^c f(x) \\ dx + \\lim_{b \\to \\infty} \\int_c^b f(x) \\ dx.\\]\n</li>\n</ul>\n\nAn improper integral is said to <strong>converge</strong> if its corresponding limit exists; otherwise, it <strong>diverges</strong>. The improper integral in part 3 converges if an only if both of its limits exist."
         },
         {
           "id": "MATH-141-c2",
@@ -3354,7 +3354,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 27 • Sec 1 (Sequences)",
           "term": "Sequence",
-          "definition": "A <span class=\"emph\">sequence</span> is a function $a(n)$ whose domain is $\\N$. The <span class=\"emph\">range</span> of a sequence is the set of all distinct values of $a(n)$.\n\nThe <span class=\"emph\">terms</span> of a sequence are the values $a(1)$, $a(2)$, \\ldots, which are usually denote with subscripts $a_1, a_2, \\ldots$.\n\nA sequence $a(n)$ is often denoted as $\\{a_n\\}$."
+          "definition": "A <span class=\"emph\">sequence</span> is a function $a(n)$ whose domain is $\\N$. The <span class=\"emph\">range</span> of a sequence is the set of all distinct values of $a(n)$.\n\nThe <span class=\"emph\">terms</span> of a sequence are the values $a(1)$, $a(2)$, …, which are usually denote with subscripts $a_1, a_2, \\ldots$.\n\nA sequence $a(n)$ is often denoted as $\\{a_n\\}$."
         },
         {
           "id": "MATH-141-c4",
@@ -3362,7 +3362,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 28 • Sec 1 (Sequences)",
           "term": "Limit of a Sequence, Convergent, Divergent",
-          "definition": "Let $\\{a_n\\}$ be a sequence and let $L$ be a real number. Given any $\\varepsilon > 0$, if an $m$ can be found such that $\\abs{a_n - L} < \\varepsilon$ for all $n > m$, then we say the <span class=\"emph\">limit of</span>$\\{a_n\\}$, as $n$ approaches infinity, is $L$}, denoted\n\\[\\lim_{n \\to \\infty} a_n = L.\\]\nIf $\\lim_{n \\to \\infty} a_n$ exists, we say the sequence <span class=\"emph\">converges</span>; otherwise, the sequence <span class=\"emph\">diverges</span>."
+          "definition": "Let $\\{a_n\\}$ be a sequence and let $L$ be a real number. Given any $\\varepsilon > 0$, if an $m$ can be found such that $\\abs{a_n - L} < \\varepsilon$ for all $n > m$, then we say the <span class=\"emph\">limit of $\\{a_n\\}$, as $n$ approaches infinity, is $L$</span>, denoted\n\\[\\lim_{n \\to \\infty} a_n = L.\\]\nIf $\\lim_{n \\to \\infty} a_n$ exists, we say the sequence <span class=\"emph\">converges</span>; otherwise, the sequence <span class=\"emph\">diverges</span>."
         },
         {
           "id": "MATH-141-c5",
@@ -3378,15 +3378,15 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 30 • Sec 1 (Sequences)",
           "term": "Monotonic Sequence",
-          "definition": "<ul class=\"def-list\">\n<li>A sequence $\\{A_n\\}$ is <span class=\"emph\">monotonically increasing</span> if $a_n \\leq a_{n+1}$ for all $n$, i.e.,\n\\[a_1 \\leq a_2 \\leq a_3 \\leq \\cdots \\leq a_n \\leq a_{n+1} \\cdots\\]\n</li>\n<li>A sequence $\\{a_n\\}$ is <span class=\"emph\">monotonically decreasing</span> if $a_n \\geq a_{n+1}$ for all $n$, i.e.,\n\\[a_1 \\geq a_2 \\geq a_3 \\geq \\cdots \\geq a_n \\geq a_{n+1} \\cdots\\]\n</li>\n<li>A sequence is <span class=\"emph\">monotonic</span> if it is monotonically increasing or monotonically decreasing.</li>\n</ul>"
+          "definition": "<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> A sequence $\\{A_n\\}$ is <span class=\"emph\">monotonically increasing</span> if $a_n \\leq a_{n+1}$ for all $n$, i.e.,\n\\[a_1 \\leq a_2 \\leq a_3 \\leq \\cdots \\leq a_n \\leq a_{n+1} \\cdots\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> A sequence $\\{a_n\\}$ is <span class=\"emph\">monotonically decreasing</span> if $a_n \\geq a_{n+1}$ for all $n$, i.e.,\n\\[a_1 \\geq a_2 \\geq a_3 \\geq \\cdots \\geq a_n \\geq a_{n+1} \\cdots\\]\n</li>\n<li><span class=\"list-item-label\">3.</span> A sequence is <span class=\"emph\">monotonic</span> if it is monotonically increasing or monotonically decreasing.</li>\n</ul>"
         },
         {
           "id": "MATH-141-c7",
           "courseId": "MATH-141",
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 31 • Sec 2 (Infinite Series)",
-          "term": "Infinite Series, $n^{\\text{th}$ Partial Sums, Convergence, Divergence",
-          "definition": "Let $\\{a_n\\}$ be a sequence.\n <ul class=\"def-list\">\n<li>The sum $\\displaystyle \\sum_{n=1}^{\\infty} a_n$ is an <span class=\"emph\">infinite series</span> (or, simply <span class=\"emph\">series</span> ).</li>\n<li>Let $\\displaystyle S_n = \\sum_{i=1}^n a_i$; the sequence $\\{S_n\\}$ is the sequence of the <span class=\"emph\"></span>$n^{\\text{th}}$ partials sums} of $\\{a_n\\}$.</li>\n<li>If the sequence $\\{S_n\\}$ <span class=\"emph\">converges</span> to $L$, we say the series $\\displaystyle \\sum_{n=1} ^\\infty a_n$ converges to $L$, and we write $\\displaystyle \\sum_{n=1}^\\infty a_n = L$.</li>\n<li>If the sequence $\\{S_n\\}$ diverges, the series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">diverges</span>.</li>\n</ul>"
+          "term": "Infinite Series, $n^{\\text{th}}$ Partial Sums, Convergence, Divergence",
+          "definition": "Let $\\{a_n\\}$ be a sequence.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> The sum $\\displaystyle \\sum_{n=1}^{\\infty} a_n$ is an <span class=\"emph\">infinite series</span> (or, simply <span class=\"emph\">series</span> ).</li>\n<li><span class=\"list-item-label\">2.</span> Let $\\displaystyle S_n = \\sum_{i=1}^n a_i$; the sequence $\\{S_n\\}$ is the sequence of the <span class=\"emph\">$n^{\\text{th}}$ partials sums</span> of $\\{a_n\\}$.</li>\n<li><span class=\"list-item-label\">3.</span> If the sequence $\\{S_n\\}$ <span class=\"emph\">converges</span> to $L$, we say the series $\\displaystyle \\sum_{n=1} ^\\infty a_n$ converges to $L$, and we write $\\displaystyle \\sum_{n=1}^\\infty a_n = L$.</li>\n<li><span class=\"list-item-label\">4.</span> If the sequence $\\{S_n\\}$ diverges, the series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">diverges</span>.</li>\n</ul>"
         },
         {
           "id": "MATH-141-c8",
@@ -3402,7 +3402,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 33 • Sec 2 (Infinite Series)",
           "term": "$p$-Series, General $p$-Series",
-          "definition": "<ul class=\"def-list\">\n<li>A <span class=\"emph\"></span>$p$-series} is a series of the form\n\\[\\sum_{n=1}^\\infty \\dfrac{1}{n^p}, \\qquad \\text{where } p > 0.\\]\n</li>\n<li>A <span class=\"emph\">general</span>$p$-series} is a series of the form\n\\[\\sum_{n=1}^\\infty \\dfrac{1}{(an+b)^p}, \\qquad \\text{where } p > 0 \\text{ and } a, \\ b \\text{ are real numbers}.\\]\n</li>\n</ul>"
+          "definition": "<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> A <span class=\"emph\">$p$-series</span> is a series of the form\n\\[\\sum_{n=1}^\\infty \\dfrac{1}{n^p}, \\qquad \\text{where } p > 0.\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> A <span class=\"emph\">general $p$-series</span> is a series of the form\n\\[\\sum_{n=1}^\\infty \\dfrac{1}{(an+b)^p}, \\qquad \\text{where } p > 0 \\text{ and } a, \\ b \\text{ are real numbers}.\\]\n</li>\n</ul>"
         },
         {
           "id": "MATH-141-c10",
@@ -3418,7 +3418,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 35 • Sec 5 (Alternating Series and Absolute Convergence)",
           "term": "Absolute and Conditional Convergence",
-          "definition": "<ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>A series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">converges absolutely</span> if $\\displaystyle \\sum_{n=1}^\\infty \\abs{a_n}$ converges.</li>\n<li>A series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">converges conditionally</span> if $\\displaystyle \\sum_{n=1}^\\infty a_n$ converges but $\\displaystyle \\sum_{n=1}^\\infty \\abs{a_n}$ diverges.</li>\n</ul>"
+          "definition": "<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> A series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">converges absolutely</span> if $\\displaystyle \\sum_{n=1}^\\infty \\abs{a_n}$ converges.</li>\n<li><span class=\"list-item-label\">2.</span> A series $\\displaystyle \\sum_{n=1}^\\infty a_n$ <span class=\"emph\">converges conditionally</span> if $\\displaystyle \\sum_{n=1}^\\infty a_n$ converges but $\\displaystyle \\sum_{n=1}^\\infty \\abs{a_n}$ diverges.</li>\n</ul>"
         },
         {
           "id": "MATH-141-c12",
@@ -3426,7 +3426,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 36 • Sec 6 (Power Series)",
           "term": "Power Series",
-          "definition": "Let $\\{a_n\\}$ be a sequence, let $x$ be a variable, and let $c$ be a real number.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The <span class=\"emph\">power series in</span>$x$} is the series\n\\[\\sum_{n=0}^\\infty a_nx^n = a_0 + a_1x + a_2x^2 + a_3x^3 + \\cdots\\]\n</li>\n<li>The <span class=\"emph\">power series in</span>$x$ centered at $c$} is the series\n\\[\\sum_{n=0}^\\infty a_n(x-c)^n = a_0 + a_1(x-c) + a_2(x-c)^2 + a_3(x-c)^3 + \\cdots\\]\n</li>\n</ul>"
+          "definition": "Let $\\{a_n\\}$ be a sequence, let $x$ be a variable, and let $c$ be a real number.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> The <span class=\"emph\">power series in $x$</span> is the series\n\\[\\sum_{n=0}^\\infty a_nx^n = a_0 + a_1x + a_2x^2 + a_3x^3 + \\cdots\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> The <span class=\"emph\">power series in $x$ centered at $c$</span> is the series\n\\[\\sum_{n=0}^\\infty a_n(x-c)^n = a_0 + a_1(x-c) + a_2(x-c)^2 + a_3(x-c)^3 + \\cdots\\]\n</li>\n</ul>"
         },
         {
           "id": "MATH-141-c13",
@@ -3434,7 +3434,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 37 • Sec 6 (Power Series)",
           "term": "Radius and Interval of Convergence",
-          "definition": "<ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The number $R$ given in Theorem 73 is the <span class=\"emph\">radius of convergence</span> of a given series. When a series converges only for $x = c$, we say the radius of convergence is $0$, i.e., $R = 0$. When the series converges for all $x$, we say the series has an infinite radius of convergence, i.e., $R = \\infty$.</li>\n<li>The <span class=\"emph\">interval of convergence</span> is the set of all values of $x$ for which the series converges.</li>\n</ul>"
+          "definition": "<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> The number $R$ given in Theorem 73 is the <span class=\"emph\">radius of convergence</span> of a given series. When a series converges only for $x = c$, we say the radius of convergence is $0$, i.e., $R = 0$. When the series converges for all $x$, we say the series has an infinite radius of convergence, i.e., $R = \\infty$.</li>\n<li><span class=\"list-item-label\">2.</span> The <span class=\"emph\">interval of convergence</span> is the set of all values of $x$ for which the series converges.</li>\n</ul>"
         },
         {
           "id": "MATH-141-c14",
@@ -3442,7 +3442,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 38 • Sec 7 (Taylor Polynomials)",
           "term": "Taylor Polynomial, Maclaurin Polynomial",
-          "definition": "Let $f$ be a function whose first $n$ derivatives exist at $x = c$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The <span class=\"emph\">Taylor polynomial of degree</span>$n$ of $f$ at $x = c$} is\n\\[p_n(x) = f(c) + f'(c)(x-c) + \\dfrac{f”(c)}{2!}(x-c)^2 + \\dfrac{f”'(c)}{3!}(x-c)^3 + \\cdots + \\dfrac{f^{(n)}(c)}{n!}(x-c)^n.\\]\n</li>\n<li>A special case of the Taylor polynomial is the Maclaurin polynomial, where $c = 0$. That is, the <span class=\"emph\">Maclaurin polynomial of degree</span>$n$ of $f$} is\n\\[p_n(x) = f(0) + f'(0)x + \\dfrac{f”(0)}{2!}x^2 + \\dfrac{f”'(0)}{3!}x^3 + \\cdots + \\dfrac{f^{(n)}(0)}{n!}x^n.\\]\n</li>\n</ul>"
+          "definition": "Let $f$ be a function whose first $n$ derivatives exist at $x = c$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> The <span class=\"emph\">Taylor polynomial of degree $n$ of $f$ at $x = c$</span> is\n\\[p_n(x) = f(c) + f'(c)(x-c) + \\dfrac{f''(c)}{2!}(x-c)^2 + \\dfrac{f'''(c)}{3!}(x-c)^3 + \\cdots + \\dfrac{f^{(n)}(c)}{n!}(x-c)^n.\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> A special case of the Taylor polynomial is the Maclaurin polynomial, where $c = 0$. That is, the <span class=\"emph\">Maclaurin polynomial of degree $n$ of $f$</span> is\n\\[p_n(x) = f(0) + f'(0)x + \\dfrac{f''(0)}{2!}x^2 + \\dfrac{f'''(0)}{3!}x^3 + \\cdots + \\dfrac{f^{(n)}(0)}{n!}x^n.\\]\n</li>\n</ul>"
         },
         {
           "id": "MATH-141-c15",
@@ -3450,7 +3450,7 @@
           "chapter": "Chapter 8: Sequences and Series",
           "section": "Def 39 • Sec 8 (Taylor Series)",
           "term": "Taylor and Maclaurin Series",
-          "definition": "Let $f(x)$ have derivatives of all orders at $x = c$.\n\n <ul class=\"def-list\">\n<li>\\setlength{</li>\n<li>sep}{10pt}</li>\n<li>The <span class=\"emph\">Taylor Series of</span>$f(x)$, centered at $c$} is\n\\[\\sum_{n=0}^\\infty \\dfrac{f^{(n)}(c)}{n!}(x-c)^n.\\]\n</li>\n<li>Setting $c = 0$ gives the <span class=\"emph\">Maclaurin Series of</span>$f(x)$}:\n\\[\\sum_{n=0}^\\infty \\dfrac{f^{(n)}(0)}{n!}x^n.\\]\n</li>\n</ul>"
+          "definition": "Let $f(x)$ have derivatives of all orders at $x = c$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">1.</span> The <span class=\"emph\">Taylor Series of $f(x)$, centered at $c$</span> is\n\\[\\sum_{n=0}^\\infty \\dfrac{f^{(n)}(c)}{n!}(x-c)^n.\\]\n</li>\n<li><span class=\"list-item-label\">2.</span> Setting $c = 0$ gives the <span class=\"emph\">Maclaurin Series of $f(x)$</span>:\n\\[\\sum_{n=0}^\\infty \\dfrac{f^{(n)}(0)}{n!}x^n.\\]\n</li>\n</ul>"
         },
         {
           "id": "MATH-141-c16",
@@ -3590,7 +3590,7 @@
           "chapter": "Chapter 1: Functions",
           "section": "Sec 3 (Rates of Change and Behavior of Graphs)",
           "term": "Rate of Change, Average Rate of Change",
-          "definition": "A <span class=\"emph\">rate of change</span> describes how an output quantity changes relative to the change in the input quantity. The units on a rate of change are “output units per input units.\" \n\nThe <span class=\"emph\">average rate of change</span> between two input values is the total change of the function values (output values) divided by the change in the input values.\n\\[\\dfrac{\\Delta y}{\\Delta x} = \\dfrac{f(x_2) - f(x_1)}{x_2 - x_1}.\\]"
+          "definition": "A <span class=\"emph\">rate of change</span> describes how an output quantity changes relative to the change in the input quantity. The units on a rate of change are “output units per input units.\" \n\n The <span class=\"emph\">average rate of change</span> between two input values is the total change of the function values (output values) divided by the change in the input values.\n\\[\\dfrac{\\Delta y}{\\Delta x} = \\dfrac{f(x_2) - f(x_1)}{x_2 - x_1}.\\]"
         },
         {
           "id": "MATH-102-c7",
@@ -3678,7 +3678,7 @@
           "chapter": "Chapter 1: Functions",
           "section": "Sec 5 (Transformation of Functions)",
           "term": "Vertical Reflection, Horizontal Reflection",
-          "definition": "Given a function $f(x)$, a new function $g(x) = -f(x)$ is a <span class=\"emph\">vertical reflection</span> of the function $f(x)$, sometimes called a reflection about (or over, or through) the $x$-axis.\n\nGiven a function $f(x)$, a new function $g(x) = f(-x)$ is a <span class=\"emph\">horizontal reflection</span> of the function $f(x)$, sometimes c alled a reflection about the $y$-axis."
+          "definition": "Given a function $f(x)$, a new function $g(x) = -f(x)$ is a <span class=\"emph\">vertical reflection</span> of the function $f(x)$, sometimes called a reflection about (or over, or through) the $x$-axis.\n\n Given a function $f(x)$, a new function $g(x) = f(-x)$ is a <span class=\"emph\">horizontal reflection</span> of the function $f(x)$, sometimes c alled a reflection about the $y$-axis."
         },
         {
           "id": "MATH-102-c18",
@@ -3686,7 +3686,7 @@
           "chapter": "Chapter 1: Functions",
           "section": "Sec 5 (Transformation of Functions)",
           "term": "Vertical Stretch and  Compression",
-          "definition": "Given a function $f(x)$, a new function $g(x) = af(x)$, where $a$ is a constant, is <span class=\"emph\">vertical stretch</span> or <span class=\"emph\">vertical compression</span> of the function $f(x)$.\n <ul class=\"def-list\">\n<li>If $a > 1$, then the graph will be stretched.</li>\n<li>If $0 < a < 1$, then the graph will be compressed.</li>\n<li>If $a < 0$, then there will be a combination of a vertical stretch or compression with a vertical reflection.</li>\n</ul>"
+          "definition": "Given a function $f(x)$, a new function $g(x) = af(x)$, where $a$ is a constant, is <span class=\"emph\">vertical stretch</span> or <span class=\"emph\">vertical compression</span> of the function $f(x)$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">$\\bullet$</span> If $a > 1$, then the graph will be stretched.</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> If $0 < a < 1$, then the graph will be compressed.</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> If $a < 0$, then there will be a combination of a vertical stretch or compression with a vertical reflection.</li>\n</ul>"
         },
         {
           "id": "MATH-102-c19",
@@ -3694,7 +3694,7 @@
           "chapter": "Chapter 1: Functions",
           "section": "Sec 5 (Transformation of Functions)",
           "term": "Horizontal Stretches and  Compressions",
-          "definition": "Given a function $f(x)$, a new function $g(x) = f(bx)$, where $b$ is a constant, is a <span class=\"emph\">horizontal stretch</span> or <span class=\"emph\">horizontal compression</span> of the function $f(x)$.\n <ul class=\"def-list\">\n<li>If $b > 1$, then the graph will be compressed by $\\dfrac{1}{b}$.</li>\n<li>If $0 < b < 1$, then the graph will be stretched by $\\dfrac{1}{b}$.</li>\n<li>If $b < 0$, then there will be combination of a horizontal stretch or compression with a horizontal reflection.</li>\n</ul>"
+          "definition": "Given a function $f(x)$, a new function $g(x) = f(bx)$, where $b$ is a constant, is a <span class=\"emph\">horizontal stretch</span> or <span class=\"emph\">horizontal compression</span> of the function $f(x)$.\n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">$\\bullet$</span> If $b > 1$, then the graph will be compressed by $\\dfrac{1}{b}$.</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> If $0 < b < 1$, then the graph will be stretched by $\\dfrac{1}{b}$.</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> If $b < 0$, then there will be combination of a horizontal stretch or compression with a horizontal reflection.</li>\n</ul>"
         },
         {
           "id": "MATH-102-c20",
@@ -3702,7 +3702,7 @@
           "chapter": "Chapter 1: Functions",
           "section": "Sec 5 (Transformation of Functions)",
           "term": "Even and Odd Functions",
-          "definition": "A function is called an <span class=\"emph\">even function</span> if for every input $x$: $f(-x) = f(x)$. The graph of an even function is symmetric about the $y$-axis.\n\nA function is called an <span class=\"emph\">odd function</span> if for every input $x$: $f(-x) = -f(x)$. The graph of an odd function is symmetric about the origin."
+          "definition": "A function is called an <span class=\"emph\">even function</span> if for every input $x$: $f(-x) = f(x)$. The graph of an even function is symmetric about the $y$-axis.\n\n A function is called an <span class=\"emph\">odd function</span> if for every input $x$: $f(-x) = -f(x)$. The graph of an odd function is symmetric about the origin."
         },
         {
           "id": "MATH-102-c21",
@@ -3726,7 +3726,7 @@
           "chapter": "Chapter 2: Linear Functions",
           "section": "Sec 1 (Linear Functions)",
           "term": "Linear Function",
-          "definition": "A <span class=\"emph\">linear function</span> is a function whose graph is a line. Linear functions can be written in the slope-intercept form\n\\[f(x) = mx + b\\]\nwhere $b$ is the <span class=\"emph\"></span>$y$-intercept}, and $m$ is the rate of change, or <span class=\"emph\">slope</span> of the function."
+          "definition": "A <span class=\"emph\">linear function</span> is a function whose graph is a line. Linear functions can be written in the slope-intercept form\n\\[f(x) = mx + b\\]\nwhere $b$ is the <span class=\"emph\">$y$-intercept</span>, and $m$ is the rate of change, or <span class=\"emph\">slope</span> of the function."
         },
         {
           "id": "MATH-102-c24",
@@ -3734,7 +3734,7 @@
           "chapter": "Chapter 2: Linear Functions",
           "section": "Sec 2 (Graphs of Linear Functions)",
           "term": "$x$-intercepts",
-          "definition": "The <span class=\"emph\"></span>$x$-intercepts} of a function are the values of $x$ for which $f(x) = 0$. In the case of a linear function, there is exactly one $x$-intercept and it can be found by solving the equation $0 = mx + b$."
+          "definition": "The <span class=\"emph\">$x$-intercepts</span> of a function are the values of $x$ for which $f(x) = 0$. In the case of a linear function, there is exactly one $x$-intercept and it can be found by solving the equation $0 = mx + b$."
         },
         {
           "id": "MATH-102-c25",
@@ -3742,7 +3742,7 @@
           "chapter": "Chapter 2: Linear Functions",
           "section": "Sec 2 (Graphs of Linear Functions)",
           "term": "Horizontal Line, Vertical Line",
-          "definition": "A <span class=\"emph\">horizontal line</span> is a line defined by an equation of the form $f(x) = b$.\n\nA <span class=\"emph\">vertical line</span> is a  line defined by an equation in the form $x = a$."
+          "definition": "A <span class=\"emph\">horizontal line</span> is a line defined by an equation of the form $f(x) = b$.\n\n A <span class=\"emph\">vertical line</span> is a line defined by an equation in the form $x = a$."
         },
         {
           "id": "MATH-102-c26",
@@ -3782,7 +3782,7 @@
           "chapter": "Chapter 3: Polynomial and Rational Functions",
           "section": "Sec 3 (Power Functions and Polynomial Functions)",
           "term": "Polynomial Function",
-          "definition": "Let $n$ be a nonnegative integer. A <span class=\"emph\">polynomial function</span> is a function that can be written in the form\n\\[f(x) = a_nx^n + \\cdots + a_2x^2 + a_1x^1 + a_0.\\]\nThis is called the general form of a polynomial function. Each $a_i$ is a coefficient and can be any real number. Each product $a_ix^i$ is a term of the polynomial function.\n\nThe term $a_nx^n$ is the leading term while $a_n$ is the leading coefficient. The degree of $f(x)$ is $n$."
+          "definition": "Let $n$ be a nonnegative integer. A <span class=\"emph\">polynomial function</span> is a function that can be written in the form\n\\[f(x) = a_nx^n + \\cdots + a_2x^2 + a_1x^1 + a_0.\\]\nThis is called the general form of a polynomial function. Each $a_i$ is a coefficient and can be any real number. Each product $a_ix^i$ is a term of the polynomial function.\n\n The term $a_nx^n$ is the leading term while $a_n$ is the leading coefficient. The degree of $f(x)$ is $n$."
         },
         {
           "id": "MATH-102-c31",
@@ -3806,7 +3806,7 @@
           "chapter": "Chapter 3: Polynomial and Rational Functions",
           "section": "Sec 4 (Graphs of Polynomial Functions)",
           "term": "Global Maximum, Global Minimum",
-          "definition": "A local maximum or local minimum at $x=a$ is the output at the highest or lowest point on the graph in an open interval around $x=a$. If a function has a local maximum at $a$, then $f(a) \\geq f(x)$ for all $x$ in an open interval around $x=a$. If a function has a local minimum at $a$, then $f(a) \\leq f(x)$ for all $x$ in an open interval around $x=a$.\n\n\\indent A <span class=\"emph\">global maximum</span> or <span class=\"emph\">global minimum</span> is the output at the highest or lowest point of the function. If a function has a global maximum at $x=a$, then $f(x) \\geq f(a)$ for all $x$. If a function has a global minimum at $a$ then $f(a) \\leq f(x)$ for all $x$."
+          "definition": "A local maximum or local minimum at $x=a$ is the output at the highest or lowest point on the graph in an open interval around $x=a$. If a function has a local maximum at $a$, then $f(a) \\geq f(x)$ for all $x$ in an open interval around $x=a$. If a function has a local minimum at $a$, then $f(a) \\leq f(x)$ for all $x$ in an open interval around $x=a$.\n\n A <span class=\"emph\">global maximum</span> or <span class=\"emph\">global minimum</span> is the output at the highest or lowest point of the function. If a function has a global maximum at $x=a$, then $f(x) \\geq f(a)$ for all $x$. If a function has a global minimum at $a$ then $f(a) \\leq f(x)$ for all $x$."
         },
         {
           "id": "MATH-102-c34",
@@ -3838,7 +3838,7 @@
           "chapter": "Chapter 3: Polynomial and Rational Functions",
           "section": "Sec 7 (Rational Functions)",
           "term": "Vertical Asymptote",
-          "definition": "A <span class=\"emph\">vertical asymptote</span> of a graph is a vertical line $x = a$ where the graph tends toward positive or negative infinity as the inputs approach $a$. We write\n\n\\begin{quote}\n \\centering $f(x) \\to \\infty$ as $x \\to a$.\n \\end{quote}\n or\n\n\\begin{quote}\n \\centering $f(x) \\to -\\infty$ as $x \\to a$.\n \\end{quote}"
+          "definition": "A <span class=\"emph\">vertical asymptote</span> of a graph is a vertical line $x = a$ where the graph tends toward positive or negative infinity as the inputs approach $a$. We write\n\n<div class=\"def-quote\">$f(x) \\to \\infty$ as $x \\to a$.</div>\n\n or\n\n<div class=\"def-quote\">$f(x) \\to -\\infty$ as $x \\to a$.</div>"
         },
         {
           "id": "MATH-102-c38",
@@ -3846,7 +3846,7 @@
           "chapter": "Chapter 3: Polynomial and Rational Functions",
           "section": "Sec 7 (Rational Functions)",
           "term": "Horizontal Asymptote",
-          "definition": "A <span class=\"emph\">horizontal asymptote</span> of a graph is a horizontal line $y = b$ where the graph approaches the line as the inputs increase or decrease without bound. We write\n\n\\begin{quote}\n \\centering $f(x) \\to b$ as $x \\to \\infty$.\n \\end{quote}\n or\n\n\\begin{quote}\n \\centering $f(x) \\to b$ as $x \\to -\\infty$.\n \\end{quote}"
+          "definition": "A <span class=\"emph\">horizontal asymptote</span> of a graph is a horizontal line $y = b$ where the graph approaches the line as the inputs increase or decrease without bound. We write\n\n<div class=\"def-quote\">$f(x) \\to b$ as $x \\to \\infty$.</div>\n\n or\n\n<div class=\"def-quote\">$f(x) \\to b$ as $x \\to -\\infty$.</div>"
         },
         {
           "id": "MATH-102-c39",
@@ -3878,7 +3878,7 @@
           "chapter": "Chapter 3: Polynomial and Rational Functions",
           "section": "Def (Analytical) • Sec Supplamental 1 (Distance and Midpoint Formulas; Circles)",
           "term": "Circle",
-          "definition": "A <span class=\"emph\">circle</span> is defined by a radius $r$ and center $(h,k)$ and is given by the equation\n\\[r^2 = (x - h)^2 + (y - k)^2.\\]\nThis equation is the \\textit{standard form} of the equation of a circle."
+          "definition": "A <span class=\"emph\">circle</span> is defined by a radius $r$ and center $(h,k)$ and is given by the equation\n\\[r^2 = (x - h)^2 + (y - k)^2.\\]\nThis equation is the <em>standard form</em> of the equation of a circle."
         },
         {
           "id": "MATH-102-c43",
@@ -3894,7 +3894,7 @@
           "chapter": "Chapter 4: Exponential and Logarithmic Functions",
           "section": "Sec 1-4 (Basic Properties of Exponential and Logarithmic Functions)",
           "term": "Logarithmic Function to the Base $a$",
-          "definition": "The <span class=\"emph\">logarithmic function to the base</span>$a$}, where $a > 0$ and $a \\neq 1$, is denoted by $y = \\operatorname{log}_a{x}$ (read as “$y$ is the logarithm with base $a$ of $x$\") and is defined by\n\\[y = \\operatorname{log}_a{x} \\text{ \\ \\ if and only if \\ \\ } x = a^y.\\]\nThe domain of the logarithmic function $y = \\operatorname{log}_a{x}$ is $x > 0$ while its range is all real numbers."
+          "definition": "The <span class=\"emph\">logarithmic function to the base $a$</span>, where $a > 0$ and $a \\neq 1$, is denoted by $y = \\operatorname{log}_a{x}$ (read as “$y$ is the logarithm with base $a$ of $x$\") and is defined by\n\\[y = \\operatorname{log}_a{x} \\text{ \\ \\ if and only if \\ \\ } x = a^y.\\]\nThe domain of the logarithmic function $y = \\operatorname{log}_a{x}$ is $x > 0$ while its range is all real numbers."
         },
         {
           "id": "MATH-102-c45",
@@ -3910,7 +3910,7 @@
           "chapter": "Chapter 5: Trigonometric Functions",
           "section": "Sec 1 (Angles)",
           "term": "Radian",
-          "definition": "One <span class=\"emph\">radian</span> is the measure of the central angle of a circle such that the length of the arc between the initial side and the terminal side is equal to the radius of the circle.\n\nThe <span class=\"emph\">radian measure</span> of an angle is the ratio of the length of the arc subtended by the angle to the radius of the circle."
+          "definition": "One <span class=\"emph\">radian</span> is the measure of the central angle of a circle such that the length of the arc between the initial side and the terminal side is equal to the radius of the circle.\n\n The <span class=\"emph\">radian measure</span> of an angle is the ratio of the length of the arc subtended by the angle to the radius of the circle."
         },
         {
           "id": "MATH-102-c47",
@@ -3942,7 +3942,7 @@
           "chapter": "Chapter 5: Trigonometric Functions",
           "section": "Sec 3 (The Other Trigonometric Functions)",
           "term": "Secant, Cosecant, Tangent, Cotangent",
-          "definition": "If $t$ is a real number and $(x,y)$ is a point where the terminal side of an angle $t$ radians intercepts the unit circle, then\n \\begin{align*}\n \\sec(t) &= \\dfrac{1}{x}, \\qquad x \\neq 0 \\\\\n \\csc(t) &= \\dfrac{1}{y}, \\qquad y \\neq 0 \\\\\n \\tan(t) &= \\dfrac{y}{x}, \\qquad x \\neq 0 \\\\\n \\cot(t) &= \\dfrac{x}{y}, \\qquad y \\neq 0 \n \\end{align*}"
+          "definition": "If $t$ is a real number and $(x,y)$ is a point where the terminal side of an angle $t$ radians intercepts the unit circle, then\n\\[\\begin{aligned}\n\\sec(t) &= \\dfrac{1}{x}, \\qquad x \\neq 0 \\\\\n \\csc(t) &= \\dfrac{1}{y}, \\qquad y \\neq 0 \\\\\n \\tan(t) &= \\dfrac{y}{x}, \\qquad x \\neq 0 \\\\\n \\cot(t) &= \\dfrac{x}{y}, \\qquad y \\neq 0\n\\end{aligned}\\]"
         },
         {
           "id": "MATH-102-c51",
@@ -3966,7 +3966,7 @@
           "chapter": "Chapter 6: Periodic Functions",
           "section": "Sec 1 (Graphs of the Sine and Cosine Functions)",
           "term": "Sine Function, Cosine Function",
-          "definition": "A <span class=\"emph\">sine function</span> has the form\n \\begin{center}\n \\href{https://www.desmos.com/calculator/pwzacgm3jk}{$\\displaystyle y = A\\sin(Bx - C) + D$,}\n \\end{center}\n where $A$, $B$, $C$, and $D$ are real numbers. Likewise a cosine function has the form\n \\begin{center}\n \\href{https://www.desmos.com/calculator/eyaylapg3w}{$\\displaystyle y = A\\cos(Bx - C) + D$.}\n \\end{center}"
+          "definition": "A <span class=\"emph\">sine function</span> has the form\n\n<div class=\"def-center\"><a href=\"https://www.desmos.com/calculator/pwzacgm3jk\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"def-link\">$\\displaystyle y = A\\sin(Bx - C) + D$,</a></div>\n\n where $A$, $B$, $C$, and $D$ are real numbers. Likewise a cosine function has the form\n\n<div class=\"def-center\"><a href=\"https://www.desmos.com/calculator/eyaylapg3w\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"def-link\">$\\displaystyle y = A\\cos(Bx - C) + D$.</a></div>"
         },
         {
           "id": "MATH-102-c54",
@@ -3974,7 +3974,7 @@
           "chapter": "Chapter 6: Periodic Functions",
           "section": "Sec 1 (Graphs of the Sine and Cosine Functions)",
           "term": "Phase Shift, Period, Amplitude, Midline",
-          "definition": "Let $A$, $B$, $C$, and $D$ be real numbers and $y = A\\sin(Bx - C) + D$, a sine curve. Then we may write\n\\[y = A\\sin\\left(B\\left(x - \\dfrac{C}{B}\\right)\\right) + D,\\]\nwhere \n <ul class=\"def-list\">\n<li>$\\abs{A}$ is the <span class=\"emph\">amplitude</span>,</li>\n<li>$D$ is the <span class=\"emph\">midline</span>,</li>\n<li>$\\dfrac{C}{B}$ is the <span class=\"emph\">phase shift</span>,</li>\n<li>and $\\dfrac{2\\pi}{B}$ is the <span class=\"emph\">period</span>.</li>\n</ul>"
+          "definition": "Let $A$, $B$, $C$, and $D$ be real numbers and $y = A\\sin(Bx - C) + D$, a sine curve. Then we may write\n\\[y = A\\sin\\left(B\\left(x - \\dfrac{C}{B}\\right)\\right) + D,\\]\nwhere \n\n<ul class=\"def-list\">\n<li><span class=\"list-item-label\">$\\bullet$</span> $\\abs{A}$ is the <span class=\"emph\">amplitude</span>,</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> $D$ is the <span class=\"emph\">midline</span>,</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> $\\dfrac{C}{B}$ is the <span class=\"emph\">phase shift</span>,</li>\n<li><span class=\"list-item-label\">$\\bullet$</span> and $\\dfrac{2\\pi}{B}$ is the <span class=\"emph\">period</span>.</li>\n</ul>"
         },
         {
           "id": "MATH-102-c55",
@@ -3990,7 +3990,7 @@
           "chapter": "Chapter 6: Periodic Functions",
           "section": "Sec 3 (Inverse Trigonometric Functions)",
           "term": "Arcsine, Arccos, Arctan",
-          "definition": "For angles in the interval $\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$, if $\\sin(y) = x$, then $\\arcsin(x) = y$.\n\nFor angles in the interval $[0,\\pi]$, if $\\cos(y) = x$, then $\\arccos(x) = y$.\n\nFor angles in the interval $\\left(-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)$, if $\\tan(y) = x$, then $\\arctan(x) = y$."
+          "definition": "For angles in the interval $\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$, if $\\sin(y) = x$, then $\\arcsin(x) = y$.\n\n For angles in the interval $[0,\\pi]$, if $\\cos(y) = x$, then $\\arccos(x) = y$.\n\n For angles in the interval $\\left(-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)$, if $\\tan(y) = x$, then $\\arctan(x) = y$."
         }
       ]
     }
